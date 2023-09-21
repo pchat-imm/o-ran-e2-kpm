@@ -1,0 +1,4 @@
+rootProject.name = 'czmq-jni'
+include 'czmq-jni'
+include 'czmq-jni-native'
+include 'czmq-jni-all'
