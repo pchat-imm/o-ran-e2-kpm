@@ -1,0 +1,19 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/support/network/transport_layer_address_test.cpp"
+		},
+		{
+			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/support/network/io_broker_epoll_test.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"io_broker"
+		],
+		"name" : "network_test"
+	}
+}

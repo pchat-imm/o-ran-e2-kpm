@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrsran_pdcch_processor.a CMakeFiles/srsran_pdcch_processor.dir/pdcch_processor_impl.cpp.o
+/usr/bin/ranlib libsrsran_pdcch_processor.a

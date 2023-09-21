@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmac_test_helpers.a CMakeFiles/mac_test_helpers.dir/mac_test_helpers.cpp.o CMakeFiles/mac_test_helpers.dir/mac_ctrl_test_dummies.cpp.o
+/usr/bin/ranlib libmac_test_helpers.a

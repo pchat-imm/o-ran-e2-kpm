@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrsran_version.a CMakeFiles/srsran_version.dir/version.cpp.o
+/usr/bin/ranlib libsrsran_version.a

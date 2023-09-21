@@ -1,0 +1,37 @@
+# CMake generated Testfile for 
+# Source directory: /home/oem/o-ran-e2/srsRAN_Project/tests/unittests
+# Build directory: /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("adt")
+subdirs("asn1")
+subdirs("cu_cp")
+subdirs("cu_up")
+subdirs("du_manager")
+subdirs("e1ap")
+subdirs("e2")
+subdirs("f1ap")
+subdirs("f1u")
+subdirs("fapi")
+subdirs("fapi_adaptor")
+subdirs("gateways")
+subdirs("gnb")
+subdirs("gtpu")
+subdirs("mac")
+subdirs("ngap")
+subdirs("ofh")
+subdirs("pcap")
+subdirs("pdcp")
+subdirs("phy")
+subdirs("psup")
+subdirs("radio")
+subdirs("ran")
+subdirs("rlc")
+subdirs("rrc")
+subdirs("scheduler")
+subdirs("sdap")
+subdirs("security")
+subdirs("srslog")
+subdirs("srsvec")
+subdirs("support")

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrsran_pusch_demodulator.a CMakeFiles/srsran_pusch_demodulator.dir/pusch_demodulator_impl.cpp.o
+/usr/bin/ranlib libsrsran_pusch_demodulator.a

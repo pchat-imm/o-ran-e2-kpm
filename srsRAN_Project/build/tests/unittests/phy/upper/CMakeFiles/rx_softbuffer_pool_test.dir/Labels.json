@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/phy/upper/rx_softbuffer_pool_test.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"phy"
+		],
+		"name" : "rx_softbuffer_pool_test"
+	}
+}

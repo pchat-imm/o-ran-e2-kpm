@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/gateways/sctp_network_gateway_test.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gateways"
+		],
+		"name" : "sctp_network_gateway_test"
+	}
+}

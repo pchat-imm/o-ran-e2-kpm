@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfapi_to_phy_translator.a CMakeFiles/fapi_to_phy_translator.dir/fapi_to_phy_translator.cpp.o
+/usr/bin/ranlib libfapi_to_phy_translator.a

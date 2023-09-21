@@ -1,0 +1,4 @@
+# Directory labels
+ ofh
+# Source files and their labels
+/home/oem/o-ran-e2/srsRAN_Project/tests/benchmarks/ofh/ofh_compression_benchmark.cpp
