@@ -1,0 +1,41 @@
+oem@oem-ThinkPad-L14-Gen-2:~$ cd o-ran-e2/
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2$ ./flexric/build/examples/ric/nearRT-RIC
+Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[NEAR-RIC]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36421
+[NEAR-RIC]: Initializing 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 147 with def = ORAN-E2SM-KPM 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+[iApp]: Initializing ... 
+[iApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+fd created with 6 
+Received message with id = 411, port = 47833 
+[E2AP] Received SETUP-REQUEST from PLMN   1. 1 Node ID 411 RAN type ngran_gNB
+[NEAR-RIC]: Accepting RAN function ID 147 with def = `0ORAN-E2SM-KPM 
+[NEAR-RIC]: Accepting interfaceType 0
+[iApp]: E42 SETUP-REQUEST received
+[iApp]: E42 SETUP-RESPONSE sent
+[iApp]: SUBSCRIPTION-REQUEST xapp_ric_id->ric_id.ran_func_id 147  
+[E2AP] SUBSCRIPTION REQUEST generated
+[NEAR-RIC]: nb_id 411 port = 47833  
+[NEAR-RIC]: nb_id 411 port = 47833  
+[NEAR-RIC]: SUBSCRIPTION DELETE REQUEST tx
+
+[iApp]: RIC_SUBSCRIPTION_DELETE_REQUEST sent 
+[iApp]: RIC_SUBSCRIPTION_DELETE_RESPONSE sent 
+[iApp]: E42 SETUP-REQUEST received
+[iApp]: E42 SETUP-RESPONSE sent
+[iApp]: SUBSCRIPTION-REQUEST xapp_ric_id->ric_id.ran_func_id 147  
+[E2AP] SUBSCRIPTION REQUEST generated
+[NEAR-RIC]: nb_id 411 port = 47833  
+[NEAR-RIC]: nb_id 411 port = 47833  
+[NEAR-RIC]: SUBSCRIPTION DELETE REQUEST tx
+
+[iApp]: RIC_SUBSCRIPTION_DELETE_REQUEST sent 
+[iApp]: RIC_SUBSCRIPTION_DELETE_RESPONSE sent 
+
