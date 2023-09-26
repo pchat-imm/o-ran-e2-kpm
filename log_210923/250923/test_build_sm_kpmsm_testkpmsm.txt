@@ -1,0 +1,13 @@
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/test/sm/kpm_sm$ ./test_kpm_sm 
+KPM SM unit test launched
+-> STEP 1. Controlling RAN function ................
+[IE RAN function ID]: Agent and RIC are using the same RAN function ID for KPM: 147
+-> STEP 2. Controlling Subscription procedure.......
+[IE RIC Event Trigger Definition] correctly encoded
+[IE RIC Action Definition] correctly encoded
+[IE RIC Event Trigger Definition] correctly decoded
+-> STEP 3. Controlling Indication procedure.........
+[IE RIC Indication Header]: correctly encoded
+[IE RIC Indication Message] correctly decoded
+-> STEP 4. Freeing memory...........................
+-> Test completed with success. Closing all

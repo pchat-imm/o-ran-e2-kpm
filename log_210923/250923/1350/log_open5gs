@@ -1,0 +1,639 @@
+inkPad-L14-Gen-2:~/o-ran-e2/srsRAN_Project/docker$ sudo docker-compose up --build 5gc
+WARNING: Some services (gnb) use the 'configs' key, which will be ignored. Compose does not support 'configs' configuration - use `docker stack deploy` to deploy to a swarm.
+Building 5gc
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  27.65kB
+Step 1/17 : ARG OS_VERSION=22.04
+Step 2/17 : FROM ubuntu:$OS_VERSION as base
+ ---> 6df894023726
+Step 3/17 : ENV PYTHONBUFFERED=1
+ ---> Using cache
+ ---> 0e61caeca02c
+Step 4/17 : ENV DEBIAN_FRONTEND=noninteractive
+ ---> Using cache
+ ---> c02cfbb7f83c
+Step 5/17 : RUN apt-get update     && apt install -y software-properties-common     && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> a12e59476a4b
+Step 6/17 : RUN apt-get update     && apt-get install -y     python3-pip     python3-setuptools     python3-wheel     ninja-build     build-essential     flex     bison     git     libsctp-dev     libgnutls28-dev     libgcrypt-dev     libssl-dev     libidn11-dev     libmongoc-dev     libbson-dev     libyaml-dev     libnghttp2-dev     libmicrohttpd-dev     libcurl4-gnutls-dev     libnghttp2-dev     libtins-dev     meson     mongodb     curl     gettext     gdb     iproute2     iptables     iputils-ping     netcat     iperf     iperf3     libtalloc-dev     cmake
+ ---> Using cache
+ ---> f7417f2e1768
+Step 7/17 : ARG OPEN5GS_VERSION
+ ---> Using cache
+ ---> e8046f111f4d
+Step 8/17 : RUN echo $OPEN5GS_VERSION > ./open5gsversion
+ ---> Using cache
+ ---> cf922a6ba9bc
+Step 9/17 : RUN git clone --depth 1 --branch $(cat ./open5gsversion) https://github.com/open5gs/open5gs open5gs    && cd open5gs     && meson build --prefix=`pwd`/install     && ninja -C build     && cd build     && ninja install
+ ---> Using cache
+ ---> 9c98207b5a5e
+Step 10/17 : RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -     && apt-get install -y nodejs     && cd open5gs/webui     && npm ci --no-optional
+ ---> Using cache
+ ---> c5e4ca0134ad
+Step 11/17 : RUN python3 -m pip install pymongo click pyroute2 ipaddress python-iptables
+ ---> Using cache
+ ---> 6649523b91ce
+Step 12/17 : FROM base as open5gs
+ ---> 6649523b91ce
+Step 13/17 : WORKDIR /open5gs
+ ---> Using cache
+ ---> f1317f4b12fe
+Step 14/17 : COPY open5gs-5gc.yml open5gs-5gc.yml.in
+ ---> Using cache
+ ---> 9cad743e57d9
+Step 15/17 : COPY open5gs_entrypoint.sh add_users.py setup_tun.py ./
+ ---> Using cache
+ ---> 8e075b182c76
+Step 16/17 : ENV PATH="${PATH}:/open5gs/build/tests/app/"
+ ---> Using cache
+ ---> 2847cbd0bea4
+Step 17/17 : ENTRYPOINT [ "./open5gs_entrypoint.sh" ]
+ ---> Using cache
+ ---> a75e3d3704b7
+Successfully built a75e3d3704b7
+Successfully tagged docker_5gc:latest
+open5gs_5gc is up-to-date
+Attaching to open5gs_5gc
+open5gs_5gc | nc: connect to 127.0.0.1 port 27017 (tcp) failed: Connection refused
+open5gs_5gc | waiting for mongodb
+open5gs_5gc | 
+open5gs_5gc | > open5gs@2.6.1 dev /open5gs/webui
+open5gs_5gc | > node server/index.js
+open5gs_5gc | 
+open5gs_5gc | > Using external babel configuration
+open5gs_5gc | > Location: "/open5gs/webui/.babelrc"
+open5gs_5gc | Connection to 127.0.0.1 27017 port [tcp/*] succeeded!
+open5gs_5gc |  DONE  Compiled successfully in 1228ms7:06:01 AM
+open5gs_5gc | 
+open5gs_5gc | Mongoose: accounts.count({}, {})
+open5gs_5gc | > Ready on http://4cc07f8ddf6f:3000
+open5gs_5gc | Mongoose: subscribers.createIndex({ imsi: 1 }, { unique: true, background: true })
+open5gs_5gc | Reading subscriber data from cmd.
+open5gs_5gc | Added subscriber with Inserted ID : 650beb59b0ebc62a1598bdc5
+open5gs_5gc | 650beb59b0ebc62a1598bdc5
+open5gs_5gc | Mongoose: accounts.createIndex({ username: 1 }, { unique: true, background: true })
+open5gs_5gc | Mongoose: accounts.findOne({ '$or': [ { username: 'admin' } ] }, { projection: { hash: 0, salt: 0 } })
+open5gs_5gc | Mongoose: accounts.insertOne({ roles: [ 'admin' ], _id: new ObjectId("650beb5935de5bdb1daedd01"), username: 'admin', salt: '2ce2c4a9c55a1c96d0991193eae1a08d0044d2c4be512aab3565d8ad9b886324', hash: '9d1b228a414630fd8bd85a4a10651e4e3643dd335da91dd2da10a897dcae58cfffd188777958c9917aef3955386f9d3bd7b2683f7440763199ccb39ea7d03d06857a8cb3894c936caeac8d3c2b76af63e6f4e858f341451351b3004719898ade1c67b410854fbcf5b5f28ae95fe6e1a2335a20d4da6b2f0cb6b7eb4184a2536a6f545ea17dd200c3d83d0615b275c2dafa4c9b80e14e1894fd4dd7d549c51b4bfeac5b00bd066b0d3a5240c7e0488261216db5364337b74d550c1885bf3150119c58a5805c975d179795187e2bcbe2d79a2ff55a636cc6731296519fa2327fe7c68f4d1fe7ec6f74f9bd2f4cf99932d901f66f1d57c13a52c53bfe180a27eed7872c886571c1975a1b17ef2f82a40216e1369ce55a9e45aa3a3fd380b9374609d533dee739094c578ceaff40032c5c6bf55fbe7a17ccee3f39d305d69808997e284bd8a435bcb78987da00a6bd223bdd9f08ceff085ba1b115071d12f4a452775354c9abff540abe43818fd5378f56941e388a22209f1fe0f956862f48e03ae9816642778bbf0ee164d227919d7a7c7b193d1ead248fa5604e167b44db5cabd95562c38f5f65d688415ab44341a8812be614334d8e8f6da79b3ffd88c9d576f242cc6a50c959ab86240a89ae8b337c26106e5ca9aeafc6675bc88cac19b90d5e53185be1f1da48874626328a8fafc898070e29caf6aa6a3bf83edb24622045af', __v: 0}, { session: null })
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.370: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.376: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.379: [sbi] INFO: nghttp2_server() [http://127.0.0.10]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.379: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.437: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.440: [sbi] INFO: nghttp2_server() [http://127.0.1.10]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.440: [app] INFO: SCP initialize...done (../src/scp/app.c:31)
+open5gs_5gc | 09/21 07:06:02.440: [nrf] INFO: [5310aeda-584d-41ee-8a5a-6b7b5ab40b42] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.441: [sbi] INFO: [5310aeda-584d-41ee-8a5a-6b7b5ab40b42] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.488: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.497: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+open5gs_5gc | 09/21 07:06:02.497: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+open5gs_5gc | 09/21 07:06:02.498: [gtp] INFO: gtp_server() [10.53.1.2]:2152 (../lib/gtp/path.c:30)
+open5gs_5gc | 09/21 07:06:02.498: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.548: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.582: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.586: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+open5gs_5gc | 09/21 07:06:02.586: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+open5gs_5gc | 09/21 07:06:02.586: [pfcp] INFO: pfcp_server() [127.0.0.4]:8805 (../lib/pfcp/path.c:30)
+open5gs_5gc | 09/21 07:06:02.586: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.7]:8805 (../lib/pfcp/path.c:61)
+open5gs_5gc | 09/21 07:06:02.586: [sbi] INFO: NF Service [nsmf-pdusession] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.586: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:173)
+open5gs_5gc | 09/21 07:06:02.587: [sbi] INFO: nghttp2_server() [http://127.0.0.4]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.587: [app] INFO: SMF initialize...done (../src/smf/app.c:31)
+open5gs_5gc | 09/21 07:06:02.587: [smf] INFO: PFCP associated [127.0.0.7]:8805 (../src/smf/pfcp-sm.c:174)
+open5gs_5gc | 09/21 07:06:02.588: [nrf] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.588: [sbi] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.588: [sbi] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.588: [sbi] INFO: NF Service [namf-comm] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.588: [sbi] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/21 07:06:02.589: [sbi] INFO: nghttp2_server() [http://127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.589: [amf] INFO: ngap_server() [10.53.1.2]:38412 (../src/amf/ngap-sctp.c:61)
+open5gs_5gc | 09/21 07:06:02.589: [sctp] INFO: AMF initialize...done (../src/amf/app.c:33)
+open5gs_5gc | 09/21 07:06:02.590: [nrf] INFO: [5326c4f4-584d-41ee-95d7-450108464b5b] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.590: [sbi] INFO: [5326c4f4-584d-41ee-95d7-450108464b5b] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.590: [sbi] INFO: [5326c4f4-584d-41ee-95d7-450108464b5b] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.590: [sbi] INFO: [5326c4f4-584d-41ee-95d7-450108464b5b] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.590: [sbi] INFO: [5326c4f4-584d-41ee-95d7-450108464b5b] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.590: [sbi] INFO: [5326c4f4-584d-41ee-95d7-450108464b5b] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.633: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.635: [sbi] INFO: NF Service [nausf-auth] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.636: [sbi] INFO: nghttp2_server() [http://127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.636: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+open5gs_5gc | 09/21 07:06:02.636: [nrf] INFO: [532eabf6-584d-41ee-bc59-f3a8c60e4e4f] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.636: [sbi] INFO: [532eabf6-584d-41ee-bc59-f3a8c60e4e4f] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.636: [sbi] INFO: [532eabf6-584d-41ee-bc59-f3a8c60e4e4f] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.637: [sbi] INFO: [532eabf6-584d-41ee-bc59-f3a8c60e4e4f] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.637: [sbi] INFO: [532eabf6-584d-41ee-bc59-f3a8c60e4e4f] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.637: [sbi] INFO: [532eabf6-584d-41ee-bc59-f3a8c60e4e4f] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.687: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.690: [sbi] INFO: NF Service [nudm-ueau] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.690: [sbi] INFO: NF Service [nudm-uecm] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.690: [sbi] INFO: NF Service [nudm-sdm] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.691: [sbi] INFO: nghttp2_server() [http://127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.691: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+open5gs_5gc | 09/21 07:06:02.691: [nrf] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.692: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.692: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.692: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.692: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.692: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] WARNING: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF has already been added (../lib/sbi/nnrf-handler.c:636)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] WARNING: NF EndPoint updated [127.0.0.12:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] WARNING: NF EndPoint updated [127.0.0.12:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.693: [sbi] INFO: [53370a30-584d-41ee-af18-a9431fd83e19] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.744: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.747: [dbi] INFO: MongoDB URI: 'mongodb://127.0.0.1/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+open5gs_5gc | 09/21 07:06:02.747: [sbi] INFO: NF Service [npcf-am-policy-control] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.747: [sbi] INFO: NF Service [npcf-smpolicycontrol] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.747: [sbi] INFO: NF Service [npcf-policyauthorization] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.747: [sbi] INFO: nghttp2_server() [http://127.0.0.13]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.747: [app] INFO: PCF initialize...done (../src/pcf/app.c:31)
+open5gs_5gc | 09/21 07:06:02.748: [nrf] INFO: [533f885e-584d-41ee-a223-1123f0566208] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.748: [sbi] INFO: [533f885e-584d-41ee-a223-1123f0566208] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.748: [sbi] INFO: [533f885e-584d-41ee-a223-1123f0566208] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.749: [sbi] INFO: [533f885e-584d-41ee-a223-1123f0566208] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.749: [sbi] INFO: [533f885e-584d-41ee-a223-1123f0566208] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.749: [sbi] INFO: [533f885e-584d-41ee-a223-1123f0566208] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.749: [sbi] INFO: [533f885e-584d-41ee-a223-1123f0566208] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.749: [sbi] INFO: [533f885e-584d-41ee-a223-1123f0566208] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.790: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.793: [sbi] INFO: NF Service [nnssf-nsselection] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.793: [sbi] INFO: nghttp2_server() [http://127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.793: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+open5gs_5gc | 09/21 07:06:02.794: [nrf] INFO: [5346a9ea-584d-41ee-b646-532705884234] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.794: [sbi] INFO: [5346a9ea-584d-41ee-b646-532705884234] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.794: [sbi] INFO: [5346a9ea-584d-41ee-b646-532705884234] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.794: [sbi] INFO: [5346a9ea-584d-41ee-b646-532705884234] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.794: [sbi] INFO: [5346a9ea-584d-41ee-b646-532705884234] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.794: [sbi] INFO: [5346a9ea-584d-41ee-b646-532705884234] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.838: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.841: [sbi] INFO: NF Service [nbsf-management] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.841: [sbi] INFO: nghttp2_server() [http://127.0.0.15]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.841: [app] INFO: BSF initialize...done (../src/bsf/app.c:31)
+open5gs_5gc | 09/21 07:06:02.842: [nrf] INFO: [534df858-584d-41ee-827d-dd9f4f2a38c8] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.842: [sbi] INFO: [534df858-584d-41ee-827d-dd9f4f2a38c8] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.842: [sbi] INFO: [534df858-584d-41ee-827d-dd9f4f2a38c8] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.843: [sbi] INFO: [534df858-584d-41ee-827d-dd9f4f2a38c8] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.843: [sbi] INFO: [534df858-584d-41ee-827d-dd9f4f2a38c8] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.843: [sbi] INFO: [534df858-584d-41ee-827d-dd9f4f2a38c8] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/21 07:06:02.895: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/21 07:06:02.897: [dbi] INFO: MongoDB URI: 'mongodb://127.0.0.1/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+open5gs_5gc | 09/21 07:06:02.897: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/21 07:06:02.897: [sbi] INFO: nghttp2_server() [http://127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/21 07:06:02.897: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+open5gs_5gc | 09/21 07:06:02.897: [nrf] INFO: [53567a8c-584d-41ee-883e-59e27794e262] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/21 07:06:02.898: [sbi] INFO: [53567a8c-584d-41ee-883e-59e27794e262] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.898: [sbi] INFO: [53567a8c-584d-41ee-883e-59e27794e262] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.898: [sbi] INFO: [53567a8c-584d-41ee-883e-59e27794e262] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.898: [sbi] INFO: [53567a8c-584d-41ee-883e-59e27794e262] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:02.898: [sbi] INFO: [53567a8c-584d-41ee-883e-59e27794e262] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/21 07:06:02.898: [sbi] INFO: [53567a8c-584d-41ee-883e-59e27794e262] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/21 07:06:02.898: [sbi] INFO: [53567a8c-584d-41ee-883e-59e27794e262] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/21 07:06:05.001: [smf] WARNING: PFCP[REQ] has already been associated [127.0.0.7]:8805 (../src/smf/pfcp-sm.c:217)
+open5gs_5gc | 09/21 07:06:05.001: [upf] WARNING: PFCP[RSP] has already been associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:213)
+open5gs_5gc | 09/21 07:08:29.049: [amf] INFO: gNB-N2 accepted[10.53.1.1]:32830 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/21 07:08:29.049: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/21 07:08:29.049: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/21 07:08:29.049: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/21 07:38:08.278: [amf] INFO: InitialUEMessage (../src/amf/ngap-handler.c:372)
+open5gs_5gc | 09/21 07:38:08.278: [amf] INFO: [Added] Number of gNB-UEs is now 1 (../src/amf/context.c:2327)
+open5gs_5gc | 09/21 07:38:08.278: [amf] INFO:     RAN_UE_NGAP_ID[0] AMF_UE_NGAP_ID[1] TAC[7] CellID[0x19b0] (../src/amf/ngap-handler.c:533)
+open5gs_5gc | 09/21 07:38:08.278: [amf] INFO: [suci-0-001-01-0000-0-0-0123456780] Unknown UE by SUCI (../src/amf/context.c:1634)
+open5gs_5gc | 09/21 07:38:08.278: [amf] INFO: [Added] Number of AMF-UEs is now 1 (../src/amf/context.c:1419)
+open5gs_5gc | 09/21 07:38:08.278: [gmm] INFO: Registration request (../src/amf/gmm-sm.c:985)
+open5gs_5gc | 09/21 07:38:08.278: [gmm] INFO: [suci-0-001-01-0000-0-0-0123456780]    SUCI (../src/amf/gmm-handler.c:149)
+open5gs_5gc | 09/21 07:38:08.529: [gmm] INFO: [imsi-001010123456780] Registration complete (../src/amf/gmm-sm.c:1916)
+open5gs_5gc | 09/21 07:38:08.529: [amf] INFO: [imsi-001010123456780] Configuration update command (../src/amf/nas-path.c:612)
+open5gs_5gc | 09/21 07:38:08.529: [gmm] INFO:     UTC [2023-09-21T07:38:08] Timezone[0]/DST[0] (../src/amf/gmm-build.c:544)
+open5gs_5gc | 09/21 07:38:08.529: [gmm] INFO:     LOCAL [2023-09-21T07:38:08] Timezone[0]/DST[0] (../src/amf/gmm-build.c:549)
+open5gs_5gc | 09/21 07:38:08.530: [amf] INFO: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2348)
+open5gs_5gc | 09/21 07:38:08.530: [gmm] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] S_NSSAI[SST:1 SD:0xffffff] (../src/amf/gmm-handler.c:1186)
+open5gs_5gc | 09/21 07:38:08.534: [sbi] WARNING: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NF-discover) NF has already been added (../lib/sbi/nnrf-handler.c:740)
+open5gs_5gc | 09/21 07:38:08.534: [sbi] WARNING: NF EndPoint updated [127.0.0.4:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/21 07:38:08.534: [sbi] WARNING: NF EndPoint updated [127.0.0.4:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/21 07:38:08.534: [sbi] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:763)
+open5gs_5gc | 09/21 07:38:08.535: [smf] INFO: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:1012)
+open5gs_5gc | 09/21 07:38:08.535: [smf] INFO: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:3108)
+open5gs_5gc | 09/21 07:38:08.547: [smf] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] IPv4[10.45.1.2] IPv6[] (../src/smf/npcf-handler.c:528)
+open5gs_5gc | 09/21 07:38:08.548: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:194)
+open5gs_5gc | 09/21 07:38:08.549: [gtp] INFO: gtp_connect() [127.0.0.4]:2152 (../lib/gtp/path.c:60)
+open5gs_5gc | 09/21 07:38:08.549: [upf] INFO: UE F-SEID[UP:0x1 CP:0x1] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/21 07:38:08.549: [upf] INFO: UE F-SEID[UP:0x1 CP:0x1] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/21 07:38:08.550: [gtp] INFO: gtp_connect() [10.53.1.2]:2152 (../lib/gtp/path.c:60)
+open5gs_5gc | 09/21 07:38:08.553: [gmm] INFO: [imsi-001010123456780] No GUTI allocated (../src/amf/gmm-sm.c:1242)
+open5gs_5gc | 09/21 07:38:08.683: [gtp] INFO: gtp_connect() [10.53.1.1]:2152 (../lib/gtp/path.c:60)
+open5gs_5gc | 09/21 07:52:55.118: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/21 07:52:55.119: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/21 07:52:55.121: [amf] INFO: [Removed] Number of gNB-UEs is now 0 (../src/amf/context.c:2334)
+open5gs_5gc | 09/21 07:59:53.393: [amf] INFO: gNB-N2 accepted[10.53.1.1]:53931 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/21 07:59:53.393: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/21 07:59:53.393: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/21 07:59:53.393: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/21 08:03:06.807: [amf] INFO: InitialUEMessage (../src/amf/ngap-handler.c:372)
+open5gs_5gc | 09/21 08:03:06.807: [amf] INFO: [Added] Number of gNB-UEs is now 1 (../src/amf/context.c:2327)
+open5gs_5gc | 09/21 08:03:06.807: [amf] INFO:     RAN_UE_NGAP_ID[0] AMF_UE_NGAP_ID[2] TAC[7] CellID[0x19b0] (../src/amf/ngap-handler.c:533)
+open5gs_5gc | 09/21 08:03:06.807: [amf] INFO: [suci-0-001-01-0000-0-0-0123456780] known UE by SUCI (../src/amf/context.c:1632)
+open5gs_5gc | 09/21 08:03:06.807: [gmm] INFO: Registration request (../src/amf/gmm-sm.c:985)
+open5gs_5gc | 09/21 08:03:06.807: [gmm] INFO: [suci-0-001-01-0000-0-0-0123456780]    SUCI (../src/amf/gmm-handler.c:149)
+open5gs_5gc | 09/21 08:03:06.812: [upf] INFO: [Removed] Number of UPF-sessions is now 0 (../src/upf/context.c:232)
+open5gs_5gc | 09/21 08:03:06.812: [smf] INFO: Removed Session: UE IMSI:[imsi-001010123456780] DNN:[srsapn:1] IPv4:[10.45.1.2] IPv6:[] (../src/smf/context.c:1710)
+open5gs_5gc | 09/21 08:03:06.812: [smf] INFO: [Removed] Number of SMF-Sessions is now 0 (../src/smf/context.c:3116)
+open5gs_5gc | 09/21 08:03:06.812: [smf] INFO: [Removed] Number of SMF-UEs is now 0 (../src/smf/context.c:1071)
+open5gs_5gc | 09/21 08:03:06.813: [amf] INFO: [imsi-001010123456780:1] Release SM context [204] (../src/amf/amf-sm.c:475)
+open5gs_5gc | 09/21 08:03:06.813: [amf] INFO: [Removed] Number of AMF-Sessions is now 0 (../src/amf/context.c:2355)
+open5gs_5gc | 09/21 08:03:06.900: [pcf] WARNING: NF EndPoint updated [127.0.0.5:7777] (../src/pcf/npcf-handler.c:100)
+open5gs_5gc | 09/21 08:03:07.141: [gmm] INFO: [imsi-001010123456780] Registration complete (../src/amf/gmm-sm.c:1916)
+open5gs_5gc | 09/21 08:03:07.141: [amf] INFO: [imsi-001010123456780] Configuration update command (../src/amf/nas-path.c:612)
+open5gs_5gc | 09/21 08:03:07.141: [gmm] INFO:     UTC [2023-09-21T08:03:07] Timezone[0]/DST[0] (../src/amf/gmm-build.c:544)
+open5gs_5gc | 09/21 08:03:07.141: [gmm] INFO:     LOCAL [2023-09-21T08:03:07] Timezone[0]/DST[0] (../src/amf/gmm-build.c:549)
+open5gs_5gc | 09/21 08:03:07.142: [amf] INFO: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2348)
+open5gs_5gc | 09/21 08:03:07.142: [gmm] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] S_NSSAI[SST:1 SD:0xffffff] (../src/amf/gmm-handler.c:1186)
+open5gs_5gc | 09/21 08:03:07.145: [sbi] WARNING: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NF-discover) NF has already been added (../lib/sbi/nnrf-handler.c:740)
+open5gs_5gc | 09/21 08:03:07.145: [sbi] WARNING: NF EndPoint updated [127.0.0.4:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/21 08:03:07.145: [sbi] WARNING: NF EndPoint updated [127.0.0.4:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/21 08:03:07.145: [sbi] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:763)
+open5gs_5gc | 09/21 08:03:07.146: [smf] INFO: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:1012)
+open5gs_5gc | 09/21 08:03:07.146: [smf] INFO: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:3108)
+open5gs_5gc | 09/21 08:03:07.155: [smf] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] IPv4[10.45.1.2] IPv6[] (../src/smf/npcf-handler.c:528)
+open5gs_5gc | 09/21 08:03:07.155: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:194)
+open5gs_5gc | 09/21 08:03:07.155: [upf] INFO: UE F-SEID[UP:0x2 CP:0x2] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/21 08:03:07.156: [upf] INFO: UE F-SEID[UP:0x2 CP:0x2] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/21 08:03:07.169: [gmm] INFO: [imsi-001010123456780] No GUTI allocated (../src/amf/gmm-sm.c:1242)
+open5gs_5gc | 09/21 09:03:07.148: [sbi] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] NF expired (../lib/sbi/nf-sm.c:318)
+open5gs_5gc | 09/21 09:18:20.361: [amf] INFO: gNB-N2 accepted[10.53.1.1]:57509 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/21 09:18:20.361: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/21 09:18:20.361: [amf] INFO: [Added] Number of gNBs is now 2 (../src/amf/context.c:1034)
+open5gs_5gc | 09/21 09:18:20.361: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/21 09:18:29.508: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/21 09:18:29.508: [amf] INFO: [Removed] Number of gNBs is now 1 (../src/amf/context.c:1061)
+open5gs_5gc | 09/21 09:19:10.507: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/21 09:19:10.507: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/21 09:19:10.508: [amf] INFO: [Removed] Number of gNB-UEs is now 0 (../src/amf/context.c:2334)
+open5gs_5gc | 09/21 09:19:14.624: [amf] INFO: gNB-N2 accepted[10.53.1.1]:39510 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/21 09:19:14.624: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/21 09:19:14.624: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/21 09:19:14.624: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/21 09:19:51.096: [amf] INFO: InitialUEMessage (../src/amf/ngap-handler.c:372)
+open5gs_5gc | 09/21 09:19:51.096: [amf] INFO: [Added] Number of gNB-UEs is now 1 (../src/amf/context.c:2327)
+open5gs_5gc | 09/21 09:19:51.096: [amf] INFO:     RAN_UE_NGAP_ID[0] AMF_UE_NGAP_ID[3] TAC[7] CellID[0x19b0] (../src/amf/ngap-handler.c:533)
+open5gs_5gc | 09/21 09:19:51.096: [amf] INFO: [suci-0-001-01-0000-0-0-0123456780] known UE by SUCI (../src/amf/context.c:1632)
+open5gs_5gc | 09/21 09:19:51.096: [gmm] INFO: Registration request (../src/amf/gmm-sm.c:985)
+open5gs_5gc | 09/21 09:19:51.096: [gmm] INFO: [suci-0-001-01-0000-0-0-0123456780]    SUCI (../src/amf/gmm-handler.c:149)
+open5gs_5gc | 09/21 09:19:51.098: [upf] INFO: [Removed] Number of UPF-sessions is now 0 (../src/upf/context.c:232)
+open5gs_5gc | 09/21 09:19:51.098: [smf] INFO: Removed Session: UE IMSI:[imsi-001010123456780] DNN:[srsapn:1] IPv4:[10.45.1.2] IPv6:[] (../src/smf/context.c:1710)
+open5gs_5gc | 09/21 09:19:51.098: [smf] INFO: [Removed] Number of SMF-Sessions is now 0 (../src/smf/context.c:3116)
+open5gs_5gc | 09/21 09:19:51.098: [smf] INFO: [Removed] Number of SMF-UEs is now 0 (../src/smf/context.c:1071)
+open5gs_5gc | 09/21 09:19:51.098: [amf] INFO: [imsi-001010123456780:1] Release SM context [204] (../src/amf/amf-sm.c:475)
+open5gs_5gc | 09/21 09:19:51.098: [amf] INFO: [Removed] Number of AMF-Sessions is now 0 (../src/amf/context.c:2355)
+open5gs_5gc | 09/21 09:19:51.180: [pcf] WARNING: NF EndPoint updated [127.0.0.5:7777] (../src/pcf/npcf-handler.c:100)
+open5gs_5gc | 09/21 09:19:51.341: [gmm] INFO: [imsi-001010123456780] Registration complete (../src/amf/gmm-sm.c:1916)
+open5gs_5gc | 09/21 09:19:51.341: [amf] INFO: [imsi-001010123456780] Configuration update command (../src/amf/nas-path.c:612)
+open5gs_5gc | 09/21 09:19:51.341: [gmm] INFO:     UTC [2023-09-21T09:19:51] Timezone[0]/DST[0] (../src/amf/gmm-build.c:544)
+open5gs_5gc | 09/21 09:19:51.341: [gmm] INFO:     LOCAL [2023-09-21T09:19:51] Timezone[0]/DST[0] (../src/amf/gmm-build.c:549)
+open5gs_5gc | 09/21 09:19:51.341: [amf] INFO: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2348)
+open5gs_5gc | 09/21 09:19:51.341: [gmm] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] S_NSSAI[SST:1 SD:0xffffff] (../src/amf/gmm-handler.c:1186)
+open5gs_5gc | 09/21 09:19:51.343: [sbi] WARNING: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NF-discover) NF has already been added (../lib/sbi/nnrf-handler.c:740)
+open5gs_5gc | 09/21 09:19:51.343: [sbi] WARNING: NF EndPoint updated [127.0.0.4:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/21 09:19:51.343: [sbi] WARNING: NF EndPoint updated [127.0.0.4:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/21 09:19:51.343: [sbi] INFO: [532234a2-584d-41ee-8fcf-bdd8b80425b4] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:763)
+open5gs_5gc | 09/21 09:19:51.343: [smf] INFO: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:1012)
+open5gs_5gc | 09/21 09:19:51.343: [smf] INFO: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:3108)
+open5gs_5gc | 09/21 09:19:51.347: [smf] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] IPv4[10.45.1.2] IPv6[] (../src/smf/npcf-handler.c:528)
+open5gs_5gc | 09/21 09:19:51.347: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:194)
+open5gs_5gc | 09/21 09:19:51.347: [upf] INFO: UE F-SEID[UP:0x3 CP:0x3] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/21 09:19:51.347: [upf] INFO: UE F-SEID[UP:0x3 CP:0x3] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/21 09:19:51.382: [gmm] INFO: [imsi-001010123456780] No GUTI allocated (../src/amf/gmm-sm.c:1242)
+open5gs_5gc | 09/21 10:04:29.120: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/21 10:04:29.120: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/21 10:04:29.121: [amf] INFO: [Removed] Number of gNB-UEs is now 0 (../src/amf/context.c:2334)
+open5gs_5gc | 09/21 10:04:34.365: [app] INFO: SIGTERM received (../src/main.c:53)
+open5gs_5gc | 09/21 10:04:34.365: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+open5gs_5gc | 09/21 10:04:39.365: [thread] FATAL: thread still running after 3 seconds (../lib/core/ogs-thread.c:129)
+open5gs_5gc | 09/21 10:04:39.365: [thread] FATAL: ogs_thread_destroy: should not be reached. (../lib/core/ogs-thread.c:130)
+open5gs_5gc | 09/21 10:04:39.365: [core] FATAL: backtrace() returned 8 addresses (../lib/core/ogs-abort.c:37)
+open5gs_5gc | /open5gs/build/tests/app/../../lib/core/libogscore.so.2(ogs_thread_destroy+0x228) [0x7f10ea21dba1]
+open5gs_5gc | 5gc(+0x489e) [0x55b60c6ae89e]
+open5gs_5gc | 5gc(+0x3ddd) [0x55b60c6adddd]
+open5gs_5gc | /lib/x86_64-linux-gnu/libc.so.6(+0x468a7) [0x7f10e9dc28a7]
+open5gs_5gc | /lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x7f10e9dc2a60]
+open5gs_5gc | /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x7f10e9da008a]
+open5gs_5gc | 5gc(+0x3a8e) [0x55b60c6ada8e]
+open5gs_5gc | nc: connect to 127.0.0.1 port 27017 (tcp) failed: Connection refused
+open5gs_5gc | waiting for mongodb
+open5gs_5gc | 2023-09-26T03:33:52.534+0000 I CONTROL  [main] log file "/tmp/mongodb.log" exists; moved to "/tmp/mongodb.log.2023-09-26T03-33-52".
+open5gs_5gc | 
+open5gs_5gc | > open5gs@2.6.1 dev /open5gs/webui
+open5gs_5gc | > node server/index.js
+open5gs_5gc | 
+open5gs_5gc | > Using external babel configuration
+open5gs_5gc | > Location: "/open5gs/webui/.babelrc"
+open5gs_5gc | Connection to 127.0.0.1 27017 port [tcp/*] succeeded!
+open5gs_5gc |  DONE  Compiled successfully in 954ms3:33:54 AM
+open5gs_5gc | 
+open5gs_5gc | Mongoose: accounts.count({}, {})
+open5gs_5gc | > Ready on http://4cc07f8ddf6f:3000
+open5gs_5gc | Mongoose: subscribers.createIndex({ imsi: 1 }, { unique: true, background: true })
+open5gs_5gc | Mongoose: accounts.createIndex({ username: 1 }, { unique: true, background: true })
+open5gs_5gc | Reading subscriber data from cmd.
+open5gs_5gc | UE (IMSI=001010123456780) already exists, updating it.
+open5gs_5gc | Attempting to update IMSI 001010123456780
+open5gs_5gc | <pymongo.results.UpdateResult object at 0x7f86ff025d30>
+open5gs_5gc | True
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.412: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.419: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.422: [sbi] INFO: nghttp2_server() [http://127.0.0.10]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.422: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.510: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.514: [sbi] INFO: nghttp2_server() [http://127.0.1.10]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.514: [app] INFO: SCP initialize...done (../src/scp/app.c:31)
+open5gs_5gc | 09/26 03:33:55.515: [nrf] INFO: [854aa49a-5c1d-41ee-8890-3585a9d9b7d3] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.515: [sbi] INFO: [854aa49a-5c1d-41ee-8890-3585a9d9b7d3] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.551: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.557: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+open5gs_5gc | 09/26 03:33:55.557: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+open5gs_5gc | 09/26 03:33:55.558: [gtp] INFO: gtp_server() [10.53.1.2]:2152 (../lib/gtp/path.c:30)
+open5gs_5gc | 09/26 03:33:55.558: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.607: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.633: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+open5gs_5gc | 09/26 03:33:55.633: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+open5gs_5gc | 09/26 03:33:55.633: [pfcp] INFO: pfcp_server() [127.0.0.4]:8805 (../lib/pfcp/path.c:30)
+open5gs_5gc | 09/26 03:33:55.633: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.7]:8805 (../lib/pfcp/path.c:61)
+open5gs_5gc | 09/26 03:33:55.633: [sbi] INFO: NF Service [nsmf-pdusession] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.633: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:173)
+open5gs_5gc | 09/26 03:33:55.634: [sbi] INFO: nghttp2_server() [http://127.0.0.4]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.634: [app] INFO: SMF initialize...done (../src/smf/app.c:31)
+open5gs_5gc | 09/26 03:33:55.634: [smf] INFO: PFCP associated [127.0.0.7]:8805 (../src/smf/pfcp-sm.c:174)
+open5gs_5gc | 09/26 03:33:55.634: [nrf] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.635: [sbi] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.635: [sbi] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.635: [sbi] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.653: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.659: [sbi] INFO: NF Service [namf-comm] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.660: [sbi] INFO: nghttp2_server() [http://127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.660: [amf] INFO: ngap_server() [10.53.1.2]:38412 (../src/amf/ngap-sctp.c:61)
+open5gs_5gc | 09/26 03:33:55.660: [sctp] INFO: AMF initialize...done (../src/amf/app.c:33)
+open5gs_5gc | 09/26 03:33:55.661: [nrf] INFO: [856057cc-5c1d-41ee-bd51-9ff90b526d1b] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.661: [sbi] INFO: [856057cc-5c1d-41ee-bd51-9ff90b526d1b] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.661: [sbi] INFO: [856057cc-5c1d-41ee-bd51-9ff90b526d1b] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.661: [sbi] INFO: [856057cc-5c1d-41ee-bd51-9ff90b526d1b] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/26 03:33:55.661: [sbi] INFO: [856057cc-5c1d-41ee-bd51-9ff90b526d1b] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.661: [sbi] INFO: [856057cc-5c1d-41ee-bd51-9ff90b526d1b] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.700: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.702: [sbi] INFO: NF Service [nausf-auth] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.702: [sbi] INFO: nghttp2_server() [http://127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.702: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+open5gs_5gc | 09/26 03:33:55.702: [nrf] INFO: [856773cc-5c1d-41ee-9bb3-bf3d4d4ae4fa] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.703: [sbi] INFO: [856773cc-5c1d-41ee-9bb3-bf3d4d4ae4fa] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.703: [sbi] INFO: [856773cc-5c1d-41ee-9bb3-bf3d4d4ae4fa] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.703: [sbi] INFO: [856773cc-5c1d-41ee-9bb3-bf3d4d4ae4fa] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/26 03:33:55.703: [sbi] INFO: [856773cc-5c1d-41ee-9bb3-bf3d4d4ae4fa] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.703: [sbi] INFO: [856773cc-5c1d-41ee-9bb3-bf3d4d4ae4fa] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.751: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.752: [sbi] INFO: NF Service [nudm-ueau] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.752: [sbi] INFO: NF Service [nudm-uecm] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.752: [sbi] INFO: NF Service [nudm-sdm] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.752: [sbi] INFO: nghttp2_server() [http://127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.752: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+open5gs_5gc | 09/26 03:33:55.753: [nrf] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.753: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.753: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] WARNING: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF has already been added (../lib/sbi/nnrf-handler.c:636)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] WARNING: NF EndPoint updated [127.0.0.12:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] WARNING: NF EndPoint updated [127.0.0.12:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.754: [sbi] INFO: [856f2c34-5c1d-41ee-9278-774a906f5ba6] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.804: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.806: [dbi] INFO: MongoDB URI: 'mongodb://127.0.0.1/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+open5gs_5gc | 09/26 03:33:55.806: [sbi] INFO: NF Service [npcf-am-policy-control] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.806: [sbi] INFO: NF Service [npcf-smpolicycontrol] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.806: [sbi] INFO: NF Service [npcf-policyauthorization] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.806: [sbi] INFO: nghttp2_server() [http://127.0.0.13]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.806: [app] INFO: PCF initialize...done (../src/pcf/app.c:31)
+open5gs_5gc | 09/26 03:33:55.807: [nrf] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.807: [sbi] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.807: [sbi] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.808: [sbi] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.808: [sbi] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.808: [sbi] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/26 03:33:55.808: [sbi] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.808: [sbi] INFO: [85774838-5c1d-41ee-a5b1-f77f1b4766de] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.851: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.853: [sbi] INFO: NF Service [nnssf-nsselection] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.853: [sbi] INFO: nghttp2_server() [http://127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.853: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+open5gs_5gc | 09/26 03:33:55.854: [nrf] INFO: [857e8512-5c1d-41ee-ac1f-f9d0dd0d05e6] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.854: [sbi] INFO: [857e8512-5c1d-41ee-ac1f-f9d0dd0d05e6] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.854: [sbi] INFO: [857e8512-5c1d-41ee-ac1f-f9d0dd0d05e6] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.854: [sbi] INFO: [857e8512-5c1d-41ee-ac1f-f9d0dd0d05e6] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.854: [sbi] INFO: [857e8512-5c1d-41ee-ac1f-f9d0dd0d05e6] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/26 03:33:55.854: [sbi] INFO: [857e8512-5c1d-41ee-ac1f-f9d0dd0d05e6] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.902: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.903: [sbi] INFO: NF Service [nbsf-management] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.904: [sbi] INFO: nghttp2_server() [http://127.0.0.15]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.904: [app] INFO: BSF initialize...done (../src/bsf/app.c:31)
+open5gs_5gc | 09/26 03:33:55.904: [nrf] INFO: [85863a78-5c1d-41ee-84cf-b1e1bf301cbe] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.904: [sbi] INFO: [85863a78-5c1d-41ee-84cf-b1e1bf301cbe] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.904: [sbi] INFO: [85863a78-5c1d-41ee-84cf-b1e1bf301cbe] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.905: [sbi] INFO: [85863a78-5c1d-41ee-84cf-b1e1bf301cbe] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/26 03:33:55.905: [sbi] INFO: [85863a78-5c1d-41ee-84cf-b1e1bf301cbe] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.905: [sbi] INFO: [85863a78-5c1d-41ee-84cf-b1e1bf301cbe] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | Open5GS daemon v2.6.1
+open5gs_5gc | 
+open5gs_5gc | 09/26 03:33:55.955: [app] INFO: Configuration: 'open5gs-5gc.yml' (../lib/app/ogs-init.c:126)
+open5gs_5gc | 09/26 03:33:55.958: [dbi] INFO: MongoDB URI: 'mongodb://127.0.0.1/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+open5gs_5gc | 09/26 03:33:55.958: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context.c:1436)
+open5gs_5gc | 09/26 03:33:55.958: [sbi] INFO: nghttp2_server() [http://127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:395)
+open5gs_5gc | 09/26 03:33:55.958: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+open5gs_5gc | 09/26 03:33:55.958: [nrf] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+open5gs_5gc | 09/26 03:33:55.958: [sbi] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.958: [sbi] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.959: [sbi] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.959: [sbi] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.959: [sbi] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:632)
+open5gs_5gc | 09/26 03:33:55.959: [sbi] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:642)
+open5gs_5gc | 09/26 03:33:55.959: [sbi] INFO: [858e6194-5c1d-41ee-ac37-f3a28c6cc374] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+open5gs_5gc | 09/26 03:33:58.061: [smf] WARNING: PFCP[REQ] has already been associated [127.0.0.7]:8805 (../src/smf/pfcp-sm.c:217)
+open5gs_5gc | 09/26 03:33:58.061: [upf] WARNING: PFCP[RSP] has already been associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:213)
+open5gs_5gc | 09/26 04:28:40.387: [amf] INFO: gNB-N2 accepted[10.53.1.1]:32806 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/26 04:28:40.387: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/26 04:28:40.387: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/26 04:28:40.387: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/26 04:29:21.282: [amf] INFO: InitialUEMessage (../src/amf/ngap-handler.c:372)
+open5gs_5gc | 09/26 04:29:21.282: [amf] INFO: [Added] Number of gNB-UEs is now 1 (../src/amf/context.c:2327)
+open5gs_5gc | 09/26 04:29:21.282: [amf] INFO:     RAN_UE_NGAP_ID[0] AMF_UE_NGAP_ID[1] TAC[7] CellID[0x19b0] (../src/amf/ngap-handler.c:533)
+open5gs_5gc | 09/26 04:29:21.282: [amf] INFO: [suci-0-001-01-0000-0-0-0123456780] Unknown UE by SUCI (../src/amf/context.c:1634)
+open5gs_5gc | 09/26 04:29:21.282: [amf] INFO: [Added] Number of AMF-UEs is now 1 (../src/amf/context.c:1419)
+open5gs_5gc | 09/26 04:29:21.282: [gmm] INFO: Registration request (../src/amf/gmm-sm.c:985)
+open5gs_5gc | 09/26 04:29:21.282: [gmm] INFO: [suci-0-001-01-0000-0-0-0123456780]    SUCI (../src/amf/gmm-handler.c:149)
+open5gs_5gc | 09/26 04:29:21.525: [gmm] INFO: [imsi-001010123456780] Registration complete (../src/amf/gmm-sm.c:1916)
+open5gs_5gc | 09/26 04:29:21.525: [amf] INFO: [imsi-001010123456780] Configuration update command (../src/amf/nas-path.c:612)
+open5gs_5gc | 09/26 04:29:21.525: [gmm] INFO:     UTC [2023-09-26T04:29:21] Timezone[0]/DST[0] (../src/amf/gmm-build.c:544)
+open5gs_5gc | 09/26 04:29:21.525: [gmm] INFO:     LOCAL [2023-09-26T04:29:21] Timezone[0]/DST[0] (../src/amf/gmm-build.c:549)
+open5gs_5gc | 09/26 04:29:21.525: [amf] INFO: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2348)
+open5gs_5gc | 09/26 04:29:21.525: [gmm] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] S_NSSAI[SST:1 SD:0xffffff] (../src/amf/gmm-handler.c:1186)
+open5gs_5gc | 09/26 04:29:21.528: [sbi] WARNING: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NF-discover) NF has already been added (../lib/sbi/nnrf-handler.c:740)
+open5gs_5gc | 09/26 04:29:21.528: [sbi] WARNING: NF EndPoint updated [127.0.0.4:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/26 04:29:21.528: [sbi] WARNING: NF EndPoint updated [127.0.0.4:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/26 04:29:21.528: [sbi] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:763)
+open5gs_5gc | 09/26 04:29:21.528: [smf] INFO: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:1012)
+open5gs_5gc | 09/26 04:29:21.529: [smf] INFO: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:3108)
+open5gs_5gc | 09/26 04:29:21.533: [smf] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] IPv4[10.45.1.2] IPv6[] (../src/smf/npcf-handler.c:528)
+open5gs_5gc | 09/26 04:29:21.533: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:194)
+open5gs_5gc | 09/26 04:29:21.533: [gtp] INFO: gtp_connect() [127.0.0.4]:2152 (../lib/gtp/path.c:60)
+open5gs_5gc | 09/26 04:29:21.533: [upf] INFO: UE F-SEID[UP:0x1 CP:0x1] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/26 04:29:21.533: [upf] INFO: UE F-SEID[UP:0x1 CP:0x1] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/26 04:29:21.533: [gtp] INFO: gtp_connect() [10.53.1.2]:2152 (../lib/gtp/path.c:60)
+open5gs_5gc | 09/26 04:29:21.550: [gmm] INFO: [imsi-001010123456780] No GUTI allocated (../src/amf/gmm-sm.c:1242)
+open5gs_5gc | 09/26 04:29:21.674: [gtp] INFO: gtp_connect() [10.53.1.1]:2152 (../lib/gtp/path.c:60)
+open5gs_5gc | 09/26 04:33:02.607: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/26 04:33:02.609: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/26 04:33:02.611: [amf] INFO: [Removed] Number of gNB-UEs is now 0 (../src/amf/context.c:2334)
+open5gs_5gc | 09/26 05:29:21.533: [sbi] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] NF expired (../lib/sbi/nf-sm.c:318)
+open5gs_5gc | 09/26 06:14:56.469: [amf] INFO: gNB-N2 accepted[10.53.1.1]:41686 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/26 06:14:56.469: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/26 06:14:56.469: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/26 06:14:56.469: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/26 06:14:58.041: [amf] INFO: InitialUEMessage (../src/amf/ngap-handler.c:372)
+open5gs_5gc | 09/26 06:14:58.041: [amf] INFO: [Added] Number of gNB-UEs is now 1 (../src/amf/context.c:2327)
+open5gs_5gc | 09/26 06:14:58.041: [amf] INFO:     RAN_UE_NGAP_ID[0] AMF_UE_NGAP_ID[2] TAC[7] CellID[0x19b0] (../src/amf/ngap-handler.c:533)
+open5gs_5gc | 09/26 06:14:58.041: [amf] INFO: [suci-0-001-01-0000-0-0-0123456780] known UE by SUCI (../src/amf/context.c:1632)
+open5gs_5gc | 09/26 06:14:58.041: [gmm] INFO: Registration request (../src/amf/gmm-sm.c:985)
+open5gs_5gc | 09/26 06:14:58.041: [gmm] INFO: [suci-0-001-01-0000-0-0-0123456780]    SUCI (../src/amf/gmm-handler.c:149)
+open5gs_5gc | 09/26 06:14:58.043: [upf] INFO: [Removed] Number of UPF-sessions is now 0 (../src/upf/context.c:232)
+open5gs_5gc | 09/26 06:14:58.043: [smf] INFO: Removed Session: UE IMSI:[imsi-001010123456780] DNN:[srsapn:1] IPv4:[10.45.1.2] IPv6:[] (../src/smf/context.c:1710)
+open5gs_5gc | 09/26 06:14:58.043: [smf] INFO: [Removed] Number of SMF-Sessions is now 0 (../src/smf/context.c:3116)
+open5gs_5gc | 09/26 06:14:58.043: [smf] INFO: [Removed] Number of SMF-UEs is now 0 (../src/smf/context.c:1071)
+open5gs_5gc | 09/26 06:14:58.043: [amf] INFO: [imsi-001010123456780:1] Release SM context [204] (../src/amf/amf-sm.c:475)
+open5gs_5gc | 09/26 06:14:58.043: [amf] INFO: [Removed] Number of AMF-Sessions is now 0 (../src/amf/context.c:2355)
+open5gs_5gc | 09/26 06:14:58.126: [pcf] WARNING: NF EndPoint updated [127.0.0.5:7777] (../src/pcf/npcf-handler.c:100)
+open5gs_5gc | 09/26 06:14:58.285: [gmm] INFO: [imsi-001010123456780] Registration complete (../src/amf/gmm-sm.c:1916)
+open5gs_5gc | 09/26 06:14:58.285: [amf] INFO: [imsi-001010123456780] Configuration update command (../src/amf/nas-path.c:612)
+open5gs_5gc | 09/26 06:14:58.285: [gmm] INFO:     UTC [2023-09-26T06:14:58] Timezone[0]/DST[0] (../src/amf/gmm-build.c:544)
+open5gs_5gc | 09/26 06:14:58.285: [gmm] INFO:     LOCAL [2023-09-26T06:14:58] Timezone[0]/DST[0] (../src/amf/gmm-build.c:549)
+open5gs_5gc | 09/26 06:14:58.285: [amf] INFO: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2348)
+open5gs_5gc | 09/26 06:14:58.285: [gmm] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] S_NSSAI[SST:1 SD:0xffffff] (../src/amf/gmm-handler.c:1186)
+open5gs_5gc | 09/26 06:14:58.287: [sbi] WARNING: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NF-discover) NF has already been added (../lib/sbi/nnrf-handler.c:740)
+open5gs_5gc | 09/26 06:14:58.287: [sbi] WARNING: NF EndPoint updated [127.0.0.4:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/26 06:14:58.287: [sbi] WARNING: NF EndPoint updated [127.0.0.4:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/26 06:14:58.287: [sbi] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:763)
+open5gs_5gc | 09/26 06:14:58.287: [smf] INFO: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:1012)
+open5gs_5gc | 09/26 06:14:58.287: [smf] INFO: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:3108)
+open5gs_5gc | 09/26 06:14:58.291: [smf] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] IPv4[10.45.1.2] IPv6[] (../src/smf/npcf-handler.c:528)
+open5gs_5gc | 09/26 06:14:58.291: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:194)
+open5gs_5gc | 09/26 06:14:58.291: [upf] INFO: UE F-SEID[UP:0x2 CP:0x2] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/26 06:14:58.291: [upf] INFO: UE F-SEID[UP:0x2 CP:0x2] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/26 06:14:58.308: [gmm] INFO: [imsi-001010123456780] No GUTI allocated (../src/amf/gmm-sm.c:1242)
+open5gs_5gc | 09/26 06:18:05.849: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/26 06:18:05.849: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/26 06:18:05.850: [amf] INFO: [Removed] Number of gNB-UEs is now 0 (../src/amf/context.c:2334)
+open5gs_5gc | 09/26 06:18:21.012: [amf] INFO: gNB-N2 accepted[10.53.1.1]:39594 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/26 06:18:21.012: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/26 06:18:21.012: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/26 06:18:21.012: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/26 06:32:04.768: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/26 06:32:04.768: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/26 06:42:34.640: [amf] INFO: gNB-N2 accepted[10.53.1.1]:50714 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/26 06:42:34.640: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/26 06:42:34.640: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/26 06:42:34.640: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/26 06:43:09.035: [amf] INFO: InitialUEMessage (../src/amf/ngap-handler.c:372)
+open5gs_5gc | 09/26 06:43:09.035: [amf] INFO: [Added] Number of gNB-UEs is now 1 (../src/amf/context.c:2327)
+open5gs_5gc | 09/26 06:43:09.035: [amf] INFO:     RAN_UE_NGAP_ID[0] AMF_UE_NGAP_ID[3] TAC[7] CellID[0x19b0] (../src/amf/ngap-handler.c:533)
+open5gs_5gc | 09/26 06:43:09.035: [amf] INFO: [suci-0-001-01-0000-0-0-0123456780] known UE by SUCI (../src/amf/context.c:1632)
+open5gs_5gc | 09/26 06:43:09.035: [gmm] INFO: Registration request (../src/amf/gmm-sm.c:985)
+open5gs_5gc | 09/26 06:43:09.035: [gmm] INFO: [suci-0-001-01-0000-0-0-0123456780]    SUCI (../src/amf/gmm-handler.c:149)
+open5gs_5gc | 09/26 06:43:09.037: [upf] INFO: [Removed] Number of UPF-sessions is now 0 (../src/upf/context.c:232)
+open5gs_5gc | 09/26 06:43:09.037: [smf] INFO: Removed Session: UE IMSI:[imsi-001010123456780] DNN:[srsapn:1] IPv4:[10.45.1.2] IPv6:[] (../src/smf/context.c:1710)
+open5gs_5gc | 09/26 06:43:09.037: [smf] INFO: [Removed] Number of SMF-Sessions is now 0 (../src/smf/context.c:3116)
+open5gs_5gc | 09/26 06:43:09.037: [smf] INFO: [Removed] Number of SMF-UEs is now 0 (../src/smf/context.c:1071)
+open5gs_5gc | 09/26 06:43:09.038: [amf] INFO: [imsi-001010123456780:1] Release SM context [204] (../src/amf/amf-sm.c:475)
+open5gs_5gc | 09/26 06:43:09.038: [amf] INFO: [Removed] Number of AMF-Sessions is now 0 (../src/amf/context.c:2355)
+open5gs_5gc | 09/26 06:43:09.120: [pcf] WARNING: NF EndPoint updated [127.0.0.5:7777] (../src/pcf/npcf-handler.c:100)
+open5gs_5gc | 09/26 06:43:09.281: [gmm] INFO: [imsi-001010123456780] Registration complete (../src/amf/gmm-sm.c:1916)
+open5gs_5gc | 09/26 06:43:09.281: [amf] INFO: [imsi-001010123456780] Configuration update command (../src/amf/nas-path.c:612)
+open5gs_5gc | 09/26 06:43:09.281: [gmm] INFO:     UTC [2023-09-26T06:43:09] Timezone[0]/DST[0] (../src/amf/gmm-build.c:544)
+open5gs_5gc | 09/26 06:43:09.281: [gmm] INFO:     LOCAL [2023-09-26T06:43:09] Timezone[0]/DST[0] (../src/amf/gmm-build.c:549)
+open5gs_5gc | 09/26 06:43:09.281: [amf] INFO: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2348)
+open5gs_5gc | 09/26 06:43:09.281: [gmm] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] S_NSSAI[SST:1 SD:0xffffff] (../src/amf/gmm-handler.c:1186)
+open5gs_5gc | 09/26 06:43:09.283: [sbi] WARNING: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NF-discover) NF has already been added (../lib/sbi/nnrf-handler.c:740)
+open5gs_5gc | 09/26 06:43:09.283: [sbi] WARNING: NF EndPoint updated [127.0.0.4:80] (../lib/sbi/context.c:1618)
+open5gs_5gc | 09/26 06:43:09.283: [sbi] WARNING: NF EndPoint updated [127.0.0.4:7777] (../lib/sbi/context.c:1527)
+open5gs_5gc | 09/26 06:43:09.283: [sbi] INFO: [8559caa6-5c1d-41ee-bfc7-f73b431e8b2b] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:763)
+open5gs_5gc | 09/26 06:43:09.283: [smf] INFO: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:1012)
+open5gs_5gc | 09/26 06:43:09.283: [smf] INFO: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:3108)
+open5gs_5gc | 09/26 06:43:09.287: [smf] INFO: UE SUPI[imsi-001010123456780] DNN[srsapn] IPv4[10.45.1.2] IPv6[] (../src/smf/npcf-handler.c:528)
+open5gs_5gc | 09/26 06:43:09.287: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:194)
+open5gs_5gc | 09/26 06:43:09.287: [upf] INFO: UE F-SEID[UP:0x3 CP:0x3] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/26 06:43:09.287: [upf] INFO: UE F-SEID[UP:0x3 CP:0x3] APN[srsapn] PDN-Type[1] IPv4[10.45.1.2] IPv6[] (../src/upf/context.c:467)
+open5gs_5gc | 09/26 06:43:09.302: [gmm] INFO: [imsi-001010123456780] No GUTI allocated (../src/amf/gmm-sm.c:1242)
+open5gs_5gc | 09/26 06:46:58.313: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/26 06:46:58.314: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/26 06:46:58.315: [amf] INFO: [Removed] Number of gNB-UEs is now 0 (../src/amf/context.c:2334)
+open5gs_5gc | 09/26 06:47:07.635: [amf] INFO: gNB-N2 accepted[10.53.1.1]:43880 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/26 06:47:07.635: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/26 06:47:07.635: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/26 06:47:07.635: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+open5gs_5gc | 09/26 06:47:09.071: [amf] INFO: gNB-N2[10.53.1.1] connection refused!!! (../src/amf/amf-sm.c:758)
+open5gs_5gc | 09/26 06:47:09.071: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:1061)
+open5gs_5gc | 09/26 06:50:20.607: [amf] INFO: gNB-N2 accepted[10.53.1.1]:50546 in ng-path module (../src/amf/ngap-sctp.c:113)
+open5gs_5gc | 09/26 06:50:20.607: [amf] INFO: gNB-N2 accepted[10.53.1.1] in master_sm module (../src/amf/amf-sm.c:706)
+open5gs_5gc | 09/26 06:50:20.607: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:1034)
+open5gs_5gc | 09/26 06:50:20.607: [amf] INFO: gNB-N2[10.53.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:745)
+

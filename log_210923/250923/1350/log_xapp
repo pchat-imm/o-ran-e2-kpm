@@ -1,0 +1,158 @@
+oem@oem-ThinkPad-L14-Gen-2:~$ cd o-ran-e2/flexric/build/examples/xApp/c/slice/
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/slice$ ls
+CMakeFiles  cmake_install.cmake  Makefile  xapp_slice_moni_ctrl
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/slice$ ./xapp_slice_moni_ctrl 
+Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[xAapp]: Initializing ... 
+[xApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 147 with def = ORAN-E2SM-KPM 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+Filename = /tmp/xapp_db_1695710677974580 
+ [xApp]: E42 SETUP-REQUEST sent
+adding event fd = 8 ev-> 4 
+[xApp]: E42 SETUP-RESPONSE received
+[xApp]: xApp ID = 7 
+Registered E2 Nodes = 1 
+Pending event size before remove = 1 
+Connected E2 nodes len = 1
+Registered ran func id = 147 
+xapp_slice_moni_ctrl: /home/oem/work/flexric/src/xApp/e42_xapp_api.c:137: valid_sm_id: Assertion `sm_id == 142 || sm_id == 143 || sm_id == 144 || sm_id == 145 || sm_id == 146 || sm_id == 147 || sm_id == 148' failed.
+Aborted (core dumped)
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/slice$ ls
+CMakeFiles  cmake_install.cmake  Makefile  xapp_slice_moni_ctrl
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/slice$ cd ../../../../
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build$ ls
+CMakeCache.txt  cmake_install.cmake  examples              Makefile  test
+CMakeFiles      CTestTestfile.cmake  install_manifest.txt  src
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build$ cd examples/
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples$ ls
+CMakeFiles  cmake_install.cmake  emulator  Makefile  ric  xApp
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples$ cd xApp/
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp$ ls
+c  CMakeFiles  cmake_install.cmake  Makefile  python3
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp$ cd c/
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c$ ls
+CMakeFiles  cmake_install.cmake  helloworld  Makefile  monitor  slice  tc
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c$ cd monitor/
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/monitor$ ls
+CMakeFiles           Makefile       xapp_kpm_moni
+cmake_install.cmake  xapp_gtp_moni  xapp_mac_rlc_pdcp_moni
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/monitor$ ./xapp_mac_rlc_pdcp_moni 
+Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[xAapp]: Initializing ... 
+[xApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 147 with def = ORAN-E2SM-KPM 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+Filename = /tmp/xapp_db_1695710714170495 
+ [xApp]: E42 SETUP-REQUEST sent
+adding event fd = 8 ev-> 4 
+[xApp]: E42 SETUP-RESPONSE received
+[xApp]: xApp ID = 8 
+Registered E2 Nodes = 1 
+Pending event size before remove = 1 
+Connected E2 nodes = 1
+Registered node 0 ran func id = 147 
+ Generated of req_id = 1 
+[xApp]: RIC SUBSCRIPTION REQUEST sent
+adding event fd = 8 ev-> 5 
+[xApp]: SUBSCRIPTION RESPONSE received
+Pending event size before remove = 1 
+[xApp]: Successfully SUBSCRIBED to ran function = 147 
+xapp_mac_rlc_pdcp_moni: /home/oem/work/flexric/src/xApp/e42_xapp_api.c:137: valid_sm_id: Assertion `sm_id == 142 || sm_id == 143 || sm_id == 144 || sm_id == 145 || sm_id == 146 || sm_id == 147 || sm_id == 148' failed.
+Aborted (core dumped)
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/monitor$ ls
+CMakeFiles           Makefile       xapp_kpm_moni
+cmake_install.cmake  xapp_gtp_moni  xapp_mac_rlc_pdcp_moni
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/monitor$ ./xapp_gtp_moni 
+Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[xAapp]: Initializing ... 
+[xApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 147 with def = ORAN-E2SM-KPM 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+Filename = /tmp/xapp_db_1695710725574909 
+ [xApp]: E42 SETUP-REQUEST sent
+adding event fd = 8 ev-> 4 
+[xApp]: E42 SETUP-RESPONSE received
+[xApp]: xApp ID = 9 
+Registered E2 Nodes = 1 
+Pending event size before remove = 1 
+Connected E2 nodes = 1
+Registered node 0 ran func id = 147 
+ Generated of req_id = 1 
+[xApp]: RIC SUBSCRIPTION REQUEST sent
+adding event fd = 8 ev-> 5 
+xapp_gtp_moni: /home/oem/work/flexric/src/xApp/e42_xapp.c:252: e2_event_loop_xapp: Assertion `*e.p_ev != E42_RIC_SUBSCRIPTION_REQUEST_PENDING_EVENT && "Timeout waiting for Report. Connection lost with the RIC?"' failed.
+Aborted (core dumped)
+oem@oem-ThinkPad-L14-Gen-2:~/o-ran-e2/flexric/build/examples/xApp/c/monitor$ ./xapp_gtp_moni 
+Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[xAapp]: Initializing ... 
+[xApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 147 with def = ORAN-E2SM-KPM 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+Filename = /tmp/xapp_db_1695711092719243 
+ [xApp]: E42 SETUP-REQUEST sent
+adding event fd = 8 ev-> 4 
+[xApp]: E42 SETUP-RESPONSE received
+[xApp]: xApp ID = 7 
+Registered E2 Nodes = 1 
+Pending event size before remove = 1 
+Connected E2 nodes = 1
+Registered node 0 ran func id = 147 
+ Generated of req_id = 1 
+[xApp]: RIC SUBSCRIPTION REQUEST sent
+adding event fd = 8 ev-> 5 
+xapp_gtp_moni: /home/oem/work/flexric/src/xApp/e42_xapp.c:252: e2_event_loop_xapp: Assertion `*e.p_ev != E42_RIC_SUBSCRIPTION_REQUEST_PENDING_EVENT && "Timeout waiting for Report. Connection lost with the RIC?"' failed.
+Aborted (core dumped)
+
