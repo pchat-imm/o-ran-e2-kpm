@@ -9,7 +9,7 @@
 3. change gnb
 4. change ue
 
-//////////////////////////////////////////////////////////////////////////////////////////////
+___
 #### read more: wiki of this repository
 
 try O-RAN 5G E2 interface to test e2sm kpm <br />
