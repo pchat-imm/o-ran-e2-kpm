@@ -1,3 +1,6 @@
+# o-ran-e2-kpm
+## branch: slicing
+
 **purpose of this branch**: try to add sst and sd successfully \
 **follow this**: https://github.com/s5uishida/open5gs_5gc_srsran_sample_config/tree/main \
 **requirement**
