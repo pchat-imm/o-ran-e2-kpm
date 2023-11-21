@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/lib/src/asn1
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,30 +43,30 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/asn1/libasn1_utils.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1/libasn1_utils.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/asn1/librrc_asn1.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1/librrc_asn1.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/asn1/libs1ap_asn1.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1/libs1ap_asn1.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/asn1/librrc_nr_asn1.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1/librrc_nr_asn1.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/asn1/libngap_nr_asn1.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1/libngap_nr_asn1.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/asn1/libnas_5g_msg.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1/libnas_5g_msg.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/asn1/libric_e2.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1/libric_e2.a")
 endif()
 

@@ -1,3 +1,0 @@
-# Directory labels
- serdes
-# Source files and their labels

@@ -1,9 +1,9 @@
 lib/src/common/CMakeFiles/srsran_common.dir/band_helper.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/band_helper.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/band_helper.cc \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/band_helper.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/band_helper.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/c++/10/math.h /usr/include/c++/10/cmath \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
@@ -79,7 +79,7 @@ lib/src/common/CMakeFiles/srsran_common.dir/band_helper.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
  /usr/include/inttypes.h /usr/include/c++/10/array \
  /usr/include/c++/10/utility /usr/include/c++/10/bits/stl_relops.h \
  /usr/include/c++/10/bits/stl_pair.h /usr/include/c++/10/bits/move.h \

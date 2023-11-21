@@ -1,6 +1,0 @@
-# Directory labels
- adt
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/adt/ring_buffer_test.cpp
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/adt/blocking_queue_test.cpp
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/adt/concurrent_queue_test.cpp

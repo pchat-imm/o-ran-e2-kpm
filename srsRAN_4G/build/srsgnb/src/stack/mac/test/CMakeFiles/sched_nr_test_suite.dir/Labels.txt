@@ -2,6 +2,6 @@
  sched
  nr
 # Source files and their labels
-/home/oem/o-ran-e2/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_common_test.cc
-/home/oem/o-ran-e2/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_ue_ded_test_suite.cc
-/home/oem/o-ran-e2/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_sim_ue.cc
+/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_common_test.cc
+/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_ue_ded_test_suite.cc
+/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_sim_ue.cc

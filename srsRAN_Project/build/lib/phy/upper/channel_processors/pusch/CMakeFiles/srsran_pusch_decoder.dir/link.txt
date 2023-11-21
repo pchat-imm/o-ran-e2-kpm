@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_pusch_decoder.a CMakeFiles/srsran_pusch_decoder.dir/pusch_decoder_impl.cpp.o
-/usr/bin/ranlib libsrsran_pusch_decoder.a

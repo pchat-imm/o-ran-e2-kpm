@@ -1,2 +1,0 @@
-/usr/bin/ar qc libphy_to_fapi_translator.a CMakeFiles/phy_to_fapi_translator.dir/phy_to_fapi_results_event_translator.cpp.o CMakeFiles/phy_to_fapi_translator.dir/phy_to_fapi_time_event_translator.cpp.o
-/usr/bin/ranlib libphy_to_fapi_translator.a

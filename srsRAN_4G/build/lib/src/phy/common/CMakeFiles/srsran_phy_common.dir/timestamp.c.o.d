@@ -1,8 +1,8 @@
 lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/timestamp.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/common/timestamp.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/common/timestamp.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/timestamp.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/timestamp.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

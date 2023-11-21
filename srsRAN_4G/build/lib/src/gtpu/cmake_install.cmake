@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/lib/src/gtpu
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/gtpu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/gtpu/libsrsran_gtpu.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/gtpu/libsrsran_gtpu.a")
 endif()
 

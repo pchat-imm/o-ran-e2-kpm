@@ -1,11 +1,11 @@
 lib/src/phy/ch_estimation/test/CMakeFiles/csi_rs_pattern_test.dir/csi_rs_pattern_test.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/ch_estimation/test/csi_rs_pattern_test.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/ch_estimation/test/csi_rs_pattern_test.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/ch_estimation/csi_rs.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/ch_estimation/csi_rs_cfg.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/csi_rs.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/csi_rs_cfg.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -46,16 +46,16 @@ lib/src/phy/ch_estimation/test/CMakeFiles/csi_rs_pattern_test.dir/csi_rs_pattern
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/inttypes.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/phch_cfg_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/ch_estimation/csi_rs_cfg.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/sch_cfg_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/softbuffer.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/uci_cfg_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/csi_cfg.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/pucch_cfg_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/harq_ack_cfg.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/re_pattern.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/../common/phy_common_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/phch_cfg_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/csi_rs_cfg.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/sch_cfg_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/softbuffer.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/uci_cfg_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/csi_cfg.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pucch_cfg_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/harq_ack_cfg.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/re_pattern.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/../common/phy_common_nr.h \
  /usr/include/complex.h /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/cmathcalls.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/support/srsran_test.h
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/support/srsran_test.h

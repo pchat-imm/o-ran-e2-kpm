@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/srsepc/src
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsepc/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsepc"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/srsepc/src/srsepc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/srsepc")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsepc" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsepc")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -65,7 +65,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsmbms"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/srsepc/src/srsmbms")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/srsmbms")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsmbms" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsmbms")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -76,10 +76,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsepc/src/mme/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsepc/src/hss/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsepc/src/spgw/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsepc/src/mbms-gw/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/mme/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/hss/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/spgw/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/mbms-gw/cmake_install.cmake")
 
 endif()
 

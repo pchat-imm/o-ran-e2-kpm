@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/oem/o-ran-e2/srsRAN_4G/build/CPackSourceConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/srslog//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/srslog//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/src/srslog/CMakeFiles/srslog.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/CMakeFiles/srslog.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/srslog/CMakeFiles/srslog.dir/rule
 .PHONY : lib/src/srslog/CMakeFiles/srslog.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ srslog: lib/src/srslog/CMakeFiles/srslog.dir/rule
 
 # fast build rule for target.
 srslog/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/build
 .PHONY : srslog/fast
 
 backend_worker.o: backend_worker.cpp.o
@@ -210,7 +210,7 @@ backend_worker.o: backend_worker.cpp.o
 
 # target to build an object file
 backend_worker.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.o
 .PHONY : backend_worker.cpp.o
 
 backend_worker.i: backend_worker.cpp.i
@@ -218,7 +218,7 @@ backend_worker.i: backend_worker.cpp.i
 
 # target to preprocess a source file
 backend_worker.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.i
 .PHONY : backend_worker.cpp.i
 
 backend_worker.s: backend_worker.cpp.s
@@ -226,7 +226,7 @@ backend_worker.s: backend_worker.cpp.s
 
 # target to generate assembly for a file
 backend_worker.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.s
 .PHONY : backend_worker.cpp.s
 
 bundled/fmt/format.o: bundled/fmt/format.cc.o
@@ -234,7 +234,7 @@ bundled/fmt/format.o: bundled/fmt/format.cc.o
 
 # target to build an object file
 bundled/fmt/format.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.o
 .PHONY : bundled/fmt/format.cc.o
 
 bundled/fmt/format.i: bundled/fmt/format.cc.i
@@ -242,7 +242,7 @@ bundled/fmt/format.i: bundled/fmt/format.cc.i
 
 # target to preprocess a source file
 bundled/fmt/format.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.i
 .PHONY : bundled/fmt/format.cc.i
 
 bundled/fmt/format.s: bundled/fmt/format.cc.s
@@ -250,7 +250,7 @@ bundled/fmt/format.s: bundled/fmt/format.cc.s
 
 # target to generate assembly for a file
 bundled/fmt/format.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.s
 .PHONY : bundled/fmt/format.cc.s
 
 bundled/fmt/os.o: bundled/fmt/os.cc.o
@@ -258,7 +258,7 @@ bundled/fmt/os.o: bundled/fmt/os.cc.o
 
 # target to build an object file
 bundled/fmt/os.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.o
 .PHONY : bundled/fmt/os.cc.o
 
 bundled/fmt/os.i: bundled/fmt/os.cc.i
@@ -266,7 +266,7 @@ bundled/fmt/os.i: bundled/fmt/os.cc.i
 
 # target to preprocess a source file
 bundled/fmt/os.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.i
 .PHONY : bundled/fmt/os.cc.i
 
 bundled/fmt/os.s: bundled/fmt/os.cc.s
@@ -274,7 +274,7 @@ bundled/fmt/os.s: bundled/fmt/os.cc.s
 
 # target to generate assembly for a file
 bundled/fmt/os.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.s
 .PHONY : bundled/fmt/os.cc.s
 
 event_trace.o: event_trace.cpp.o
@@ -282,7 +282,7 @@ event_trace.o: event_trace.cpp.o
 
 # target to build an object file
 event_trace.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.o
 .PHONY : event_trace.cpp.o
 
 event_trace.i: event_trace.cpp.i
@@ -290,7 +290,7 @@ event_trace.i: event_trace.cpp.i
 
 # target to preprocess a source file
 event_trace.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.i
 .PHONY : event_trace.cpp.i
 
 event_trace.s: event_trace.cpp.s
@@ -298,7 +298,7 @@ event_trace.s: event_trace.cpp.s
 
 # target to generate assembly for a file
 event_trace.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.s
 .PHONY : event_trace.cpp.s
 
 formatters/json_formatter.o: formatters/json_formatter.cpp.o
@@ -306,7 +306,7 @@ formatters/json_formatter.o: formatters/json_formatter.cpp.o
 
 # target to build an object file
 formatters/json_formatter.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.o
 .PHONY : formatters/json_formatter.cpp.o
 
 formatters/json_formatter.i: formatters/json_formatter.cpp.i
@@ -314,7 +314,7 @@ formatters/json_formatter.i: formatters/json_formatter.cpp.i
 
 # target to preprocess a source file
 formatters/json_formatter.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.i
 .PHONY : formatters/json_formatter.cpp.i
 
 formatters/json_formatter.s: formatters/json_formatter.cpp.s
@@ -322,7 +322,7 @@ formatters/json_formatter.s: formatters/json_formatter.cpp.s
 
 # target to generate assembly for a file
 formatters/json_formatter.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.s
 .PHONY : formatters/json_formatter.cpp.s
 
 formatters/text_formatter.o: formatters/text_formatter.cpp.o
@@ -330,7 +330,7 @@ formatters/text_formatter.o: formatters/text_formatter.cpp.o
 
 # target to build an object file
 formatters/text_formatter.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.o
 .PHONY : formatters/text_formatter.cpp.o
 
 formatters/text_formatter.i: formatters/text_formatter.cpp.i
@@ -338,7 +338,7 @@ formatters/text_formatter.i: formatters/text_formatter.cpp.i
 
 # target to preprocess a source file
 formatters/text_formatter.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.i
 .PHONY : formatters/text_formatter.cpp.i
 
 formatters/text_formatter.s: formatters/text_formatter.cpp.s
@@ -346,7 +346,7 @@ formatters/text_formatter.s: formatters/text_formatter.cpp.s
 
 # target to generate assembly for a file
 formatters/text_formatter.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.s
 .PHONY : formatters/text_formatter.cpp.s
 
 srslog.o: srslog.cpp.o
@@ -354,7 +354,7 @@ srslog.o: srslog.cpp.o
 
 # target to build an object file
 srslog.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.o
 .PHONY : srslog.cpp.o
 
 srslog.i: srslog.cpp.i
@@ -362,7 +362,7 @@ srslog.i: srslog.cpp.i
 
 # target to preprocess a source file
 srslog.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.i
 .PHONY : srslog.cpp.i
 
 srslog.s: srslog.cpp.s
@@ -370,7 +370,7 @@ srslog.s: srslog.cpp.s
 
 # target to generate assembly for a file
 srslog.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.s
 .PHONY : srslog.cpp.s
 
 srslog_c.o: srslog_c.cpp.o
@@ -378,7 +378,7 @@ srslog_c.o: srslog_c.cpp.o
 
 # target to build an object file
 srslog_c.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.o
 .PHONY : srslog_c.cpp.o
 
 srslog_c.i: srslog_c.cpp.i
@@ -386,7 +386,7 @@ srslog_c.i: srslog_c.cpp.i
 
 # target to preprocess a source file
 srslog_c.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.i
 .PHONY : srslog_c.cpp.i
 
 srslog_c.s: srslog_c.cpp.s
@@ -394,7 +394,7 @@ srslog_c.s: srslog_c.cpp.s
 
 # target to generate assembly for a file
 srslog_c.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/srslog/CMakeFiles/srslog.dir/build.make lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.s
 .PHONY : srslog_c.cpp.s
 
 # Help Target
@@ -448,6 +448,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,7 +1,7 @@
 lib/src/common/CMakeFiles/srsran_common.dir/gen_mch_tables.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/gen_mch_tables.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/gen_mch_tables.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/gen_mch_tables.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/gen_mch_tables.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

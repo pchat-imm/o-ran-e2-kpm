@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 # Include any dependencies generated for this target.
 include lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/depend.make
@@ -72,16 +72,16 @@ include lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/flags.make
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o: lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/flags.make
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o: ../lib/examples/usrp_capture_sync_nbiot.c
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o: lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o"
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o -MF CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o.d -o CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o -c /home/oem/o-ran-e2/srsRAN_4G/lib/examples/usrp_capture_sync_nbiot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o -MF CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o.d -o CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync_nbiot.c
 
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.i"
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oem/o-ran-e2/srsRAN_4G/lib/examples/usrp_capture_sync_nbiot.c > CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync_nbiot.c > CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.i
 
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.s"
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oem/o-ran-e2/srsRAN_4G/lib/examples/usrp_capture_sync_nbiot.c -o CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync_nbiot.c -o CMakeFiles/usrp_capture_sync_nbiot.dir/usrp_capture_sync_nbiot.c.s
 
 # Object files for target usrp_capture_sync_nbiot
 usrp_capture_sync_nbiot_OBJECTS = \
@@ -98,18 +98,18 @@ lib/examples/usrp_capture_sync_nbiot: lib/src/phy/rf/libsrsran_rf_utils.a
 lib/examples/usrp_capture_sync_nbiot: lib/src/phy/libsrsran_phy.a
 lib/examples/usrp_capture_sync_nbiot: /usr/lib/x86_64-linux-gnu/libfftw3f.so
 lib/examples/usrp_capture_sync_nbiot: lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable usrp_capture_sync_nbiot"
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usrp_capture_sync_nbiot.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable usrp_capture_sync_nbiot"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usrp_capture_sync_nbiot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/build: lib/examples/usrp_capture_sync_nbiot
 .PHONY : lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/build
 
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/examples && $(CMAKE_COMMAND) -P CMakeFiles/usrp_capture_sync_nbiot.dir/cmake_clean.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && $(CMAKE_COMMAND) -P CMakeFiles/usrp_capture_sync_nbiot.dir/cmake_clean.cmake
 .PHONY : lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/clean
 
 lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_4G /home/oem/o-ran-e2/srsRAN_4G/lib/examples /home/oem/o-ran-e2/srsRAN_4G/build /home/oem/o-ran-e2/srsRAN_4G/build/lib/examples /home/oem/o-ran-e2/srsRAN_4G/build/lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_4G /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/examples/CMakeFiles/usrp_capture_sync_nbiot.dir/depend
 

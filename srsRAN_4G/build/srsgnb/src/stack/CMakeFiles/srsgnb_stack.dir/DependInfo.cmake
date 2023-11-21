@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/srsgnb/src/stack/gnb_stack_nr.cc" "srsgnb/src/stack/CMakeFiles/srsgnb_stack.dir/gnb_stack_nr.cc.o" "gcc" "srsgnb/src/stack/CMakeFiles/srsgnb_stack.dir/gnb_stack_nr.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/gnb_stack_nr.cc" "srsgnb/src/stack/CMakeFiles/srsgnb_stack.dir/gnb_stack_nr.cc.o" "gcc" "srsgnb/src/stack/CMakeFiles/srsgnb_stack.dir/gnb_stack_nr.cc.o.d"
   )
 
 # Targets to which this target links.

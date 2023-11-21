@@ -1,5 +1,0 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/cu_cp/mobility/cu_cp_mobility_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/cu_cp/mobility/cu_cp_mobility_test[1]_tests.cmake")
-else()
-  add_test(cu_cp_mobility_test_NOT_BUILT cu_cp_mobility_test_NOT_BUILT)
-endif()

@@ -1,7 +1,7 @@
 lib/src/phy/phch/CMakeFiles/srsran_phch.dir/sequences.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/phch/sequences.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/sequences.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -42,9 +42,9 @@ lib/src/phy/phch/CMakeFiles/srsran_phch.dir/sequences.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/sequence.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/vector.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/sequence.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/vector.h \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \

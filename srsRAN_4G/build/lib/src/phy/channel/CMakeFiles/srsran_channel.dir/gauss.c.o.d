@@ -1,5 +1,5 @@
 lib/src/phy/channel/CMakeFiles/srsran_channel.dir/gauss.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/gauss.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/gauss.c \
  /usr/include/stdc-predef.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

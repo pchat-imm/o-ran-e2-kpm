@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmac_fapi_adaptor.a CMakeFiles/mac_fapi_adaptor.dir/mac_fapi_adaptor_impl.cpp.o
-/usr/bin/ranlib libmac_fapi_adaptor.a

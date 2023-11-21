@@ -1,4 +1,0 @@
-# Directory labels
- sched
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/benchmarks/scheduler/scheduler_no_ues_benchmark.cpp

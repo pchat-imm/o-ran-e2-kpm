@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/srsue/src
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/srsue/src/srsue")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/srsue")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue"
-         OLD_RPATH "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/rf:"
+         OLD_RPATH "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue")
@@ -64,9 +64,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsue/src/phy/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsue/src/stack/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsue/src/test/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/test/cmake_install.cmake")
 
 endif()
 

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/support/emergency_handlers.cc" "lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o" "gcc" "lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/support/signal_handler.cc" "lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o" "gcc" "lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/emergency_handlers.cc" "lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o" "gcc" "lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/signal_handler.cc" "lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o" "gcc" "lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o.d"
   )
 
 # Targets to which this target links.

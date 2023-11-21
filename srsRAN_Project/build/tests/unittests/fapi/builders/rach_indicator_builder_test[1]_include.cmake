@@ -1,5 +1,0 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi/builders/rach_indicator_builder_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi/builders/rach_indicator_builder_test[1]_tests.cmake")
-else()
-  add_test(rach_indicator_builder_test_NOT_BUILT rach_indicator_builder_test_NOT_BUILT)
-endif()

@@ -1,10 +1,10 @@
 lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pbch_msg_nr.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/phch/pbch_msg_nr.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/pbch_msg_nr.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/pbch_msg_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pbch_msg_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -45,5 +45,5 @@ lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pbch_msg_nr.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/inttypes.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/bit.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/vector.h
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/bit.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/vector.h

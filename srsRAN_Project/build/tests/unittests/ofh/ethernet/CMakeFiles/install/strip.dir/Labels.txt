@@ -1,3 +1,0 @@
-# Directory labels
- ethernet
-# Source files and their labels

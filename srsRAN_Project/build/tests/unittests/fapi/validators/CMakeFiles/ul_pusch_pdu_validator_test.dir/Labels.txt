@@ -1,4 +1,0 @@
-# Directory labels
- fapi
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/fapi/validators/ul_pusch_pdu_test.cpp

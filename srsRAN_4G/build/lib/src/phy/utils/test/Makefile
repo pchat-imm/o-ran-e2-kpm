@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/oem/o-ran-e2/srsRAN_4G/build/CPackSourceConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/utils/test//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/utils/test//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/src/phy/utils/test/CMakeFiles/dft_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/dft_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/dft_test.dir/rule
 .PHONY : lib/src/phy/utils/test/CMakeFiles/dft_test.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ dft_test: lib/src/phy/utils/test/CMakeFiles/dft_test.dir/rule
 
 # fast build rule for target.
 dft_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build
 .PHONY : dft_test/fast
 
 # Convenience name for target.
 lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule
 .PHONY : lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ algebra_test: lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule
 
 # fast build rule for target.
 algebra_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build
 .PHONY : algebra_test/fast
 
 # Convenience name for target.
 lib/src/phy/utils/test/CMakeFiles/vector_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/vector_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/vector_test.dir/rule
 .PHONY : lib/src/phy/utils/test/CMakeFiles/vector_test.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ vector_test: lib/src/phy/utils/test/CMakeFiles/vector_test.dir/rule
 
 # fast build rule for target.
 vector_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build
 .PHONY : vector_test/fast
 
 # Convenience name for target.
 lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/rule
 .PHONY : lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ ringbuffer_test: lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/rule
 
 # fast build rule for target.
 ringbuffer_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build
 .PHONY : ringbuffer_test/fast
 
 # Convenience name for target.
 lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/rule
 .PHONY : lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/rule
 
 # Convenience name for target.
@@ -258,7 +258,7 @@ re_pattern_test: lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/rule
 
 # fast build rule for target.
 re_pattern_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build
 .PHONY : re_pattern_test/fast
 
 dft_test.o: dft_test.c.o
@@ -266,7 +266,7 @@ dft_test.o: dft_test.c.o
 
 # target to build an object file
 dft_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/dft_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/dft_test.c.o
 .PHONY : dft_test.c.o
 
 dft_test.i: dft_test.c.i
@@ -274,7 +274,7 @@ dft_test.i: dft_test.c.i
 
 # target to preprocess a source file
 dft_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/dft_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/dft_test.c.i
 .PHONY : dft_test.c.i
 
 dft_test.s: dft_test.c.s
@@ -282,7 +282,7 @@ dft_test.s: dft_test.c.s
 
 # target to generate assembly for a file
 dft_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/dft_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/dft_test.c.s
 .PHONY : dft_test.c.s
 
 mat_test.o: mat_test.c.o
@@ -290,7 +290,7 @@ mat_test.o: mat_test.c.o
 
 # target to build an object file
 mat_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/mat_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/mat_test.c.o
 .PHONY : mat_test.c.o
 
 mat_test.i: mat_test.c.i
@@ -298,7 +298,7 @@ mat_test.i: mat_test.c.i
 
 # target to preprocess a source file
 mat_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/mat_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/mat_test.c.i
 .PHONY : mat_test.c.i
 
 mat_test.s: mat_test.c.s
@@ -306,7 +306,7 @@ mat_test.s: mat_test.c.s
 
 # target to generate assembly for a file
 mat_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/mat_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/mat_test.c.s
 .PHONY : mat_test.c.s
 
 re_pattern_test.o: re_pattern_test.c.o
@@ -314,7 +314,7 @@ re_pattern_test.o: re_pattern_test.c.o
 
 # target to build an object file
 re_pattern_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/re_pattern_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/re_pattern_test.c.o
 .PHONY : re_pattern_test.c.o
 
 re_pattern_test.i: re_pattern_test.c.i
@@ -322,7 +322,7 @@ re_pattern_test.i: re_pattern_test.c.i
 
 # target to preprocess a source file
 re_pattern_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/re_pattern_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/re_pattern_test.c.i
 .PHONY : re_pattern_test.c.i
 
 re_pattern_test.s: re_pattern_test.c.s
@@ -330,7 +330,7 @@ re_pattern_test.s: re_pattern_test.c.s
 
 # target to generate assembly for a file
 re_pattern_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/re_pattern_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/re_pattern_test.dir/re_pattern_test.c.s
 .PHONY : re_pattern_test.c.s
 
 ring_buffer_test.o: ring_buffer_test.c.o
@@ -338,7 +338,7 @@ ring_buffer_test.o: ring_buffer_test.c.o
 
 # target to build an object file
 ring_buffer_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.o
 .PHONY : ring_buffer_test.c.o
 
 ring_buffer_test.i: ring_buffer_test.c.i
@@ -346,7 +346,7 @@ ring_buffer_test.i: ring_buffer_test.c.i
 
 # target to preprocess a source file
 ring_buffer_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.i
 .PHONY : ring_buffer_test.c.i
 
 ring_buffer_test.s: ring_buffer_test.c.s
@@ -354,7 +354,7 @@ ring_buffer_test.s: ring_buffer_test.c.s
 
 # target to generate assembly for a file
 ring_buffer_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.s
 .PHONY : ring_buffer_test.c.s
 
 vector_test.o: vector_test.c.o
@@ -362,7 +362,7 @@ vector_test.o: vector_test.c.o
 
 # target to build an object file
 vector_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/vector_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/vector_test.c.o
 .PHONY : vector_test.c.o
 
 vector_test.i: vector_test.c.i
@@ -370,7 +370,7 @@ vector_test.i: vector_test.c.i
 
 # target to preprocess a source file
 vector_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/vector_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/vector_test.c.i
 .PHONY : vector_test.c.i
 
 vector_test.s: vector_test.c.s
@@ -378,7 +378,7 @@ vector_test.s: vector_test.c.s
 
 # target to generate assembly for a file
 vector_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/vector_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/vector_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/vector_test.dir/vector_test.c.s
 .PHONY : vector_test.c.s
 
 # Help Target
@@ -427,6 +427,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

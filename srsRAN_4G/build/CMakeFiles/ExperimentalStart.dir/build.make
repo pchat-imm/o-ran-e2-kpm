@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 # Utility rule file for ExperimentalStart.
 
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalStart.dir/clean:
 .PHONY : CMakeFiles/ExperimentalStart.dir/clean
 
 CMakeFiles/ExperimentalStart.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_4G /home/oem/o-ran-e2/srsRAN_4G /home/oem/o-ran-e2/srsRAN_4G/build /home/oem/o-ran-e2/srsRAN_4G/build /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_4G /home/chatchamon/o-ran-e2-kpm/srsRAN_4G /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalStart.dir/depend
 

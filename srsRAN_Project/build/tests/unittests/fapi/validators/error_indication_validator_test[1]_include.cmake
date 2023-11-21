@@ -1,5 +1,0 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi/validators/error_indication_validator_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi/validators/error_indication_validator_test[1]_tests.cmake")
-else()
-  add_test(error_indication_validator_test_NOT_BUILT error_indication_validator_test_NOT_BUILT)
-endif()

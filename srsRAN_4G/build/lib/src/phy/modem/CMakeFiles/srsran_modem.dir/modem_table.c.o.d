@@ -1,5 +1,5 @@
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/modem_table.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c \
  /usr/include/stdc-predef.h /usr/include/complex.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -54,9 +54,9 @@ lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o: \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/lte_tables.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -77,5 +77,5 @@ lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/vector.h
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/vector.h

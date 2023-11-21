@@ -1,3 +1,0 @@
-add_test( e2sm_kpm_meas_provider_test.e2sm_kpm_ind_three_drb_rlc_metrics /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/e2/e2sm_kpm_meas_provider_test [==[--gtest_filter=e2sm_kpm_meas_provider_test.e2sm_kpm_ind_three_drb_rlc_metrics]==] --gtest_also_run_disabled_tests)
-set_tests_properties( e2sm_kpm_meas_provider_test.e2sm_kpm_ind_three_drb_rlc_metrics PROPERTIES WORKING_DIRECTORY /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/e2 SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( e2sm_kpm_meas_provider_test_TESTS e2sm_kpm_meas_provider_test.e2sm_kpm_ind_three_drb_rlc_metrics)

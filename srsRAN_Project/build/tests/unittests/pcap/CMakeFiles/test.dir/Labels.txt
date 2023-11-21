@@ -1,3 +1,0 @@
-# Directory labels
- pcap
-# Source files and their labels

@@ -1,5 +1,0 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/ran/bcd_helpers_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/ran/bcd_helpers_test[1]_tests.cmake")
-else()
-  add_test(bcd_helpers_test_NOT_BUILT bcd_helpers_test_NOT_BUILT)
-endif()

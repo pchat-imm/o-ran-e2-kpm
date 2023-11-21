@@ -1,3 +1,0 @@
-# Directory labels
- mac
-# Source files and their labels

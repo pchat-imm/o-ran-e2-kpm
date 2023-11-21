@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o" "gcc" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o" "gcc" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o" "gcc" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o" "gcc" "lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o.d"
   )
 
 # Targets to which this target links.

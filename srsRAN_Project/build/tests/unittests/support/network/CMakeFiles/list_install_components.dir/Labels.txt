@@ -1,3 +1,0 @@
-# Directory labels
- io_broker
-# Source files and their labels

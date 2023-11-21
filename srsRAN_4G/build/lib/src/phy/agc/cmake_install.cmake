@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/agc
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/agc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

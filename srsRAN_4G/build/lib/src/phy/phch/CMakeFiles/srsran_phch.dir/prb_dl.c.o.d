@@ -1,5 +1,5 @@
 lib/src/phy/phch/CMakeFiles/srsran_phch.dir/prb_dl.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/phch/prb_dl.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/prb_dl.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdbool.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -16,9 +16,9 @@ lib/src/phy/phch/CMakeFiles/srsran_phch.dir/prb_dl.c.o: \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/phch/prb_dl.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/prb_dl.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \

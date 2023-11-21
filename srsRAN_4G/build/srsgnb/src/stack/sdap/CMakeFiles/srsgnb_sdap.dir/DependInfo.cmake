@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc" "srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o" "gcc" "srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc" "srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o" "gcc" "srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o.d"
   )
 
 # Targets to which this target links.

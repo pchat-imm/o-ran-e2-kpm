@@ -1,4 +1,0 @@
-# Directory labels
- phy
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/phy/upper/vrb_to_prb_mapper_test.cpp

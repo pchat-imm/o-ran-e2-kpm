@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc" "srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o" "gcc" "srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc" "srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o" "gcc" "srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o.d"
   )
 
 # Targets to which this target links.

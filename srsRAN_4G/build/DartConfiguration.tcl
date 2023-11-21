@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/oem/o-ran-e2/srsRAN_4G
-BuildDirectory: /home/oem/o-ran-e2/srsRAN_4G/build
+SourceDirectory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
+BuildDirectory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: oem-ThinkPad-L14-Gen-2
+Site: chatchamon-ThinkPad-L14-Gen-2
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++
@@ -26,7 +26,7 @@ SubmitURL: http://my.cdash.org/submit.php?project=srsRAN
 NightlyStartTime: 00:00:00 GMT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/oem/o-ran-e2/srsRAN_4G"
+ConfigureCommand: "/usr/bin/cmake" "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

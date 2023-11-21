@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_network.a CMakeFiles/srsran_network.dir/transport_layer_address.cpp.o CMakeFiles/srsran_network.dir/io_broker_factory.cpp.o CMakeFiles/srsran_network.dir/io_broker_epoll.cpp.o
-/usr/bin/ranlib libsrsran_network.a

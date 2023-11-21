@@ -2,6 +2,23 @@
 ## branch: slicing
 
 **purpose of this branch**: try to add sst and sd successfully \
+**current change 211123**
+1. srsue from srsRAN_4G/build/srsue/src
+```
+Random Access Complete.     c-rnti=0x4601, ta=0
+RRC Connected
+Failed to setup/configure GW interface
+RRC NR reconfiguration successful.
+```
+- but already try make czmq again and install srsRAN_4G again
+
+2. try run the system again
+- [X] open5gs docker of srsRAN_Project
+- [X] near-RT RIC
+- gNB
+- ue
+
+
 **follow this**: https://github.com/s5uishida/open5gs_5gc_srsran_sample_config/tree/main \
 **requirement**
 1. change open5gs

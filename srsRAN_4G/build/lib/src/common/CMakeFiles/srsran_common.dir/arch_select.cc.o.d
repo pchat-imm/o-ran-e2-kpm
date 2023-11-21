@@ -1,5 +1,5 @@
 lib/src/common/CMakeFiles/srsran_common.dir/arch_select.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/arch_select.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/arch_select.cc \
  /usr/include/stdc-predef.h /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

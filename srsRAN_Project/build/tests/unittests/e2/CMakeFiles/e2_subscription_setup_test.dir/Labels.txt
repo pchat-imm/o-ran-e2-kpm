@@ -1,4 +1,0 @@
-# Directory labels
- e2ap
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/e2/e2_subscription_setup_test.cpp

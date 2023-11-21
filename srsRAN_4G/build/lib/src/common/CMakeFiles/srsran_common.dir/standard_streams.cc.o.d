@@ -1,7 +1,7 @@
 lib/src/common/CMakeFiles/srsran_common.dir/standard_streams.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/standard_streams.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/standard_streams.cc \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/standard_streams.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/standard_streams.h \
  /usr/include/c++/10/cstdarg \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \

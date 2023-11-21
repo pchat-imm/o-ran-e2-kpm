@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_pcap.a CMakeFiles/srsran_pcap.dir/pcap_file_base.cpp.o CMakeFiles/srsran_pcap.dir/mac_pcap_impl.cpp.o CMakeFiles/srsran_pcap.dir/f1ap_pcap.cpp.o CMakeFiles/srsran_pcap.dir/e2ap_pcap.cpp.o CMakeFiles/srsran_pcap.dir/dlt_pcap_impl.cpp.o
-/usr/bin/ranlib libsrsran_pcap.a

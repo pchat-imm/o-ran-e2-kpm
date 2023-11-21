@@ -1,5 +1,5 @@
 lib/src/phy/phch/CMakeFiles/srsran_phch.dir/dci_nbiot.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/phch/dci_nbiot.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/dci_nbiot.c \
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -72,27 +72,27 @@ lib/src/phy/phch/CMakeFiles/srsran_phch.dir/dci_nbiot.c.o: \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/dci_nbiot.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/dci.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/ra.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/ra_nbiot.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/npbch.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/convolutional/convcoder.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/convolutional/rm_conv.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/convolutional/viterbi.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/crc.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/mimo/layermap.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/mimo/precoding.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/modem/demod_soft.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/modem/mod.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/scrambling/scrambling.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/sequence.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/bit.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/debug.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/dci_nbiot.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/dci.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/ra.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/ra_nbiot.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/npbch.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/convolutional/convcoder.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/convolutional/rm_conv.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/convolutional/viterbi.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/crc.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/mimo/layermap.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/mimo/precoding.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/modem/demod_soft.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/modem/mod.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/scrambling/scrambling.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/sequence.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/bit.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/debug.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
@@ -109,4 +109,4 @@ lib/src/phy/phch/CMakeFiles/srsran_phch.dir/dci_nbiot.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/vector.h
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/vector.h

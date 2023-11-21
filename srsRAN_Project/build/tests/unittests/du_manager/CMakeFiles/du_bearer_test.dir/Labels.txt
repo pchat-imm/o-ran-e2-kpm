@@ -1,4 +1,0 @@
-# Directory labels
- du_manager
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/du_manager/du_bearer_test.cpp

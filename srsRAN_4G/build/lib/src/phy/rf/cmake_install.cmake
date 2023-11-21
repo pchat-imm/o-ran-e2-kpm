@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/rf
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/rf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -55,8 +55,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES
-    "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_zmq.so.23.04.0"
-    "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_zmq.so.0"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_zmq.so.23.04.0"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_zmq.so.0"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_zmq.so.23.04.0"
@@ -78,7 +78,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_zmq.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_zmq.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_zmq.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_zmq.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_zmq.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -100,8 +100,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES
-    "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf.so.23.04.0"
-    "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf.so.0"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf.so.23.04.0"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf.so.0"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf.so.23.04.0"
@@ -127,7 +127,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf.so"
          RPATH "$ORIGIN/")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf.so")
     file(RPATH_CHANGE

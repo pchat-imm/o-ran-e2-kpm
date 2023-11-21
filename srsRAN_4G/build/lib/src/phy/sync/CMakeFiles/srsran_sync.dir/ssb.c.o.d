@@ -1,10 +1,10 @@
 lib/src/phy/sync/CMakeFiles/srsran_sync.dir/ssb.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/sync/ssb.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/ssb.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/sync/ssb.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/sync/ssb.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -45,12 +45,12 @@ lib/src/phy/sync/CMakeFiles/srsran_sync.dir/ssb.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/inttypes.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/dft/dft.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/pbch_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/crc.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_code.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/debug.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/dft/dft.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pbch_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/crc.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_code.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/debug.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
@@ -99,15 +99,15 @@ lib/src/phy/sync/CMakeFiles/srsran_sync.dir/ssb.c.o: \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_decoder.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_encoder.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_rm.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/phch/pbch_msg_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/ch_estimation/dmrs_pbch.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/sync/pss_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/sync/sss_nr.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/vector.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_decoder.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_encoder.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_rm.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pbch_msg_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/dmrs_pbch.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/sync/pss_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/sync/sss_nr.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/vector.h \
  /usr/include/complex.h /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/cmathcalls.h

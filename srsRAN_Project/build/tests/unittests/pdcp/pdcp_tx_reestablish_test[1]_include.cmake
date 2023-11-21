@@ -1,5 +1,0 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/pdcp/pdcp_tx_reestablish_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/pdcp/pdcp_tx_reestablish_test[1]_tests.cmake")
-else()
-  add_test(pdcp_tx_reestablish_test_NOT_BUILT pdcp_tx_reestablish_test_NOT_BUILT)
-endif()

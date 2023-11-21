@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/oem/o-ran-e2/srsRAN_4G/build/CPackSourceConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_4G/build/srsue/src/phy/test//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/test//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/rule
 .PHONY : srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ ue_phy_test: srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/rule
 
 # fast build rule for target.
 ue_phy_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build
 .PHONY : ue_phy_test/fast
 
 # Convenience name for target.
 srsue/src/phy/test/CMakeFiles/scell_search_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/scell_search_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/scell_search_test.dir/rule
 .PHONY : srsue/src/phy/test/CMakeFiles/scell_search_test.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ scell_search_test: srsue/src/phy/test/CMakeFiles/scell_search_test.dir/rule
 
 # fast build rule for target.
 scell_search_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build
 .PHONY : scell_search_test/fast
 
 # Convenience name for target.
 srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/rule
 .PHONY : srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ nr_cell_search_test: srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/rule
 
 # fast build rule for target.
 nr_cell_search_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build
 .PHONY : nr_cell_search_test/fast
 
 # Convenience name for target.
 srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/rule
 .PHONY : srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ nr_cell_search_rf: srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/rule
 
 # fast build rule for target.
 nr_cell_search_rf/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build
 .PHONY : nr_cell_search_rf/fast
 
 # Convenience name for target.
 srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/rule
 .PHONY : srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/rule
 
 # Convenience name for target.
@@ -258,7 +258,7 @@ nr_sa_cell_search_test: srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir
 
 # fast build rule for target.
 nr_sa_cell_search_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build
 .PHONY : nr_sa_cell_search_test/fast
 
 nr_cell_search_rf.o: nr_cell_search_rf.cc.o
@@ -266,7 +266,7 @@ nr_cell_search_rf.o: nr_cell_search_rf.cc.o
 
 # target to build an object file
 nr_cell_search_rf.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o
 .PHONY : nr_cell_search_rf.cc.o
 
 nr_cell_search_rf.i: nr_cell_search_rf.cc.i
@@ -274,7 +274,7 @@ nr_cell_search_rf.i: nr_cell_search_rf.cc.i
 
 # target to preprocess a source file
 nr_cell_search_rf.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.i
 .PHONY : nr_cell_search_rf.cc.i
 
 nr_cell_search_rf.s: nr_cell_search_rf.cc.s
@@ -282,7 +282,7 @@ nr_cell_search_rf.s: nr_cell_search_rf.cc.s
 
 # target to generate assembly for a file
 nr_cell_search_rf.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.s
 .PHONY : nr_cell_search_rf.cc.s
 
 nr_cell_search_test.o: nr_cell_search_test.cc.o
@@ -290,7 +290,7 @@ nr_cell_search_test.o: nr_cell_search_test.cc.o
 
 # target to build an object file
 nr_cell_search_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/nr_cell_search_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/nr_cell_search_test.cc.o
 .PHONY : nr_cell_search_test.cc.o
 
 nr_cell_search_test.i: nr_cell_search_test.cc.i
@@ -298,7 +298,7 @@ nr_cell_search_test.i: nr_cell_search_test.cc.i
 
 # target to preprocess a source file
 nr_cell_search_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/nr_cell_search_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/nr_cell_search_test.cc.i
 .PHONY : nr_cell_search_test.cc.i
 
 nr_cell_search_test.s: nr_cell_search_test.cc.s
@@ -306,7 +306,7 @@ nr_cell_search_test.s: nr_cell_search_test.cc.s
 
 # target to generate assembly for a file
 nr_cell_search_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/nr_cell_search_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_cell_search_test.dir/nr_cell_search_test.cc.s
 .PHONY : nr_cell_search_test.cc.s
 
 nr_sa_cell_search_test.o: nr_sa_cell_search_test.cc.o
@@ -314,7 +314,7 @@ nr_sa_cell_search_test.o: nr_sa_cell_search_test.cc.o
 
 # target to build an object file
 nr_sa_cell_search_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/nr_sa_cell_search_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/nr_sa_cell_search_test.cc.o
 .PHONY : nr_sa_cell_search_test.cc.o
 
 nr_sa_cell_search_test.i: nr_sa_cell_search_test.cc.i
@@ -322,7 +322,7 @@ nr_sa_cell_search_test.i: nr_sa_cell_search_test.cc.i
 
 # target to preprocess a source file
 nr_sa_cell_search_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/nr_sa_cell_search_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/nr_sa_cell_search_test.cc.i
 .PHONY : nr_sa_cell_search_test.cc.i
 
 nr_sa_cell_search_test.s: nr_sa_cell_search_test.cc.s
@@ -330,7 +330,7 @@ nr_sa_cell_search_test.s: nr_sa_cell_search_test.cc.s
 
 # target to generate assembly for a file
 nr_sa_cell_search_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/nr_sa_cell_search_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/nr_sa_cell_search_test.dir/nr_sa_cell_search_test.cc.s
 .PHONY : nr_sa_cell_search_test.cc.s
 
 scell_search_test.o: scell_search_test.cc.o
@@ -338,7 +338,7 @@ scell_search_test.o: scell_search_test.cc.o
 
 # target to build an object file
 scell_search_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/scell_search_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/scell_search_test.cc.o
 .PHONY : scell_search_test.cc.o
 
 scell_search_test.i: scell_search_test.cc.i
@@ -346,7 +346,7 @@ scell_search_test.i: scell_search_test.cc.i
 
 # target to preprocess a source file
 scell_search_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/scell_search_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/scell_search_test.cc.i
 .PHONY : scell_search_test.cc.i
 
 scell_search_test.s: scell_search_test.cc.s
@@ -354,7 +354,7 @@ scell_search_test.s: scell_search_test.cc.s
 
 # target to generate assembly for a file
 scell_search_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/scell_search_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/scell_search_test.dir/build.make srsue/src/phy/test/CMakeFiles/scell_search_test.dir/scell_search_test.cc.s
 .PHONY : scell_search_test.cc.s
 
 ue_phy_test.o: ue_phy_test.cc.o
@@ -362,7 +362,7 @@ ue_phy_test.o: ue_phy_test.cc.o
 
 # target to build an object file
 ue_phy_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/ue_phy_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/ue_phy_test.cc.o
 .PHONY : ue_phy_test.cc.o
 
 ue_phy_test.i: ue_phy_test.cc.i
@@ -370,7 +370,7 @@ ue_phy_test.i: ue_phy_test.cc.i
 
 # target to preprocess a source file
 ue_phy_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/ue_phy_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/ue_phy_test.cc.i
 .PHONY : ue_phy_test.cc.i
 
 ue_phy_test.s: ue_phy_test.cc.s
@@ -378,7 +378,7 @@ ue_phy_test.s: ue_phy_test.cc.s
 
 # target to generate assembly for a file
 ue_phy_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/ue_phy_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/build.make srsue/src/phy/test/CMakeFiles/ue_phy_test.dir/ue_phy_test.cc.s
 .PHONY : ue_phy_test.cc.s
 
 # Help Target
@@ -427,6 +427,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

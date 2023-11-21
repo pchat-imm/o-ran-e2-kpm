@@ -1,5 +1,5 @@
 lib/src/common/CMakeFiles/srsran_common.dir/tti_sync_cv.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/tti_sync_cv.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/tti_sync_cv.cc \
  /usr/include/stdc-predef.h /usr/include/pthread.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -39,8 +39,8 @@ lib/src/common/CMakeFiles/srsran_common.dir/tti_sync_cv.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/tti_sync_cv.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/tti_sync.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/tti_sync_cv.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/tti_sync.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \

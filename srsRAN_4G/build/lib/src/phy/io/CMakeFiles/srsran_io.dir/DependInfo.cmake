@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/io/binsource.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/binsource.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/binsource.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/io/filesink.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesink.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesink.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/io/filesource.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesource.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesource.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/io/netsink.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsink.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsink.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/io/netsource.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsource.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsource.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/io/binsource.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/binsource.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/binsource.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/io/filesink.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesink.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesink.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/io/filesource.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesource.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/filesource.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/io/netsink.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsink.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsink.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/io/netsource.c" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsource.c.o" "gcc" "lib/src/phy/io/CMakeFiles/srsran_io.dir/netsource.c.o.d"
   )
 
 # Targets to which this target links.

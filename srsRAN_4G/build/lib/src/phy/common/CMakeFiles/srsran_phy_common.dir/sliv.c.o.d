@@ -1,8 +1,8 @@
 lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/sliv.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/common/sliv.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/common/sliv.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/sliv.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/sliv.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
  /usr/include/inttypes.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

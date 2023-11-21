@@ -1,5 +1,5 @@
 lib/src/common/test/CMakeFiles/thread_test.dir/thread_test.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/test/thread_test.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/test/thread_test.cc \
  /usr/include/stdc-predef.h /usr/include/c++/10/iostream \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
@@ -150,7 +150,7 @@ lib/src/common/test/CMakeFiles/thread_test.dir/thread_test.cc.o: \
  /usr/include/c++/10/bits/basic_ios.tcc \
  /usr/include/c++/10/bits/ostream.tcc /usr/include/c++/10/istream \
  /usr/include/c++/10/bits/istream.tcc \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/threads.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/threads.h \
  /usr/include/x86_64-linux-gnu/sys/timerfd.h \
  /usr/include/x86_64-linux-gnu/bits/timerfd.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdu_ue.a CMakeFiles/du_ue.dir/du_bearer.cpp.o CMakeFiles/du_ue.dir/du_ue_bearer_manager.cpp.o CMakeFiles/du_ue.dir/du_ue_adapters.cpp.o
-/usr/bin/ranlib libdu_ue.a

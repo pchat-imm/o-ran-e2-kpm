@@ -1,3 +1,0 @@
-# Directory labels
- phy
-# Source files and their labels

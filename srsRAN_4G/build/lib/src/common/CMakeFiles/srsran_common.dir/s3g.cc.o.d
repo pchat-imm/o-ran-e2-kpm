@@ -1,7 +1,7 @@
 lib/src/common/CMakeFiles/srsran_common.dir/s3g.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/s3g.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/s3g.cc \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/s3g.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/s3g.h \
  /usr/include/c++/10/math.h /usr/include/c++/10/cmath \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \

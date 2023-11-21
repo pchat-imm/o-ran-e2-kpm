@@ -1,4 +1,0 @@
-# Directory labels
- pdcp
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/pdcp/pdcp_tx_metrics_test.cpp

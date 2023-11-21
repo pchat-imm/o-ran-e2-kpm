@@ -1,4 +1,0 @@
-# Directory labels
- phy
-# Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/phy/upper/channel_processors/pucch_processor_format1_unittest.cpp

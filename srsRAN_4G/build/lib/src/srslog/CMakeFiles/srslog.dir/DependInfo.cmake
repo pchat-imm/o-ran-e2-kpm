@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/backend_worker.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/bundled/fmt/format.cc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/bundled/fmt/os.cc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/event_trace.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/formatters/json_formatter.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/formatters/text_formatter.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/srslog.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/srslog/srslog_c.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/backend_worker.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/bundled/fmt/format.cc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/bundled/fmt/os.cc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/event_trace.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/formatters/json_formatter.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/formatters/text_formatter.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/srslog.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/srslog/srslog_c.cpp" "lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.o" "gcc" "lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.o.d"
   )
 
 # Targets to which this target links.

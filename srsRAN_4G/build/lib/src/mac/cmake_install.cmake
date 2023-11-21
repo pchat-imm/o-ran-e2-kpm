@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/lib/src/mac
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/mac
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,12 +43,12 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/mac/libsrsran_mac.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/libsrsran_mac.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/lib/src/mac/test/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/test/cmake_install.cmake")
 
 endif()
 

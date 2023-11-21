@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc" "srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o" "gcc" "srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc" "srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o" "gcc" "srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o.d"
   )
 
 # Targets to which this target links.

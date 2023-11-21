@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,17 +43,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/oem/o-ran-e2/srsRAN_4G/build/srsran_install_configs.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsran_install_configs.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/lib/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsue/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsenb/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsgnb/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsepc/cmake_install.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/test/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/test/cmake_install.cmake")
 
 endif()
 
@@ -65,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oem/o-ran-e2/srsRAN_4G/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
