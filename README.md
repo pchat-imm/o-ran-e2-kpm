@@ -18,6 +18,9 @@ RRC NR reconfiguration successful.
 - gNB
 - ue
 
+next task: install open5gs from source to be able to config amf and upf https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
+without 'ninja install'
+
 
 **follow this**: https://github.com/s5uishida/open5gs_5gc_srsran_sample_config/tree/main \
 **requirement**
