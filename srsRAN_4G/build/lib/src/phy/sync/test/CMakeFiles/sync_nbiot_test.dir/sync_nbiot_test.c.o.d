@@ -146,6 +146,7 @@ lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/sync_nbiot_test.c.o: \
  /usr/include/x86_64-linux-gnu/sys/time.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/ringbuffer.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/cedron_freq_estimator.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/chest_ul.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/refsignal_ul.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pucch_cfg.h \

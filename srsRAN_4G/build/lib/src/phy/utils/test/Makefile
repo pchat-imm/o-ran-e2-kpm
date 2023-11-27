@@ -206,6 +206,20 @@ dft_test/fast:
 .PHONY : dft_test/fast
 
 # Convenience name for target.
+lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/rule:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/rule
+.PHONY : lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/rule
+
+# Convenience name for target.
+freq_est_test: lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/rule
+.PHONY : freq_est_test
+
+# fast build rule for target.
+freq_est_test/fast:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/build
+.PHONY : freq_est_test/fast
+
+# Convenience name for target.
 lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule:
 	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule
 .PHONY : lib/src/phy/utils/test/CMakeFiles/algebra_test.dir/rule
@@ -284,6 +298,30 @@ dft_test.s: dft_test.c.s
 dft_test.c.s:
 	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/dft_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/dft_test.dir/dft_test.c.s
 .PHONY : dft_test.c.s
+
+freq_est_test.o: freq_est_test.c.o
+.PHONY : freq_est_test.o
+
+# target to build an object file
+freq_est_test.c.o:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/freq_est_test.c.o
+.PHONY : freq_est_test.c.o
+
+freq_est_test.i: freq_est_test.c.i
+.PHONY : freq_est_test.i
+
+# target to preprocess a source file
+freq_est_test.c.i:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/freq_est_test.c.i
+.PHONY : freq_est_test.c.i
+
+freq_est_test.s: freq_est_test.c.s
+.PHONY : freq_est_test.s
+
+# target to generate assembly for a file
+freq_est_test.c.s:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/freq_est_test.c.s
+.PHONY : freq_est_test.c.s
 
 mat_test.o: mat_test.c.o
 .PHONY : mat_test.o
@@ -398,12 +436,16 @@ help:
 	@echo "... test"
 	@echo "... algebra_test"
 	@echo "... dft_test"
+	@echo "... freq_est_test"
 	@echo "... re_pattern_test"
 	@echo "... ringbuffer_test"
 	@echo "... vector_test"
 	@echo "... dft_test.o"
 	@echo "... dft_test.i"
 	@echo "... dft_test.s"
+	@echo "... freq_est_test.o"
+	@echo "... freq_est_test.i"
+	@echo "... freq_est_test.s"
 	@echo "... mat_test.o"
 	@echo "... mat_test.i"
 	@echo "... mat_test.s"

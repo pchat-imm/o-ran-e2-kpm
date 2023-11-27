@@ -58,7 +58,8 @@ lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi37_port.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/convolutional/parity.h \
  /usr/include/inttypes.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/convolutional/viterbi37.h \
@@ -72,6 +73,5 @@ lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi37_port.c.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/memory.h \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h

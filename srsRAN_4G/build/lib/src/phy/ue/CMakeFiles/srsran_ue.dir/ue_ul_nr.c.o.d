@@ -105,6 +105,7 @@ lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_ul_nr.c.o: \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pucch_cfg_nr.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pucch_nr.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/chest_ul.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/cedron_freq_estimator.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/refsignal_ul.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pucch_cfg.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/cqi.h \

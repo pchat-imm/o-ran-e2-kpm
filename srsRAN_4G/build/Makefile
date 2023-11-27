@@ -2233,6 +2233,19 @@ dft_test/fast:
 .PHONY : dft_test/fast
 
 #=============================================================================
+# Target rules for targets named freq_est_test
+
+# Build rule for target.
+freq_est_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 freq_est_test
+.PHONY : freq_est_test
+
+# fast build rule for target.
+freq_est_test/fast:
+	$(MAKE) $(MAKESILENT) -f lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/build.make lib/src/phy/utils/test/CMakeFiles/freq_est_test.dir/build
+.PHONY : freq_est_test/fast
+
+#=============================================================================
 # Target rules for targets named algebra_test
 
 # Build rule for target.
@@ -5276,6 +5289,7 @@ help:
 	@echo "... fading_channel_test"
 	@echo "... file_sink_test"
 	@echo "... file_utils_test"
+	@echo "... freq_est_test"
 	@echo "... fsm_test"
 	@echo "... gen_ack_nr_test"
 	@echo "... gen_ack_test"

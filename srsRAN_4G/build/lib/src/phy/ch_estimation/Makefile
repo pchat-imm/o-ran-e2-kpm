@@ -205,6 +205,30 @@ srsran_ch_estimation/fast:
 	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/build.make lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/build
 .PHONY : srsran_ch_estimation/fast
 
+cedron_freq_estimator.o: cedron_freq_estimator.c.o
+.PHONY : cedron_freq_estimator.o
+
+# target to build an object file
+cedron_freq_estimator.c.o:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/build.make lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/cedron_freq_estimator.c.o
+.PHONY : cedron_freq_estimator.c.o
+
+cedron_freq_estimator.i: cedron_freq_estimator.c.i
+.PHONY : cedron_freq_estimator.i
+
+# target to preprocess a source file
+cedron_freq_estimator.c.i:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/build.make lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/cedron_freq_estimator.c.i
+.PHONY : cedron_freq_estimator.c.i
+
+cedron_freq_estimator.s: cedron_freq_estimator.c.s
+.PHONY : cedron_freq_estimator.s
+
+# target to generate assembly for a file
+cedron_freq_estimator.c.s:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/build.make lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/cedron_freq_estimator.c.s
+.PHONY : cedron_freq_estimator.c.s
+
 chest_common.o: chest_common.c.o
 .PHONY : chest_common.o
 
@@ -557,6 +581,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... srsran_ch_estimation"
+	@echo "... cedron_freq_estimator.o"
+	@echo "... cedron_freq_estimator.i"
+	@echo "... cedron_freq_estimator.s"
 	@echo "... chest_common.o"
 	@echo "... chest_common.i"
 	@echo "... chest_common.s"

@@ -401,6 +401,9 @@ ENABLE_TTCN3:BOOL=OFF
 //Enable UHD
 ENABLE_UHD:BOOL=ON
 
+//Stop compilation on errors
+ENABLE_WERROR:BOOL=ON
+
 //Enable ZeroMQ
 ENABLE_ZEROMQ:BOOL=ON
 

@@ -89,6 +89,7 @@ lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/refsignal_ul.c.o: 
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/dft/dft.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/phch/pucch.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/chest_ul.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/cedron_freq_estimator.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/chest_common.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/resampling/interp.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/modem/mod.h \

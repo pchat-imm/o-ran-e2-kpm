@@ -340,6 +340,7 @@ srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.o: \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/sequence.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/timestamp.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/cedron_freq_estimator.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/chest_dl.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/chest_common.h \
  /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/ch_estimation/refsignal_dl.h \

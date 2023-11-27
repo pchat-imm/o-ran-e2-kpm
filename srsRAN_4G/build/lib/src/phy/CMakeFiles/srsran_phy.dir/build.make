@@ -75,6 +75,7 @@ srsran_phy_OBJECTS =
 # External object files for target srsran_phy
 srsran_phy_EXTERNAL_OBJECTS = \
 "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o" \
+"/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/cedron_freq_estimator.c.o" \
 "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_common.c.o" \
 "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_dl.c.o" \
 "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_dl_nbiot.c.o" \
@@ -276,6 +277,7 @@ srsran_phy_EXTERNAL_OBJECTS = \
 "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o"
 
 lib/src/phy/libsrsran_phy.a: lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o
+lib/src/phy/libsrsran_phy.a: lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/cedron_freq_estimator.c.o
 lib/src/phy/libsrsran_phy.a: lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_common.c.o
 lib/src/phy/libsrsran_phy.a: lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_dl.c.o
 lib/src/phy/libsrsran_phy.a: lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_dl_nbiot.c.o
