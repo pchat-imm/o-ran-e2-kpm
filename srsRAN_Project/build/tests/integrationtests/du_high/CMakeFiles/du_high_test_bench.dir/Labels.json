@@ -1,0 +1,17 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/integrationtests/du_high/test_utils/du_high_test_bench.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"du_high",
+			"integrationtest"
+		],
+		"name" : "du_high_test_bench"
+	}
+}

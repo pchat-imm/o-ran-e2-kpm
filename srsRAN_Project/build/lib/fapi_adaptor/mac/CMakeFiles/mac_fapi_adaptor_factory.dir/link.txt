@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmac_fapi_adaptor_factory.a CMakeFiles/mac_fapi_adaptor_factory.dir/mac_fapi_adaptor_factory_impl.cpp.o
+/usr/bin/ranlib libmac_fapi_adaptor_factory.a

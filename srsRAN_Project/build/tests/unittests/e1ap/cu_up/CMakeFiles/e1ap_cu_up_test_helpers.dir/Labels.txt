@@ -1,0 +1,4 @@
+# Directory labels
+ e1ap
+# Source files and their labels
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/e1ap/cu_up/e1ap_cu_up_test_helpers.cpp

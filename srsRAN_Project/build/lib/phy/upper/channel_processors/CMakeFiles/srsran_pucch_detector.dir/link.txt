@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrsran_pucch_detector.a CMakeFiles/srsran_pucch_detector.dir/pucch_detector_impl.cpp.o
+/usr/bin/ranlib libsrsran_pucch_detector.a

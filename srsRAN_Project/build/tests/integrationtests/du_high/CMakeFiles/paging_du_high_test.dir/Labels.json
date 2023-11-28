@@ -1,0 +1,17 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/integrationtests/du_high/paging_test.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"du_high",
+			"integrationtest"
+		],
+		"name" : "paging_du_high_test"
+	}
+}

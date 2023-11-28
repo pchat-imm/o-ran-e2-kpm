@@ -1,0 +1,2 @@
+/usr/bin/ar qc libphy_fapi_adaptor_factory.a CMakeFiles/phy_fapi_adaptor_factory.dir/phy_fapi_adaptor_factory_impl.cpp.o
+/usr/bin/ranlib libphy_fapi_adaptor_factory.a

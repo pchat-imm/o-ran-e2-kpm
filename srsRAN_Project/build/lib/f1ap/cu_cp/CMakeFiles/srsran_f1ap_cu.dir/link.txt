@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrsran_f1ap_cu.a CMakeFiles/srsran_f1ap_cu.dir/f1ap_cu_impl.cpp.o CMakeFiles/srsran_f1ap_cu.dir/f1ap_cu_factory.cpp.o CMakeFiles/srsran_f1ap_cu.dir/procedures/ue_context_setup_procedure.cpp.o CMakeFiles/srsran_f1ap_cu.dir/procedures/ue_context_modification_procedure.cpp.o CMakeFiles/srsran_f1ap_cu.dir/procedures/ue_context_release_procedure.cpp.o
+/usr/bin/ranlib libsrsran_f1ap_cu.a

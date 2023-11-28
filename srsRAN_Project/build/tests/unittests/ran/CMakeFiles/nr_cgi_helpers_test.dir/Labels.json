@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/ran/nr_cgi_helpers_test.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ran"
+		],
+		"name" : "nr_cgi_helpers_test"
+	}
+}

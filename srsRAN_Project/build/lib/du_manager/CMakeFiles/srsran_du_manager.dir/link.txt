@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrsran_du_manager.a CMakeFiles/srsran_du_manager.dir/du_manager_factory.cpp.o CMakeFiles/srsran_du_manager.dir/du_manager_impl.cpp.o CMakeFiles/srsran_du_manager.dir/du_ue/du_ue_manager.cpp.o CMakeFiles/srsran_du_manager.dir/du_cell_manager.cpp.o
+/usr/bin/ranlib libsrsran_du_manager.a

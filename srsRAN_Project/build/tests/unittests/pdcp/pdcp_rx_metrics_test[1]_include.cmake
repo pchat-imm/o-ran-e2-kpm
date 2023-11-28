@@ -1,0 +1,5 @@
+if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/pdcp/pdcp_rx_metrics_test[1]_tests.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/pdcp/pdcp_rx_metrics_test[1]_tests.cmake")
+else()
+  add_test(pdcp_rx_metrics_test_NOT_BUILT pdcp_rx_metrics_test_NOT_BUILT)
+endif()

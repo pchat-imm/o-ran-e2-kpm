@@ -1,0 +1,4 @@
+# Directory labels
+ rlc
+# Source files and their labels
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/rlc/rlc_tx_am_test.cpp

@@ -1,0 +1,8 @@
+# Directory labels
+ sched
+# Source files and their labels
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/common_scheduling/ssb_scheduler_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/common_scheduling/sib1_scheduler_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/common_scheduling/prach_scheduler_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/common_scheduling/ra_scheduler_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/common_scheduling/paging_scheduler_test.cpp

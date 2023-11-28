@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrsran_pdsch_encoder.a CMakeFiles/srsran_pdsch_encoder.dir/pdsch_encoder_impl.cpp.o
+/usr/bin/ranlib libsrsran_pdsch_encoder.a

@@ -1,0 +1,5 @@
+if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/rrc/rrc_ue_test[1]_tests.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/rrc/rrc_ue_test[1]_tests.cmake")
+else()
+  add_test(rrc_ue_test_NOT_BUILT rrc_ue_test_NOT_BUILT)
+endif()

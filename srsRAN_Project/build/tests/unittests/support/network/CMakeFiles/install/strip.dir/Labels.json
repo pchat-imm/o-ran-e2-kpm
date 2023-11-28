@@ -1,0 +1,11 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"io_broker"
+		],
+		"name" : "install/strip"
+	}
+}
