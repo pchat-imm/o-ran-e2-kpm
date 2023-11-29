@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/ngap/CMakeFiles/srsran_ngap.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/CMakeFiles/srsran_ngap.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ngap/CMakeFiles/srsran_ngap.dir/rule
 .PHONY : lib/ngap/CMakeFiles/srsran_ngap.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ srsran_ngap: lib/ngap/CMakeFiles/srsran_ngap.dir/rule
 
 # fast build rule for target.
 srsran_ngap/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/build
 .PHONY : srsran_ngap/fast
 
 ngap_asn1_packer.o: ngap_asn1_packer.cpp.o
@@ -190,7 +190,7 @@ ngap_asn1_packer.o: ngap_asn1_packer.cpp.o
 
 # target to build an object file
 ngap_asn1_packer.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o
 .PHONY : ngap_asn1_packer.cpp.o
 
 ngap_asn1_packer.i: ngap_asn1_packer.cpp.i
@@ -198,7 +198,7 @@ ngap_asn1_packer.i: ngap_asn1_packer.cpp.i
 
 # target to preprocess a source file
 ngap_asn1_packer.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.i
 .PHONY : ngap_asn1_packer.cpp.i
 
 ngap_asn1_packer.s: ngap_asn1_packer.cpp.s
@@ -206,7 +206,7 @@ ngap_asn1_packer.s: ngap_asn1_packer.cpp.s
 
 # target to generate assembly for a file
 ngap_asn1_packer.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.s
 .PHONY : ngap_asn1_packer.cpp.s
 
 ngap_factory.o: ngap_factory.cpp.o
@@ -214,7 +214,7 @@ ngap_factory.o: ngap_factory.cpp.o
 
 # target to build an object file
 ngap_factory.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o
 .PHONY : ngap_factory.cpp.o
 
 ngap_factory.i: ngap_factory.cpp.i
@@ -222,7 +222,7 @@ ngap_factory.i: ngap_factory.cpp.i
 
 # target to preprocess a source file
 ngap_factory.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.i
 .PHONY : ngap_factory.cpp.i
 
 ngap_factory.s: ngap_factory.cpp.s
@@ -230,7 +230,7 @@ ngap_factory.s: ngap_factory.cpp.s
 
 # target to generate assembly for a file
 ngap_factory.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.s
 .PHONY : ngap_factory.cpp.s
 
 ngap_impl.o: ngap_impl.cpp.o
@@ -238,7 +238,7 @@ ngap_impl.o: ngap_impl.cpp.o
 
 # target to build an object file
 ngap_impl.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o
 .PHONY : ngap_impl.cpp.o
 
 ngap_impl.i: ngap_impl.cpp.i
@@ -246,7 +246,7 @@ ngap_impl.i: ngap_impl.cpp.i
 
 # target to preprocess a source file
 ngap_impl.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.i
 .PHONY : ngap_impl.cpp.i
 
 ngap_impl.s: ngap_impl.cpp.s
@@ -254,7 +254,7 @@ ngap_impl.s: ngap_impl.cpp.s
 
 # target to generate assembly for a file
 ngap_impl.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.s
 .PHONY : ngap_impl.cpp.s
 
 procedures/ng_setup_procedure.o: procedures/ng_setup_procedure.cpp.o
@@ -262,7 +262,7 @@ procedures/ng_setup_procedure.o: procedures/ng_setup_procedure.cpp.o
 
 # target to build an object file
 procedures/ng_setup_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o
 .PHONY : procedures/ng_setup_procedure.cpp.o
 
 procedures/ng_setup_procedure.i: procedures/ng_setup_procedure.cpp.i
@@ -270,7 +270,7 @@ procedures/ng_setup_procedure.i: procedures/ng_setup_procedure.cpp.i
 
 # target to preprocess a source file
 procedures/ng_setup_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.i
 .PHONY : procedures/ng_setup_procedure.cpp.i
 
 procedures/ng_setup_procedure.s: procedures/ng_setup_procedure.cpp.s
@@ -278,15 +278,39 @@ procedures/ng_setup_procedure.s: procedures/ng_setup_procedure.cpp.s
 
 # target to generate assembly for a file
 procedures/ng_setup_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.s
 .PHONY : procedures/ng_setup_procedure.cpp.s
+
+procedures/ngap_dl_nas_message_transfer_procedure.o: procedures/ngap_dl_nas_message_transfer_procedure.cpp.o
+.PHONY : procedures/ngap_dl_nas_message_transfer_procedure.o
+
+# target to build an object file
+procedures/ngap_dl_nas_message_transfer_procedure.cpp.o:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o
+.PHONY : procedures/ngap_dl_nas_message_transfer_procedure.cpp.o
+
+procedures/ngap_dl_nas_message_transfer_procedure.i: procedures/ngap_dl_nas_message_transfer_procedure.cpp.i
+.PHONY : procedures/ngap_dl_nas_message_transfer_procedure.i
+
+# target to preprocess a source file
+procedures/ngap_dl_nas_message_transfer_procedure.cpp.i:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.i
+.PHONY : procedures/ngap_dl_nas_message_transfer_procedure.cpp.i
+
+procedures/ngap_dl_nas_message_transfer_procedure.s: procedures/ngap_dl_nas_message_transfer_procedure.cpp.s
+.PHONY : procedures/ngap_dl_nas_message_transfer_procedure.s
+
+# target to generate assembly for a file
+procedures/ngap_dl_nas_message_transfer_procedure.cpp.s:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.s
+.PHONY : procedures/ngap_dl_nas_message_transfer_procedure.cpp.s
 
 procedures/ngap_handover_preparation_procedure.o: procedures/ngap_handover_preparation_procedure.cpp.o
 .PHONY : procedures/ngap_handover_preparation_procedure.o
 
 # target to build an object file
 procedures/ngap_handover_preparation_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o
 .PHONY : procedures/ngap_handover_preparation_procedure.cpp.o
 
 procedures/ngap_handover_preparation_procedure.i: procedures/ngap_handover_preparation_procedure.cpp.i
@@ -294,7 +318,7 @@ procedures/ngap_handover_preparation_procedure.i: procedures/ngap_handover_prepa
 
 # target to preprocess a source file
 procedures/ngap_handover_preparation_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.i
 .PHONY : procedures/ngap_handover_preparation_procedure.cpp.i
 
 procedures/ngap_handover_preparation_procedure.s: procedures/ngap_handover_preparation_procedure.cpp.s
@@ -302,7 +326,7 @@ procedures/ngap_handover_preparation_procedure.s: procedures/ngap_handover_prepa
 
 # target to generate assembly for a file
 procedures/ngap_handover_preparation_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.s
 .PHONY : procedures/ngap_handover_preparation_procedure.cpp.s
 
 procedures/ngap_handover_resource_allocation_procedure.o: procedures/ngap_handover_resource_allocation_procedure.cpp.o
@@ -310,7 +334,7 @@ procedures/ngap_handover_resource_allocation_procedure.o: procedures/ngap_handov
 
 # target to build an object file
 procedures/ngap_handover_resource_allocation_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o
 .PHONY : procedures/ngap_handover_resource_allocation_procedure.cpp.o
 
 procedures/ngap_handover_resource_allocation_procedure.i: procedures/ngap_handover_resource_allocation_procedure.cpp.i
@@ -318,7 +342,7 @@ procedures/ngap_handover_resource_allocation_procedure.i: procedures/ngap_handov
 
 # target to preprocess a source file
 procedures/ngap_handover_resource_allocation_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.i
 .PHONY : procedures/ngap_handover_resource_allocation_procedure.cpp.i
 
 procedures/ngap_handover_resource_allocation_procedure.s: procedures/ngap_handover_resource_allocation_procedure.cpp.s
@@ -326,7 +350,7 @@ procedures/ngap_handover_resource_allocation_procedure.s: procedures/ngap_handov
 
 # target to generate assembly for a file
 procedures/ngap_handover_resource_allocation_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.s
 .PHONY : procedures/ngap_handover_resource_allocation_procedure.cpp.s
 
 procedures/ngap_initial_context_setup_procedure.o: procedures/ngap_initial_context_setup_procedure.cpp.o
@@ -334,7 +358,7 @@ procedures/ngap_initial_context_setup_procedure.o: procedures/ngap_initial_conte
 
 # target to build an object file
 procedures/ngap_initial_context_setup_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o
 .PHONY : procedures/ngap_initial_context_setup_procedure.cpp.o
 
 procedures/ngap_initial_context_setup_procedure.i: procedures/ngap_initial_context_setup_procedure.cpp.i
@@ -342,7 +366,7 @@ procedures/ngap_initial_context_setup_procedure.i: procedures/ngap_initial_conte
 
 # target to preprocess a source file
 procedures/ngap_initial_context_setup_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.i
 .PHONY : procedures/ngap_initial_context_setup_procedure.cpp.i
 
 procedures/ngap_initial_context_setup_procedure.s: procedures/ngap_initial_context_setup_procedure.cpp.s
@@ -350,7 +374,7 @@ procedures/ngap_initial_context_setup_procedure.s: procedures/ngap_initial_conte
 
 # target to generate assembly for a file
 procedures/ngap_initial_context_setup_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.s
 .PHONY : procedures/ngap_initial_context_setup_procedure.cpp.s
 
 procedures/ngap_pdu_session_resource_modify_procedure.o: procedures/ngap_pdu_session_resource_modify_procedure.cpp.o
@@ -358,7 +382,7 @@ procedures/ngap_pdu_session_resource_modify_procedure.o: procedures/ngap_pdu_ses
 
 # target to build an object file
 procedures/ngap_pdu_session_resource_modify_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o
 .PHONY : procedures/ngap_pdu_session_resource_modify_procedure.cpp.o
 
 procedures/ngap_pdu_session_resource_modify_procedure.i: procedures/ngap_pdu_session_resource_modify_procedure.cpp.i
@@ -366,7 +390,7 @@ procedures/ngap_pdu_session_resource_modify_procedure.i: procedures/ngap_pdu_ses
 
 # target to preprocess a source file
 procedures/ngap_pdu_session_resource_modify_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.i
 .PHONY : procedures/ngap_pdu_session_resource_modify_procedure.cpp.i
 
 procedures/ngap_pdu_session_resource_modify_procedure.s: procedures/ngap_pdu_session_resource_modify_procedure.cpp.s
@@ -374,7 +398,7 @@ procedures/ngap_pdu_session_resource_modify_procedure.s: procedures/ngap_pdu_ses
 
 # target to generate assembly for a file
 procedures/ngap_pdu_session_resource_modify_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.s
 .PHONY : procedures/ngap_pdu_session_resource_modify_procedure.cpp.s
 
 procedures/ngap_pdu_session_resource_release_procedure.o: procedures/ngap_pdu_session_resource_release_procedure.cpp.o
@@ -382,7 +406,7 @@ procedures/ngap_pdu_session_resource_release_procedure.o: procedures/ngap_pdu_se
 
 # target to build an object file
 procedures/ngap_pdu_session_resource_release_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o
 .PHONY : procedures/ngap_pdu_session_resource_release_procedure.cpp.o
 
 procedures/ngap_pdu_session_resource_release_procedure.i: procedures/ngap_pdu_session_resource_release_procedure.cpp.i
@@ -390,7 +414,7 @@ procedures/ngap_pdu_session_resource_release_procedure.i: procedures/ngap_pdu_se
 
 # target to preprocess a source file
 procedures/ngap_pdu_session_resource_release_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.i
 .PHONY : procedures/ngap_pdu_session_resource_release_procedure.cpp.i
 
 procedures/ngap_pdu_session_resource_release_procedure.s: procedures/ngap_pdu_session_resource_release_procedure.cpp.s
@@ -398,7 +422,7 @@ procedures/ngap_pdu_session_resource_release_procedure.s: procedures/ngap_pdu_se
 
 # target to generate assembly for a file
 procedures/ngap_pdu_session_resource_release_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.s
 .PHONY : procedures/ngap_pdu_session_resource_release_procedure.cpp.s
 
 procedures/ngap_pdu_session_resource_setup_procedure.o: procedures/ngap_pdu_session_resource_setup_procedure.cpp.o
@@ -406,7 +430,7 @@ procedures/ngap_pdu_session_resource_setup_procedure.o: procedures/ngap_pdu_sess
 
 # target to build an object file
 procedures/ngap_pdu_session_resource_setup_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o
 .PHONY : procedures/ngap_pdu_session_resource_setup_procedure.cpp.o
 
 procedures/ngap_pdu_session_resource_setup_procedure.i: procedures/ngap_pdu_session_resource_setup_procedure.cpp.i
@@ -414,7 +438,7 @@ procedures/ngap_pdu_session_resource_setup_procedure.i: procedures/ngap_pdu_sess
 
 # target to preprocess a source file
 procedures/ngap_pdu_session_resource_setup_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.i
 .PHONY : procedures/ngap_pdu_session_resource_setup_procedure.cpp.i
 
 procedures/ngap_pdu_session_resource_setup_procedure.s: procedures/ngap_pdu_session_resource_setup_procedure.cpp.s
@@ -422,7 +446,7 @@ procedures/ngap_pdu_session_resource_setup_procedure.s: procedures/ngap_pdu_sess
 
 # target to generate assembly for a file
 procedures/ngap_pdu_session_resource_setup_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.s
 .PHONY : procedures/ngap_pdu_session_resource_setup_procedure.cpp.s
 
 procedures/ngap_ue_context_release_procedure.o: procedures/ngap_ue_context_release_procedure.cpp.o
@@ -430,7 +454,7 @@ procedures/ngap_ue_context_release_procedure.o: procedures/ngap_ue_context_relea
 
 # target to build an object file
 procedures/ngap_ue_context_release_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o
 .PHONY : procedures/ngap_ue_context_release_procedure.cpp.o
 
 procedures/ngap_ue_context_release_procedure.i: procedures/ngap_ue_context_release_procedure.cpp.i
@@ -438,7 +462,7 @@ procedures/ngap_ue_context_release_procedure.i: procedures/ngap_ue_context_relea
 
 # target to preprocess a source file
 procedures/ngap_ue_context_release_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.i
 .PHONY : procedures/ngap_ue_context_release_procedure.cpp.i
 
 procedures/ngap_ue_context_release_procedure.s: procedures/ngap_ue_context_release_procedure.cpp.s
@@ -446,7 +470,7 @@ procedures/ngap_ue_context_release_procedure.s: procedures/ngap_ue_context_relea
 
 # target to generate assembly for a file
 procedures/ngap_ue_context_release_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ngap/CMakeFiles/srsran_ngap.dir/build.make lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.s
 .PHONY : procedures/ngap_ue_context_release_procedure.cpp.s
 
 # Help Target
@@ -475,6 +499,9 @@ help:
 	@echo "... procedures/ng_setup_procedure.o"
 	@echo "... procedures/ng_setup_procedure.i"
 	@echo "... procedures/ng_setup_procedure.s"
+	@echo "... procedures/ngap_dl_nas_message_transfer_procedure.o"
+	@echo "... procedures/ngap_dl_nas_message_transfer_procedure.i"
+	@echo "... procedures/ngap_dl_nas_message_transfer_procedure.s"
 	@echo "... procedures/ngap_handover_preparation_procedure.o"
 	@echo "... procedures/ngap_handover_preparation_procedure.i"
 	@echo "... procedures/ngap_handover_preparation_procedure.s"
@@ -507,6 +534,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

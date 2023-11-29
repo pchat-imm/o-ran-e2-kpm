@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_Project/lib/security/s3g.cpp" "lib/security/CMakeFiles/srsran_security.dir/s3g.cpp.o" "gcc" "lib/security/CMakeFiles/srsran_security.dir/s3g.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_Project/lib/security/security.cpp" "lib/security/CMakeFiles/srsran_security.dir/security.cpp.o" "gcc" "lib/security/CMakeFiles/srsran_security.dir/security.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_Project/lib/security/zuc.cpp" "lib/security/CMakeFiles/srsran_security.dir/zuc.cpp.o" "gcc" "lib/security/CMakeFiles/srsran_security.dir/zuc.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/security/s3g.cpp" "lib/security/CMakeFiles/srsran_security.dir/s3g.cpp.o" "gcc" "lib/security/CMakeFiles/srsran_security.dir/s3g.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/security/security.cpp" "lib/security/CMakeFiles/srsran_security.dir/security.cpp.o" "gcc" "lib/security/CMakeFiles/srsran_security.dir/security.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/security/zuc.cpp" "lib/security/CMakeFiles/srsran_security.dir/zuc.cpp.o" "gcc" "lib/security/CMakeFiles/srsran_security.dir/zuc.cpp.o.d"
   )
 
 # Targets to which this target links.

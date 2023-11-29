@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/lib/phy/upper
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/phy/upper
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,39 +44,39 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_coding/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_coding/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_modulation/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_modulation/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/equalization/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/equalization/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/sequence_generators/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/sequence_generators/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/signal_processors/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/signal_processors/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/liblog_likelihood_ratio.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/liblog_likelihood_ratio.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/libsrsran_upper_phy_support.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/libsrsran_upper_phy_support.a")
 endif()
 

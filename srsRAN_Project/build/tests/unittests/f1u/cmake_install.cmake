@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/f1u
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/f1u
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/f1u/cu_up/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/f1u/cu_up/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/f1u/du/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/f1u/du/cmake_install.cmake")
 endif()
 

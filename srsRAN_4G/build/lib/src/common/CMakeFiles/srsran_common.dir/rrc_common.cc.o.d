@@ -1,7 +1,7 @@
 lib/src/common/CMakeFiles/srsran_common.dir/rrc_common.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/common/rrc_common.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/rrc_common.cc \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/rrc/rrc_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/rrc/rrc_common.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

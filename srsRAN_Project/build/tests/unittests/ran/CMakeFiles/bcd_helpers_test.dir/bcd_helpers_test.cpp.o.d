@@ -1,7 +1,7 @@
 tests/unittests/ran/CMakeFiles/bcd_helpers_test.dir/bcd_helpers_test.cpp.o: \
- /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/ran/bcd_helpers_test.cpp \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/ran/bcd_helpers_test.cpp \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/bcd_helpers.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/bcd_helpers.h \
  /usr/include/ctype.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

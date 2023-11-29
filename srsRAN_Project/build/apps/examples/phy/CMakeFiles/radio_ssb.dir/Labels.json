@@ -2,13 +2,13 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/oem/o-ran-e2/srsRAN_Project/apps/examples/phy/radio_ssb.cpp"
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/apps/examples/phy/radio_ssb.cpp"
 		},
 		{
-			"file" : "/home/oem/o-ran-e2/srsRAN_Project/apps/examples/phy/lower_phy_example_factory.cpp"
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/apps/examples/phy/lower_phy_example_factory.cpp"
 		},
 		{
-			"file" : "/home/oem/o-ran-e2/srsRAN_Project/apps/examples/phy/upper_phy_ssb_example.cpp"
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/apps/examples/phy/upper_phy_ssb_example.cpp"
 		}
 	],
 	"target" : 

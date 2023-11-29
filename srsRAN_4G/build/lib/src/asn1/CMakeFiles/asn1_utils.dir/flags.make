@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DASSERTS_ENABLED -DENABLE_TIMEPROF
 
-CXX_INCLUDES = -I/home/oem/o-ran-e2/srsRAN_4G/build/lib/include -I/home/oem/o-ran-e2/srsRAN_4G/lib/include -I/home/oem/o-ran-e2/srsRAN_4G -I/home/oem/o-ran-e2/srsRAN_4G/cmake/modules
+CXX_INCLUDES = -I/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/include -I/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include -I/home/chatchamon/o-ran-e2-kpm/srsRAN_4G -I/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/cmake/modules
 
 CXX_FLAGS =  -Wall -Wno-comment -Wno-reorder -Wno-unused-variable -Wtype-limits -std=c++14 -fno-strict-aliasing -Wno-unused-but-set-variable -march=native -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -fvisibility=hidden -O3 -fno-trapping-math -fno-math-errno -DBUILD_TYPE_RELEASE -mavx512f -mavx512cd -mavx512bw -mavx512dq -DLV_HAVE_AVX512 -Werror -Wno-switch -Wno-unused-variable -Wno-return-type -Wno-sign-compare -Wno-reorder -Wno-parentheses -fno-exceptions -O3 -DNDEBUG -fPIC
 

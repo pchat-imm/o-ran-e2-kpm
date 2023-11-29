@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 # Include any dependencies generated for this target.
 include tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/depend.make
@@ -72,16 +72,16 @@ include tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o: tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/flags.make
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o: ../tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test.cpp
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o: tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o -MF CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o.d -o CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o -MF CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o.d -o CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test.cpp
 
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test.cpp > CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test.cpp > CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.i
 
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test.cpp -o CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test.cpp -o CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.s
 
 # Object files for target precoding_matrix_table_generator_test
 precoding_matrix_table_generator_test_OBJECTS = \
@@ -92,29 +92,25 @@ precoding_matrix_table_generator_test_EXTERNAL_OBJECTS =
 
 tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o
 tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make
-tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/fapi_adaptor/phy/messages/libsrsran_fapi_phy_message_adaptors.a
-tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/srslog/libsrslog.a
-tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/phy/support/libsrsran_phy_support.a
-tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/srsvec/libsrsvec.a
 tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/fapi_adaptor/libsrsran_fapi_precoding_matrix_tools.a
-tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/phy/upper/libsrsran_upper_phy_support.a
+tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/srslog/libsrslog.a
 tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/ran/libsrsran_ran.a
 tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: lib/srslog/libsrslog.a
 tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: external/fmt/libfmt.a
 tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test: tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable precoding_matrix_table_generator_test"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/precoding_matrix_table_generator_test.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/cmake -D TEST_TARGET=precoding_matrix_table_generator_test -D TEST_EXECUTABLE=/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=precoding_matrix_table_generator_test_TESTS -D CTEST_FILE=/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=15 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable precoding_matrix_table_generator_test"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/precoding_matrix_table_generator_test.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor && /usr/bin/cmake -D TEST_TARGET=precoding_matrix_table_generator_test -D TEST_EXECUTABLE=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=precoding_matrix_table_generator_test_TESTS -D CTEST_FILE=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=15 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build: tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test
 .PHONY : tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build
 
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor && $(CMAKE_COMMAND) -P CMakeFiles/precoding_matrix_table_generator_test.dir/cmake_clean.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor && $(CMAKE_COMMAND) -P CMakeFiles/precoding_matrix_table_generator_test.dir/cmake_clean.cmake
 .PHONY : tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/clean
 
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_Project /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/fapi_adaptor /home/oem/o-ran-e2/srsRAN_Project/build /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_Project /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/fapi_adaptor /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/depend
 

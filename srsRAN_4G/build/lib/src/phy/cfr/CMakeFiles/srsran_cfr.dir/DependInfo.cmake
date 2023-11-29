@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/cfr/cfr.c" "lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o" "gcc" "lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/cfr/cfr.c" "lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o" "gcc" "lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o.d"
   )
 
 # Targets to which this target links.

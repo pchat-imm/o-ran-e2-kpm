@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_4G/srsgnb/src/stack/rrc
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_4G/build/srsgnb/src/stack/rrc/test/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc/test/cmake_install.cmake")
 
 endif()
 

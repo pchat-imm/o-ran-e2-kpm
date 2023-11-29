@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_Project/build/lib/f1u//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/f1u//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/rule
 .PHONY : lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ srsran_f1u_cu_up: lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/rule
 
 # fast build rule for target.
 srsran_f1u_cu_up/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build
 .PHONY : srsran_f1u_cu_up/fast
 
 # Convenience name for target.
 lib/f1u/CMakeFiles/srsran_f1u_du.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/CMakeFiles/srsran_f1u_du.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/CMakeFiles/srsran_f1u_du.dir/rule
 .PHONY : lib/f1u/CMakeFiles/srsran_f1u_du.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ srsran_f1u_du: lib/f1u/CMakeFiles/srsran_f1u_du.dir/rule
 
 # fast build rule for target.
 srsran_f1u_du/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/build
 .PHONY : srsran_f1u_du/fast
 
 # Convenience name for target.
 lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/rule
 .PHONY : lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/rule
 
 # Convenience name for target.
@@ -210,7 +210,7 @@ srsgnb_app_f1u_connector: lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/rule
 
 # fast build rule for target.
 srsgnb_app_f1u_connector/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build
 .PHONY : srsgnb_app_f1u_connector/fast
 
 cu_up/f1u_bearer_factory.o: cu_up/f1u_bearer_factory.cpp.o
@@ -218,7 +218,7 @@ cu_up/f1u_bearer_factory.o: cu_up/f1u_bearer_factory.cpp.o
 
 # target to build an object file
 cu_up/f1u_bearer_factory.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_factory.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_factory.cpp.o
 .PHONY : cu_up/f1u_bearer_factory.cpp.o
 
 cu_up/f1u_bearer_factory.i: cu_up/f1u_bearer_factory.cpp.i
@@ -226,7 +226,7 @@ cu_up/f1u_bearer_factory.i: cu_up/f1u_bearer_factory.cpp.i
 
 # target to preprocess a source file
 cu_up/f1u_bearer_factory.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_factory.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_factory.cpp.i
 .PHONY : cu_up/f1u_bearer_factory.cpp.i
 
 cu_up/f1u_bearer_factory.s: cu_up/f1u_bearer_factory.cpp.s
@@ -234,7 +234,7 @@ cu_up/f1u_bearer_factory.s: cu_up/f1u_bearer_factory.cpp.s
 
 # target to generate assembly for a file
 cu_up/f1u_bearer_factory.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_factory.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_factory.cpp.s
 .PHONY : cu_up/f1u_bearer_factory.cpp.s
 
 cu_up/f1u_bearer_impl.o: cu_up/f1u_bearer_impl.cpp.o
@@ -242,7 +242,7 @@ cu_up/f1u_bearer_impl.o: cu_up/f1u_bearer_impl.cpp.o
 
 # target to build an object file
 cu_up/f1u_bearer_impl.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_impl.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_impl.cpp.o
 .PHONY : cu_up/f1u_bearer_impl.cpp.o
 
 cu_up/f1u_bearer_impl.i: cu_up/f1u_bearer_impl.cpp.i
@@ -250,7 +250,7 @@ cu_up/f1u_bearer_impl.i: cu_up/f1u_bearer_impl.cpp.i
 
 # target to preprocess a source file
 cu_up/f1u_bearer_impl.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_impl.cpp.i
 .PHONY : cu_up/f1u_bearer_impl.cpp.i
 
 cu_up/f1u_bearer_impl.s: cu_up/f1u_bearer_impl.cpp.s
@@ -258,7 +258,7 @@ cu_up/f1u_bearer_impl.s: cu_up/f1u_bearer_impl.cpp.s
 
 # target to generate assembly for a file
 cu_up/f1u_bearer_impl.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_cu_up.dir/cu_up/f1u_bearer_impl.cpp.s
 .PHONY : cu_up/f1u_bearer_impl.cpp.s
 
 du/f1u_bearer_factory.o: du/f1u_bearer_factory.cpp.o
@@ -266,7 +266,7 @@ du/f1u_bearer_factory.o: du/f1u_bearer_factory.cpp.o
 
 # target to build an object file
 du/f1u_bearer_factory.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_factory.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_factory.cpp.o
 .PHONY : du/f1u_bearer_factory.cpp.o
 
 du/f1u_bearer_factory.i: du/f1u_bearer_factory.cpp.i
@@ -274,7 +274,7 @@ du/f1u_bearer_factory.i: du/f1u_bearer_factory.cpp.i
 
 # target to preprocess a source file
 du/f1u_bearer_factory.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_factory.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_factory.cpp.i
 .PHONY : du/f1u_bearer_factory.cpp.i
 
 du/f1u_bearer_factory.s: du/f1u_bearer_factory.cpp.s
@@ -282,7 +282,7 @@ du/f1u_bearer_factory.s: du/f1u_bearer_factory.cpp.s
 
 # target to generate assembly for a file
 du/f1u_bearer_factory.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_factory.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_factory.cpp.s
 .PHONY : du/f1u_bearer_factory.cpp.s
 
 du/f1u_bearer_impl.o: du/f1u_bearer_impl.cpp.o
@@ -290,7 +290,7 @@ du/f1u_bearer_impl.o: du/f1u_bearer_impl.cpp.o
 
 # target to build an object file
 du/f1u_bearer_impl.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_impl.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_impl.cpp.o
 .PHONY : du/f1u_bearer_impl.cpp.o
 
 du/f1u_bearer_impl.i: du/f1u_bearer_impl.cpp.i
@@ -298,7 +298,7 @@ du/f1u_bearer_impl.i: du/f1u_bearer_impl.cpp.i
 
 # target to preprocess a source file
 du/f1u_bearer_impl.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_impl.cpp.i
 .PHONY : du/f1u_bearer_impl.cpp.i
 
 du/f1u_bearer_impl.s: du/f1u_bearer_impl.cpp.s
@@ -306,7 +306,7 @@ du/f1u_bearer_impl.s: du/f1u_bearer_impl.cpp.s
 
 # target to generate assembly for a file
 du/f1u_bearer_impl.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsran_f1u_du.dir/build.make lib/f1u/CMakeFiles/srsran_f1u_du.dir/du/f1u_bearer_impl.cpp.s
 .PHONY : du/f1u_bearer_impl.cpp.s
 
 local_connector/f1u_local_connector.o: local_connector/f1u_local_connector.cpp.o
@@ -314,7 +314,7 @@ local_connector/f1u_local_connector.o: local_connector/f1u_local_connector.cpp.o
 
 # target to build an object file
 local_connector/f1u_local_connector.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/local_connector/f1u_local_connector.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/local_connector/f1u_local_connector.cpp.o
 .PHONY : local_connector/f1u_local_connector.cpp.o
 
 local_connector/f1u_local_connector.i: local_connector/f1u_local_connector.cpp.i
@@ -322,7 +322,7 @@ local_connector/f1u_local_connector.i: local_connector/f1u_local_connector.cpp.i
 
 # target to preprocess a source file
 local_connector/f1u_local_connector.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/local_connector/f1u_local_connector.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/local_connector/f1u_local_connector.cpp.i
 .PHONY : local_connector/f1u_local_connector.cpp.i
 
 local_connector/f1u_local_connector.s: local_connector/f1u_local_connector.cpp.s
@@ -330,7 +330,7 @@ local_connector/f1u_local_connector.s: local_connector/f1u_local_connector.cpp.s
 
 # target to generate assembly for a file
 local_connector/f1u_local_connector.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/local_connector/f1u_local_connector.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/build.make lib/f1u/CMakeFiles/srsgnb_app_f1u_connector.dir/local_connector/f1u_local_connector.cpp.s
 .PHONY : local_connector/f1u_local_connector.cpp.s
 
 # Help Target
@@ -375,6 +375,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

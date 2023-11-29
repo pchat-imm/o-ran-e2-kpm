@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 # Include any dependencies generated for this target.
 include lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/depend.make
@@ -72,16 +72,16 @@ include lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/flags.make
 lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o: lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/flags.make
 lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o: ../lib/src/phy/scrambling/scrambling.c
 lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o: lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o"
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/scrambling && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o -MF CMakeFiles/srsran_scrambling.dir/scrambling.c.o.d -o CMakeFiles/srsran_scrambling.dir/scrambling.c.o -c /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/scrambling/scrambling.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/scrambling && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o -MF CMakeFiles/srsran_scrambling.dir/scrambling.c.o.d -o CMakeFiles/srsran_scrambling.dir/scrambling.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/scrambling/scrambling.c
 
 lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_scrambling.dir/scrambling.c.i"
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/scrambling && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/scrambling/scrambling.c > CMakeFiles/srsran_scrambling.dir/scrambling.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/scrambling && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/scrambling/scrambling.c > CMakeFiles/srsran_scrambling.dir/scrambling.c.i
 
 lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_scrambling.dir/scrambling.c.s"
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/scrambling && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/scrambling/scrambling.c -o CMakeFiles/srsran_scrambling.dir/scrambling.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/scrambling && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/scrambling/scrambling.c -o CMakeFiles/srsran_scrambling.dir/scrambling.c.s
 
 srsran_scrambling: lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o
 srsran_scrambling: lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/build.make
@@ -92,10 +92,10 @@ lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/build: srsran_scrambling
 .PHONY : lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/build
 
 lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/scrambling && $(CMAKE_COMMAND) -P CMakeFiles/srsran_scrambling.dir/cmake_clean.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/scrambling && $(CMAKE_COMMAND) -P CMakeFiles/srsran_scrambling.dir/cmake_clean.cmake
 .PHONY : lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/clean
 
 lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_4G /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/scrambling /home/oem/o-ran-e2/srsRAN_4G/build /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/scrambling /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_4G /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/scrambling /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/scrambling /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/depend
 

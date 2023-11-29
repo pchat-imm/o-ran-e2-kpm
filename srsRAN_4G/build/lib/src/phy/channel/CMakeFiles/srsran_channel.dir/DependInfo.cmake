@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/ch_awgn.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/ch_awgn.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/ch_awgn.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/delay.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/delay.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/delay.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/fading.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/fading.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/fading.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/gauss.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/gauss.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/gauss.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/hst.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/hst.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/hst.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/rlf.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/rlf.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/rlf.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/channel/channel.cc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/channel.cc.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/channel.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/ch_awgn.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/ch_awgn.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/ch_awgn.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/delay.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/delay.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/delay.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/fading.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/fading.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/fading.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/gauss.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/gauss.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/gauss.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/hst.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/hst.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/hst.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/rlf.c" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/rlf.c.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/rlf.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/channel/channel.cc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/channel.cc.o" "gcc" "lib/src/phy/channel/CMakeFiles/srsran_channel.dir/channel.cc.o.d"
   )
 
 # Targets to which this target links.

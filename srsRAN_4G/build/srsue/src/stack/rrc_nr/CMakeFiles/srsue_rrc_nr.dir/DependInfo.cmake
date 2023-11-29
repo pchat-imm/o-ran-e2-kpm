@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/__/rrc/rrc_cell.cc.o" "gcc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/__/rrc/rrc_cell.cc.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/srsue/src/stack/rrc_nr/rrc_nr.cc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr.cc.o" "gcc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr.cc.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/srsue/src/stack/rrc_nr/rrc_nr_procedures.cc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr_procedures.cc.o" "gcc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr_procedures.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/__/rrc/rrc_cell.cc.o" "gcc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/__/rrc/rrc_cell.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc_nr/rrc_nr.cc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr.cc.o" "gcc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr.cc.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc_nr/rrc_nr_procedures.cc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr_procedures.cc.o" "gcc" "srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr_procedures.cc.o.d"
   )
 
 # Targets to which this target links.

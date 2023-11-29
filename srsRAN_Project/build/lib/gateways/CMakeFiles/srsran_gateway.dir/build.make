@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 # Include any dependencies generated for this target.
 include lib/gateways/CMakeFiles/srsran_gateway.dir/depend.make
@@ -72,58 +72,58 @@ include lib/gateways/CMakeFiles/srsran_gateway.dir/flags.make
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/flags.make
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o: ../lib/gateways/sctp_network_gateway_impl.cpp
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o -MF CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o.d -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/sctp_network_gateway_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o -MF CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o.d -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/sctp_network_gateway_impl.cpp
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/sctp_network_gateway_impl.cpp > CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/sctp_network_gateway_impl.cpp > CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.i
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/sctp_network_gateway_impl.cpp -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/sctp_network_gateway_impl.cpp -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.s
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/flags.make
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o: ../lib/gateways/udp_network_gateway_impl.cpp
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o -MF CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o.d -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/udp_network_gateway_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o -MF CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o.d -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/udp_network_gateway_impl.cpp
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/udp_network_gateway_impl.cpp > CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/udp_network_gateway_impl.cpp > CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.i
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/udp_network_gateway_impl.cpp -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/udp_network_gateway_impl.cpp -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.s
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/flags.make
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o: ../lib/gateways/sctp_network_gateway_factory.cpp
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o -MF CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o.d -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/sctp_network_gateway_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o -MF CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o.d -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/sctp_network_gateway_factory.cpp
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/sctp_network_gateway_factory.cpp > CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/sctp_network_gateway_factory.cpp > CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.i
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/sctp_network_gateway_factory.cpp -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/sctp_network_gateway_factory.cpp -o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.s
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/flags.make
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o: ../lib/gateways/udp_network_gateway_factory.cpp
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o: lib/gateways/CMakeFiles/srsran_gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o -MF CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o.d -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/udp_network_gateway_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o -MF CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o.d -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/udp_network_gateway_factory.cpp
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/udp_network_gateway_factory.cpp > CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/udp_network_gateway_factory.cpp > CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.i
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/gateways/udp_network_gateway_factory.cpp -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways/udp_network_gateway_factory.cpp -o CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.s
 
 # Object files for target srsran_gateway
 srsran_gateway_OBJECTS = \
@@ -141,19 +141,19 @@ lib/gateways/libsrsran_gateway.a: lib/gateways/CMakeFiles/srsran_gateway.dir/sct
 lib/gateways/libsrsran_gateway.a: lib/gateways/CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o
 lib/gateways/libsrsran_gateway.a: lib/gateways/CMakeFiles/srsran_gateway.dir/build.make
 lib/gateways/libsrsran_gateway.a: lib/gateways/CMakeFiles/srsran_gateway.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsrsran_gateway.a"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && $(CMAKE_COMMAND) -P CMakeFiles/srsran_gateway.dir/cmake_clean_target.cmake
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srsran_gateway.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsrsran_gateway.a"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && $(CMAKE_COMMAND) -P CMakeFiles/srsran_gateway.dir/cmake_clean_target.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srsran_gateway.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/gateways/CMakeFiles/srsran_gateway.dir/build: lib/gateways/libsrsran_gateway.a
 .PHONY : lib/gateways/CMakeFiles/srsran_gateway.dir/build
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways && $(CMAKE_COMMAND) -P CMakeFiles/srsran_gateway.dir/cmake_clean.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways && $(CMAKE_COMMAND) -P CMakeFiles/srsran_gateway.dir/cmake_clean.cmake
 .PHONY : lib/gateways/CMakeFiles/srsran_gateway.dir/clean
 
 lib/gateways/CMakeFiles/srsran_gateway.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_Project /home/oem/o-ran-e2/srsRAN_Project/lib/gateways /home/oem/o-ran-e2/srsRAN_Project/build /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways /home/oem/o-ran-e2/srsRAN_Project/build/lib/gateways/CMakeFiles/srsran_gateway.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_Project /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/gateways /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/gateways/CMakeFiles/srsran_gateway.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/gateways/CMakeFiles/srsran_gateway.dir/depend
 

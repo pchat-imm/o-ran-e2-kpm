@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/lib/scheduler
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/scheduler
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,26 +44,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/scheduler/config/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/scheduler/config/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/scheduler/logging/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/scheduler/logging/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/scheduler/cell/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/scheduler/cell/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/scheduler/common_scheduling/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/scheduler/common_scheduling/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/scheduler/ue_scheduling/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/scheduler/ue_scheduling/cmake_install.cmake")
 endif()
 

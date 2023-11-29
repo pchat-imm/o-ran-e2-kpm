@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_ulsch_demux.a CMakeFiles/srsran_ulsch_demux.dir/ulsch_demultiplex_impl.cpp.o
-/usr/bin/ranlib libsrsran_ulsch_demux.a

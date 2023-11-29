@@ -42,7 +42,7 @@ void sm_cb_kpm(sm_ag_if_rd_t const* rd)
     adapter_MeasDataItem_t* curMeasData = &msg->MeasData[i];
     for(size_t j = 0; j < curMeasData->measRecord_len; j++){
       adapter_MeasRecord_t* curMeasRecord = &(curMeasData->measRecord[j]);
-      printf("Received RIC Indication:\n");
+      printf("Received RIC Indication: \n");
       printf("---Metric: %s: Value: %li\n", curMeasInfo->measName.buf, curMeasRecord->int_val);
     }
   }

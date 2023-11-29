@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/configs
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,19 +44,19 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srsran" TYPE FILE FILES
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_custom_cell_properties.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_rf_b200_tdd_n78_20mhz.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_rf_b210_fdd_srsUE.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_rf_n310_fdd_n3_20mhz.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_ru_picocom_scb_tdd_n78_20mhz.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_ru_ran550_tdd_n78_100mhz_2x2.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_ru_ran550_tdd_n78_20mhz.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/gnb_ru_rpqn4800e_tdd_n78_20mhz.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/mimo_usrp.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/mobility.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/qam256.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/qos.yml"
-    "/home/oem/o-ran-e2/srsRAN_Project/configs/slicing.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_custom_cell_properties.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_rf_b200_tdd_n78_20mhz.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_rf_b210_fdd_srsUE.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_rf_n310_fdd_n3_20mhz.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_ru_picocom_scb_tdd_n78_20mhz.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_ru_ran550_tdd_n78_100mhz_2x2.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_ru_ran550_tdd_n78_20mhz.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/gnb_ru_rpqn4800e_tdd_n78_20mhz.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/mimo_usrp.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/mobility.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/qam256.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/qos.yml"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/configs/slicing.yml"
     )
 endif()
 

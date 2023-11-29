@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,52 +44,52 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/apps/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/apps/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/configs/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/configs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/docs/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/docs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/external/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/external/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/utils/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/utils/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/test_doubles/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/test_doubles/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/integrationtests/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/integrationtests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/benchmarks/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/benchmarks/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -100,5 +100,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oem/o-ran-e2/srsRAN_Project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

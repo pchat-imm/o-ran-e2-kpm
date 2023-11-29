@@ -1,10 +1,10 @@
 # CMake generated Testfile for 
-# Source directory: /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/ofh
-# Build directory: /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/ofh
+# Source directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/ofh
+# Build directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/ofh
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/ofh/slot_symbol_point_test[1]_include.cmake")
+include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/ofh/slot_symbol_point_test[1]_include.cmake")
 subdirs("compression")
 subdirs("ecpri")
 subdirs("ethernet")

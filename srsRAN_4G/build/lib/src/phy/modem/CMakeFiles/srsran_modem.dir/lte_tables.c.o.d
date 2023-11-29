@@ -1,5 +1,5 @@
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/lte_tables.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c \
  /usr/include/stdc-predef.h /usr/include/complex.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -30,10 +30,10 @@ lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/lte_tables.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/modem/modem_table.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/common/phy_common.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/10/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DASSERTS_ENABLED
 
-CXX_INCLUDES = -I/home/oem/o-ran-e2/srsRAN_Project/include -I/home/oem/o-ran-e2/srsRAN_Project/external/fmt/include -I/home/oem/o-ran-e2/srsRAN_Project/external -I/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/du_manager/../../.. -I/home/oem/o-ran-e2/srsRAN_Project
+CXX_INCLUDES = -I/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include -I/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/external/fmt/include -I/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/external -I/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/du_manager/../../.. -I/home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 CXX_FLAGS =  -Wall -Werror -Wno-error=maybe-uninitialized -Wnon-virtual-dtor -Wsuggest-override -Wshadow -O3 -DNDEBUG -fno-trapping-math -fno-math-errno -DBUILD_TYPE_RELEASE -fPIC -std=gnu++14
 

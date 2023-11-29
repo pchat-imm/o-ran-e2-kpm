@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o.d"
   "CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o"
   "CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o.d"
+  "CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o"
+  "CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o.d"
   "CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o"
   "CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o.d"
   "CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o"

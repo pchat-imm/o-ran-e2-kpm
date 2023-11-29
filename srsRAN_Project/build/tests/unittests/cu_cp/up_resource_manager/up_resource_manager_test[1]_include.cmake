@@ -1,5 +1,5 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/cu_cp/up_resource_manager/up_resource_manager_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/cu_cp/up_resource_manager/up_resource_manager_test[1]_tests.cmake")
+if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/cu_cp/up_resource_manager/up_resource_manager_test[1]_tests.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/cu_cp/up_resource_manager/up_resource_manager_test[1]_tests.cmake")
 else()
   add_test(up_resource_manager_test_NOT_BUILT up_resource_manager_test_NOT_BUILT)
 endif()

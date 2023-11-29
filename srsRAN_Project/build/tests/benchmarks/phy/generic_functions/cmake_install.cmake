@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/tests/benchmarks/phy/generic_functions
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/benchmarks/phy/generic_functions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

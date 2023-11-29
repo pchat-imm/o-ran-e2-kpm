@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_Project/build/lib/fapi_adaptor/mac//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/fapi_adaptor/mac//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/rule
 .PHONY : lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ srsran_mac_to_fapi_translator: lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fap
 
 # fast build rule for target.
 srsran_mac_to_fapi_translator/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build
 .PHONY : srsran_mac_to_fapi_translator/fast
 
 # Convenience name for target.
 lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/rule
 .PHONY : lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ srsran_fapi_to_mac_translator: lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_ma
 
 # fast build rule for target.
 srsran_fapi_to_mac_translator/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build
 .PHONY : srsran_fapi_to_mac_translator/fast
 
 # Convenience name for target.
 lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/rule
 .PHONY : lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ mac_fapi_adaptor: lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/rule
 
 # fast build rule for target.
 mac_fapi_adaptor/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build
 .PHONY : mac_fapi_adaptor/fast
 
 # Convenience name for target.
 lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/rule
 .PHONY : lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/rule
 
 # Convenience name for target.
@@ -224,7 +224,7 @@ mac_fapi_adaptor_factory: lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_facto
 
 # fast build rule for target.
 mac_fapi_adaptor_factory/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build
 .PHONY : mac_fapi_adaptor_factory/fast
 
 fapi_to_mac_data_msg_translator.o: fapi_to_mac_data_msg_translator.cpp.o
@@ -232,7 +232,7 @@ fapi_to_mac_data_msg_translator.o: fapi_to_mac_data_msg_translator.cpp.o
 
 # target to build an object file
 fapi_to_mac_data_msg_translator.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_data_msg_translator.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_data_msg_translator.cpp.o
 .PHONY : fapi_to_mac_data_msg_translator.cpp.o
 
 fapi_to_mac_data_msg_translator.i: fapi_to_mac_data_msg_translator.cpp.i
@@ -240,7 +240,7 @@ fapi_to_mac_data_msg_translator.i: fapi_to_mac_data_msg_translator.cpp.i
 
 # target to preprocess a source file
 fapi_to_mac_data_msg_translator.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_data_msg_translator.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_data_msg_translator.cpp.i
 .PHONY : fapi_to_mac_data_msg_translator.cpp.i
 
 fapi_to_mac_data_msg_translator.s: fapi_to_mac_data_msg_translator.cpp.s
@@ -248,7 +248,7 @@ fapi_to_mac_data_msg_translator.s: fapi_to_mac_data_msg_translator.cpp.s
 
 # target to generate assembly for a file
 fapi_to_mac_data_msg_translator.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_data_msg_translator.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_data_msg_translator.cpp.s
 .PHONY : fapi_to_mac_data_msg_translator.cpp.s
 
 fapi_to_mac_time_msg_translator.o: fapi_to_mac_time_msg_translator.cpp.o
@@ -256,7 +256,7 @@ fapi_to_mac_time_msg_translator.o: fapi_to_mac_time_msg_translator.cpp.o
 
 # target to build an object file
 fapi_to_mac_time_msg_translator.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_time_msg_translator.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_time_msg_translator.cpp.o
 .PHONY : fapi_to_mac_time_msg_translator.cpp.o
 
 fapi_to_mac_time_msg_translator.i: fapi_to_mac_time_msg_translator.cpp.i
@@ -264,7 +264,7 @@ fapi_to_mac_time_msg_translator.i: fapi_to_mac_time_msg_translator.cpp.i
 
 # target to preprocess a source file
 fapi_to_mac_time_msg_translator.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_time_msg_translator.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_time_msg_translator.cpp.i
 .PHONY : fapi_to_mac_time_msg_translator.cpp.i
 
 fapi_to_mac_time_msg_translator.s: fapi_to_mac_time_msg_translator.cpp.s
@@ -272,7 +272,7 @@ fapi_to_mac_time_msg_translator.s: fapi_to_mac_time_msg_translator.cpp.s
 
 # target to generate assembly for a file
 fapi_to_mac_time_msg_translator.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_time_msg_translator.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_fapi_to_mac_translator.dir/fapi_to_mac_time_msg_translator.cpp.s
 .PHONY : fapi_to_mac_time_msg_translator.cpp.s
 
 mac_fapi_adaptor_factory_impl.o: mac_fapi_adaptor_factory_impl.cpp.o
@@ -280,7 +280,7 @@ mac_fapi_adaptor_factory_impl.o: mac_fapi_adaptor_factory_impl.cpp.o
 
 # target to build an object file
 mac_fapi_adaptor_factory_impl.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/mac_fapi_adaptor_factory_impl.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/mac_fapi_adaptor_factory_impl.cpp.o
 .PHONY : mac_fapi_adaptor_factory_impl.cpp.o
 
 mac_fapi_adaptor_factory_impl.i: mac_fapi_adaptor_factory_impl.cpp.i
@@ -288,7 +288,7 @@ mac_fapi_adaptor_factory_impl.i: mac_fapi_adaptor_factory_impl.cpp.i
 
 # target to preprocess a source file
 mac_fapi_adaptor_factory_impl.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/mac_fapi_adaptor_factory_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/mac_fapi_adaptor_factory_impl.cpp.i
 .PHONY : mac_fapi_adaptor_factory_impl.cpp.i
 
 mac_fapi_adaptor_factory_impl.s: mac_fapi_adaptor_factory_impl.cpp.s
@@ -296,7 +296,7 @@ mac_fapi_adaptor_factory_impl.s: mac_fapi_adaptor_factory_impl.cpp.s
 
 # target to generate assembly for a file
 mac_fapi_adaptor_factory_impl.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/mac_fapi_adaptor_factory_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor_factory.dir/mac_fapi_adaptor_factory_impl.cpp.s
 .PHONY : mac_fapi_adaptor_factory_impl.cpp.s
 
 mac_fapi_adaptor_impl.o: mac_fapi_adaptor_impl.cpp.o
@@ -304,7 +304,7 @@ mac_fapi_adaptor_impl.o: mac_fapi_adaptor_impl.cpp.o
 
 # target to build an object file
 mac_fapi_adaptor_impl.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/mac_fapi_adaptor_impl.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/mac_fapi_adaptor_impl.cpp.o
 .PHONY : mac_fapi_adaptor_impl.cpp.o
 
 mac_fapi_adaptor_impl.i: mac_fapi_adaptor_impl.cpp.i
@@ -312,7 +312,7 @@ mac_fapi_adaptor_impl.i: mac_fapi_adaptor_impl.cpp.i
 
 # target to preprocess a source file
 mac_fapi_adaptor_impl.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/mac_fapi_adaptor_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/mac_fapi_adaptor_impl.cpp.i
 .PHONY : mac_fapi_adaptor_impl.cpp.i
 
 mac_fapi_adaptor_impl.s: mac_fapi_adaptor_impl.cpp.s
@@ -320,7 +320,7 @@ mac_fapi_adaptor_impl.s: mac_fapi_adaptor_impl.cpp.s
 
 # target to generate assembly for a file
 mac_fapi_adaptor_impl.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/mac_fapi_adaptor_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/mac_fapi_adaptor.dir/mac_fapi_adaptor_impl.cpp.s
 .PHONY : mac_fapi_adaptor_impl.cpp.s
 
 mac_to_fapi_translator.o: mac_to_fapi_translator.cpp.o
@@ -328,7 +328,7 @@ mac_to_fapi_translator.o: mac_to_fapi_translator.cpp.o
 
 # target to build an object file
 mac_to_fapi_translator.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/mac_to_fapi_translator.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/mac_to_fapi_translator.cpp.o
 .PHONY : mac_to_fapi_translator.cpp.o
 
 mac_to_fapi_translator.i: mac_to_fapi_translator.cpp.i
@@ -336,7 +336,7 @@ mac_to_fapi_translator.i: mac_to_fapi_translator.cpp.i
 
 # target to preprocess a source file
 mac_to_fapi_translator.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/mac_to_fapi_translator.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/mac_to_fapi_translator.cpp.i
 .PHONY : mac_to_fapi_translator.cpp.i
 
 mac_to_fapi_translator.s: mac_to_fapi_translator.cpp.s
@@ -344,7 +344,7 @@ mac_to_fapi_translator.s: mac_to_fapi_translator.cpp.s
 
 # target to generate assembly for a file
 mac_to_fapi_translator.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/mac_to_fapi_translator.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/build.make lib/fapi_adaptor/mac/CMakeFiles/srsran_mac_to_fapi_translator.dir/mac_to_fapi_translator.cpp.s
 .PHONY : mac_to_fapi_translator.cpp.s
 
 # Help Target
@@ -390,6 +390,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

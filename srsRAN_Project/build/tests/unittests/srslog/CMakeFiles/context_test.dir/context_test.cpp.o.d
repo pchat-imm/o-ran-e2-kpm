@@ -1,7 +1,7 @@
 tests/unittests/srslog/CMakeFiles/context_test.dir/context_test.cpp.o: \
- /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/srslog/context_test.cpp \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/srslog/context_test.cpp \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_Project/tests/unittests/srslog/testing_helpers.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/srslog/testing_helpers.h \
  /usr/include/c++/10/cstdio \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
@@ -32,8 +32,8 @@ tests/unittests/srslog/CMakeFiles/context_test.dir/context_test.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/context.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/support/tmpl_utils.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/context.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/support/tmpl_utils.h \
  /usr/include/c++/10/cstddef /usr/include/c++/10/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \

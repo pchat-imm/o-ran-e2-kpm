@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,17 +158,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -195,6 +195,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

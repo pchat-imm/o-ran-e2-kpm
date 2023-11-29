@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/oem/o-ran-e2/srsRAN_4G/build/CPackSourceConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_4G/build/lib/src/phy/sync/test//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/pss_file.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/pss_file.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/pss_file.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/pss_file.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ pss_file: lib/src/phy/sync/test/CMakeFiles/pss_file.dir/rule
 
 # fast build rule for target.
 pss_file/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build
 .PHONY : pss_file/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/npss_file.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/npss_file.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/npss_file.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/npss_file.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ npss_file: lib/src/phy/sync/test/CMakeFiles/npss_file.dir/rule
 
 # fast build rule for target.
 npss_file/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build
 .PHONY : npss_file/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ pss_usrp: lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/rule
 
 # fast build rule for target.
 pss_usrp/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build
 .PHONY : pss_usrp/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ npss_usrp: lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/rule
 
 # fast build rule for target.
 npss_usrp/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build
 .PHONY : npss_usrp/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/rule
 
 # Convenience name for target.
@@ -258,12 +258,12 @@ nsss_usrp: lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/rule
 
 # fast build rule for target.
 nsss_usrp/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build
 .PHONY : nsss_usrp/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/sync_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/sync_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/sync_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/sync_test.dir/rule
 
 # Convenience name for target.
@@ -272,12 +272,12 @@ sync_test: lib/src/phy/sync/test/CMakeFiles/sync_test.dir/rule
 
 # fast build rule for target.
 sync_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build
 .PHONY : sync_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/rule
 
 # Convenience name for target.
@@ -286,12 +286,12 @@ sync_nbiot_test: lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/rule
 
 # fast build rule for target.
 sync_nbiot_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build
 .PHONY : sync_nbiot_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/npss_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/npss_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/npss_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/npss_test.dir/rule
 
 # Convenience name for target.
@@ -300,12 +300,12 @@ npss_test: lib/src/phy/sync/test/CMakeFiles/npss_test.dir/rule
 
 # fast build rule for target.
 npss_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build
 .PHONY : npss_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ nsss_test: lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/rule
 
 # fast build rule for target.
 nsss_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build
 .PHONY : nsss_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/rule
 
 # Convenience name for target.
@@ -328,12 +328,12 @@ sync_sl_test: lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/rule
 
 # fast build rule for target.
 sync_sl_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build
 .PHONY : sync_sl_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ psss_file_test: lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/rule
 
 # fast build rule for target.
 psss_file_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build
 .PHONY : psss_file_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/rule
 
 # Convenience name for target.
@@ -356,12 +356,12 @@ cfo_test: lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/rule
 
 # fast build rule for target.
 cfo_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build
 .PHONY : cfo_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/rule
 
 # Convenience name for target.
@@ -370,12 +370,12 @@ ssb_measure_test: lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/rule
 
 # fast build rule for target.
 ssb_measure_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build
 .PHONY : ssb_measure_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/rule
 
 # Convenience name for target.
@@ -384,12 +384,12 @@ ssb_decode_test: lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/rule
 
 # fast build rule for target.
 ssb_decode_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build
 .PHONY : ssb_decode_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/rule
 
 # Convenience name for target.
@@ -398,12 +398,12 @@ ssb_grid_test: lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/rule
 
 # fast build rule for target.
 ssb_grid_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build
 .PHONY : ssb_grid_test/fast
 
 # Convenience name for target.
 lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/rule
 .PHONY : lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/rule
 
 # Convenience name for target.
@@ -412,7 +412,7 @@ ssb_file_test: lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/rule
 
 # fast build rule for target.
 ssb_file_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build
 .PHONY : ssb_file_test/fast
 
 cfo_test.o: cfo_test.c.o
@@ -420,7 +420,7 @@ cfo_test.o: cfo_test.c.o
 
 # target to build an object file
 cfo_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/cfo_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/cfo_test.c.o
 .PHONY : cfo_test.c.o
 
 cfo_test.i: cfo_test.c.i
@@ -428,7 +428,7 @@ cfo_test.i: cfo_test.c.i
 
 # target to preprocess a source file
 cfo_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/cfo_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/cfo_test.c.i
 .PHONY : cfo_test.c.i
 
 cfo_test.s: cfo_test.c.s
@@ -436,7 +436,7 @@ cfo_test.s: cfo_test.c.s
 
 # target to generate assembly for a file
 cfo_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/cfo_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/cfo_test.dir/cfo_test.c.s
 .PHONY : cfo_test.c.s
 
 npss_file.o: npss_file.c.o
@@ -444,7 +444,7 @@ npss_file.o: npss_file.c.o
 
 # target to build an object file
 npss_file.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o
 .PHONY : npss_file.c.o
 
 npss_file.i: npss_file.c.i
@@ -452,7 +452,7 @@ npss_file.i: npss_file.c.i
 
 # target to preprocess a source file
 npss_file.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.i
 .PHONY : npss_file.c.i
 
 npss_file.s: npss_file.c.s
@@ -460,7 +460,7 @@ npss_file.s: npss_file.c.s
 
 # target to generate assembly for a file
 npss_file.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.s
 .PHONY : npss_file.c.s
 
 npss_test.o: npss_test.c.o
@@ -468,7 +468,7 @@ npss_test.o: npss_test.c.o
 
 # target to build an object file
 npss_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/npss_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/npss_test.c.o
 .PHONY : npss_test.c.o
 
 npss_test.i: npss_test.c.i
@@ -476,7 +476,7 @@ npss_test.i: npss_test.c.i
 
 # target to preprocess a source file
 npss_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/npss_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/npss_test.c.i
 .PHONY : npss_test.c.i
 
 npss_test.s: npss_test.c.s
@@ -484,7 +484,7 @@ npss_test.s: npss_test.c.s
 
 # target to generate assembly for a file
 npss_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/npss_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_test.dir/npss_test.c.s
 .PHONY : npss_test.c.s
 
 npss_usrp.o: npss_usrp.c.o
@@ -492,7 +492,7 @@ npss_usrp.o: npss_usrp.c.o
 
 # target to build an object file
 npss_usrp.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/npss_usrp.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/npss_usrp.c.o
 .PHONY : npss_usrp.c.o
 
 npss_usrp.i: npss_usrp.c.i
@@ -500,7 +500,7 @@ npss_usrp.i: npss_usrp.c.i
 
 # target to preprocess a source file
 npss_usrp.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/npss_usrp.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/npss_usrp.c.i
 .PHONY : npss_usrp.c.i
 
 npss_usrp.s: npss_usrp.c.s
@@ -508,7 +508,7 @@ npss_usrp.s: npss_usrp.c.s
 
 # target to generate assembly for a file
 npss_usrp.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/npss_usrp.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/npss_usrp.dir/npss_usrp.c.s
 .PHONY : npss_usrp.c.s
 
 nsss_test.o: nsss_test.c.o
@@ -516,7 +516,7 @@ nsss_test.o: nsss_test.c.o
 
 # target to build an object file
 nsss_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/nsss_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/nsss_test.c.o
 .PHONY : nsss_test.c.o
 
 nsss_test.i: nsss_test.c.i
@@ -524,7 +524,7 @@ nsss_test.i: nsss_test.c.i
 
 # target to preprocess a source file
 nsss_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/nsss_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/nsss_test.c.i
 .PHONY : nsss_test.c.i
 
 nsss_test.s: nsss_test.c.s
@@ -532,7 +532,7 @@ nsss_test.s: nsss_test.c.s
 
 # target to generate assembly for a file
 nsss_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/nsss_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_test.dir/nsss_test.c.s
 .PHONY : nsss_test.c.s
 
 nsss_usrp.o: nsss_usrp.c.o
@@ -540,7 +540,7 @@ nsss_usrp.o: nsss_usrp.c.o
 
 # target to build an object file
 nsss_usrp.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/nsss_usrp.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/nsss_usrp.c.o
 .PHONY : nsss_usrp.c.o
 
 nsss_usrp.i: nsss_usrp.c.i
@@ -548,7 +548,7 @@ nsss_usrp.i: nsss_usrp.c.i
 
 # target to preprocess a source file
 nsss_usrp.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/nsss_usrp.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/nsss_usrp.c.i
 .PHONY : nsss_usrp.c.i
 
 nsss_usrp.s: nsss_usrp.c.s
@@ -556,7 +556,7 @@ nsss_usrp.s: nsss_usrp.c.s
 
 # target to generate assembly for a file
 nsss_usrp.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/nsss_usrp.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/nsss_usrp.dir/nsss_usrp.c.s
 .PHONY : nsss_usrp.c.s
 
 pss_file.o: pss_file.c.o
@@ -564,7 +564,7 @@ pss_file.o: pss_file.c.o
 
 # target to build an object file
 pss_file.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/pss_file.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/pss_file.c.o
 .PHONY : pss_file.c.o
 
 pss_file.i: pss_file.c.i
@@ -572,7 +572,7 @@ pss_file.i: pss_file.c.i
 
 # target to preprocess a source file
 pss_file.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/pss_file.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/pss_file.c.i
 .PHONY : pss_file.c.i
 
 pss_file.s: pss_file.c.s
@@ -580,7 +580,7 @@ pss_file.s: pss_file.c.s
 
 # target to generate assembly for a file
 pss_file.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/pss_file.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_file.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_file.dir/pss_file.c.s
 .PHONY : pss_file.c.s
 
 pss_usrp.o: pss_usrp.c.o
@@ -588,7 +588,7 @@ pss_usrp.o: pss_usrp.c.o
 
 # target to build an object file
 pss_usrp.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/pss_usrp.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/pss_usrp.c.o
 .PHONY : pss_usrp.c.o
 
 pss_usrp.i: pss_usrp.c.i
@@ -596,7 +596,7 @@ pss_usrp.i: pss_usrp.c.i
 
 # target to preprocess a source file
 pss_usrp.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/pss_usrp.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/pss_usrp.c.i
 .PHONY : pss_usrp.c.i
 
 pss_usrp.s: pss_usrp.c.s
@@ -604,7 +604,7 @@ pss_usrp.s: pss_usrp.c.s
 
 # target to generate assembly for a file
 pss_usrp.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/pss_usrp.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/build.make lib/src/phy/sync/test/CMakeFiles/pss_usrp.dir/pss_usrp.c.s
 .PHONY : pss_usrp.c.s
 
 psss_file_test.o: psss_file_test.c.o
@@ -612,7 +612,7 @@ psss_file_test.o: psss_file_test.c.o
 
 # target to build an object file
 psss_file_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/psss_file_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/psss_file_test.c.o
 .PHONY : psss_file_test.c.o
 
 psss_file_test.i: psss_file_test.c.i
@@ -620,7 +620,7 @@ psss_file_test.i: psss_file_test.c.i
 
 # target to preprocess a source file
 psss_file_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/psss_file_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/psss_file_test.c.i
 .PHONY : psss_file_test.c.i
 
 psss_file_test.s: psss_file_test.c.s
@@ -628,7 +628,7 @@ psss_file_test.s: psss_file_test.c.s
 
 # target to generate assembly for a file
 psss_file_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/psss_file_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/psss_file_test.dir/psss_file_test.c.s
 .PHONY : psss_file_test.c.s
 
 ssb_decode_test.o: ssb_decode_test.c.o
@@ -636,7 +636,7 @@ ssb_decode_test.o: ssb_decode_test.c.o
 
 # target to build an object file
 ssb_decode_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/ssb_decode_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/ssb_decode_test.c.o
 .PHONY : ssb_decode_test.c.o
 
 ssb_decode_test.i: ssb_decode_test.c.i
@@ -644,7 +644,7 @@ ssb_decode_test.i: ssb_decode_test.c.i
 
 # target to preprocess a source file
 ssb_decode_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/ssb_decode_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/ssb_decode_test.c.i
 .PHONY : ssb_decode_test.c.i
 
 ssb_decode_test.s: ssb_decode_test.c.s
@@ -652,7 +652,7 @@ ssb_decode_test.s: ssb_decode_test.c.s
 
 # target to generate assembly for a file
 ssb_decode_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/ssb_decode_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_decode_test.dir/ssb_decode_test.c.s
 .PHONY : ssb_decode_test.c.s
 
 ssb_file_test.o: ssb_file_test.c.o
@@ -660,7 +660,7 @@ ssb_file_test.o: ssb_file_test.c.o
 
 # target to build an object file
 ssb_file_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/ssb_file_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/ssb_file_test.c.o
 .PHONY : ssb_file_test.c.o
 
 ssb_file_test.i: ssb_file_test.c.i
@@ -668,7 +668,7 @@ ssb_file_test.i: ssb_file_test.c.i
 
 # target to preprocess a source file
 ssb_file_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/ssb_file_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/ssb_file_test.c.i
 .PHONY : ssb_file_test.c.i
 
 ssb_file_test.s: ssb_file_test.c.s
@@ -676,7 +676,7 @@ ssb_file_test.s: ssb_file_test.c.s
 
 # target to generate assembly for a file
 ssb_file_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/ssb_file_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_file_test.dir/ssb_file_test.c.s
 .PHONY : ssb_file_test.c.s
 
 ssb_grid_test.o: ssb_grid_test.c.o
@@ -684,7 +684,7 @@ ssb_grid_test.o: ssb_grid_test.c.o
 
 # target to build an object file
 ssb_grid_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/ssb_grid_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/ssb_grid_test.c.o
 .PHONY : ssb_grid_test.c.o
 
 ssb_grid_test.i: ssb_grid_test.c.i
@@ -692,7 +692,7 @@ ssb_grid_test.i: ssb_grid_test.c.i
 
 # target to preprocess a source file
 ssb_grid_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/ssb_grid_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/ssb_grid_test.c.i
 .PHONY : ssb_grid_test.c.i
 
 ssb_grid_test.s: ssb_grid_test.c.s
@@ -700,7 +700,7 @@ ssb_grid_test.s: ssb_grid_test.c.s
 
 # target to generate assembly for a file
 ssb_grid_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/ssb_grid_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_grid_test.dir/ssb_grid_test.c.s
 .PHONY : ssb_grid_test.c.s
 
 ssb_measure_test.o: ssb_measure_test.c.o
@@ -708,7 +708,7 @@ ssb_measure_test.o: ssb_measure_test.c.o
 
 # target to build an object file
 ssb_measure_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/ssb_measure_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/ssb_measure_test.c.o
 .PHONY : ssb_measure_test.c.o
 
 ssb_measure_test.i: ssb_measure_test.c.i
@@ -716,7 +716,7 @@ ssb_measure_test.i: ssb_measure_test.c.i
 
 # target to preprocess a source file
 ssb_measure_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/ssb_measure_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/ssb_measure_test.c.i
 .PHONY : ssb_measure_test.c.i
 
 ssb_measure_test.s: ssb_measure_test.c.s
@@ -724,7 +724,7 @@ ssb_measure_test.s: ssb_measure_test.c.s
 
 # target to generate assembly for a file
 ssb_measure_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/ssb_measure_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/ssb_measure_test.dir/ssb_measure_test.c.s
 .PHONY : ssb_measure_test.c.s
 
 sync_nbiot_test.o: sync_nbiot_test.c.o
@@ -732,7 +732,7 @@ sync_nbiot_test.o: sync_nbiot_test.c.o
 
 # target to build an object file
 sync_nbiot_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/sync_nbiot_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/sync_nbiot_test.c.o
 .PHONY : sync_nbiot_test.c.o
 
 sync_nbiot_test.i: sync_nbiot_test.c.i
@@ -740,7 +740,7 @@ sync_nbiot_test.i: sync_nbiot_test.c.i
 
 # target to preprocess a source file
 sync_nbiot_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/sync_nbiot_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/sync_nbiot_test.c.i
 .PHONY : sync_nbiot_test.c.i
 
 sync_nbiot_test.s: sync_nbiot_test.c.s
@@ -748,7 +748,7 @@ sync_nbiot_test.s: sync_nbiot_test.c.s
 
 # target to generate assembly for a file
 sync_nbiot_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/sync_nbiot_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_nbiot_test.dir/sync_nbiot_test.c.s
 .PHONY : sync_nbiot_test.c.s
 
 sync_sl_test.o: sync_sl_test.c.o
@@ -756,7 +756,7 @@ sync_sl_test.o: sync_sl_test.c.o
 
 # target to build an object file
 sync_sl_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/sync_sl_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/sync_sl_test.c.o
 .PHONY : sync_sl_test.c.o
 
 sync_sl_test.i: sync_sl_test.c.i
@@ -764,7 +764,7 @@ sync_sl_test.i: sync_sl_test.c.i
 
 # target to preprocess a source file
 sync_sl_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/sync_sl_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/sync_sl_test.c.i
 .PHONY : sync_sl_test.c.i
 
 sync_sl_test.s: sync_sl_test.c.s
@@ -772,7 +772,7 @@ sync_sl_test.s: sync_sl_test.c.s
 
 # target to generate assembly for a file
 sync_sl_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/sync_sl_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_sl_test.dir/sync_sl_test.c.s
 .PHONY : sync_sl_test.c.s
 
 sync_test.o: sync_test.c.o
@@ -780,7 +780,7 @@ sync_test.o: sync_test.c.o
 
 # target to build an object file
 sync_test.c.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o
 .PHONY : sync_test.c.o
 
 sync_test.i: sync_test.c.i
@@ -788,7 +788,7 @@ sync_test.i: sync_test.c.i
 
 # target to preprocess a source file
 sync_test.c.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.i
 .PHONY : sync_test.c.i
 
 sync_test.s: sync_test.c.s
@@ -796,7 +796,7 @@ sync_test.s: sync_test.c.s
 
 # target to generate assembly for a file
 sync_test.c.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/sync/test/CMakeFiles/sync_test.dir/build.make lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.s
 .PHONY : sync_test.c.s
 
 # Help Target
@@ -889,6 +889,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

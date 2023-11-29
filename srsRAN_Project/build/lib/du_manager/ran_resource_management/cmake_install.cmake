@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/lib/du_manager/ran_resource_management
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/du_manager/ran_resource_management
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

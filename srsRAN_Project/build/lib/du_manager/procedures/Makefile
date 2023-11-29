@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_Project/build/lib/du_manager/procedures//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/du_manager/procedures//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/rule
 .PHONY : lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ srsran_du_manager_procedures: lib/du_manager/procedures/CMakeFiles/srsran_du_man
 
 # fast build rule for target.
 srsran_du_manager_procedures/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build
 .PHONY : srsran_du_manager_procedures/fast
 
 du_stop_procedure.o: du_stop_procedure.cpp.o
@@ -190,7 +190,7 @@ du_stop_procedure.o: du_stop_procedure.cpp.o
 
 # target to build an object file
 du_stop_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_stop_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_stop_procedure.cpp.o
 .PHONY : du_stop_procedure.cpp.o
 
 du_stop_procedure.i: du_stop_procedure.cpp.i
@@ -198,7 +198,7 @@ du_stop_procedure.i: du_stop_procedure.cpp.i
 
 # target to preprocess a source file
 du_stop_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_stop_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_stop_procedure.cpp.i
 .PHONY : du_stop_procedure.cpp.i
 
 du_stop_procedure.s: du_stop_procedure.cpp.s
@@ -206,7 +206,7 @@ du_stop_procedure.s: du_stop_procedure.cpp.s
 
 # target to generate assembly for a file
 du_stop_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_stop_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_stop_procedure.cpp.s
 .PHONY : du_stop_procedure.cpp.s
 
 du_ue_ric_configuration_procedure.o: du_ue_ric_configuration_procedure.cpp.o
@@ -214,7 +214,7 @@ du_ue_ric_configuration_procedure.o: du_ue_ric_configuration_procedure.cpp.o
 
 # target to build an object file
 du_ue_ric_configuration_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_ue_ric_configuration_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_ue_ric_configuration_procedure.cpp.o
 .PHONY : du_ue_ric_configuration_procedure.cpp.o
 
 du_ue_ric_configuration_procedure.i: du_ue_ric_configuration_procedure.cpp.i
@@ -222,7 +222,7 @@ du_ue_ric_configuration_procedure.i: du_ue_ric_configuration_procedure.cpp.i
 
 # target to preprocess a source file
 du_ue_ric_configuration_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_ue_ric_configuration_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_ue_ric_configuration_procedure.cpp.i
 .PHONY : du_ue_ric_configuration_procedure.cpp.i
 
 du_ue_ric_configuration_procedure.s: du_ue_ric_configuration_procedure.cpp.s
@@ -230,7 +230,7 @@ du_ue_ric_configuration_procedure.s: du_ue_ric_configuration_procedure.cpp.s
 
 # target to generate assembly for a file
 du_ue_ric_configuration_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_ue_ric_configuration_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/du_ue_ric_configuration_procedure.cpp.s
 .PHONY : du_ue_ric_configuration_procedure.cpp.s
 
 initial_du_setup_procedure.o: initial_du_setup_procedure.cpp.o
@@ -238,7 +238,7 @@ initial_du_setup_procedure.o: initial_du_setup_procedure.cpp.o
 
 # target to build an object file
 initial_du_setup_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/initial_du_setup_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/initial_du_setup_procedure.cpp.o
 .PHONY : initial_du_setup_procedure.cpp.o
 
 initial_du_setup_procedure.i: initial_du_setup_procedure.cpp.i
@@ -246,7 +246,7 @@ initial_du_setup_procedure.i: initial_du_setup_procedure.cpp.i
 
 # target to preprocess a source file
 initial_du_setup_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/initial_du_setup_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/initial_du_setup_procedure.cpp.i
 .PHONY : initial_du_setup_procedure.cpp.i
 
 initial_du_setup_procedure.s: initial_du_setup_procedure.cpp.s
@@ -254,7 +254,7 @@ initial_du_setup_procedure.s: initial_du_setup_procedure.cpp.s
 
 # target to generate assembly for a file
 initial_du_setup_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/initial_du_setup_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/initial_du_setup_procedure.cpp.s
 .PHONY : initial_du_setup_procedure.cpp.s
 
 ue_configuration_procedure.o: ue_configuration_procedure.cpp.o
@@ -262,7 +262,7 @@ ue_configuration_procedure.o: ue_configuration_procedure.cpp.o
 
 # target to build an object file
 ue_configuration_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_configuration_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_configuration_procedure.cpp.o
 .PHONY : ue_configuration_procedure.cpp.o
 
 ue_configuration_procedure.i: ue_configuration_procedure.cpp.i
@@ -270,7 +270,7 @@ ue_configuration_procedure.i: ue_configuration_procedure.cpp.i
 
 # target to preprocess a source file
 ue_configuration_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_configuration_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_configuration_procedure.cpp.i
 .PHONY : ue_configuration_procedure.cpp.i
 
 ue_configuration_procedure.s: ue_configuration_procedure.cpp.s
@@ -278,7 +278,7 @@ ue_configuration_procedure.s: ue_configuration_procedure.cpp.s
 
 # target to generate assembly for a file
 ue_configuration_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_configuration_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_configuration_procedure.cpp.s
 .PHONY : ue_configuration_procedure.cpp.s
 
 ue_creation_procedure.o: ue_creation_procedure.cpp.o
@@ -286,7 +286,7 @@ ue_creation_procedure.o: ue_creation_procedure.cpp.o
 
 # target to build an object file
 ue_creation_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_creation_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_creation_procedure.cpp.o
 .PHONY : ue_creation_procedure.cpp.o
 
 ue_creation_procedure.i: ue_creation_procedure.cpp.i
@@ -294,7 +294,7 @@ ue_creation_procedure.i: ue_creation_procedure.cpp.i
 
 # target to preprocess a source file
 ue_creation_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_creation_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_creation_procedure.cpp.i
 .PHONY : ue_creation_procedure.cpp.i
 
 ue_creation_procedure.s: ue_creation_procedure.cpp.s
@@ -302,7 +302,7 @@ ue_creation_procedure.s: ue_creation_procedure.cpp.s
 
 # target to generate assembly for a file
 ue_creation_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_creation_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_creation_procedure.cpp.s
 .PHONY : ue_creation_procedure.cpp.s
 
 ue_deletion_procedure.o: ue_deletion_procedure.cpp.o
@@ -310,7 +310,7 @@ ue_deletion_procedure.o: ue_deletion_procedure.cpp.o
 
 # target to build an object file
 ue_deletion_procedure.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_deletion_procedure.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_deletion_procedure.cpp.o
 .PHONY : ue_deletion_procedure.cpp.o
 
 ue_deletion_procedure.i: ue_deletion_procedure.cpp.i
@@ -318,7 +318,7 @@ ue_deletion_procedure.i: ue_deletion_procedure.cpp.i
 
 # target to preprocess a source file
 ue_deletion_procedure.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_deletion_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_deletion_procedure.cpp.i
 .PHONY : ue_deletion_procedure.cpp.i
 
 ue_deletion_procedure.s: ue_deletion_procedure.cpp.s
@@ -326,7 +326,7 @@ ue_deletion_procedure.s: ue_deletion_procedure.cpp.s
 
 # target to generate assembly for a file
 ue_deletion_procedure.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_deletion_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/build.make lib/du_manager/procedures/CMakeFiles/srsran_du_manager_procedures.dir/ue_deletion_procedure.cpp.s
 .PHONY : ue_deletion_procedure.cpp.s
 
 # Help Target
@@ -372,6 +372,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

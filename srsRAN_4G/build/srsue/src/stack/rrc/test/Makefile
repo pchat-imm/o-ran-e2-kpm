@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/oem/o-ran-e2/srsRAN_4G/build/CPackSourceConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_4G/build/srsue/src/stack/rrc/test//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc/test//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rule
 .PHONY : srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ rrc_reconfig_test: srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rul
 
 # fast build rule for target.
 rrc_reconfig_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build
 .PHONY : rrc_reconfig_test/fast
 
 # Convenience name for target.
 srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rule
 .PHONY : srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ rrc_meas_test: srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rule
 
 # fast build rule for target.
 rrc_meas_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build
 .PHONY : rrc_meas_test/fast
 
 # Convenience name for target.
 srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rule
 .PHONY : srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ rrc_phy_ctrl_test: srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rul
 
 # fast build rule for target.
 rrc_phy_ctrl_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build
 .PHONY : rrc_phy_ctrl_test/fast
 
 # Convenience name for target.
 srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rule
 .PHONY : srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ rrc_cell_test: srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rule
 
 # fast build rule for target.
 rrc_cell_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build
 .PHONY : rrc_cell_test/fast
 
 # Convenience name for target.
 srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rule
 .PHONY : srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rule
 
 # Convenience name for target.
@@ -258,7 +258,7 @@ rrc_rlf_report_test: srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir
 
 # fast build rule for target.
 rrc_rlf_report_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build
 .PHONY : rrc_rlf_report_test/fast
 
 rrc_cell_test.o: rrc_cell_test.cc.o
@@ -266,7 +266,7 @@ rrc_cell_test.o: rrc_cell_test.cc.o
 
 # target to build an object file
 rrc_cell_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rrc_cell_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rrc_cell_test.cc.o
 .PHONY : rrc_cell_test.cc.o
 
 rrc_cell_test.i: rrc_cell_test.cc.i
@@ -274,7 +274,7 @@ rrc_cell_test.i: rrc_cell_test.cc.i
 
 # target to preprocess a source file
 rrc_cell_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rrc_cell_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rrc_cell_test.cc.i
 .PHONY : rrc_cell_test.cc.i
 
 rrc_cell_test.s: rrc_cell_test.cc.s
@@ -282,7 +282,7 @@ rrc_cell_test.s: rrc_cell_test.cc.s
 
 # target to generate assembly for a file
 rrc_cell_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rrc_cell_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_cell_test.dir/rrc_cell_test.cc.s
 .PHONY : rrc_cell_test.cc.s
 
 rrc_meas_test.o: rrc_meas_test.cc.o
@@ -290,7 +290,7 @@ rrc_meas_test.o: rrc_meas_test.cc.o
 
 # target to build an object file
 rrc_meas_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rrc_meas_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rrc_meas_test.cc.o
 .PHONY : rrc_meas_test.cc.o
 
 rrc_meas_test.i: rrc_meas_test.cc.i
@@ -298,7 +298,7 @@ rrc_meas_test.i: rrc_meas_test.cc.i
 
 # target to preprocess a source file
 rrc_meas_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rrc_meas_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rrc_meas_test.cc.i
 .PHONY : rrc_meas_test.cc.i
 
 rrc_meas_test.s: rrc_meas_test.cc.s
@@ -306,7 +306,7 @@ rrc_meas_test.s: rrc_meas_test.cc.s
 
 # target to generate assembly for a file
 rrc_meas_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rrc_meas_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_meas_test.dir/rrc_meas_test.cc.s
 .PHONY : rrc_meas_test.cc.s
 
 rrc_phy_ctrl_test.o: rrc_phy_ctrl_test.cc.o
@@ -314,7 +314,7 @@ rrc_phy_ctrl_test.o: rrc_phy_ctrl_test.cc.o
 
 # target to build an object file
 rrc_phy_ctrl_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rrc_phy_ctrl_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rrc_phy_ctrl_test.cc.o
 .PHONY : rrc_phy_ctrl_test.cc.o
 
 rrc_phy_ctrl_test.i: rrc_phy_ctrl_test.cc.i
@@ -322,7 +322,7 @@ rrc_phy_ctrl_test.i: rrc_phy_ctrl_test.cc.i
 
 # target to preprocess a source file
 rrc_phy_ctrl_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rrc_phy_ctrl_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rrc_phy_ctrl_test.cc.i
 .PHONY : rrc_phy_ctrl_test.cc.i
 
 rrc_phy_ctrl_test.s: rrc_phy_ctrl_test.cc.s
@@ -330,7 +330,7 @@ rrc_phy_ctrl_test.s: rrc_phy_ctrl_test.cc.s
 
 # target to generate assembly for a file
 rrc_phy_ctrl_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rrc_phy_ctrl_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_phy_ctrl_test.dir/rrc_phy_ctrl_test.cc.s
 .PHONY : rrc_phy_ctrl_test.cc.s
 
 rrc_reconfig_test.o: rrc_reconfig_test.cc.o
@@ -338,7 +338,7 @@ rrc_reconfig_test.o: rrc_reconfig_test.cc.o
 
 # target to build an object file
 rrc_reconfig_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.o
 .PHONY : rrc_reconfig_test.cc.o
 
 rrc_reconfig_test.i: rrc_reconfig_test.cc.i
@@ -346,7 +346,7 @@ rrc_reconfig_test.i: rrc_reconfig_test.cc.i
 
 # target to preprocess a source file
 rrc_reconfig_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.i
 .PHONY : rrc_reconfig_test.cc.i
 
 rrc_reconfig_test.s: rrc_reconfig_test.cc.s
@@ -354,7 +354,7 @@ rrc_reconfig_test.s: rrc_reconfig_test.cc.s
 
 # target to generate assembly for a file
 rrc_reconfig_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.s
 .PHONY : rrc_reconfig_test.cc.s
 
 rrc_rlf_report_test.o: rrc_rlf_report_test.cc.o
@@ -362,7 +362,7 @@ rrc_rlf_report_test.o: rrc_rlf_report_test.cc.o
 
 # target to build an object file
 rrc_rlf_report_test.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rrc_rlf_report_test.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rrc_rlf_report_test.cc.o
 .PHONY : rrc_rlf_report_test.cc.o
 
 rrc_rlf_report_test.i: rrc_rlf_report_test.cc.i
@@ -370,7 +370,7 @@ rrc_rlf_report_test.i: rrc_rlf_report_test.cc.i
 
 # target to preprocess a source file
 rrc_rlf_report_test.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rrc_rlf_report_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rrc_rlf_report_test.cc.i
 .PHONY : rrc_rlf_report_test.cc.i
 
 rrc_rlf_report_test.s: rrc_rlf_report_test.cc.s
@@ -378,7 +378,7 @@ rrc_rlf_report_test.s: rrc_rlf_report_test.cc.s
 
 # target to generate assembly for a file
 rrc_rlf_report_test.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rrc_rlf_report_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/build.make srsue/src/stack/rrc/test/CMakeFiles/rrc_rlf_report_test.dir/rrc_rlf_report_test.cc.s
 .PHONY : rrc_rlf_report_test.cc.s
 
 # Help Target
@@ -427,6 +427,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -2,4 +2,4 @@
  du_high
  integrationtest
 # Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/integrationtests/du_high/mac_test_mode_adapter_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/integrationtests/du_high/mac_test_mode_adapter_test.cpp

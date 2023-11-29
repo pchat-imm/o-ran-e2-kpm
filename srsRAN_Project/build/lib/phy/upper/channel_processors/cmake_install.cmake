@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/lib/phy/upper/channel_processors
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/phy/upper/channel_processors
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,82 +44,70 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/pusch/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/pusch/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_channel_processors.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_channel_processors.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pbch_encoder.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pbch_encoder.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pbch_modulator.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pbch_modulator.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdcch_encoder.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdcch_encoder.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdcch_modulator.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdcch_modulator.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdcch_processor.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdcch_processor.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdsch_encoder.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdsch_encoder.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdsch_modulator.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdsch_modulator.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdsch_processor.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pdsch_processor.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_prach_detector.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_prach_detector.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pucch_demodulator.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pucch_demodulator.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pucch_detector.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pucch_detector.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pucch_processor.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_pucch_processor.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/pusch/libsrsran_pusch_decoder.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/pusch/libsrsran_pusch_processor.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/pusch/libsrsran_pusch_demodulator.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_ssb_processor.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/pusch/libsrsran_pusch_processor.a")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_ssb_processor.a")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_uci_decoder.a")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/oem/o-ran-e2/srsRAN_Project/build/lib/phy/upper/channel_processors/pusch/libsrsran_ulsch_demux.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/phy/upper/channel_processors/libsrsran_uci_decoder.a")
 endif()
 

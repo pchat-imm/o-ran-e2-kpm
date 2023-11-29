@@ -1,8 +1,8 @@
 lib/src/asn1/CMakeFiles/srsran_asn1.dir/liblte_mme.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/asn1/liblte_mme.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/liblte_mme.cc \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/asn1/liblte_mme.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/asn1/liblte_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/asn1/liblte_mme.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/asn1/liblte_common.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -139,5 +139,5 @@ lib/src/asn1/CMakeFiles/srsran_asn1.dir/liblte_mme.cc.o: \
  /usr/include/c++/10/bits/charconv.h \
  /usr/include/c++/10/bits/functional_hash.h \
  /usr/include/c++/10/bits/basic_string.tcc \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/common/liblte_security.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/asn1/liblte_common.h
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/common/liblte_security.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/asn1/liblte_common.h

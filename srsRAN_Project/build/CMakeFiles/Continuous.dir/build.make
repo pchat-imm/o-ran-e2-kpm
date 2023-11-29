@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 # Utility rule file for Continuous.
 
@@ -82,6 +82,6 @@ CMakeFiles/Continuous.dir/clean:
 .PHONY : CMakeFiles/Continuous.dir/clean
 
 CMakeFiles/Continuous.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_Project /home/oem/o-ran-e2/srsRAN_Project /home/oem/o-ran-e2/srsRAN_Project/build /home/oem/o-ran-e2/srsRAN_Project/build /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_Project /home/chatchamon/o-ran-e2-kpm/srsRAN_Project /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Continuous.dir/depend
 

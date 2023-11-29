@@ -1,7 +1,7 @@
 lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/utils/test/ring_buffer_test.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/utils/test/ring_buffer_test.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/support/srsran_test.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/support/srsran_test.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -90,10 +90,10 @@ lib/src/phy/utils/test/CMakeFiles/ringbuffer_test.dir/ring_buffer_test.c.o: \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/ringbuffer.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/ringbuffer.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/vector.h
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/vector.h

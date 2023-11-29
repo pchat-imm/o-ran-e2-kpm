@@ -1,6 +1,14 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/srsran_pusch_processor.dir/pusch_codeblock_decoder.cpp.o"
+  "CMakeFiles/srsran_pusch_processor.dir/pusch_codeblock_decoder.cpp.o.d"
+  "CMakeFiles/srsran_pusch_processor.dir/pusch_decoder_impl.cpp.o"
+  "CMakeFiles/srsran_pusch_processor.dir/pusch_decoder_impl.cpp.o.d"
+  "CMakeFiles/srsran_pusch_processor.dir/pusch_demodulator_impl.cpp.o"
+  "CMakeFiles/srsran_pusch_processor.dir/pusch_demodulator_impl.cpp.o.d"
   "CMakeFiles/srsran_pusch_processor.dir/pusch_processor_impl.cpp.o"
   "CMakeFiles/srsran_pusch_processor.dir/pusch_processor_impl.cpp.o.d"
+  "CMakeFiles/srsran_pusch_processor.dir/ulsch_demultiplex_impl.cpp.o"
+  "CMakeFiles/srsran_pusch_processor.dir/ulsch_demultiplex_impl.cpp.o.d"
   "libsrsran_pusch_processor.a"
   "libsrsran_pusch_processor.pdb"
 )

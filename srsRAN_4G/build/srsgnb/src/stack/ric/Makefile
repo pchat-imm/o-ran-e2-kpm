@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_4G
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_4G/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/oem/o-ran-e2/srsRAN_4G/build/CPackSourceConfig.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_4G/build/srsgnb/src/stack/ric//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_4G/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/rule
 .PHONY : srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ srsgnb_ric: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/rule
 
 # fast build rule for target.
 srsgnb_ric/fast:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build
 .PHONY : srsgnb_ric/fast
 
 e2_agent.o: e2_agent.cc.o
@@ -210,7 +210,7 @@ e2_agent.o: e2_agent.cc.o
 
 # target to build an object file
 e2_agent.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o
 .PHONY : e2_agent.cc.o
 
 e2_agent.i: e2_agent.cc.i
@@ -218,7 +218,7 @@ e2_agent.i: e2_agent.cc.i
 
 # target to preprocess a source file
 e2_agent.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.i
 .PHONY : e2_agent.cc.i
 
 e2_agent.s: e2_agent.cc.s
@@ -226,7 +226,7 @@ e2_agent.s: e2_agent.cc.s
 
 # target to generate assembly for a file
 e2_agent.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.s
 .PHONY : e2_agent.cc.s
 
 e2ap.o: e2ap.cc.o
@@ -234,7 +234,7 @@ e2ap.o: e2ap.cc.o
 
 # target to build an object file
 e2ap.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o
 .PHONY : e2ap.cc.o
 
 e2ap.i: e2ap.cc.i
@@ -242,7 +242,7 @@ e2ap.i: e2ap.cc.i
 
 # target to preprocess a source file
 e2ap.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.i
 .PHONY : e2ap.cc.i
 
 e2ap.s: e2ap.cc.s
@@ -250,7 +250,7 @@ e2ap.s: e2ap.cc.s
 
 # target to generate assembly for a file
 e2ap.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.s
 .PHONY : e2ap.cc.s
 
 e2ap_ric_subscription.o: e2ap_ric_subscription.cc.o
@@ -258,7 +258,7 @@ e2ap_ric_subscription.o: e2ap_ric_subscription.cc.o
 
 # target to build an object file
 e2ap_ric_subscription.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o
 .PHONY : e2ap_ric_subscription.cc.o
 
 e2ap_ric_subscription.i: e2ap_ric_subscription.cc.i
@@ -266,7 +266,7 @@ e2ap_ric_subscription.i: e2ap_ric_subscription.cc.i
 
 # target to preprocess a source file
 e2ap_ric_subscription.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.i
 .PHONY : e2ap_ric_subscription.cc.i
 
 e2ap_ric_subscription.s: e2ap_ric_subscription.cc.s
@@ -274,7 +274,7 @@ e2ap_ric_subscription.s: e2ap_ric_subscription.cc.s
 
 # target to generate assembly for a file
 e2ap_ric_subscription.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.s
 .PHONY : e2ap_ric_subscription.cc.s
 
 e2sm_kpm.o: e2sm_kpm.cc.o
@@ -282,7 +282,7 @@ e2sm_kpm.o: e2sm_kpm.cc.o
 
 # target to build an object file
 e2sm_kpm.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o
 .PHONY : e2sm_kpm.cc.o
 
 e2sm_kpm.i: e2sm_kpm.cc.i
@@ -290,7 +290,7 @@ e2sm_kpm.i: e2sm_kpm.cc.i
 
 # target to preprocess a source file
 e2sm_kpm.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.i
 .PHONY : e2sm_kpm.cc.i
 
 e2sm_kpm.s: e2sm_kpm.cc.s
@@ -298,7 +298,7 @@ e2sm_kpm.s: e2sm_kpm.cc.s
 
 # target to generate assembly for a file
 e2sm_kpm.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.s
 .PHONY : e2sm_kpm.cc.s
 
 e2sm_kpm_common.o: e2sm_kpm_common.cc.o
@@ -306,7 +306,7 @@ e2sm_kpm_common.o: e2sm_kpm_common.cc.o
 
 # target to build an object file
 e2sm_kpm_common.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o
 .PHONY : e2sm_kpm_common.cc.o
 
 e2sm_kpm_common.i: e2sm_kpm_common.cc.i
@@ -314,7 +314,7 @@ e2sm_kpm_common.i: e2sm_kpm_common.cc.i
 
 # target to preprocess a source file
 e2sm_kpm_common.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.i
 .PHONY : e2sm_kpm_common.cc.i
 
 e2sm_kpm_common.s: e2sm_kpm_common.cc.s
@@ -322,7 +322,7 @@ e2sm_kpm_common.s: e2sm_kpm_common.cc.s
 
 # target to generate assembly for a file
 e2sm_kpm_common.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.s
 .PHONY : e2sm_kpm_common.cc.s
 
 e2sm_kpm_report_service.o: e2sm_kpm_report_service.cc.o
@@ -330,7 +330,7 @@ e2sm_kpm_report_service.o: e2sm_kpm_report_service.cc.o
 
 # target to build an object file
 e2sm_kpm_report_service.cc.o:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o
 .PHONY : e2sm_kpm_report_service.cc.o
 
 e2sm_kpm_report_service.i: e2sm_kpm_report_service.cc.i
@@ -338,7 +338,7 @@ e2sm_kpm_report_service.i: e2sm_kpm_report_service.cc.i
 
 # target to preprocess a source file
 e2sm_kpm_report_service.cc.i:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.i
 .PHONY : e2sm_kpm_report_service.cc.i
 
 e2sm_kpm_report_service.s: e2sm_kpm_report_service.cc.s
@@ -346,7 +346,7 @@ e2sm_kpm_report_service.s: e2sm_kpm_report_service.cc.s
 
 # target to generate assembly for a file
 e2sm_kpm_report_service.cc.s:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/build.make srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.s
 .PHONY : e2sm_kpm_report_service.cc.s
 
 # Help Target
@@ -394,6 +394,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

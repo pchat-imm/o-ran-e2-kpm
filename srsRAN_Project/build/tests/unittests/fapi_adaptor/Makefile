@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/fapi_adaptor//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/rule
 .PHONY : tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ fapi_adaptor_performance_dl_tti_request: tests/unittests/fapi_adaptor/CMakeFiles
 
 # fast build rule for target.
 fapi_adaptor_performance_dl_tti_request/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build
 .PHONY : fapi_adaptor_performance_dl_tti_request/fast
 
 # Convenience name for target.
 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/rule
 .PHONY : tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/rule
 
 # Convenience name for target.
@@ -196,15 +196,29 @@ precoding_matrix_table_generator_test: tests/unittests/fapi_adaptor/CMakeFiles/p
 
 # fast build rule for target.
 precoding_matrix_table_generator_test/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build
 .PHONY : precoding_matrix_table_generator_test/fast
+
+# Convenience name for target.
+tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/rule:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/rule
+.PHONY : tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/rule
+
+# Convenience name for target.
+uci_part2_correspondence_test: tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/rule
+.PHONY : uci_part2_correspondence_test
+
+# fast build rule for target.
+uci_part2_correspondence_test/fast:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/build
+.PHONY : uci_part2_correspondence_test/fast
 
 adaptor_performance_dl_tti_request.o: adaptor_performance_dl_tti_request.cpp.o
 .PHONY : adaptor_performance_dl_tti_request.o
 
 # target to build an object file
 adaptor_performance_dl_tti_request.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/adaptor_performance_dl_tti_request.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/adaptor_performance_dl_tti_request.cpp.o
 .PHONY : adaptor_performance_dl_tti_request.cpp.o
 
 adaptor_performance_dl_tti_request.i: adaptor_performance_dl_tti_request.cpp.i
@@ -212,7 +226,7 @@ adaptor_performance_dl_tti_request.i: adaptor_performance_dl_tti_request.cpp.i
 
 # target to preprocess a source file
 adaptor_performance_dl_tti_request.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/adaptor_performance_dl_tti_request.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/adaptor_performance_dl_tti_request.cpp.i
 .PHONY : adaptor_performance_dl_tti_request.cpp.i
 
 adaptor_performance_dl_tti_request.s: adaptor_performance_dl_tti_request.cpp.s
@@ -220,7 +234,7 @@ adaptor_performance_dl_tti_request.s: adaptor_performance_dl_tti_request.cpp.s
 
 # target to generate assembly for a file
 adaptor_performance_dl_tti_request.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/adaptor_performance_dl_tti_request.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/fapi_adaptor_performance_dl_tti_request.dir/adaptor_performance_dl_tti_request.cpp.s
 .PHONY : adaptor_performance_dl_tti_request.cpp.s
 
 precoding_matrix_table_generator_test.o: precoding_matrix_table_generator_test.cpp.o
@@ -228,7 +242,7 @@ precoding_matrix_table_generator_test.o: precoding_matrix_table_generator_test.c
 
 # target to build an object file
 precoding_matrix_table_generator_test.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.o
 .PHONY : precoding_matrix_table_generator_test.cpp.o
 
 precoding_matrix_table_generator_test.i: precoding_matrix_table_generator_test.cpp.i
@@ -236,7 +250,7 @@ precoding_matrix_table_generator_test.i: precoding_matrix_table_generator_test.c
 
 # target to preprocess a source file
 precoding_matrix_table_generator_test.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.i
 .PHONY : precoding_matrix_table_generator_test.cpp.i
 
 precoding_matrix_table_generator_test.s: precoding_matrix_table_generator_test.cpp.s
@@ -244,8 +258,32 @@ precoding_matrix_table_generator_test.s: precoding_matrix_table_generator_test.c
 
 # target to generate assembly for a file
 precoding_matrix_table_generator_test.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/precoding_matrix_table_generator_test.dir/precoding_matrix_table_generator_test.cpp.s
 .PHONY : precoding_matrix_table_generator_test.cpp.s
+
+uci_part2_correspondence_test.o: uci_part2_correspondence_test.cpp.o
+.PHONY : uci_part2_correspondence_test.o
+
+# target to build an object file
+uci_part2_correspondence_test.cpp.o:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/uci_part2_correspondence_test.cpp.o
+.PHONY : uci_part2_correspondence_test.cpp.o
+
+uci_part2_correspondence_test.i: uci_part2_correspondence_test.cpp.i
+.PHONY : uci_part2_correspondence_test.i
+
+# target to preprocess a source file
+uci_part2_correspondence_test.cpp.i:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/uci_part2_correspondence_test.cpp.i
+.PHONY : uci_part2_correspondence_test.cpp.i
+
+uci_part2_correspondence_test.s: uci_part2_correspondence_test.cpp.s
+.PHONY : uci_part2_correspondence_test.s
+
+# target to generate assembly for a file
+uci_part2_correspondence_test.cpp.s:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/build.make tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/uci_part2_correspondence_test.cpp.s
+.PHONY : uci_part2_correspondence_test.cpp.s
 
 # Help Target
 help:
@@ -262,12 +300,16 @@ help:
 	@echo "... test"
 	@echo "... fapi_adaptor_performance_dl_tti_request"
 	@echo "... precoding_matrix_table_generator_test"
+	@echo "... uci_part2_correspondence_test"
 	@echo "... adaptor_performance_dl_tti_request.o"
 	@echo "... adaptor_performance_dl_tti_request.i"
 	@echo "... adaptor_performance_dl_tti_request.s"
 	@echo "... precoding_matrix_table_generator_test.o"
 	@echo "... precoding_matrix_table_generator_test.i"
 	@echo "... precoding_matrix_table_generator_test.s"
+	@echo "... uci_part2_correspondence_test.o"
+	@echo "... uci_part2_correspondence_test.i"
+	@echo "... uci_part2_correspondence_test.s"
 .PHONY : help
 
 
@@ -279,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -38,8 +38,8 @@ static char build_mode[] = "unknown";
 #endif
 #endif
 
-static char build_hash[] = "5e6f50a20";
+static char build_hash[] = "374200dee";
 
-static char build_info[] = "commit 5e6f50a20 on branch main";
+static char build_info[] = "commit 374200dee on branch main";
 
 } // namespace srsran

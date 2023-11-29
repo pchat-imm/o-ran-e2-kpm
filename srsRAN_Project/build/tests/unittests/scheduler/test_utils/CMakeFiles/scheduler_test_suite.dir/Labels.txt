@@ -1,5 +1,5 @@
 # Directory labels
  sched
 # Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/scheduler/test_utils/scheduler_test_suite.cpp
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/scheduler/test_utils/scheduler_output_test_helpers.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/test_utils/scheduler_test_suite.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/test_utils/scheduler_output_test_helpers.cpp

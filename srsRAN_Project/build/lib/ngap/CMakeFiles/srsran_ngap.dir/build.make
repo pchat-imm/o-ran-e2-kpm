@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 # Include any dependencies generated for this target.
 include lib/ngap/CMakeFiles/srsran_ngap.dir/depend.make
@@ -72,156 +72,170 @@ include lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o: ../lib/ngap/ngap_factory.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o -MF CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o.d -o CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o -MF CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o.d -o CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_factory.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_factory.cpp > CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_factory.cpp > CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_factory.cpp -o CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_factory.cpp -o CMakeFiles/srsran_ngap.dir/ngap_factory.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o: ../lib/ngap/ngap_impl.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o -MF CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o.d -o CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o -MF CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o.d -o CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_impl.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_impl.cpp > CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_impl.cpp > CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_impl.cpp -o CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_impl.cpp -o CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o: ../lib/ngap/ngap_asn1_packer.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o -MF CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o.d -o CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_asn1_packer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o -MF CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o.d -o CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_asn1_packer.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_asn1_packer.cpp > CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_asn1_packer.cpp > CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/ngap_asn1_packer.cpp -o CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/ngap_asn1_packer.cpp -o CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o: ../lib/ngap/procedures/ng_setup_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ng_setup_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ng_setup_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ng_setup_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ng_setup_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ng_setup_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ng_setup_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o: ../lib/ngap/procedures/ngap_initial_context_setup_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_initial_context_setup_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_initial_context_setup_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_initial_context_setup_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_initial_context_setup_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_initial_context_setup_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_initial_context_setup_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.s
+
+lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
+lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o: ../lib/ngap/procedures/ngap_dl_nas_message_transfer_procedure.cpp
+lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_dl_nas_message_transfer_procedure.cpp
+
+lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.i"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_dl_nas_message_transfer_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.i
+
+lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.s"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_dl_nas_message_transfer_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o: ../lib/ngap/procedures/ngap_pdu_session_resource_setup_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_setup_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_setup_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_setup_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_setup_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_setup_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_setup_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o: ../lib/ngap/procedures/ngap_pdu_session_resource_modify_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_modify_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_modify_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_modify_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_modify_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_modify_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_modify_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o: ../lib/ngap/procedures/ngap_pdu_session_resource_release_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_release_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_release_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_release_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_release_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_release_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_pdu_session_resource_release_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o: ../lib/ngap/procedures/ngap_handover_preparation_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_handover_preparation_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_handover_preparation_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_handover_preparation_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_handover_preparation_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_handover_preparation_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_handover_preparation_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_preparation_procedure.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o: ../lib/ngap/procedures/ngap_handover_resource_allocation_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_handover_resource_allocation_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_handover_resource_allocation_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_handover_resource_allocation_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_handover_resource_allocation_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_handover_resource_allocation_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_handover_resource_allocation_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_handover_resource_allocation_procedure.cpp.s
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/flags.make
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o: ../lib/ngap/procedures/ngap_ue_context_release_procedure.cpp
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o: lib/ngap/CMakeFiles/srsran_ngap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o -c /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_ue_context_release_procedure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o -MF CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o.d -o CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_ue_context_release_procedure.cpp
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.i"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_ue_context_release_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_ue_context_release_procedure.cpp > CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.i
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.s"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/o-ran-e2/srsRAN_Project/lib/ngap/procedures/ngap_ue_context_release_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap/procedures/ngap_ue_context_release_procedure.cpp -o CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.s
 
 # Object files for target srsran_ngap
 srsran_ngap_OBJECTS = \
@@ -230,6 +244,7 @@ srsran_ngap_OBJECTS = \
 "CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o" \
 "CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o" \
 "CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o" \
+"CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o" \
 "CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o" \
 "CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o" \
 "CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o" \
@@ -245,6 +260,7 @@ lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_impl.cpp.o
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/ngap_asn1_packer.cpp.o
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ng_setup_procedure.cpp.o
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_initial_context_setup_procedure.cpp.o
+lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_dl_nas_message_transfer_procedure.cpp.o
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_setup_procedure.cpp.o
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_modify_procedure.cpp.o
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_pdu_session_resource_release_procedure.cpp.o
@@ -253,19 +269,19 @@ lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_h
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/procedures/ngap_ue_context_release_procedure.cpp.o
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/build.make
 lib/ngap/libsrsran_ngap.a: lib/ngap/CMakeFiles/srsran_ngap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libsrsran_ngap.a"
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && $(CMAKE_COMMAND) -P CMakeFiles/srsran_ngap.dir/cmake_clean_target.cmake
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srsran_ngap.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libsrsran_ngap.a"
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && $(CMAKE_COMMAND) -P CMakeFiles/srsran_ngap.dir/cmake_clean_target.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srsran_ngap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/ngap/CMakeFiles/srsran_ngap.dir/build: lib/ngap/libsrsran_ngap.a
 .PHONY : lib/ngap/CMakeFiles/srsran_ngap.dir/build
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap && $(CMAKE_COMMAND) -P CMakeFiles/srsran_ngap.dir/cmake_clean.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap && $(CMAKE_COMMAND) -P CMakeFiles/srsran_ngap.dir/cmake_clean.cmake
 .PHONY : lib/ngap/CMakeFiles/srsran_ngap.dir/clean
 
 lib/ngap/CMakeFiles/srsran_ngap.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_Project /home/oem/o-ran-e2/srsRAN_Project/lib/ngap /home/oem/o-ran-e2/srsRAN_Project/build /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap /home/oem/o-ran-e2/srsRAN_Project/build/lib/ngap/CMakeFiles/srsran_ngap.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_Project /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/ngap /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ngap/CMakeFiles/srsran_ngap.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/ngap/CMakeFiles/srsran_ngap.dir/depend
 

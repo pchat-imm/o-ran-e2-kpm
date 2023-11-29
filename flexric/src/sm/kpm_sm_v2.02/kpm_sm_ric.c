@@ -81,7 +81,7 @@ static sm_subs_data_t on_subscription_kpm_sm_ric(sm_ric_t const* sm_ric, const c
 	adapter_LabelInfoItem_t	dummylabelInfo = {.noLabel = &noLabelnum}; 
   MeasInfo_t dummy_MeasInfo = { 
     .meas_type = KPM_V2_MEASUREMENT_TYPE_NAME, 
-    .measName = {.buf = (unsigned char *)"RSRP", .len = 4},
+    .measName = {.buf = (unsigned char *)"DRB.RlcSduTransmittedVolumeDL", .len = 29},
     .labelInfo = &dummylabelInfo, 
     .labelInfo_len = 1
   };

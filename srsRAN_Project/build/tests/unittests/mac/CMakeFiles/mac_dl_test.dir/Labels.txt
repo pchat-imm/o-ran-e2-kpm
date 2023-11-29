@@ -1,8 +1,8 @@
 # Directory labels
  mac
 # Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/mac/mac_dl_cfg_test.cpp
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/mac/mac_dl_ue_manager_test.cpp
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/mac/mac_cell_processor_test.cpp
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/mac/dl_sch_pdu_assembler_test.cpp
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/mac/mac_rar_pdu_assembler_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/mac/mac_dl_cfg_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/mac/mac_rlf_detector_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/mac/mac_cell_processor_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/mac/dl_sch_pdu_assembler_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/mac/mac_rar_pdu_assembler_test.cpp

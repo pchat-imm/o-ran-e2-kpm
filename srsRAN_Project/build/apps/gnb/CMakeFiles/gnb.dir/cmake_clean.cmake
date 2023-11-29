@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gnb.dir/helpers/gnb_console_helper.cpp.o.d"
   "CMakeFiles/gnb.dir/helpers/metrics_hub.cpp.o"
   "CMakeFiles/gnb.dir/helpers/metrics_hub.cpp.o.d"
+  "CMakeFiles/gnb.dir/helpers/metrics_plotter_json.cpp.o"
+  "CMakeFiles/gnb.dir/helpers/metrics_plotter_json.cpp.o.d"
   "CMakeFiles/gnb.dir/helpers/metrics_plotter_stdout.cpp.o"
   "CMakeFiles/gnb.dir/helpers/metrics_plotter_stdout.cpp.o.d"
   "gnb"

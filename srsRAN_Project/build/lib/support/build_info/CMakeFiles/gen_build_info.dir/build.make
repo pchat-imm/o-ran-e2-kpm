@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 # Utility rule file for gen_build_info.
 
@@ -67,7 +67,7 @@ include lib/support/build_info/CMakeFiles/gen_build_info.dir/compiler_depend.mak
 include lib/support/build_info/CMakeFiles/gen_build_info.dir/progress.make
 
 lib/support/build_info/CMakeFiles/gen_build_info:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/support/build_info && cmake -P /home/oem/o-ran-e2/srsRAN_Project/build/build_info.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/support/build_info && cmake -P /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/build_info.cmake
 
 gen_build_info: lib/support/build_info/CMakeFiles/gen_build_info
 gen_build_info: lib/support/build_info/CMakeFiles/gen_build_info.dir/build.make
@@ -78,10 +78,10 @@ lib/support/build_info/CMakeFiles/gen_build_info.dir/build: gen_build_info
 .PHONY : lib/support/build_info/CMakeFiles/gen_build_info.dir/build
 
 lib/support/build_info/CMakeFiles/gen_build_info.dir/clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/lib/support/build_info && $(CMAKE_COMMAND) -P CMakeFiles/gen_build_info.dir/cmake_clean.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/support/build_info && $(CMAKE_COMMAND) -P CMakeFiles/gen_build_info.dir/cmake_clean.cmake
 .PHONY : lib/support/build_info/CMakeFiles/gen_build_info.dir/clean
 
 lib/support/build_info/CMakeFiles/gen_build_info.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_Project /home/oem/o-ran-e2/srsRAN_Project/lib/support/build_info /home/oem/o-ran-e2/srsRAN_Project/build /home/oem/o-ran-e2/srsRAN_Project/build/lib/support/build_info /home/oem/o-ran-e2/srsRAN_Project/build/lib/support/build_info/CMakeFiles/gen_build_info.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_Project /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/support/build_info /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/support/build_info /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/support/build_info/CMakeFiles/gen_build_info.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/support/build_info/CMakeFiles/gen_build_info.dir/depend
 

@@ -2,7 +2,7 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/support/fixed_size_memory_pool_test.cpp"
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/support/fixed_size_memory_pool_test.cpp"
 		}
 	],
 	"target" : 

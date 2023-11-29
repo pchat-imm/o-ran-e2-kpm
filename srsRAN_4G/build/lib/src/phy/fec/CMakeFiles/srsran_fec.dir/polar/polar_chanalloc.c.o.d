@@ -1,8 +1,8 @@
 lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_chanalloc.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/fec/polar/polar_chanalloc.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/polar_chanalloc.c \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_chanalloc.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/fec/polar/polar_chanalloc.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

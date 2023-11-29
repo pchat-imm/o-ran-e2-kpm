@@ -1,12 +1,16 @@
 apps/gnb/CMakeFiles/gnb.dir/gnb_appconfig_validators.cpp.o: \
- /home/oem/o-ran-e2/srsRAN_Project/apps/gnb/gnb_appconfig_validators.cpp \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/apps/gnb/gnb_appconfig_validators.cpp \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_Project/apps/gnb/gnb_appconfig_validators.h \
- /home/oem/o-ran-e2/srsRAN_Project/apps/gnb/gnb_appconfig.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/optional.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/support/srsran_assert.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/srslog.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/support/any.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/apps/gnb/gnb_appconfig_validators.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/apps/gnb/gnb_appconfig.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/apps/gnb/gnb_os_sched_affinity_manager.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/support/unique_thread.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/bounded_bitset.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/span.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/static_vector.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/support/srsran_assert.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/srslog.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/support/any.h \
  /usr/include/c++/10/memory /usr/include/c++/10/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
@@ -122,10 +126,10 @@ apps/gnb/CMakeFiles/gnb.dir/gnb_appconfig_validators.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/c++/10/bits/atomic_lockfree_defines.h \
  /usr/include/c++/10/backward/auto_ptr.h /usr/include/c++/10/cstdint \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/logger.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/log_channel.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/log_backend.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/shared_types.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/logger.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/log_channel.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/log_backend.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/shared_types.h \
  /usr/include/c++/10/functional /usr/include/c++/10/bits/std_function.h \
  /usr/include/c++/10/string /usr/include/c++/10/bits/char_traits.h \
  /usr/include/c++/10/bits/localefwd.h \
@@ -162,7 +166,7 @@ apps/gnb/CMakeFiles/gnb.dir/gnb_appconfig_validators.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/10/bits/charconv.h \
  /usr/include/c++/10/bits/basic_string.tcc \
- /home/oem/o-ran-e2/srsRAN_Project/external/fmt/include/fmt/core.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/external/fmt/include/fmt/core.h \
  /usr/include/c++/10/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
@@ -180,9 +184,9 @@ apps/gnb/CMakeFiles/gnb.dir/gnb_appconfig_validators.cpp.o: \
  /usr/include/c++/10/experimental/string_view /usr/include/c++/10/limits \
  /usr/include/c++/10/experimental/bits/lfts_config.h \
  /usr/include/c++/10/experimental/bits/string_view.tcc \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/log_entry.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/log_entry_metadata.h \
- /home/oem/o-ran-e2/srsRAN_Project/external/fmt/include/fmt/format.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/log_entry.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/log_entry_metadata.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/external/fmt/include/fmt/format.h \
  /usr/include/c++/10/algorithm /usr/include/c++/10/bits/stl_algo.h \
  /usr/include/c++/10/bits/algorithmfwd.h \
  /usr/include/c++/10/bits/stl_heap.h \
@@ -196,26 +200,36 @@ apps/gnb/CMakeFiles/gnb.dir/gnb_appconfig_validators.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/oem/o-ran-e2/srsRAN_Project/external/fmt/include/fmt/core.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/external/fmt/include/fmt/core.h \
  /usr/include/c++/10/chrono /usr/include/c++/10/ratio \
  /usr/include/c++/10/ctime /usr/include/c++/10/bits/parse_numbers.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/support/thread_utils.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/sink.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/support/error_string.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/support/memory_buffer.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/formatter.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/context.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/srslog/detail/support/tmpl_utils.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/support/thread_utils.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/sink.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/support/error_string.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/support/memory_buffer.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/formatter.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/context.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/srslog/detail/support/tmpl_utils.h \
  /usr/include/c++/10/cstddef /usr/include/c++/10/cassert \
  /usr/include/assert.h /usr/include/c++/10/atomic \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/support/compiler.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/variant.h \
- /home/oem/o-ran-e2/srsRAN_Project/external/variant/variant.hpp \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/band_helper.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/expected.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/band_helper_constants.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/bs_channel_bandwidth.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/support/error_handling.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/support/compiler.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/support/math_utils.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/complex.h \
+ /usr/include/c++/10/complex /usr/include/c++/10/sstream \
+ /usr/include/c++/10/istream /usr/include/c++/10/ios \
+ /usr/include/c++/10/bits/basic_ios.h \
+ /usr/include/c++/10/bits/locale_facets.h /usr/include/c++/10/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_inline.h \
+ /usr/include/c++/10/bits/locale_facets.tcc \
+ /usr/include/c++/10/bits/basic_ios.tcc /usr/include/c++/10/ostream \
+ /usr/include/c++/10/bits/ostream.tcc \
+ /usr/include/c++/10/bits/istream.tcc \
+ /usr/include/c++/10/bits/sstream.tcc /usr/include/inttypes.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/strong_type.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/unique_function.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/support/error_handling.h \
  /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -254,66 +268,54 @@ apps/gnb/CMakeFiles/gnb.dir/gnb_appconfig_validators.cpp.o: \
  /usr/include/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/n_ta_offset.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/nr_band.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/ssb_properties.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/bounded_integer.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/strong_type.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/subcarrier_spacing.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/frequency_range.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/direct_current_offset.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/resource_block.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/five_qi.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/ntn.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pcch/pcch_configuration.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/static_vector.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/tiny_optional.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pci.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pdcch/search_space.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/frame_types.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pdcch/coreset.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/bounded_bitset.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/span.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/support/math_utils.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/complex.h \
- /usr/include/c++/10/complex /usr/include/c++/10/sstream \
- /usr/include/c++/10/istream /usr/include/c++/10/ios \
- /usr/include/c++/10/bits/basic_ios.h \
- /usr/include/c++/10/bits/locale_facets.h /usr/include/c++/10/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_base.h \
- /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_inline.h \
- /usr/include/c++/10/bits/locale_facets.tcc \
- /usr/include/c++/10/bits/basic_ios.tcc /usr/include/c++/10/ostream \
- /usr/include/c++/10/bits/ostream.tcc \
- /usr/include/c++/10/bits/istream.tcc \
- /usr/include/c++/10/bits/sstream.tcc /usr/include/inttypes.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pdcch/pdcch_constants.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/phy/constants.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/resource_allocation/rb_interval.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/interval.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/slot_point.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/scheduler/sched_consts.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pdsch/pdsch_mcs.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/sch_mcs.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/modulation_scheme.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pucch/pucch_configuration.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pucch/pucch_mapping.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/sr_configuration.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pusch/pusch_mcs.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/rnti.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/s_nssai.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/support/unique_thread.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/adt/unique_function.h \
- /usr/include/c++/10/thread \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/pdcp/pdcp_config.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/duplex_mode.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/pdcch/pdcch_type0_css_coreset_config.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/phy_time_unit.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/prach/prach_configuration.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/prach/prach_format_type.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/prach/prach_helper.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/prach/rach_config_common.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/prach/restricted_set_config.h \
- /home/oem/o-ran-e2/srsRAN_Project/include/srsran/ran/cyclic_prefix.h
+ /usr/include/asm-generic/posix_types.h /usr/include/c++/10/thread \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/optional.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/variant.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/external/variant/variant.hpp \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/band_helper.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/expected.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/band_helper_constants.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/bs_channel_bandwidth.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/n_ta_offset.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/nr_band.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/ssb_properties.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/bounded_integer.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/subcarrier_spacing.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/frequency_range.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/direct_current_offset.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/resource_block.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/five_qi.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/ntn.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pcch/pcch_configuration.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/tiny_optional.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pci.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pdcch/search_space.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/frame_types.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pdcch/coreset.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pdcch/pdcch_constants.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/phy/constants.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/resource_allocation/rb_interval.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/adt/interval.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/slot_point.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/scheduler/sched_consts.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pdsch/pdsch_mcs.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/sch_mcs.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/modulation_scheme.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pucch/pucch_configuration.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pucch/pucch_mapping.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/sr_configuration.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pusch/pusch_mcs.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/rnti.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/s_nssai.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/sib/system_info_config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/slot_pdu_capacity_constants.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/pdcp/pdcp_config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/duplex_mode.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/pdcch/pdcch_type0_css_coreset_config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/phy_time_unit.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/prach/prach_configuration.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/prach/prach_format_type.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/prach/prach_helper.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/prach/rach_config_common.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/prach/restricted_set_config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/include/srsran/ran/cyclic_prefix.h

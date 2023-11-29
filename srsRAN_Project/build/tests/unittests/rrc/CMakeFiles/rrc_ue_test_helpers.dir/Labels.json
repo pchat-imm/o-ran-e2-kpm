@@ -2,7 +2,7 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/rrc/rrc_ue_test_messages.cpp"
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/rrc/rrc_ue_test_messages.cpp"
 		}
 	],
 	"target" : 

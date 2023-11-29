@@ -1,4 +1,4 @@
 # Directory labels
  fapi
 # Source files and their labels
-/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/fapi/builders/rx_data_indication_test.cpp
+/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/fapi/builders/rx_data_indication_test.cpp

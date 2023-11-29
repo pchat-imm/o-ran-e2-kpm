@@ -1,7 +1,7 @@
 lib/src/radio/CMakeFiles/srsran_radio.dir/channel_mapping.cc.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/radio/channel_mapping.cc \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/radio/channel_mapping.cc \
  /usr/include/stdc-predef.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/radio/channel_mapping.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/radio/channel_mapping.h \
  /usr/include/c++/10/cinttypes /usr/include/c++/10/cstdint \
  /usr/include/x86_64-linux-gnu/c++/10/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
@@ -155,14 +155,14 @@ lib/src/radio/CMakeFiles/srsran_radio.dir/channel_mapping.cc.o: \
  /usr/include/c++/10/bits/basic_string.tcc \
  /usr/include/c++/10/bits/std_mutex.h \
  /usr/include/c++/10/bits/unique_lock.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/debug.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/debug.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/utils/phy_logger.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdbool.h \
  /usr/include/c++/10/stdlib.h /usr/include/string.h \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/10/sstream \
  /usr/include/c++/10/istream /usr/include/c++/10/ios \
  /usr/include/c++/10/bits/ios_base.h \

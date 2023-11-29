@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/lib/fapi_adaptor/phy
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/fapi_adaptor/phy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/lib/fapi_adaptor/phy/messages/cmake_install.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/fapi_adaptor/phy/messages/cmake_install.cmake")
 endif()
 

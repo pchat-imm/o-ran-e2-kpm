@@ -24,6 +24,6 @@
 
 namespace srsran {
 
-#define SRSRAN_VERSION_STRING "23.5.0"
+#define SRSRAN_VERSION_STRING "23.10.1"
 
 } // namespace srsran

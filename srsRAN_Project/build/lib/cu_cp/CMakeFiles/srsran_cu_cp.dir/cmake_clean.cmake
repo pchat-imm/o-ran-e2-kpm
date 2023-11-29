@@ -43,6 +43,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/srsran_cu_cp.dir/routines/reestablishment_context_modification_routine.cpp.o.d"
   "CMakeFiles/srsran_cu_cp.dir/routines/ue_context_release_routine.cpp.o"
   "CMakeFiles/srsran_cu_cp.dir/routines/ue_context_release_routine.cpp.o.d"
+  "CMakeFiles/srsran_cu_cp.dir/routines/ue_removal_routine.cpp.o"
+  "CMakeFiles/srsran_cu_cp.dir/routines/ue_removal_routine.cpp.o.d"
   "CMakeFiles/srsran_cu_cp.dir/task_schedulers/cu_up_task_scheduler.cpp.o"
   "CMakeFiles/srsran_cu_cp.dir/task_schedulers/cu_up_task_scheduler.cpp.o.d"
   "CMakeFiles/srsran_cu_cp.dir/task_schedulers/du_task_scheduler.cpp.o"

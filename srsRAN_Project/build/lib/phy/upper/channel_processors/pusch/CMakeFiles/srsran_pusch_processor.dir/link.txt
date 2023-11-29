@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsrsran_pusch_processor.a CMakeFiles/srsran_pusch_processor.dir/pusch_processor_impl.cpp.o
+/usr/bin/ar qc libsrsran_pusch_processor.a CMakeFiles/srsran_pusch_processor.dir/pusch_codeblock_decoder.cpp.o CMakeFiles/srsran_pusch_processor.dir/pusch_decoder_impl.cpp.o CMakeFiles/srsran_pusch_processor.dir/pusch_demodulator_impl.cpp.o CMakeFiles/srsran_pusch_processor.dir/pusch_processor_impl.cpp.o CMakeFiles/srsran_pusch_processor.dir/ulsch_demultiplex_impl.cpp.o
 /usr/bin/ranlib libsrsran_pusch_processor.a

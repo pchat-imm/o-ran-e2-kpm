@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles /home/oem/o-ran-e2/srsRAN_Project/build/lib/ran//CMakeFiles/progress.marks
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/o-ran-e2/srsRAN_Project/build/CMakeFiles 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/lib/ran//CMakeFiles/progress.marks
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/clean
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/preinstall
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/ran/CMakeFiles/srsran_ran.dir/rule:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/CMakeFiles/srsran_ran.dir/rule
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ran/CMakeFiles/srsran_ran.dir/rule
 .PHONY : lib/ran/CMakeFiles/srsran_ran.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ srsran_ran: lib/ran/CMakeFiles/srsran_ran.dir/rule
 
 # fast build rule for target.
 srsran_ran/fast:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/build
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/build
 .PHONY : srsran_ran/fast
 
 band_helper.o: band_helper.cpp.o
@@ -190,7 +190,7 @@ band_helper.o: band_helper.cpp.o
 
 # target to build an object file
 band_helper.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/band_helper.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/band_helper.cpp.o
 .PHONY : band_helper.cpp.o
 
 band_helper.i: band_helper.cpp.i
@@ -198,7 +198,7 @@ band_helper.i: band_helper.cpp.i
 
 # target to preprocess a source file
 band_helper.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/band_helper.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/band_helper.cpp.i
 .PHONY : band_helper.cpp.i
 
 band_helper.s: band_helper.cpp.s
@@ -206,7 +206,7 @@ band_helper.s: band_helper.cpp.s
 
 # target to generate assembly for a file
 band_helper.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/band_helper.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/band_helper.cpp.s
 .PHONY : band_helper.cpp.s
 
 csi_report/csi_report_config_helpers.o: csi_report/csi_report_config_helpers.cpp.o
@@ -214,7 +214,7 @@ csi_report/csi_report_config_helpers.o: csi_report/csi_report_config_helpers.cpp
 
 # target to build an object file
 csi_report/csi_report_config_helpers.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_config_helpers.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_config_helpers.cpp.o
 .PHONY : csi_report/csi_report_config_helpers.cpp.o
 
 csi_report/csi_report_config_helpers.i: csi_report/csi_report_config_helpers.cpp.i
@@ -222,7 +222,7 @@ csi_report/csi_report_config_helpers.i: csi_report/csi_report_config_helpers.cpp
 
 # target to preprocess a source file
 csi_report/csi_report_config_helpers.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_config_helpers.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_config_helpers.cpp.i
 .PHONY : csi_report/csi_report_config_helpers.cpp.i
 
 csi_report/csi_report_config_helpers.s: csi_report/csi_report_config_helpers.cpp.s
@@ -230,7 +230,7 @@ csi_report/csi_report_config_helpers.s: csi_report/csi_report_config_helpers.cpp
 
 # target to generate assembly for a file
 csi_report/csi_report_config_helpers.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_config_helpers.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_config_helpers.cpp.s
 .PHONY : csi_report/csi_report_config_helpers.cpp.s
 
 csi_report/csi_report_on_pucch_helpers.o: csi_report/csi_report_on_pucch_helpers.cpp.o
@@ -238,7 +238,7 @@ csi_report/csi_report_on_pucch_helpers.o: csi_report/csi_report_on_pucch_helpers
 
 # target to build an object file
 csi_report/csi_report_on_pucch_helpers.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.o
 .PHONY : csi_report/csi_report_on_pucch_helpers.cpp.o
 
 csi_report/csi_report_on_pucch_helpers.i: csi_report/csi_report_on_pucch_helpers.cpp.i
@@ -246,7 +246,7 @@ csi_report/csi_report_on_pucch_helpers.i: csi_report/csi_report_on_pucch_helpers
 
 # target to preprocess a source file
 csi_report/csi_report_on_pucch_helpers.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.i
 .PHONY : csi_report/csi_report_on_pucch_helpers.cpp.i
 
 csi_report/csi_report_on_pucch_helpers.s: csi_report/csi_report_on_pucch_helpers.cpp.s
@@ -254,7 +254,7 @@ csi_report/csi_report_on_pucch_helpers.s: csi_report/csi_report_on_pucch_helpers
 
 # target to generate assembly for a file
 csi_report/csi_report_on_pucch_helpers.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.s
 .PHONY : csi_report/csi_report_on_pucch_helpers.cpp.s
 
 csi_report/csi_report_on_pusch_helpers.o: csi_report/csi_report_on_pusch_helpers.cpp.o
@@ -262,7 +262,7 @@ csi_report/csi_report_on_pusch_helpers.o: csi_report/csi_report_on_pusch_helpers
 
 # target to build an object file
 csi_report/csi_report_on_pusch_helpers.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.o
 .PHONY : csi_report/csi_report_on_pusch_helpers.cpp.o
 
 csi_report/csi_report_on_pusch_helpers.i: csi_report/csi_report_on_pusch_helpers.cpp.i
@@ -270,7 +270,7 @@ csi_report/csi_report_on_pusch_helpers.i: csi_report/csi_report_on_pusch_helpers
 
 # target to preprocess a source file
 csi_report/csi_report_on_pusch_helpers.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.i
 .PHONY : csi_report/csi_report_on_pusch_helpers.cpp.i
 
 csi_report/csi_report_on_pusch_helpers.s: csi_report/csi_report_on_pusch_helpers.cpp.s
@@ -278,7 +278,7 @@ csi_report/csi_report_on_pusch_helpers.s: csi_report/csi_report_on_pusch_helpers
 
 # target to generate assembly for a file
 csi_report/csi_report_on_pusch_helpers.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.s
 .PHONY : csi_report/csi_report_on_pusch_helpers.cpp.s
 
 csi_report/csi_report_on_puxch_helpers.o: csi_report/csi_report_on_puxch_helpers.cpp.o
@@ -286,7 +286,7 @@ csi_report/csi_report_on_puxch_helpers.o: csi_report/csi_report_on_puxch_helpers
 
 # target to build an object file
 csi_report/csi_report_on_puxch_helpers.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.o
 .PHONY : csi_report/csi_report_on_puxch_helpers.cpp.o
 
 csi_report/csi_report_on_puxch_helpers.i: csi_report/csi_report_on_puxch_helpers.cpp.i
@@ -294,7 +294,7 @@ csi_report/csi_report_on_puxch_helpers.i: csi_report/csi_report_on_puxch_helpers
 
 # target to preprocess a source file
 csi_report/csi_report_on_puxch_helpers.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.i
 .PHONY : csi_report/csi_report_on_puxch_helpers.cpp.i
 
 csi_report/csi_report_on_puxch_helpers.s: csi_report/csi_report_on_puxch_helpers.cpp.s
@@ -302,7 +302,7 @@ csi_report/csi_report_on_puxch_helpers.s: csi_report/csi_report_on_puxch_helpers
 
 # target to generate assembly for a file
 csi_report/csi_report_on_puxch_helpers.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.s
 .PHONY : csi_report/csi_report_on_puxch_helpers.cpp.s
 
 csi_rs/csi_rs_config_helpers.o: csi_rs/csi_rs_config_helpers.cpp.o
@@ -310,7 +310,7 @@ csi_rs/csi_rs_config_helpers.o: csi_rs/csi_rs_config_helpers.cpp.o
 
 # target to build an object file
 csi_rs/csi_rs_config_helpers.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_config_helpers.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_config_helpers.cpp.o
 .PHONY : csi_rs/csi_rs_config_helpers.cpp.o
 
 csi_rs/csi_rs_config_helpers.i: csi_rs/csi_rs_config_helpers.cpp.i
@@ -318,7 +318,7 @@ csi_rs/csi_rs_config_helpers.i: csi_rs/csi_rs_config_helpers.cpp.i
 
 # target to preprocess a source file
 csi_rs/csi_rs_config_helpers.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_config_helpers.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_config_helpers.cpp.i
 .PHONY : csi_rs/csi_rs_config_helpers.cpp.i
 
 csi_rs/csi_rs_config_helpers.s: csi_rs/csi_rs_config_helpers.cpp.s
@@ -326,7 +326,7 @@ csi_rs/csi_rs_config_helpers.s: csi_rs/csi_rs_config_helpers.cpp.s
 
 # target to generate assembly for a file
 csi_rs/csi_rs_config_helpers.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_config_helpers.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_config_helpers.cpp.s
 .PHONY : csi_rs/csi_rs_config_helpers.cpp.s
 
 csi_rs/csi_rs_pattern.o: csi_rs/csi_rs_pattern.cpp.o
@@ -334,7 +334,7 @@ csi_rs/csi_rs_pattern.o: csi_rs/csi_rs_pattern.cpp.o
 
 # target to build an object file
 csi_rs/csi_rs_pattern.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_pattern.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_pattern.cpp.o
 .PHONY : csi_rs/csi_rs_pattern.cpp.o
 
 csi_rs/csi_rs_pattern.i: csi_rs/csi_rs_pattern.cpp.i
@@ -342,7 +342,7 @@ csi_rs/csi_rs_pattern.i: csi_rs/csi_rs_pattern.cpp.i
 
 # target to preprocess a source file
 csi_rs/csi_rs_pattern.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_pattern.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_pattern.cpp.i
 .PHONY : csi_rs/csi_rs_pattern.cpp.i
 
 csi_rs/csi_rs_pattern.s: csi_rs/csi_rs_pattern.cpp.s
@@ -350,7 +350,7 @@ csi_rs/csi_rs_pattern.s: csi_rs/csi_rs_pattern.cpp.s
 
 # target to generate assembly for a file
 csi_rs/csi_rs_pattern.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_pattern.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/csi_rs_pattern.cpp.s
 .PHONY : csi_rs/csi_rs_pattern.cpp.s
 
 csi_rs/frequency_allocation_type.o: csi_rs/frequency_allocation_type.cpp.o
@@ -358,7 +358,7 @@ csi_rs/frequency_allocation_type.o: csi_rs/frequency_allocation_type.cpp.o
 
 # target to build an object file
 csi_rs/frequency_allocation_type.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/frequency_allocation_type.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/frequency_allocation_type.cpp.o
 .PHONY : csi_rs/frequency_allocation_type.cpp.o
 
 csi_rs/frequency_allocation_type.i: csi_rs/frequency_allocation_type.cpp.i
@@ -366,7 +366,7 @@ csi_rs/frequency_allocation_type.i: csi_rs/frequency_allocation_type.cpp.i
 
 # target to preprocess a source file
 csi_rs/frequency_allocation_type.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/frequency_allocation_type.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/frequency_allocation_type.cpp.i
 .PHONY : csi_rs/frequency_allocation_type.cpp.i
 
 csi_rs/frequency_allocation_type.s: csi_rs/frequency_allocation_type.cpp.s
@@ -374,7 +374,7 @@ csi_rs/frequency_allocation_type.s: csi_rs/frequency_allocation_type.cpp.s
 
 # target to generate assembly for a file
 csi_rs/frequency_allocation_type.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/frequency_allocation_type.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/csi_rs/frequency_allocation_type.cpp.s
 .PHONY : csi_rs/frequency_allocation_type.cpp.s
 
 pdcch/cce_to_prb_mapping.o: pdcch/cce_to_prb_mapping.cpp.o
@@ -382,7 +382,7 @@ pdcch/cce_to_prb_mapping.o: pdcch/cce_to_prb_mapping.cpp.o
 
 # target to build an object file
 pdcch/cce_to_prb_mapping.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/cce_to_prb_mapping.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/cce_to_prb_mapping.cpp.o
 .PHONY : pdcch/cce_to_prb_mapping.cpp.o
 
 pdcch/cce_to_prb_mapping.i: pdcch/cce_to_prb_mapping.cpp.i
@@ -390,7 +390,7 @@ pdcch/cce_to_prb_mapping.i: pdcch/cce_to_prb_mapping.cpp.i
 
 # target to preprocess a source file
 pdcch/cce_to_prb_mapping.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/cce_to_prb_mapping.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/cce_to_prb_mapping.cpp.i
 .PHONY : pdcch/cce_to_prb_mapping.cpp.i
 
 pdcch/cce_to_prb_mapping.s: pdcch/cce_to_prb_mapping.cpp.s
@@ -398,7 +398,7 @@ pdcch/cce_to_prb_mapping.s: pdcch/cce_to_prb_mapping.cpp.s
 
 # target to generate assembly for a file
 pdcch/cce_to_prb_mapping.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/cce_to_prb_mapping.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/cce_to_prb_mapping.cpp.s
 .PHONY : pdcch/cce_to_prb_mapping.cpp.s
 
 pdcch/dci_packing.o: pdcch/dci_packing.cpp.o
@@ -406,7 +406,7 @@ pdcch/dci_packing.o: pdcch/dci_packing.cpp.o
 
 # target to build an object file
 pdcch/dci_packing.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/dci_packing.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/dci_packing.cpp.o
 .PHONY : pdcch/dci_packing.cpp.o
 
 pdcch/dci_packing.i: pdcch/dci_packing.cpp.i
@@ -414,7 +414,7 @@ pdcch/dci_packing.i: pdcch/dci_packing.cpp.i
 
 # target to preprocess a source file
 pdcch/dci_packing.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/dci_packing.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/dci_packing.cpp.i
 .PHONY : pdcch/dci_packing.cpp.i
 
 pdcch/dci_packing.s: pdcch/dci_packing.cpp.s
@@ -422,7 +422,7 @@ pdcch/dci_packing.s: pdcch/dci_packing.cpp.s
 
 # target to generate assembly for a file
 pdcch/dci_packing.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/dci_packing.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/dci_packing.cpp.s
 .PHONY : pdcch/dci_packing.cpp.s
 
 pdcch/pdcch_candidates.o: pdcch/pdcch_candidates.cpp.o
@@ -430,7 +430,7 @@ pdcch/pdcch_candidates.o: pdcch/pdcch_candidates.cpp.o
 
 # target to build an object file
 pdcch/pdcch_candidates.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_candidates.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_candidates.cpp.o
 .PHONY : pdcch/pdcch_candidates.cpp.o
 
 pdcch/pdcch_candidates.i: pdcch/pdcch_candidates.cpp.i
@@ -438,7 +438,7 @@ pdcch/pdcch_candidates.i: pdcch/pdcch_candidates.cpp.i
 
 # target to preprocess a source file
 pdcch/pdcch_candidates.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_candidates.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_candidates.cpp.i
 .PHONY : pdcch/pdcch_candidates.cpp.i
 
 pdcch/pdcch_candidates.s: pdcch/pdcch_candidates.cpp.s
@@ -446,7 +446,7 @@ pdcch/pdcch_candidates.s: pdcch/pdcch_candidates.cpp.s
 
 # target to generate assembly for a file
 pdcch/pdcch_candidates.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_candidates.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_candidates.cpp.s
 .PHONY : pdcch/pdcch_candidates.cpp.s
 
 pdcch/pdcch_type0_css_coreset_config.o: pdcch/pdcch_type0_css_coreset_config.cpp.o
@@ -454,7 +454,7 @@ pdcch/pdcch_type0_css_coreset_config.o: pdcch/pdcch_type0_css_coreset_config.cpp
 
 # target to build an object file
 pdcch/pdcch_type0_css_coreset_config.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.o
 .PHONY : pdcch/pdcch_type0_css_coreset_config.cpp.o
 
 pdcch/pdcch_type0_css_coreset_config.i: pdcch/pdcch_type0_css_coreset_config.cpp.i
@@ -462,7 +462,7 @@ pdcch/pdcch_type0_css_coreset_config.i: pdcch/pdcch_type0_css_coreset_config.cpp
 
 # target to preprocess a source file
 pdcch/pdcch_type0_css_coreset_config.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.i
 .PHONY : pdcch/pdcch_type0_css_coreset_config.cpp.i
 
 pdcch/pdcch_type0_css_coreset_config.s: pdcch/pdcch_type0_css_coreset_config.cpp.s
@@ -470,7 +470,7 @@ pdcch/pdcch_type0_css_coreset_config.s: pdcch/pdcch_type0_css_coreset_config.cpp
 
 # target to generate assembly for a file
 pdcch/pdcch_type0_css_coreset_config.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.s
 .PHONY : pdcch/pdcch_type0_css_coreset_config.cpp.s
 
 pdcch/pdcch_type0_css_occasions.o: pdcch/pdcch_type0_css_occasions.cpp.o
@@ -478,7 +478,7 @@ pdcch/pdcch_type0_css_occasions.o: pdcch/pdcch_type0_css_occasions.cpp.o
 
 # target to build an object file
 pdcch/pdcch_type0_css_occasions.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.o
 .PHONY : pdcch/pdcch_type0_css_occasions.cpp.o
 
 pdcch/pdcch_type0_css_occasions.i: pdcch/pdcch_type0_css_occasions.cpp.i
@@ -486,7 +486,7 @@ pdcch/pdcch_type0_css_occasions.i: pdcch/pdcch_type0_css_occasions.cpp.i
 
 # target to preprocess a source file
 pdcch/pdcch_type0_css_occasions.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.i
 .PHONY : pdcch/pdcch_type0_css_occasions.cpp.i
 
 pdcch/pdcch_type0_css_occasions.s: pdcch/pdcch_type0_css_occasions.cpp.s
@@ -494,7 +494,7 @@ pdcch/pdcch_type0_css_occasions.s: pdcch/pdcch_type0_css_occasions.cpp.s
 
 # target to generate assembly for a file
 pdcch/pdcch_type0_css_occasions.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.s
 .PHONY : pdcch/pdcch_type0_css_occasions.cpp.s
 
 pdcch/search_space.o: pdcch/search_space.cpp.o
@@ -502,7 +502,7 @@ pdcch/search_space.o: pdcch/search_space.cpp.o
 
 # target to build an object file
 pdcch/search_space.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/search_space.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/search_space.cpp.o
 .PHONY : pdcch/search_space.cpp.o
 
 pdcch/search_space.i: pdcch/search_space.cpp.i
@@ -510,7 +510,7 @@ pdcch/search_space.i: pdcch/search_space.cpp.i
 
 # target to preprocess a source file
 pdcch/search_space.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/search_space.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/search_space.cpp.i
 .PHONY : pdcch/search_space.cpp.i
 
 pdcch/search_space.s: pdcch/search_space.cpp.s
@@ -518,7 +518,7 @@ pdcch/search_space.s: pdcch/search_space.cpp.s
 
 # target to generate assembly for a file
 pdcch/search_space.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/search_space.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdcch/search_space.cpp.s
 .PHONY : pdcch/search_space.cpp.s
 
 pdsch/dlsch_info.o: pdsch/dlsch_info.cpp.o
@@ -526,7 +526,7 @@ pdsch/dlsch_info.o: pdsch/dlsch_info.cpp.o
 
 # target to build an object file
 pdsch/dlsch_info.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/dlsch_info.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/dlsch_info.cpp.o
 .PHONY : pdsch/dlsch_info.cpp.o
 
 pdsch/dlsch_info.i: pdsch/dlsch_info.cpp.i
@@ -534,7 +534,7 @@ pdsch/dlsch_info.i: pdsch/dlsch_info.cpp.i
 
 # target to preprocess a source file
 pdsch/dlsch_info.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/dlsch_info.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/dlsch_info.cpp.i
 .PHONY : pdsch/dlsch_info.cpp.i
 
 pdsch/dlsch_info.s: pdsch/dlsch_info.cpp.s
@@ -542,7 +542,7 @@ pdsch/dlsch_info.s: pdsch/dlsch_info.cpp.s
 
 # target to generate assembly for a file
 pdsch/dlsch_info.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/dlsch_info.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/dlsch_info.cpp.s
 .PHONY : pdsch/dlsch_info.cpp.s
 
 pdsch/pdsch_antenna_port_mapping.o: pdsch/pdsch_antenna_port_mapping.cpp.o
@@ -550,7 +550,7 @@ pdsch/pdsch_antenna_port_mapping.o: pdsch/pdsch_antenna_port_mapping.cpp.o
 
 # target to build an object file
 pdsch/pdsch_antenna_port_mapping.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.o
 .PHONY : pdsch/pdsch_antenna_port_mapping.cpp.o
 
 pdsch/pdsch_antenna_port_mapping.i: pdsch/pdsch_antenna_port_mapping.cpp.i
@@ -558,7 +558,7 @@ pdsch/pdsch_antenna_port_mapping.i: pdsch/pdsch_antenna_port_mapping.cpp.i
 
 # target to preprocess a source file
 pdsch/pdsch_antenna_port_mapping.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.i
 .PHONY : pdsch/pdsch_antenna_port_mapping.cpp.i
 
 pdsch/pdsch_antenna_port_mapping.s: pdsch/pdsch_antenna_port_mapping.cpp.s
@@ -566,7 +566,7 @@ pdsch/pdsch_antenna_port_mapping.s: pdsch/pdsch_antenna_port_mapping.cpp.s
 
 # target to generate assembly for a file
 pdsch/pdsch_antenna_port_mapping.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.s
 .PHONY : pdsch/pdsch_antenna_port_mapping.cpp.s
 
 pdsch/pdsch_mcs.o: pdsch/pdsch_mcs.cpp.o
@@ -574,7 +574,7 @@ pdsch/pdsch_mcs.o: pdsch/pdsch_mcs.cpp.o
 
 # target to build an object file
 pdsch/pdsch_mcs.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_mcs.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_mcs.cpp.o
 .PHONY : pdsch/pdsch_mcs.cpp.o
 
 pdsch/pdsch_mcs.i: pdsch/pdsch_mcs.cpp.i
@@ -582,7 +582,7 @@ pdsch/pdsch_mcs.i: pdsch/pdsch_mcs.cpp.i
 
 # target to preprocess a source file
 pdsch/pdsch_mcs.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_mcs.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_mcs.cpp.i
 .PHONY : pdsch/pdsch_mcs.cpp.i
 
 pdsch/pdsch_mcs.s: pdsch/pdsch_mcs.cpp.s
@@ -590,7 +590,7 @@ pdsch/pdsch_mcs.s: pdsch/pdsch_mcs.cpp.s
 
 # target to generate assembly for a file
 pdsch/pdsch_mcs.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_mcs.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pdsch/pdsch_mcs.cpp.s
 .PHONY : pdsch/pdsch_mcs.cpp.s
 
 prach/prach_configuration.o: prach/prach_configuration.cpp.o
@@ -598,7 +598,7 @@ prach/prach_configuration.o: prach/prach_configuration.cpp.o
 
 # target to build an object file
 prach/prach_configuration.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_configuration.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_configuration.cpp.o
 .PHONY : prach/prach_configuration.cpp.o
 
 prach/prach_configuration.i: prach/prach_configuration.cpp.i
@@ -606,7 +606,7 @@ prach/prach_configuration.i: prach/prach_configuration.cpp.i
 
 # target to preprocess a source file
 prach/prach_configuration.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_configuration.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_configuration.cpp.i
 .PHONY : prach/prach_configuration.cpp.i
 
 prach/prach_configuration.s: prach/prach_configuration.cpp.s
@@ -614,7 +614,7 @@ prach/prach_configuration.s: prach/prach_configuration.cpp.s
 
 # target to generate assembly for a file
 prach/prach_configuration.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_configuration.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_configuration.cpp.s
 .PHONY : prach/prach_configuration.cpp.s
 
 prach/prach_cyclic_shifts.o: prach/prach_cyclic_shifts.cpp.o
@@ -622,7 +622,7 @@ prach/prach_cyclic_shifts.o: prach/prach_cyclic_shifts.cpp.o
 
 # target to build an object file
 prach/prach_cyclic_shifts.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_cyclic_shifts.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_cyclic_shifts.cpp.o
 .PHONY : prach/prach_cyclic_shifts.cpp.o
 
 prach/prach_cyclic_shifts.i: prach/prach_cyclic_shifts.cpp.i
@@ -630,7 +630,7 @@ prach/prach_cyclic_shifts.i: prach/prach_cyclic_shifts.cpp.i
 
 # target to preprocess a source file
 prach/prach_cyclic_shifts.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_cyclic_shifts.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_cyclic_shifts.cpp.i
 .PHONY : prach/prach_cyclic_shifts.cpp.i
 
 prach/prach_cyclic_shifts.s: prach/prach_cyclic_shifts.cpp.s
@@ -638,7 +638,7 @@ prach/prach_cyclic_shifts.s: prach/prach_cyclic_shifts.cpp.s
 
 # target to generate assembly for a file
 prach/prach_cyclic_shifts.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_cyclic_shifts.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_cyclic_shifts.cpp.s
 .PHONY : prach/prach_cyclic_shifts.cpp.s
 
 prach/prach_frequency_mapping.o: prach/prach_frequency_mapping.cpp.o
@@ -646,7 +646,7 @@ prach/prach_frequency_mapping.o: prach/prach_frequency_mapping.cpp.o
 
 # target to build an object file
 prach/prach_frequency_mapping.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_frequency_mapping.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_frequency_mapping.cpp.o
 .PHONY : prach/prach_frequency_mapping.cpp.o
 
 prach/prach_frequency_mapping.i: prach/prach_frequency_mapping.cpp.i
@@ -654,7 +654,7 @@ prach/prach_frequency_mapping.i: prach/prach_frequency_mapping.cpp.i
 
 # target to preprocess a source file
 prach/prach_frequency_mapping.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_frequency_mapping.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_frequency_mapping.cpp.i
 .PHONY : prach/prach_frequency_mapping.cpp.i
 
 prach/prach_frequency_mapping.s: prach/prach_frequency_mapping.cpp.s
@@ -662,7 +662,7 @@ prach/prach_frequency_mapping.s: prach/prach_frequency_mapping.cpp.s
 
 # target to generate assembly for a file
 prach/prach_frequency_mapping.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_frequency_mapping.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_frequency_mapping.cpp.s
 .PHONY : prach/prach_frequency_mapping.cpp.s
 
 prach/prach_helper.o: prach/prach_helper.cpp.o
@@ -670,7 +670,7 @@ prach/prach_helper.o: prach/prach_helper.cpp.o
 
 # target to build an object file
 prach/prach_helper.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_helper.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_helper.cpp.o
 .PHONY : prach/prach_helper.cpp.o
 
 prach/prach_helper.i: prach/prach_helper.cpp.i
@@ -678,7 +678,7 @@ prach/prach_helper.i: prach/prach_helper.cpp.i
 
 # target to preprocess a source file
 prach/prach_helper.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_helper.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_helper.cpp.i
 .PHONY : prach/prach_helper.cpp.i
 
 prach/prach_helper.s: prach/prach_helper.cpp.s
@@ -686,7 +686,7 @@ prach/prach_helper.s: prach/prach_helper.cpp.s
 
 # target to generate assembly for a file
 prach/prach_helper.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_helper.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_helper.cpp.s
 .PHONY : prach/prach_helper.cpp.s
 
 prach/prach_preamble_information.o: prach/prach_preamble_information.cpp.o
@@ -694,7 +694,7 @@ prach/prach_preamble_information.o: prach/prach_preamble_information.cpp.o
 
 # target to build an object file
 prach/prach_preamble_information.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_preamble_information.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_preamble_information.cpp.o
 .PHONY : prach/prach_preamble_information.cpp.o
 
 prach/prach_preamble_information.i: prach/prach_preamble_information.cpp.i
@@ -702,7 +702,7 @@ prach/prach_preamble_information.i: prach/prach_preamble_information.cpp.i
 
 # target to preprocess a source file
 prach/prach_preamble_information.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_preamble_information.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_preamble_information.cpp.i
 .PHONY : prach/prach_preamble_information.cpp.i
 
 prach/prach_preamble_information.s: prach/prach_preamble_information.cpp.s
@@ -710,7 +710,7 @@ prach/prach_preamble_information.s: prach/prach_preamble_information.cpp.s
 
 # target to generate assembly for a file
 prach/prach_preamble_information.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_preamble_information.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/prach/prach_preamble_information.cpp.s
 .PHONY : prach/prach_preamble_information.cpp.s
 
 precoding/precoding_codebooks.o: precoding/precoding_codebooks.cpp.o
@@ -718,7 +718,7 @@ precoding/precoding_codebooks.o: precoding/precoding_codebooks.cpp.o
 
 # target to build an object file
 precoding/precoding_codebooks.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/precoding/precoding_codebooks.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/precoding/precoding_codebooks.cpp.o
 .PHONY : precoding/precoding_codebooks.cpp.o
 
 precoding/precoding_codebooks.i: precoding/precoding_codebooks.cpp.i
@@ -726,7 +726,7 @@ precoding/precoding_codebooks.i: precoding/precoding_codebooks.cpp.i
 
 # target to preprocess a source file
 precoding/precoding_codebooks.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/precoding/precoding_codebooks.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/precoding/precoding_codebooks.cpp.i
 .PHONY : precoding/precoding_codebooks.cpp.i
 
 precoding/precoding_codebooks.s: precoding/precoding_codebooks.cpp.s
@@ -734,7 +734,7 @@ precoding/precoding_codebooks.s: precoding/precoding_codebooks.cpp.s
 
 # target to generate assembly for a file
 precoding/precoding_codebooks.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/precoding/precoding_codebooks.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/precoding/precoding_codebooks.cpp.s
 .PHONY : precoding/precoding_codebooks.cpp.s
 
 pusch/pusch_mcs.o: pusch/pusch_mcs.cpp.o
@@ -742,7 +742,7 @@ pusch/pusch_mcs.o: pusch/pusch_mcs.cpp.o
 
 # target to build an object file
 pusch/pusch_mcs.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_mcs.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_mcs.cpp.o
 .PHONY : pusch/pusch_mcs.cpp.o
 
 pusch/pusch_mcs.i: pusch/pusch_mcs.cpp.i
@@ -750,7 +750,7 @@ pusch/pusch_mcs.i: pusch/pusch_mcs.cpp.i
 
 # target to preprocess a source file
 pusch/pusch_mcs.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_mcs.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_mcs.cpp.i
 .PHONY : pusch/pusch_mcs.cpp.i
 
 pusch/pusch_mcs.s: pusch/pusch_mcs.cpp.s
@@ -758,7 +758,7 @@ pusch/pusch_mcs.s: pusch/pusch_mcs.cpp.s
 
 # target to generate assembly for a file
 pusch/pusch_mcs.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_mcs.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_mcs.cpp.s
 .PHONY : pusch/pusch_mcs.cpp.s
 
 pusch/pusch_uci_beta_offset.o: pusch/pusch_uci_beta_offset.cpp.o
@@ -766,7 +766,7 @@ pusch/pusch_uci_beta_offset.o: pusch/pusch_uci_beta_offset.cpp.o
 
 # target to build an object file
 pusch/pusch_uci_beta_offset.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_uci_beta_offset.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_uci_beta_offset.cpp.o
 .PHONY : pusch/pusch_uci_beta_offset.cpp.o
 
 pusch/pusch_uci_beta_offset.i: pusch/pusch_uci_beta_offset.cpp.i
@@ -774,7 +774,7 @@ pusch/pusch_uci_beta_offset.i: pusch/pusch_uci_beta_offset.cpp.i
 
 # target to preprocess a source file
 pusch/pusch_uci_beta_offset.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_uci_beta_offset.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_uci_beta_offset.cpp.i
 .PHONY : pusch/pusch_uci_beta_offset.cpp.i
 
 pusch/pusch_uci_beta_offset.s: pusch/pusch_uci_beta_offset.cpp.s
@@ -782,7 +782,7 @@ pusch/pusch_uci_beta_offset.s: pusch/pusch_uci_beta_offset.cpp.s
 
 # target to generate assembly for a file
 pusch/pusch_uci_beta_offset.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_uci_beta_offset.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/pusch_uci_beta_offset.cpp.s
 .PHONY : pusch/pusch_uci_beta_offset.cpp.s
 
 pusch/ulsch_info.o: pusch/ulsch_info.cpp.o
@@ -790,7 +790,7 @@ pusch/ulsch_info.o: pusch/ulsch_info.cpp.o
 
 # target to build an object file
 pusch/ulsch_info.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/ulsch_info.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/ulsch_info.cpp.o
 .PHONY : pusch/ulsch_info.cpp.o
 
 pusch/ulsch_info.i: pusch/ulsch_info.cpp.i
@@ -798,7 +798,7 @@ pusch/ulsch_info.i: pusch/ulsch_info.cpp.i
 
 # target to preprocess a source file
 pusch/ulsch_info.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/ulsch_info.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/ulsch_info.cpp.i
 .PHONY : pusch/ulsch_info.cpp.i
 
 pusch/ulsch_info.s: pusch/ulsch_info.cpp.s
@@ -806,7 +806,7 @@ pusch/ulsch_info.s: pusch/ulsch_info.cpp.s
 
 # target to generate assembly for a file
 pusch/ulsch_info.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/ulsch_info.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/pusch/ulsch_info.cpp.s
 .PHONY : pusch/ulsch_info.cpp.s
 
 resource_allocation/resource_allocation_frequency.o: resource_allocation/resource_allocation_frequency.cpp.o
@@ -814,7 +814,7 @@ resource_allocation/resource_allocation_frequency.o: resource_allocation/resourc
 
 # target to build an object file
 resource_allocation/resource_allocation_frequency.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/resource_allocation/resource_allocation_frequency.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/resource_allocation/resource_allocation_frequency.cpp.o
 .PHONY : resource_allocation/resource_allocation_frequency.cpp.o
 
 resource_allocation/resource_allocation_frequency.i: resource_allocation/resource_allocation_frequency.cpp.i
@@ -822,7 +822,7 @@ resource_allocation/resource_allocation_frequency.i: resource_allocation/resourc
 
 # target to preprocess a source file
 resource_allocation/resource_allocation_frequency.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/resource_allocation/resource_allocation_frequency.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/resource_allocation/resource_allocation_frequency.cpp.i
 .PHONY : resource_allocation/resource_allocation_frequency.cpp.i
 
 resource_allocation/resource_allocation_frequency.s: resource_allocation/resource_allocation_frequency.cpp.s
@@ -830,7 +830,7 @@ resource_allocation/resource_allocation_frequency.s: resource_allocation/resourc
 
 # target to generate assembly for a file
 resource_allocation/resource_allocation_frequency.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/resource_allocation/resource_allocation_frequency.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/resource_allocation/resource_allocation_frequency.cpp.s
 .PHONY : resource_allocation/resource_allocation_frequency.cpp.s
 
 sch/sch_segmentation.o: sch/sch_segmentation.cpp.o
@@ -838,7 +838,7 @@ sch/sch_segmentation.o: sch/sch_segmentation.cpp.o
 
 # target to build an object file
 sch/sch_segmentation.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/sch/sch_segmentation.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/sch/sch_segmentation.cpp.o
 .PHONY : sch/sch_segmentation.cpp.o
 
 sch/sch_segmentation.i: sch/sch_segmentation.cpp.i
@@ -846,7 +846,7 @@ sch/sch_segmentation.i: sch/sch_segmentation.cpp.i
 
 # target to preprocess a source file
 sch/sch_segmentation.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/sch/sch_segmentation.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/sch/sch_segmentation.cpp.i
 .PHONY : sch/sch_segmentation.cpp.i
 
 sch/sch_segmentation.s: sch/sch_segmentation.cpp.s
@@ -854,7 +854,7 @@ sch/sch_segmentation.s: sch/sch_segmentation.cpp.s
 
 # target to generate assembly for a file
 sch/sch_segmentation.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/sch/sch_segmentation.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/sch/sch_segmentation.cpp.s
 .PHONY : sch/sch_segmentation.cpp.s
 
 ssb_freq_position_generator.o: ssb_freq_position_generator.cpp.o
@@ -862,7 +862,7 @@ ssb_freq_position_generator.o: ssb_freq_position_generator.cpp.o
 
 # target to build an object file
 ssb_freq_position_generator.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_freq_position_generator.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_freq_position_generator.cpp.o
 .PHONY : ssb_freq_position_generator.cpp.o
 
 ssb_freq_position_generator.i: ssb_freq_position_generator.cpp.i
@@ -870,7 +870,7 @@ ssb_freq_position_generator.i: ssb_freq_position_generator.cpp.i
 
 # target to preprocess a source file
 ssb_freq_position_generator.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_freq_position_generator.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_freq_position_generator.cpp.i
 .PHONY : ssb_freq_position_generator.cpp.i
 
 ssb_freq_position_generator.s: ssb_freq_position_generator.cpp.s
@@ -878,7 +878,7 @@ ssb_freq_position_generator.s: ssb_freq_position_generator.cpp.s
 
 # target to generate assembly for a file
 ssb_freq_position_generator.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_freq_position_generator.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_freq_position_generator.cpp.s
 .PHONY : ssb_freq_position_generator.cpp.s
 
 ssb_gscn.o: ssb_gscn.cpp.o
@@ -886,7 +886,7 @@ ssb_gscn.o: ssb_gscn.cpp.o
 
 # target to build an object file
 ssb_gscn.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_gscn.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_gscn.cpp.o
 .PHONY : ssb_gscn.cpp.o
 
 ssb_gscn.i: ssb_gscn.cpp.i
@@ -894,7 +894,7 @@ ssb_gscn.i: ssb_gscn.cpp.i
 
 # target to preprocess a source file
 ssb_gscn.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_gscn.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_gscn.cpp.i
 .PHONY : ssb_gscn.cpp.i
 
 ssb_gscn.s: ssb_gscn.cpp.s
@@ -902,7 +902,7 @@ ssb_gscn.s: ssb_gscn.cpp.s
 
 # target to generate assembly for a file
 ssb_gscn.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_gscn.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_gscn.cpp.s
 .PHONY : ssb_gscn.cpp.s
 
 ssb_mapping.o: ssb_mapping.cpp.o
@@ -910,7 +910,7 @@ ssb_mapping.o: ssb_mapping.cpp.o
 
 # target to build an object file
 ssb_mapping.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_mapping.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_mapping.cpp.o
 .PHONY : ssb_mapping.cpp.o
 
 ssb_mapping.i: ssb_mapping.cpp.i
@@ -918,7 +918,7 @@ ssb_mapping.i: ssb_mapping.cpp.i
 
 # target to preprocess a source file
 ssb_mapping.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_mapping.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_mapping.cpp.i
 .PHONY : ssb_mapping.cpp.i
 
 ssb_mapping.s: ssb_mapping.cpp.s
@@ -926,7 +926,7 @@ ssb_mapping.s: ssb_mapping.cpp.s
 
 # target to generate assembly for a file
 ssb_mapping.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_mapping.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/ssb_mapping.cpp.s
 .PHONY : ssb_mapping.cpp.s
 
 tdd_ul_dl_config.o: tdd_ul_dl_config.cpp.o
@@ -934,7 +934,7 @@ tdd_ul_dl_config.o: tdd_ul_dl_config.cpp.o
 
 # target to build an object file
 tdd_ul_dl_config.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/tdd_ul_dl_config.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/tdd_ul_dl_config.cpp.o
 .PHONY : tdd_ul_dl_config.cpp.o
 
 tdd_ul_dl_config.i: tdd_ul_dl_config.cpp.i
@@ -942,7 +942,7 @@ tdd_ul_dl_config.i: tdd_ul_dl_config.cpp.i
 
 # target to preprocess a source file
 tdd_ul_dl_config.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/tdd_ul_dl_config.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/tdd_ul_dl_config.cpp.i
 .PHONY : tdd_ul_dl_config.cpp.i
 
 tdd_ul_dl_config.s: tdd_ul_dl_config.cpp.s
@@ -950,7 +950,7 @@ tdd_ul_dl_config.s: tdd_ul_dl_config.cpp.s
 
 # target to generate assembly for a file
 tdd_ul_dl_config.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/tdd_ul_dl_config.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/tdd_ul_dl_config.cpp.s
 .PHONY : tdd_ul_dl_config.cpp.s
 
 uci/uci_part2_size_calculator.o: uci/uci_part2_size_calculator.cpp.o
@@ -958,7 +958,7 @@ uci/uci_part2_size_calculator.o: uci/uci_part2_size_calculator.cpp.o
 
 # target to build an object file
 uci/uci_part2_size_calculator.cpp.o:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/uci/uci_part2_size_calculator.cpp.o
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/uci/uci_part2_size_calculator.cpp.o
 .PHONY : uci/uci_part2_size_calculator.cpp.o
 
 uci/uci_part2_size_calculator.i: uci/uci_part2_size_calculator.cpp.i
@@ -966,7 +966,7 @@ uci/uci_part2_size_calculator.i: uci/uci_part2_size_calculator.cpp.i
 
 # target to preprocess a source file
 uci/uci_part2_size_calculator.cpp.i:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/uci/uci_part2_size_calculator.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/uci/uci_part2_size_calculator.cpp.i
 .PHONY : uci/uci_part2_size_calculator.cpp.i
 
 uci/uci_part2_size_calculator.s: uci/uci_part2_size_calculator.cpp.s
@@ -974,7 +974,7 @@ uci/uci_part2_size_calculator.s: uci/uci_part2_size_calculator.cpp.s
 
 # target to generate assembly for a file
 uci/uci_part2_size_calculator.cpp.s:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/uci/uci_part2_size_calculator.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(MAKE) $(MAKESILENT) -f lib/ran/CMakeFiles/srsran_ran.dir/build.make lib/ran/CMakeFiles/srsran_ran.dir/uci/uci_part2_size_calculator.cpp.s
 .PHONY : uci/uci_part2_size_calculator.cpp.s
 
 # Help Target
@@ -1101,6 +1101,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

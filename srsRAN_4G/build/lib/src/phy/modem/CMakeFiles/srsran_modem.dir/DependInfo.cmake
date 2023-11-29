@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/demod_hard.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/demod_soft.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/lte_tables.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/mod.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o.d"
-  "/home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/modem/modem_table.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_hard.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_soft.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/mod.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o" "gcc" "lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o.d"
   )
 
 # Targets to which this target links.

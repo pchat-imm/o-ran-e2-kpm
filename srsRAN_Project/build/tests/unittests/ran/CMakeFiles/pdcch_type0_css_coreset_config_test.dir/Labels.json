@@ -2,7 +2,7 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/ran/pdcch/pdcch_type0_css_coreset_config_test.cpp"
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/ran/pdcch/pdcch_type0_css_coreset_config_test.cpp"
 		}
 	],
 	"target" : 

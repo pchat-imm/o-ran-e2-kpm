@@ -2,7 +2,7 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/oem/o-ran-e2/srsRAN_Project/tests/unittests/pcap/ngap_pcap_test.cpp"
+			"file" : "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/pcap/ngap_pcap_test.cpp"
 		}
 	],
 	"target" : 

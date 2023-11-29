@@ -1,5 +1,5 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/cu_cp/cu_cp_config_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/cu_cp/cu_cp_config_test[1]_tests.cmake")
+if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/cu_cp/cu_cp_config_test[1]_tests.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/cu_cp/cu_cp_config_test[1]_tests.cmake")
 else()
   add_test(cu_cp_config_test_NOT_BUILT cu_cp_config_test_NOT_BUILT)
 endif()

@@ -1,5 +1,5 @@
-if(EXISTS "/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/f1ap/du/f1ap_du_test[1]_tests.cmake")
-  include("/home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/f1ap/du/f1ap_du_test[1]_tests.cmake")
+if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/f1ap/du/f1ap_du_test[1]_tests.cmake")
+  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/f1ap/du/f1ap_du_test[1]_tests.cmake")
 else()
   add_test(f1ap_du_test_NOT_BUILT f1ap_du_test_NOT_BUILT)
 endif()

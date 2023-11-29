@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/srsran_ch_estimation.dir/cedron_freq_estimator.c.o"
+  "CMakeFiles/srsran_ch_estimation.dir/cedron_freq_estimator.c.o.d"
   "CMakeFiles/srsran_ch_estimation.dir/chest_common.c.o"
   "CMakeFiles/srsran_ch_estimation.dir/chest_common.c.o.d"
   "CMakeFiles/srsran_ch_estimation.dir/chest_dl.c.o"

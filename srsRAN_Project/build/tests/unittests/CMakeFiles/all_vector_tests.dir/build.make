@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/o-ran-e2/srsRAN_Project
+CMAKE_SOURCE_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/o-ran-e2/srsRAN_Project/build
+CMAKE_BINARY_DIR = /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build
 
 # Utility rule file for all_vector_tests.
 
@@ -74,10 +74,10 @@ tests/unittests/CMakeFiles/all_vector_tests.dir/build: all_vector_tests
 .PHONY : tests/unittests/CMakeFiles/all_vector_tests.dir/build
 
 tests/unittests/CMakeFiles/all_vector_tests.dir/clean:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests && $(CMAKE_COMMAND) -P CMakeFiles/all_vector_tests.dir/cmake_clean.cmake
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests && $(CMAKE_COMMAND) -P CMakeFiles/all_vector_tests.dir/cmake_clean.cmake
 .PHONY : tests/unittests/CMakeFiles/all_vector_tests.dir/clean
 
 tests/unittests/CMakeFiles/all_vector_tests.dir/depend:
-	cd /home/oem/o-ran-e2/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/o-ran-e2/srsRAN_Project /home/oem/o-ran-e2/srsRAN_Project/tests/unittests /home/oem/o-ran-e2/srsRAN_Project/build /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests /home/oem/o-ran-e2/srsRAN_Project/build/tests/unittests/CMakeFiles/all_vector_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chatchamon/o-ran-e2-kpm/srsRAN_Project /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/CMakeFiles/all_vector_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/unittests/CMakeFiles/all_vector_tests.dir/depend
 

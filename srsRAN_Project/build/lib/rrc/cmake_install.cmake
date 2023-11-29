@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/o-ran-e2/srsRAN_Project/lib/rrc
+# Install script for directory: /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/rrc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

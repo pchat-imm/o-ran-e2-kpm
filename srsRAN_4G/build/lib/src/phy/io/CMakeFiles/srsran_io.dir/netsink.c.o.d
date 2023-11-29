@@ -1,5 +1,5 @@
 lib/src/phy/io/CMakeFiles/srsran_io.dir/netsink.c.o: \
- /home/oem/o-ran-e2/srsRAN_4G/lib/src/phy/io/netsink.c \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/io/netsink.c \
  /usr/include/stdc-predef.h /usr/include/arpa/inet.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -103,8 +103,8 @@ lib/src/phy/io/CMakeFiles/srsran_io.dir/netsink.c.o: \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/phy/io/netsink.h \
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/phy/io/netsink.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/10/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /home/oem/o-ran-e2/srsRAN_4G/lib/include/srsran/config.h
+ /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/include/srsran/config.h

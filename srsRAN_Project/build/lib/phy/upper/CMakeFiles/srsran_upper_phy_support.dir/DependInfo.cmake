@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oem/o-ran-e2/srsRAN_Project/lib/phy/upper/rb_allocation.cpp" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rb_allocation.cpp.o" "gcc" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rb_allocation.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_Project/lib/phy/upper/rx_softbuffer_pool_impl.cpp" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rx_softbuffer_pool_impl.cpp.o" "gcc" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rx_softbuffer_pool_impl.cpp.o.d"
-  "/home/oem/o-ran-e2/srsRAN_Project/lib/phy/upper/vrb_to_prb_mapper.cpp" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/vrb_to_prb_mapper.cpp.o" "gcc" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/vrb_to_prb_mapper.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/phy/upper/rb_allocation.cpp" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rb_allocation.cpp.o" "gcc" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rb_allocation.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/phy/upper/rx_softbuffer_pool_impl.cpp" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rx_softbuffer_pool_impl.cpp.o" "gcc" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/rx_softbuffer_pool_impl.cpp.o.d"
+  "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/lib/phy/upper/vrb_to_prb_mapper.cpp" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/vrb_to_prb_mapper.cpp.o" "gcc" "lib/phy/upper/CMakeFiles/srsran_upper_phy_support.dir/vrb_to_prb_mapper.cpp.o.d"
   )
 
 # Targets to which this target links.
