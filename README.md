@@ -1,7 +1,4 @@
 # o-ran-e2-kpm
-
-=======
-
 next task: install open5gs from source to be able to config amf and upf https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
 without 'ninja install'
 
@@ -13,7 +10,6 @@ without 'ninja install'
 3. change gnb
 4. change ue
 
-____
 #### read more: wiki of this repository
 
 try O-RAN 5G E2 interface to test e2sm kpm <br />
