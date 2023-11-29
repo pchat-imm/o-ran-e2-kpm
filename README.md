@@ -1,5 +1,4 @@
 # o-ran-e2-kpm
-
 next task: install open5gs from source to be able to config amf and upf https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
 without 'ninja install'
 
