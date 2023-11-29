@@ -1,8 +1,9 @@
 # o-ran-e2-kpm
 
-1. [] config gnb (bandwidth, scs)
-2. [] do the slicing (sst = 1, sd = 1)
-3. [] install open5gs from source to be able to config amf and upf https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
+1. [] do the slicing (sst = 1, sd = 1)
+	- gnb 
+	- ue [slicing] nssai-sst=1, nssai-sd=1
+2. [] install open5gs from source to be able to config amf and upf https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
 without 'ninja install'
 
 
