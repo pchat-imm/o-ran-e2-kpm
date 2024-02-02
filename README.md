@@ -7,6 +7,25 @@
 - nearRT-RIC and xApp_kpm: https://docs.srsran.com/projects/project/en/latest/tutorials/source/flexric/source/index.html <br />
 - multi UE zmq: https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#over-the-air-setup <br />
 
+#### other note before start
+- srsRAN_Project is inside czmq/ folder (accidentally install there)
+- configs files of gNB, UE, and xApp are in config_files/
+
+#### different config gNB, UE of nearRT-RIC and multiUE
+|component | main | Topic | NearRT-RIC | multiUE |
+|----------|------|-------|------------|---------|
+|gnb || ru_sdr | srate | 11.52 | 23.04 |
+| | cell_cfg | channel_bandwidth_MHz | 10 | 20 |
+| |	   | common_scs | 15 | 30 |
+| |	   | pdcch: coreset0_index | 6 | 12 |  
+| | e2 | enable_du_e2 | true | | 
+| |    | e2sm_kpm_enabled | true | |
+| |    | addr | 127.0.0.1 | |
+| |    | port | 36421 | |
+| | metrics | rlc_json_enable | 1 | |
+| |	  | rlc_report_period | 1000 | |
+|ue| rf | srate | 11.52e6 | 23.04e6 | 
+
 
 ### multi_UE
 
