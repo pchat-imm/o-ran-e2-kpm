@@ -1,6 +1,7 @@
 ## question <br />
 - [ ] how to config ue and gnb
 - [ ] why it is multi ue? currently only 1 ue with 3 individual ping window
+- [ ] merge multiUE branch into main
 
 
 ### main tutorial: <br />
@@ -12,6 +13,8 @@
 - configs files of gNB, UE, and xApp are in config_files/
 
 #### different config gNB, UE of nearRT-RIC and multiUE
+for multiUE to be able to handle more load, they set symbol rate, channel bandwidth, scs, into two times of original configuration
+
 |component | main | Topic | NearRT-RIC | multiUE |
 |----------|------|-------|------------|---------|
 |gnb || ru_sdr | srate | 11.52 | 23.04 |
