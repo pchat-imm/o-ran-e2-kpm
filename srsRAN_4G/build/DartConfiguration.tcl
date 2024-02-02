@@ -11,7 +11,7 @@ BuildDirectory: /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: chatchamon-ThinkPad-L14-Gen-2
+Site: worker01
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++

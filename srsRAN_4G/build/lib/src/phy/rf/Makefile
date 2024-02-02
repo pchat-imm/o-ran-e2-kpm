@@ -206,6 +206,20 @@ srsran_rf_utils/fast:
 .PHONY : srsran_rf_utils/fast
 
 # Convenience name for target.
+lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rule:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rule
+.PHONY : lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rule
+
+# Convenience name for target.
+srsran_rf_blade: lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rule
+.PHONY : srsran_rf_blade
+
+# fast build rule for target.
+srsran_rf_blade/fast:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/build
+.PHONY : srsran_rf_blade/fast
+
+# Convenience name for target.
 lib/src/phy/rf/CMakeFiles/srsran_rf_zmq.dir/rule:
 	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/rf/CMakeFiles/srsran_rf_zmq.dir/rule
 .PHONY : lib/src/phy/rf/CMakeFiles/srsran_rf_zmq.dir/rule
@@ -274,6 +288,30 @@ rf_file_test: lib/src/phy/rf/CMakeFiles/rf_file_test.dir/rule
 rf_file_test/fast:
 	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/rf_file_test.dir/build.make lib/src/phy/rf/CMakeFiles/rf_file_test.dir/build
 .PHONY : rf_file_test/fast
+
+rf_blade_imp.o: rf_blade_imp.c.o
+.PHONY : rf_blade_imp.o
+
+# target to build an object file
+rf_blade_imp.c.o:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rf_blade_imp.c.o
+.PHONY : rf_blade_imp.c.o
+
+rf_blade_imp.i: rf_blade_imp.c.i
+.PHONY : rf_blade_imp.i
+
+# target to preprocess a source file
+rf_blade_imp.c.i:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rf_blade_imp.c.i
+.PHONY : rf_blade_imp.c.i
+
+rf_blade_imp.s: rf_blade_imp.c.s
+.PHONY : rf_blade_imp.s
+
+# target to generate assembly for a file
+rf_blade_imp.c.s:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rf_blade_imp.c.s
+.PHONY : rf_blade_imp.c.s
 
 rf_file_imp.o: rf_file_imp.c.o
 .PHONY : rf_file_imp.o
@@ -533,9 +571,13 @@ help:
 	@echo "... rf_file_test"
 	@echo "... rf_zmq_test"
 	@echo "... srsran_rf"
+	@echo "... srsran_rf_blade"
 	@echo "... srsran_rf_object"
 	@echo "... srsran_rf_utils"
 	@echo "... srsran_rf_zmq"
+	@echo "... rf_blade_imp.o"
+	@echo "... rf_blade_imp.i"
+	@echo "... rf_blade_imp.s"
 	@echo "... rf_file_imp.o"
 	@echo "... rf_file_imp.i"
 	@echo "... rf_file_imp.s"

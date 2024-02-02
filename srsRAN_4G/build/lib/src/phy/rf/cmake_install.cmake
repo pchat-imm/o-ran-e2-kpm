@@ -44,6 +44,59 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so.23.04.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so.0"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHECK
+           FILE "${file}"
+           RPATH "")
+    endif()
+  endforeach()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_blade.so.23.04.0"
+    "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_blade.so.0"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so.23.04.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so.0"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/usr/local/lib:"
+           NEW_RPATH "")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
+      endif()
+    endif()
+  endforeach()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY OPTIONAL FILES "/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/libsrsran_rf_blade.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so"
+         OLD_RPATH "/usr/local/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_blade.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_zmq.so.23.04.0"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsrsran_rf_zmq.so.0"
       )

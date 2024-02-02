@@ -401,6 +401,7 @@
 /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test/CMakeFiles/install/local.dir
 /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test/CMakeFiles/install/strip.dir
 /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/CMakeFiles/srsran_rf_utils.dir
+/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir
 /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/CMakeFiles/srsran_rf_zmq.dir
 /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/CMakeFiles/srsran_rf_object.dir
 /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf/CMakeFiles/srsran_rf.dir

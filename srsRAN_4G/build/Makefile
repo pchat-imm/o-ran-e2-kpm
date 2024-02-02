@@ -1921,6 +1921,19 @@ srsran_rf_utils/fast:
 .PHONY : srsran_rf_utils/fast
 
 #=============================================================================
+# Target rules for targets named srsran_rf_blade
+
+# Build rule for target.
+srsran_rf_blade: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsran_rf_blade
+.PHONY : srsran_rf_blade
+
+# fast build rule for target.
+srsran_rf_blade/fast:
+	$(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/build
+.PHONY : srsran_rf_blade/fast
+
+#=============================================================================
 # Target rules for targets named srsran_rf_zmq
 
 # Build rule for target.
@@ -5531,6 +5544,7 @@ help:
 	@echo "... srsran_radio"
 	@echo "... srsran_resampling"
 	@echo "... srsran_rf"
+	@echo "... srsran_rf_blade"
 	@echo "... srsran_rf_object"
 	@echo "... srsran_rf_utils"
 	@echo "... srsran_rf_zmq"
