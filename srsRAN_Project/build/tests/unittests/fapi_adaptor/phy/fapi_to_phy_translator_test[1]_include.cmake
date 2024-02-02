@@ -1,5 +1,0 @@
-if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor/phy/fapi_to_phy_translator_test[1]_tests.cmake")
-  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/fapi_adaptor/phy/fapi_to_phy_translator_test[1]_tests.cmake")
-else()
-  add_test(fapi_to_phy_translator_test_NOT_BUILT fapi_to_phy_translator_test_NOT_BUILT)
-endif()

@@ -1,3 +1,0 @@
-# Directory labels
- sched
-# Source files and their labels

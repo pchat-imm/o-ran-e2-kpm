@@ -1,3 +1,0 @@
-add_test( UplinkRequestProcessor.process_prach_request_produces_event_that_request_capture_prach /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/phy/upper/uplink_request_processor_test [==[--gtest_filter=UplinkRequestProcessor.process_prach_request_produces_event_that_request_capture_prach]==] --gtest_also_run_disabled_tests)
-set_tests_properties( UplinkRequestProcessor.process_prach_request_produces_event_that_request_capture_prach PROPERTIES WORKING_DIRECTORY /home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/phy/upper SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( uplink_request_processor_test_TESTS UplinkRequestProcessor.process_prach_request_produces_event_that_request_capture_prach)

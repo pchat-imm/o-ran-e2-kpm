@@ -1,3 +1,0 @@
-# Directory labels
- ecpri
-# Source files and their labels

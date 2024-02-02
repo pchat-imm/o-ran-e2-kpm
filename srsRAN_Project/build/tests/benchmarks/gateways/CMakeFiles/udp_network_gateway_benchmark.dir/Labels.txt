@@ -1,4 +1,0 @@
-# Directory labels
- gateways
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/benchmarks/gateways/udp_network_gateway_benchmark.cpp

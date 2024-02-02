@@ -1,4 +1,0 @@
-# Directory labels
- adt
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/adt/span_formatter_test.cpp

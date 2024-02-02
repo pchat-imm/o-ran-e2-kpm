@@ -1,5 +1,0 @@
-# Directory labels
- io_broker
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/support/network/transport_layer_address_test.cpp
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/support/network/io_broker_epoll_test.cpp

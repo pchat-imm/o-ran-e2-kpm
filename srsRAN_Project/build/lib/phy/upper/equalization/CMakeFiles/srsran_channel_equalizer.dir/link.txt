@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_channel_equalizer.a CMakeFiles/srsran_channel_equalizer.dir/channel_equalizer_zf_impl.cpp.o CMakeFiles/srsran_channel_equalizer.dir/equalization_factories.cpp.o CMakeFiles/srsran_channel_equalizer.dir/equalize_zf_2x2.cpp.o
-/usr/bin/ranlib libsrsran_channel_equalizer.a

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_pdsch_processor.a CMakeFiles/srsran_pdsch_processor.dir/pdsch_codeblock_processor.cpp.o CMakeFiles/srsran_pdsch_processor.dir/pdsch_processor_concurrent_impl.cpp.o CMakeFiles/srsran_pdsch_processor.dir/pdsch_processor_impl.cpp.o CMakeFiles/srsran_pdsch_processor.dir/pdsch_processor_lite_impl.cpp.o
-/usr/bin/ranlib libsrsran_pdsch_processor.a

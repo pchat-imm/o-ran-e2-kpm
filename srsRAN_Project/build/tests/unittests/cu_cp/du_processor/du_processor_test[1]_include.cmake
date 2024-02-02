@@ -1,5 +1,0 @@
-if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/cu_cp/du_processor/du_processor_test[1]_tests.cmake")
-  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/cu_cp/du_processor/du_processor_test[1]_tests.cmake")
-else()
-  add_test(du_processor_test_NOT_BUILT du_processor_test_NOT_BUILT)
-endif()

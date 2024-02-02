@@ -1,4 +1,0 @@
-# Directory labels
- du_manager
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/du_manager/serving_cell_config_converter_test.cpp

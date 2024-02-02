@@ -1,3 +1,0 @@
-# Directory labels
- asn1
-# Source files and their labels

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_security.a CMakeFiles/srsran_security.dir/security.cpp.o CMakeFiles/srsran_security.dir/s3g.cpp.o CMakeFiles/srsran_security.dir/zuc.cpp.o
-/usr/bin/ranlib libsrsran_security.a

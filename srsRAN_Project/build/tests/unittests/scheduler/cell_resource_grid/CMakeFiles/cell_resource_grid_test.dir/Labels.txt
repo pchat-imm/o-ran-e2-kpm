@@ -1,5 +1,0 @@
-# Directory labels
- sched
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/cell_resource_grid/sched_prb_test.cpp
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/scheduler/cell_resource_grid/cell_resource_grid_test.cpp

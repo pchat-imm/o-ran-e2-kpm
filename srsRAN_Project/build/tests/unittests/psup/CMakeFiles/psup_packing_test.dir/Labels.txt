@@ -1,4 +1,0 @@
-# Directory labels
- psup
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/psup/psup_packing_test.cpp

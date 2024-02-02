@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdu_high_test_bench.a CMakeFiles/du_high_test_bench.dir/test_utils/du_high_test_bench.cpp.o
-/usr/bin/ranlib libdu_high_test_bench.a

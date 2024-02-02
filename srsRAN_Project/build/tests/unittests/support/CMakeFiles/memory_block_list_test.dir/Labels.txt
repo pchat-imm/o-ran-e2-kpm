@@ -1,4 +1,0 @@
-# Directory labels
- support
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/support/memory_block_list_test.cpp

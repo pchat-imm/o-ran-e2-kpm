@@ -1,6 +1,0 @@
-# Directory labels
- adt
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/adt/byte_buffer_segment_test.cpp
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/adt/byte_buffer_test.cpp
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/adt/byte_buffer_chain_test.cpp

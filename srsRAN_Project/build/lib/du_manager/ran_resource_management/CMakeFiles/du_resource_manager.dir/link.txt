@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdu_resource_manager.a CMakeFiles/du_resource_manager.dir/du_ran_resource_manager_impl.cpp.o CMakeFiles/du_resource_manager.dir/du_pucch_resource_manager.cpp.o CMakeFiles/du_resource_manager.dir/pucch_resource_generator.cpp.o
-/usr/bin/ranlib libdu_resource_manager.a

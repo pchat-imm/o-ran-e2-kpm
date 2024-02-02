@@ -1,3 +1,0 @@
-# Directory labels
- transmitter
-# Source files and their labels

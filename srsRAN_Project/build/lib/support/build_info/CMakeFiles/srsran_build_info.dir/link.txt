@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_build_info.a CMakeFiles/srsran_build_info.dir/build_info.cpp.o
-/usr/bin/ranlib libsrsran_build_info.a
