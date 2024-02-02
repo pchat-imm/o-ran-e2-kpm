@@ -1,26 +1,63 @@
-# o-ran-e2-kpm
-
-1. [] do the slicing (sst = 1, sd = 1)
-	- gnb 
-	- ue [slicing] nssai-sst=1, nssai-sd=1
-2. [] install open5gs from source to be able to config amf and upf https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/
-without 'ninja install'
+## question <br />
+- [ ] how to config ue and gnb
+- [ ] why it is multi ue? currently only 1 ue with 3 individual ping window
 
 
-**follow this**: https://github.com/s5uishida/open5gs_5gc_srsran_sample_config/tree/main \
-**requirement**
-1. change open5gs
-2. change upf
-3. change gnb
-4. change ue
+### main tutorial: <br />
+- nearRT-RIC and xApp_kpm: https://docs.srsran.com/projects/project/en/latest/tutorials/source/flexric/source/index.html <br />
+- multi UE zmq: https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#over-the-air-setup <br />
 
-#### read more: wiki of this repository
 
-try O-RAN 5G E2 interface to test e2sm kpm <br />
+### multi_UE
 
-| component  | source code | note | branch |
-| ------------- | ------------- | ------------- | ------------- |
-| core network  | open5GS | srsRAN_Project in docker | - |
-| gNB  | srsRAN_project | in zmq | main | 
-| srsue  | srsRAN_4G  | in zmq |  master |
-| nearRT-RIC and xApp | xapp_kpm_moni with nearRT-RIC (only this xapp that is work, other not work)| flexRIC | e2ap-v2|
+ping command `sudo ip netns exec ue1 ping 10.45.1.1`
+
+log UE
+```
+~/o-ran-e2-kpm/srsRAN_4G/build/srsue/src$ sudo ./srsue ue_zmq_multiUE.conf 
+Active RF plugins: libsrsran_rf_blade.so libsrsran_rf_zmq.so
+Inactive RF plugins: 
+Reading configuration file ue_zmq_multiUE.conf...
+
+Built in Release mode using commit ec29b0c1f on branch master.
+
+Opening 1 channels in RF device=zmq with args=tx_port=tcp://127.0.0.1:2001,rx_port=tcp://127.0.0.1:2000,base_srate=23.04e6
+Supported RF device list: bladeRF zmq file
+CHx base_srate=23.04e6
+Current sample rate is 1.92 MHz with a base rate of 23.04 MHz (x12 decimation)
+CH0 rx_port=tcp://127.0.0.1:2000
+CH0 tx_port=tcp://127.0.0.1:2001
+Current sample rate is 23.04 MHz with a base rate of 23.04 MHz (x1 decimation)
+Current sample rate is 23.04 MHz with a base rate of 23.04 MHz (x1 decimation)
+Waiting PHY to initialize ... done!
+Attaching UE...
+Random Access Transmission: prach_occasion=0, preamble_index=0, ra-rnti=0x39, tti=334
+Random Access Complete.     c-rnti=0x4601, ta=0
+RRC Connected
+PDU Session Establishment successful. IP: 10.45.1.2
+RRC NR reconfiguration successful.
+```
+
+log of gNB when have 3 pings windows
+- 1 ping: brate ~ 12k+
+- 2 ping: brate ~ 24k+
+- 3 ping: brate ~ 36k+
+```
+           -----------------DL-----------------------|------------------UL--------------------
+ pci rnti  cqi  ri  mcs  brate   ok  nok  (%)  dl_bs | pusch  mcs  brate   ok  nok  (%)    bsr
+   1 4601   15   1   26   1.8k    2    0   0%      0 |  65.5   28    11k    4    0   0%      0
+   1 4601   15   1   26   1.8k    2    0   0%      0 |  65.5   28    12k    5    0   0%      0
+   1 4601   15   1   26   1.8k    2    0   0%      0 |  65.5   28    12k    5    0   0%      0
+   1 4601   15   1   26   3.7k    4    0   0%      0 |  65.5   28    25k   10    0   0%      0
+   1 4601   15   1   26   3.7k    4    0   0%      0 |  65.5   28    25k   10    0   0%      0
+   1 4601   15   1   26   3.7k    4    0   0%      0 |  65.5   28    23k    9    0   0%      0
+   1 4601   15   1   26   5.5k    6    0   0%      0 |  65.5   28    36k   15    0   0%      0
+   1 4601   15   1   26   3.7k    4    0   0%      0 |  65.5   28    24k   10    0   0%      0
+   1 4601   15   1   26   5.5k    6    0   0%      0 |  65.5   28    37k   15    0   0%      0
+   1 4601   15   1   26   6.9k    7    0   0%      0 |  65.5   28    36k   15    0   0%      0
+   1 4601   15   1   26   5.5k    6    0   0%      0 |  65.5   28    36k   15    0   0%      0
+```
+
+
+
+
