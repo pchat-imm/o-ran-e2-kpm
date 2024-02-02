@@ -1,5 +1,9 @@
+## task 05/02/2024
+- update readme
+- merge multiUE branch into main
+
 ## question <br />
-- [ ] how to config ue and gnb
+- [ ] how to config ue
 - [ ] why it is multi ue? currently only 1 ue with 3 individual ping window
 - [ ] merge multiUE branch into main
 
@@ -11,6 +15,14 @@
 #### other note before start
 - srsRAN_Project is inside czmq/ folder (accidentally install there)
 - configs files of gNB, UE, and xApp are in config_files/
+
+#### main component
+| component  | source code | note | branch |
+| ------------- | ------------- | ------------- | ------------- |
+| core network  | open5GS | srsRAN_Project in docker | - |
+| gNB  | srsRAN_project | in zmq | main | 
+| srsue  | srsRAN_4G  | in zmq |  master |
+| nearRT-RIC and xApp | xapp_kpm_moni with nearRT-RIC | flexRIC | br-flexric|
 
 #### different config gNB, UE of nearRT-RIC and multiUE
 for multiUE to be able to handle more load, they set symbol rate, channel bandwidth, scs, into two times of original configuration
@@ -28,6 +40,10 @@ for multiUE to be able to handle more load, they set symbol rate, channel bandwi
 | | metrics | rlc_json_enable | 1 | |
 | |	  | rlc_report_period | 1000 | |
 |ue| rf | srate | 11.52e6 | 23.04e6 | 
+| | rat.nr| max_nof_prb | | 106 |
+| |	  | nof_prb | | 106|
+
+the max number of PRB need to be correspond with used bandwidth - BW 20, PRB 106 
 
 
 ### multi_UE
