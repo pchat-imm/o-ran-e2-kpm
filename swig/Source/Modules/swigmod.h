@@ -33,6 +33,7 @@ extern int ImportMode;
 extern int NoExcept;		// -no_except option
 extern int Abstract;		// abstract base class
 extern int SmartPointer;	// smart pointer methods being emitted
+extern int SwigRuntime;
 
 /* Overload "argc" and "argv" */
 extern String *argv_template_string;
@@ -98,8 +99,6 @@ public:
 
 protected:
   AccessMode cplus_mode;
-  AccessMode accessModeFromString(String *access);
-  int abstractClassTest(Node *n);	/* Is class really abstract? */
 };
 
 /* ----------------------------------------------------------------------------
@@ -217,7 +216,8 @@ public:
   virtual Hash* symbolScopePseudoSymbolLookup(const_String_or_char_ptr scope);
   static Node *classLookup(const SwigType *s); /* Class lookup      */
   static Node *enumLookup(SwigType *s);	/* Enum lookup       */
-  virtual int is_immutable(Node *n);	/* Is variable assignable? */
+  virtual int abstractClassTest(Node *n);	/* Is class really abstract? */
+  virtual int is_assignable(Node *n);	/* Is variable assignable? */
   virtual String *runtimeCode();	/* returns the language specific runtime code */
   virtual String *defaultExternalRuntimeFilename();	/* the default filename for the external runtime */
   virtual void replaceSpecialVariables(String *method, String *tm, Parm *parm); /* Language specific special variable substitutions for $typemap() */
@@ -228,11 +228,11 @@ public:
   /* Returns the cplus_runtime mode */
   int cplus_runtime_mode();
 
-  /* Flag for language to support directors */
-  void directorLanguage(int val = 1);
-
   /* Allow director related code generation */
   void allow_directors(int val = 1);
+
+  /* Return true if directors are enabled */
+  int directorsEnabled() const;
 
   /* Allow director protected members related code generation */
   void allow_dirprot(int val = 1);
@@ -243,10 +243,10 @@ public:
   /* Returns the dirprot mode */
   int dirprot_mode() const;
 
-  /* Check if the non public constructor is needed (for directors) */
+  /* Check if the non public constructor is  needed (for directors) */
   int need_nonpublic_ctor(Node *n);
 
-  /* Check if the non public member is needed (for directors) */
+  /* Check if the non public member is  needed (for directors) */
   int need_nonpublic_member(Node *n);
 
   /* Set none comparison string */
@@ -339,6 +339,9 @@ protected:
   /* Director allows multiple inheritance */
   int director_multiple_inheritance;
 
+  /* Director language module */
+  int director_language;
+
   /* Used to translate Doxygen comments to target documentation format */
   class DoxygenTranslator *doxygenTranslator;
 
@@ -349,6 +352,7 @@ private:
   int overloading;
   int multiinput;
   int cplus_runtime;
+  int directors;
   static Language *this_;
 };
 
@@ -392,7 +396,6 @@ String *Swig_overload_dispatch_cast(Node *n, const_String_or_char_ptr fmt, int *
 List *Swig_overload_rank(Node *n, bool script_lang_wrapping);
 SwigType *cplus_value_type(SwigType *t);
 
-int Swig_directors_enabled();
 /* directors.cxx start */
 String *Swig_csuperclass_call(String *base, String *method, ParmList *l);
 String *Swig_class_declaration(Node *n, String *name);
@@ -420,7 +423,6 @@ void Wrapper_cast_dispatch_mode_set(int);
 void Wrapper_naturalvar_mode_set(int);
 
 void clean_overloaded(Node *n);
-SwigType *Swig_smartptr_upcast(SwigType *smart, SwigType *c_classname, SwigType *c_baseclassname);
 
 extern "C" {
   const char *Swig_to_string(DOH *object, int count = -1);

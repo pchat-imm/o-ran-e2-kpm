@@ -4,15 +4,20 @@
  * SWIG File for building new tclsh program
  * ----------------------------------------------------------------------------- */
 
-// This module provides the Tcl_AppInit() function needed to build a
-// new version of the tclsh executable.   This file should not be used
-// when using dynamic loading.   To make an interface file work with
-// both static and dynamic loading, put something like this in your
-// interface file :
-//
-//      #ifdef STATIC
-//      %include <tclsh.i>
-//      #endif
+#ifdef AUTODOC
+%subsection "tclsh.i"
+%text %{
+This module provides the Tcl_AppInit() function needed to build a 
+new version of the tclsh executable.   This file should not be used
+when using dynamic loading.   To make an interface file work with
+both static and dynamic loading, put something like this in your
+interface file :
+
+     #ifdef STATIC
+     %include <tclsh.i>
+     #endif
+%}
+#endif
 
 %{
 

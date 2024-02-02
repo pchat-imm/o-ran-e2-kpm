@@ -37,17 +37,7 @@ void tester() {
 %}
 
 // non-type template parameters working well in SWIG, below is a simple workaround as the 3rd parameter is defaulted for enable_if_t (which is just SFINAE to give a nice C++ compiler error)
-%template(enableif5) enableif5<int, int, true>; // workaround (overriding default)
-
-
-%inline %{
-// #1037 infinite loop
-template <typename T, std::enable_if_t<sizeof(T) <= 4>>
-void destId(T el) {}
-
-template <typename T, std::enable_if_t<sizeof(T) >= 3>>
-void destId(const T& el) {}
-%}
+%template(enableif5) enableif5<int, int, true>; // workaround
 
 %inline %{
 // #961 no name for defaulted template parameter

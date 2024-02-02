@@ -9,21 +9,15 @@
 
 %feature("director") Test;
 
-/* We had to rename this in the C++ API being wrapped due to a collision with
- * a value typedef in newer ocaml headers, so use %rename to avoid having to
- * update all the runme files which use it.
- */
-%rename(value) Test::the_value;
-
 %inline %{
 class Test {
 public:
-  int the_value;
+  int value;
   
   virtual void operator()(int x, int y) {
-    the_value=x+y;
+    value=x+y;
   }
-  Test() : the_value(0) {}
+  Test() : value(0) {}
   virtual ~Test() {}
 };
 
@@ -35,12 +29,12 @@ std::function<void ( int, int )> pF = test;
 int testit1(Test &new_test, int a, int b) {
   pF = std::ref(new_test);
   pF(a, b);
-  return new_test.the_value;
+  return new_test.value;
 }
 
 int testit2(int a, int b) {
   test(a, b);
-  return test.the_value;
+  return test.value;
 }
 
 %}

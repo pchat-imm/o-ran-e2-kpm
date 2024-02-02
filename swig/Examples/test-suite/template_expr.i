@@ -2,11 +2,8 @@
 
 // bug #925555
 %inline %{
-struct ThisType {};
-template<int _size, int _stride, class __elementTypeSequence, class __dataPtrType>
-  class vctFixedLengthConstSequenceBase {};
 
-  template<int _size, int __stride, class __elementTypeSequence,
+  template<int __stride, class __elementTypeSequence,
     class __dataPtrType, class __elementType>
     inline const ThisType & 
     ConcatenationOf(const vctFixedLengthConstSequenceBase<_size - 1,
@@ -33,15 +30,9 @@ class X {};
 // bug #646275
 
 %inline %{
-struct Ty {};
-template<typename Type, short a> struct Test {};
-template<int rank, typename X, typename Type> struct CondRetType {
-  typedef Type TestRm1;
-};
-
     template<typename Type, short Rank>
-	void Func(typename CondRetType< Rank!=1,
-		Test<Type,Rank-1>, Type>::TestRm1) {}
+	typedef typename CondRetType< Rank!=1,
+		Test<Type,Rank-1>, Type>::TestRm1 TestRm1;
 %}
 
 

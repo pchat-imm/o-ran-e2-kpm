@@ -1,3 +1,3 @@
-_CPP = _cpp
+SRCS =
 
 include $(SRCDIR)../example.mk

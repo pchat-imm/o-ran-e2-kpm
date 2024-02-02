@@ -43,28 +43,19 @@ but
 Similarly for getting the string
   $1 = (char*)lua_tostring(L, $input);
 becomes
-  size_t len;
-  const char *ptr = lua_tolstring(L, $input, &len);
-  $1.assign(ptr, len);
+  $1.assign(lua_tostring(L,$input),lua_rawlen(L,$input));
+  
+Not using: lua_tolstring() as this is only found in Lua 5.1 & not 5.0.2
 */
 
 %typemap(in,checkfn="lua_isstring") string
-{
-  size_t len;
-  const char *ptr = lua_tolstring(L, $input, &len);
-  $1.assign(ptr, len);
-}
+%{$1.assign(lua_tostring(L,$input),lua_rawlen(L,$input));%}
 
 %typemap(out) string
 %{ lua_pushlstring(L,$1.data(),$1.size()); SWIG_arg++;%}
 
 %typemap(in,checkfn="lua_isstring") const string& ($*1_ltype temp)
-{
-  size_t len;
-  const char *ptr = lua_tolstring(L, $input, &len);
-  temp.assign(ptr, len);
-  $1=&temp;
-}
+%{temp.assign(lua_tostring(L,$input),lua_rawlen(L,$input)); $1=&temp;%}
 
 %typemap(out) const string&
 %{ lua_pushlstring(L,$1->data(),$1->size()); SWIG_arg++;%}

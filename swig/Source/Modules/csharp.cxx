@@ -166,7 +166,7 @@ public:
     /* for now, multiple inheritance in directors is disabled, this
        should be easy to implement though */
     director_multiple_inheritance = 0;
-    directorLanguage();
+    director_language = 1;
   }
 
   /* -----------------------------------------------------------------------------
@@ -325,7 +325,7 @@ public:
       Exit(EXIT_FAILURE);
     }
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       if (!outfile_h) {
         Printf(stderr, "Unable to determine outfile_h\n");
         Exit(EXIT_FAILURE);
@@ -401,7 +401,7 @@ public:
 
     Swig_obligatory_macros(f_runtime, "CSHARP");
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Printf(f_runtime, "#define SWIG_DIRECTORS\n");
 
       /* Emit initial director header and director code: */
@@ -444,7 +444,7 @@ public:
     /* Emit code */
     Language::top(n);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       // Insert director runtime into the f_runtime file (make it occur before %header section)
       Swig_insert_file("director_common.swg", f_runtime);
       Swig_insert_file("director.swg", f_runtime);
@@ -608,7 +608,7 @@ public:
     Dump(f_runtime, f_begin);
     Dump(f_header, f_begin);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Dump(f_directors, f_begin);
       Dump(f_directors_h, f_runtime_h);
 
@@ -1744,32 +1744,35 @@ public:
 
     Replaceall(imclass_cppcasts_code, "$csclassname", proxy_class_name);
 
+    String *classname = SwigType_namestr(c_classname);
+    String *baseclassname = SwigType_namestr(c_baseclassname);
     if (smart) {
-      SwigType *bsmart = Swig_smartptr_upcast(smart, c_classname, c_baseclassname);
       String *smartnamestr = SwigType_namestr(smart);
-      String *bsmartnamestr = SwigType_namestr(bsmart);
+      String *bsmartnamestr = SwigType_namestr(smart);
+
+      // TODO: SwigType_typedef_resolve_all on a String instead of SwigType is incorrect for templates
+      SwigType *rclassname = SwigType_typedef_resolve_all(classname);
+      SwigType *rbaseclassname = SwigType_typedef_resolve_all(baseclassname);
+      Replaceall(bsmartnamestr, rclassname, rbaseclassname);
 
       Printv(upcasts_code,
 	  "SWIGEXPORT ", bsmartnamestr, " * SWIGSTDCALL ", wname, "(", smartnamestr, " *jarg1) {\n",
 	  "    return jarg1 ? new ", bsmartnamestr, "(*jarg1) : 0;\n"
 	  "}\n", "\n", NIL);
 
+      Delete(rbaseclassname);
+      Delete(rclassname);
       Delete(bsmartnamestr);
       Delete(smartnamestr);
-      Delete(bsmart);
     } else {
-      String *classname = SwigType_namestr(c_classname);
-      String *baseclassname = SwigType_namestr(c_baseclassname);
-
       Printv(upcasts_code,
 	  "SWIGEXPORT ", baseclassname, " * SWIGSTDCALL ", wname, "(", classname, " *jarg1) {\n",
 	  "    return (", baseclassname, " *)jarg1;\n"
 	  "}\n", "\n", NIL);
-
-      Delete(baseclassname);
-      Delete(classname);
     }
 
+    Delete(baseclassname);
+    Delete(classname);
     Delete(wname);
   }
 
@@ -2973,7 +2976,7 @@ public:
     /* A C# HandleRef is used for all classes in the SWIG intermediary class.
      * The intermediary class methods are thus mangled when overloaded to give
      * a unique name. */
-    String *overloaded_name = Copy(Getattr(n, "sym:name"));
+    String *overloaded_name = NewStringf("%s", Getattr(n, "sym:name"));
 
     if (Getattr(n, "sym:overloaded")) {
       Printv(overloaded_name, Getattr(n, "sym:overname"), NIL);
@@ -3817,7 +3820,7 @@ public:
     String *name = Getattr(n, "name");
     String *symname = Getattr(n, "sym:name");
     SwigType *returntype = Getattr(n, "type");
-    String *overloaded_name = 0;
+    String *overloaded_name = getOverloadedName(n);
     String *storage = Getattr(n, "storage");
     String *value = Getattr(n, "value");
     String *decl = Getattr(n, "decl");
@@ -3839,6 +3842,7 @@ public:
     String *qualified_name = NewStringf("%s::%s", dirclassname, name);
     SwigType *c_ret_type = NULL;
     String *jupcall_args = NewString("");
+    String *imclass_dmethod;
     String *callback_typedef_parms = NewString("");
     String *delegate_parms = NewString("");
     String *proxy_method_types = NewString("");
@@ -3852,8 +3856,7 @@ public:
     // we're consistent with the sym:overload name in functionWrapper. (?? when
     // does the overloaded method name get set?)
 
-    if (!ignored_method)
-      overloaded_name = getOverloadedName(n);
+    imclass_dmethod = NewStringf("SwigDirector_%s", Swig_name_member(getNSpace(), getClassPrefix(), overloaded_name));
 
     qualified_return = SwigType_rcaststr(returntype, "c_result");
 
@@ -3906,28 +3909,28 @@ public:
       }
     }
 
-    if (!ignored_method) {
-      /* Create the intermediate class wrapper */
-      tm = Swig_typemap_lookup("imtype", n, "", 0);
-      if (tm) {
-	String *imtypeout = Getattr(n, "tmap:imtype:out");	// the type in the imtype typemap's out attribute overrides the type in the typemap
-	if (imtypeout)
-	  tm = imtypeout;
-	const String *im_directoroutattributes = Getattr(n, "tmap:imtype:directoroutattributes");
-	if (im_directoroutattributes) {
-	  Printf(callback_def, "  %s\n", im_directoroutattributes);
-	  if (!ignored_method)
-	    Printf(director_delegate_definitions, "  %s\n", im_directoroutattributes);
-	}
+    /* Create the intermediate class wrapper */
+    tm = Swig_typemap_lookup("imtype", n, "", 0);
+    if (tm) {
+      String *imtypeout = Getattr(n, "tmap:imtype:out");	// the type in the imtype typemap's out attribute overrides the type in the typemap
+      if (imtypeout)
+	tm = imtypeout;
+      const String *im_directoroutattributes = Getattr(n, "tmap:imtype:directoroutattributes");
+      if (im_directoroutattributes) {
+	Printf(callback_def, "  %s\n", im_directoroutattributes);
+	if (!ignored_method)
+	  Printf(director_delegate_definitions, "  %s\n", im_directoroutattributes);
+      }
 
-	Printf(callback_def, "  private %s SwigDirectorMethod%s(", tm, overloaded_name);
+      Printf(callback_def, "  private %s SwigDirectorMethod%s(", tm, overloaded_name);
+      if (!ignored_method) {
 	const String *csdirectordelegatemodifiers = Getattr(n, "feature:csdirectordelegatemodifiers");
 	String *modifiers = (csdirectordelegatemodifiers ? NewStringf("%s%s", csdirectordelegatemodifiers, Len(csdirectordelegatemodifiers) > 0 ? " " : "") : NewStringf("public "));
 	Printf(director_delegate_definitions, "  %sdelegate %s", modifiers, tm);
 	Delete(modifiers);
-      } else {
-	Swig_warning(WARN_CSHARP_TYPEMAP_CSTYPE_UNDEF, input_file, line_number, "No imtype typemap defined for %s\n", SwigType_str(returntype, 0));
       }
+    } else {
+      Swig_warning(WARN_CSHARP_TYPEMAP_CSTYPE_UNDEF, input_file, line_number, "No imtype typemap defined for %s\n", SwigType_str(returntype, 0));
     }
 
     if ((c_ret_type = Swig_typemap_lookup("ctype", n, "", 0))) {
@@ -4285,8 +4288,6 @@ public:
 
     if (!ignored_method) {
       /* Emit the actual upcall through */
-      String *member_name = Swig_name_member(getNSpace(), getClassPrefix(), overloaded_name);
-      String *imclass_dmethod = NewStringf("SwigDirector_%s", member_name);
       UpcallData *udata = addUpcallMethod(imclass_dmethod, symname, decl, overloaded_name);
       String *methid = Getattr(udata, "class_methodidx");
       Setattr(n, "upcalldata", udata);
@@ -4302,9 +4303,6 @@ public:
       Printf(director_delegate_instances, "  private SwigDelegate%s_%s swigDelegate%s;\n", classname, methid, methid);
       Printf(director_method_types, "  private static global::System.Type[] swigMethodTypes%s = new global::System.Type[] { %s };\n", methid, proxy_method_types);
       Printf(director_connect_parms, "SwigDirector%s%s delegate%s", classname, methid, methid);
-
-      Delete(imclass_dmethod);
-      Delete(member_name);
     }
 
     Delete(pre_code);

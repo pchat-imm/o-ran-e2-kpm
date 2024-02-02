@@ -4,7 +4,6 @@
  *   - $jslocals:         locals part of wrapper
  *   - $jscode:           code part of wrapper
  *   - $jsargcount:       number of arguments
- *   - $jsargrequired:    required number of arguments
  *   - $jsmangledtype:    mangled type of class
  * ----------------------------------------------------------------------------- */
 
@@ -15,7 +14,7 @@ static SwigV8ReturnValue $jswrapper(const SwigV8Arguments &args) {
   SWIGV8_OBJECT self = args.Holder();
   $jslocals
   if(self->InternalFieldCount() < 1) SWIG_exception_fail(SWIG_ERROR, "Illegal call of constructor $jswrapper.");
-  if(args.Length() < $jsargrequired || args.Length() > $jsargcount) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for $jswrapper.");
+  if(args.Length() != $jsargcount) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for $jswrapper.");
   $jscode
 
   SWIGV8_SetPrivateData(self, result, SWIGTYPE_$jsmangledtype, SWIG_POINTER_OWN);
@@ -74,7 +73,6 @@ fail:
  *   - $jslocals:         locals part of wrapper
  *   - $jscode:           code part of wrapper
  *   - $jsargcount:       number of arguments
- *   - $jsargrequired:    required number of arguments
  *   - $jsmangledtype:    mangled type of class
  * ----------------------------------------------------------------------------- */
 %fragment("js_overloaded_ctor", "templates") %{
@@ -84,7 +82,7 @@ static SwigV8ReturnValue $jswrapper(const SwigV8Arguments &args, V8ErrorHandler 
   SWIGV8_OBJECT self = args.Holder();
   $jslocals
   if(self->InternalFieldCount() < 1) SWIG_exception_fail(SWIG_ERROR, "Illegal call of constructor $jswrapper.");
-  if(args.Length() < $jsargrequired || args.Length() > $jsargcount) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for $jswrapper.");
+  if(args.Length() != $jsargcount) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for $jswrapper.");
   $jscode
 
   SWIGV8_SetPrivateData(self, result, SWIGTYPE_$jsmangledtype, SWIG_POINTER_OWN);
@@ -99,14 +97,13 @@ fail:
 /* -----------------------------------------------------------------------------
  * js_ctor_dispatch_case:  template for a dispatch case for calling an overloaded ctor.
  *   - $jsargcount:       number of arguments of called ctor
- *   - $jsargrequired:    required number of arguments
  *   - $jswrapper:        wrapper of called ctor
  *
  *  Note: a try-catch-like mechanism is used to switch cases
  * ----------------------------------------------------------------------------- */
 %fragment ("js_ctor_dispatch_case", "templates")
 %{
-  if(args.Length() >= $jsargrequired && args.Length() <= $jsargcount) {
+  if(args.Length() == $jsargcount) {
     errorHandler.err.Clear();
     $jswrapper(args, errorHandler);
     if(errorHandler.err.IsEmpty()) {
@@ -198,11 +195,9 @@ fail:
 
 /* -----------------------------------------------------------------------------
  * js_function:  template for function wrappers
- *   - $jswrapper:        wrapper function name
- *   - $jslocals:         locals part of wrapper
- *   - $jscode:           code part of wrapper
- *   - $jsargcount:       number of arguments
- *   - $jsargrequired:    required number of arguments
+ *   - $jswrapper:  wrapper function name
+ *   - $jslocals:   locals part of wrapper
+ *   - $jscode:     code part of wrapper
  * ----------------------------------------------------------------------------- */
 %fragment("js_function", "templates")
 %{
@@ -211,7 +206,7 @@ static SwigV8ReturnValue $jswrapper(const SwigV8Arguments &args) {
   
   SWIGV8_VALUE jsresult;
   $jslocals
-  if (args.Length() < $jsargrequired || args.Length() > $jsargcount) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for $jswrapper.");
+  if(args.Length() != $jsargcount) SWIG_exception_fail(SWIG_ERROR, "Illegal number of arguments for $jswrapper.");
 
   $jscode
   SWIGV8_RETURN(jsresult);
@@ -271,15 +266,14 @@ fail:
 
 /* -----------------------------------------------------------------------------
  * js_function_dispatch_case:  template for a case used in the function dispatcher
- *   - $jswrapper:     wrapper function name
- *   - $jsargcount:    number of arguments of overloaded function
- *   - $jsargrequired: required number of arguments
- *   - $jscode:        code part of wrapper
+ *   - $jswrapper:  wrapper function name
+ *   - $jsargcount: number of arguments of overloaded function
+ *   - $jscode:     code part of wrapper
  * ----------------------------------------------------------------------------- */
 %fragment ("js_function_dispatch_case", "templates")
 %{
 
-  if(args.Length() >= $jsargrequired && args.Length() <= $jsargcount) {
+  if(args.Length() == $jsargcount) {
     errorHandler.err.Clear();
     $jswrapper(args, errorHandler);
     if(errorHandler.err.IsEmpty()) {
@@ -287,13 +281,6 @@ fail:
     }
   }
 %}
-
-/* -----------------------------------------------------------------------------
- * js_check_arg:  template for checking if an argument exists
- *   - $jsarg: number of argument
- * ----------------------------------------------------------------------------- */
-%fragment ("js_check_arg", "templates")
-%{if(args.Length() > $jsarg)%}
 
 /* -----------------------------------------------------------------------------
  * jsv8_declare_class_template:  template for a class template declaration.

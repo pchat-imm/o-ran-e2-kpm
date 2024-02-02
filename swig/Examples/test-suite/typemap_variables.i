@@ -18,10 +18,6 @@
 %header %{
 #define OUT_NULL_VALUE SWIGV8_NULL()
 %}
-#elif defined(SWIG_JAVASCRIPT_NAPI)
-%header %{
-#define OUT_NULL_VALUE env.Null()
-%}
 #else
 %header %{
 #define OUT_NULL_VALUE 0

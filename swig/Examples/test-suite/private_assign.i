@@ -54,41 +54,20 @@
   class A : protected TROOT
   {
   };
+  
 %}
 
-%inline %{
-   Foo foo_global;
-   Foo foo_global_array[1];
-   Foo foo_global_array_2d[2][2];
+#ifdef SWIGPYTHON
 
+// This case only works in python
+%inline %{
    struct FooBar : Foo 
    {
    };
    
    FooBar bar;
-   FooBar bar_array[1];
-   FooBar bar_array_2d[2][2];
+   
 %}
 
-// https://sourceforge.net/p/swig/bugs/1006/
-%rename(Assign) TwoIsAssignableCopyable::operator=;
-%inline %{
-struct nocopy {
-  nocopy() {}
-private:
-  nocopy(const nocopy&);
-  nocopy& operator=(const nocopy&);
-};
 
-struct One: public nocopy {};
-struct TwoNotAssignableCopyable: public One {};
-struct TwoIsAssignableCopyable: public One {
-  TwoIsAssignableCopyable() {}
-  TwoIsAssignableCopyable(const TwoIsAssignableCopyable&) {}
-  TwoIsAssignableCopyable& operator=(const TwoIsAssignableCopyable&) { return *this; }
-};
-struct Three {
-  TwoNotAssignableCopyable TwoNot; // getter only should be generated
-  TwoIsAssignableCopyable TwoIs; // setter and getter should be generated
-};
-%}
+#endif

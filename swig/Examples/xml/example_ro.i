@@ -1,5 +1,5 @@
 /* File : example.i */
-%immutable;
+%readonly 
 extern int  status;
 extern char path[256];
 

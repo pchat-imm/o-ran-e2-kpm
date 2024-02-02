@@ -9,11 +9,6 @@ namespace test {
   }; 
 }
 
-namespace test1 {
-  %template(maxchar) ::test::max<char>;
-  %template(vectorchar) ::test::vector<char>;
-}
-
 namespace test2 {
   using namespace test;
   %template(maxshort) max<short>;
@@ -37,18 +32,9 @@ namespace test4 {
   %template(vectorInteger) vector<Integer>;
 }
 
-namespace test5 {
-// Empty namespace
-}
-template<typename T> struct GlobalVector {
-  void gook(T i) {}
-  void geeko(double d) {}
-  void geeky(int d) {}
-};
-%template(GlobalVectorIntPtr) test5::GlobalVector<int *>; // should fail as GlobalVector is in global namespace
-
 using namespace test;
-namespace test6 {
+namespace test5 {
   %template(maxdouble) max<double>;
   %template(vectordouble) vector<double>;
 }
+

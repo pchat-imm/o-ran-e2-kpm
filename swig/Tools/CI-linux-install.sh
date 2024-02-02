@@ -22,12 +22,8 @@ case "$SWIGLANG" in
 		$RETRY sudo apt-get -qq install mono-devel
 		;;
 	"d")
-		if [[ $VER =~ ^2\. ]]; then
-			$RETRY wget http://downloads.dlang.org/releases/2.x/${VER}/dmd_${VER}-0_amd64.deb
-			$RETRY sudo dpkg -i dmd_${VER}-0_amd64.deb
-		else
-			$RETRY sudo apt-get -qq install "$VER"
-		fi
+		$RETRY wget http://downloads.dlang.org/releases/2.x/${VER}/dmd_${VER}-0_amd64.deb
+		$RETRY sudo dpkg -i dmd_${VER}-0_amd64.deb
 		;;
 	"go")
 		if [[ "$VER" ]]; then
@@ -40,7 +36,7 @@ case "$SWIGLANG" in
 		;;
 	"javascript")
 		case "$ENGINE" in
-			"node"|"napi")
+			"node")
 				$RETRY wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.10/install.sh | bash
 				export NVM_DIR="$HOME/.nvm"
 				[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
@@ -56,7 +52,6 @@ case "$SWIGLANG" in
 				else
 					$RETRY npm install -g node-gyp
 				fi
-				$RETRY npm install -g node-addon-api
 				;;
 			"jsc")
 				$RETRY sudo apt-get install -qq libjavascriptcoregtk-${VER}-dev
@@ -122,50 +117,42 @@ case "$SWIGLANG" in
 		$RETRY sudo apt-get -qq install r-base
 		;;
 	"ruby")
-		if [[ "$VER" ]]; then
+		if ! command -v rvm; then
 			case "$VER" in
-				3.1 | 3.2 )
-					# Ruby 3.1+ support is currently only rvm master (2023-04-19)
-					# YOLO
-					curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-					curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
-					curl -sSL https://get.rvm.io | bash -s stable
-					set +x
-					source $HOME/.rvm/scripts/rvm
-					$RETRY rvm get master
-					rvm reload
-					rvm list known
-					set -x
-					;;
-				* )
-					# Install from PPA as that also contains packages needed for the build.
-					sudo apt-add-repository -y ppa:rael-gc/rvm
-					sudo apt-get update
-					sudo apt-get install rvm
-					sudo usermod -a -G rvm $USER
-					set +x
-					source /etc/profile.d/rvm.sh
-					set -x
+				1.9 | 2.0 | 2.1 | 2.2 | 2.3 )
+					$RETRY sudo apt-get -qq install libgdbm-dev libncurses5-dev libyaml-dev libssl1.0-dev
 					;;
 			esac
+			# YOLO
+			curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+			curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
+			curl -sSL https://get.rvm.io | bash -s stable
 			set +x
-			$RETRY rvm install $VER
+			source $HOME/.rvm/scripts/rvm
 			set -x
+		fi
+		case "$VER" in
+			2.7 | 3.0 | 3.1 )
+				# Ruby 2.7+ support is currently only rvm master (30 Dec 2019)
+			        set +x
+				$RETRY rvm get master
+				rvm reload
+				rvm list known
+			        set -x
+				;;
+		esac
+		if [[ "$VER" ]]; then
+			$RETRY rvm install $VER
 		fi
 		;;
 	"scilab")
 		if [[ -z "$VER" ]]; then
 			$RETRY sudo apt-get -qq install scilab
 		else
-			# Starting with version 2023.0.0 the download filename format changed.
-			case $VER in
-				20*) scilab_tarball=scilab-$VER.bin.x86_64-pc-linux-gnu.tar.xz ;;
-				*)   scilab_tarball=scilab-$VER.bin.linux-x86_64.tar.gz ;;
-			esac
-			$RETRY wget --progress=dot:giga "https://www.scilab.org/download/$VER/$scilab_tarball"
+			$RETRY wget --progress=dot:giga "https://www.scilab.org/download/$VER/scilab-$VER.bin.linux-x86_64.tar.gz"
 			# $HOME/.local/bin is in PATH and writeable
 			mkdir -p "$HOME/.local"
-			tar -xf "$scilab_tarball" --strip-components=1 -C "$HOME/.local"
+			tar -xzf "scilab-$VER.bin.linux-x86_64.tar.gz" --strip-components=1 -C "$HOME/.local"
 		fi	
 		;;
 	"tcl")

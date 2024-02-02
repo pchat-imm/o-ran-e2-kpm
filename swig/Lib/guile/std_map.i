@@ -5,7 +5,6 @@
  * ----------------------------------------------------------------------------- */
 
 %include <std_common.i>
-%include <exception.i>
 
 // ------------------------------------------------------------------------
 // std::map
@@ -65,11 +64,7 @@ namespace std {
                         val = SCM_CAR(val);
                         x = (T*) SWIG_MustGetPtr(val,$descriptor(T *),$argnum, 0);
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    (($1_type &)$1).insert_or_assign(*k, *x);
-%#else
                     (($1_type &)$1)[*k] = *x;
-%#endif
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -103,11 +98,7 @@ namespace std {
                         val = SCM_CAR(val);
                         x = (T*) SWIG_MustGetPtr(val,$descriptor(T *),$argnum, 0);
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    temp.insert_or_assign(*k, *x);
-%#else
                     temp[*k] = *x;
-%#endif
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -248,11 +239,7 @@ namespace std {
                     throw std::out_of_range("key not found");
             }
             void __setitem__(const K& key, const T& x) {
-%#ifdef __cpp_lib_map_try_emplace
-                (*self).insert_or_assign(key, x);
-%#else
                 (*self)[key] = x;
-%#endif
             }
             void __delitem__(const K& key) throw (std::out_of_range) {
                 std::map< K, T, C >::iterator i = self->find(key);
@@ -307,11 +294,7 @@ namespace std {
                         val = SCM_CAR(val);
                         x = (T*) SWIG_MustGetPtr(val,$descriptor(T *),$argnum, 0);
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    (($1_type &)$1).insert_or_assign(CONVERT_FROM(key), *x);
-%#else
                     (($1_type &)$1)[CONVERT_FROM(key)] = *x;
-%#endif
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -346,11 +329,7 @@ namespace std {
                         val = SCM_CAR(val);
                         x = (T*) SWIG_MustGetPtr(val,$descriptor(T *),$argnum, 0);
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    temp.insert_or_assign(CONVERT_FROM(key), *x);
-%#else
                     temp[CONVERT_FROM(key)] = *x;
-%#endif
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -486,11 +465,7 @@ namespace std {
                     throw std::out_of_range("key not found");
             }
             void __setitem__(K key, const T& x) {
-%#ifdef __cpp_lib_map_try_emplace
-                (*self).insert_or_assign(key, x);
-%#else
                 (*self)[key] = x;
-%#endif
             }
             void __delitem__(K key) throw (std::out_of_range) {
                 std::map< K, T, C >::iterator i = self->find(key);
@@ -540,11 +515,7 @@ namespace std {
                             SWIG_exception(SWIG_TypeError,
                                            "map<" #K "," #T "," #C "> expected");
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    (($1_type &)$1).insert_or_assign(*k, CONVERT_FROM(val));
-%#else
                     (($1_type &)$1)[*k] = CONVERT_FROM(val);
-%#endif
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -578,11 +549,7 @@ namespace std {
                             SWIG_exception(SWIG_TypeError,
                                            "map<" #K "," #T "," #C "> expected");
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    temp.insert_or_assign(*k, CONVERT_FROM(val));
-%#else
                     temp[*k] = CONVERT_FROM(val);
-%#endif
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -714,11 +681,7 @@ namespace std {
                     throw std::out_of_range("key not found");
             }
             void __setitem__(const K& key, T x) {
-%#ifdef __cpp_lib_map_try_emplace
-                (*self).insert_or_assign(key, x);
-%#else
                 (*self)[key] = x;
-%#endif
             }
             void __delitem__(const K& key) throw (std::out_of_range) {
                 std::map< K, T, C >::iterator i = self->find(key);
@@ -771,11 +734,8 @@ namespace std {
                             SWIG_exception(SWIG_TypeError,
                                            "map<" #K "," #T "," #C "> expected");
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    (($1_type &)$1).insert_or_assign(CONVERT_K_FROM(key), CONVERT_T_FROM(val));
-%#else
-                    (($1_type &)$1)[CONVERT_K_FROM(key)] = CONVERT_T_FROM(val);
-%#endif
+                    (($1_type &)$1)[CONVERT_K_FROM(key)] = 
+                                               CONVERT_T_FROM(val);
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -810,11 +770,7 @@ namespace std {
                             SWIG_exception(SWIG_TypeError,
                                            "map<" #K "," #T "," #C "> expected");
                     }
-%#ifdef __cpp_lib_map_try_emplace
-                    temp.insert_or_assign(CONVERT_K_FROM(key), CONVERT_T_FROM(val));
-%#else
                     temp[CONVERT_K_FROM(key)] = CONVERT_T_FROM(val);
-%#endif
                     alist = SCM_CDR(alist);
                 }
             } else {
@@ -943,11 +899,7 @@ namespace std {
                     throw std::out_of_range("key not found");
             }
             void __setitem__(K key, T x) {
-%#ifdef __cpp_lib_map_try_emplace
-                (*self).insert_or_assign(key, x);
-%#else
                 (*self)[key] = x;
-%#endif
             }
             void __delitem__(K key) throw (std::out_of_range) {
                 std::map< K, T, C >::iterator i = self->find(key);

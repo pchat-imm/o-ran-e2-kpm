@@ -1,10 +1,10 @@
-/* -------------------------------------------------------------
+/* ------------------------------------------------------------
  * SWIG library containing argc and argv multi-argument typemaps
- * ------------------------------------------------------------- */
+ * ------------------------------------------------------------ */
 
 %typemap(in) (int ARGC, char **ARGV) {
   int i;
-  SSize_t len;
+  I32 len;
   AV *av = (AV *)SvRV($input);
   if (SvTYPE(av) != SVt_PVAV) {
     SWIG_croak("in method '$symname', Expecting reference to argv array");
@@ -26,5 +26,7 @@
 }
 
 %typemap(freearg) (int ARGC, char **ARGV) {
-  free((void *)$2);
+  if ($2 != NULL) {
+    free((void *)$2);
+  }
 }

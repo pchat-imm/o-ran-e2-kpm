@@ -264,14 +264,6 @@ namespace std
     seekg(off_type, ios_base::seekdir);
   };  
 
-  %template(ostream) basic_ostream<char>;
-  %template(istream) basic_istream<char>;
-
-#if defined(SWIG_WCHAR)
-  %template(wostream) basic_ostream<wchar_t>;
-  %template(wistream) basic_istream<wchar_t>;
-#endif
-
   // 27.6.1.5 Template class basic_iostream
   template<typename _CharT, typename _Traits = char_traits<_CharT> >
   class basic_iostream
@@ -326,6 +318,8 @@ namespace std
 }
 
 namespace std {
+  %template(ostream) basic_ostream<char>;
+  %template(istream) basic_istream<char>;
   %template(iostream) basic_iostream<char>;
 
   %template(endl) endl<char, std::char_traits<char> >;
@@ -333,6 +327,8 @@ namespace std {
   %template(flush) flush<char, std::char_traits<char> >;
 
 #if defined(SWIG_WCHAR)
+  %template(wostream) basic_ostream<wchar_t>;
+  %template(wistream) basic_istream<wchar_t>;
   %template(wiostream) basic_iostream<wchar_t>;  
 
   %template(wendl) endl<wchar_t, std::char_traits<wchar_t> >;

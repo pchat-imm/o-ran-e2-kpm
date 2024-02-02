@@ -27,9 +27,6 @@ public class runme
     ProtectedBase pb = new ProtectedDerived("ProtectedDerived");
     // ProtectedDerived's destructor should be called via the Dispose(disposing) virtual call
     pb.Dispose();
-
-    MyAllProtectedBottom mapb = new MyAllProtectedBottom();
-    mapb.callProtectedMethods();
   }
 }
 
@@ -84,16 +81,5 @@ class MyProtectedBase : ProtectedBase
     ProtectedBase.AnEnum ae = anEnum;
     if (ae != ProtectedBase.AnEnum.EnumVal1)
       throw new Exception("Failed");
-  }
-}
-
-class MyAllProtectedBottom : AllProtectedBottom
-{
-  public void callProtectedMethods() {
-    usingOverloaded();
-    usingOverloaded(99);
-    usingSingle();
-    doSomething();
-    doSomething(99);
   }
 }

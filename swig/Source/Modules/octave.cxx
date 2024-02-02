@@ -85,7 +85,7 @@ public:
     enable_cplus_runtime_mode();
     allow_overloading();
     director_multiple_inheritance = 1;
-    directorLanguage();
+    director_language = 1;
     docs = NewHash();
   }
 
@@ -199,7 +199,7 @@ public:
     Printf(f_runtime, "#define SWIG_global_name      \"%s\"\n", global_name);
     Printf(f_runtime, "#define SWIG_op_prefix        \"%s\"\n", op_prefix);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Printf(f_runtime, "#define SWIG_DIRECTORS\n");
       Swig_banner(f_directors_h);
       if (dirprot_mode()) {
@@ -224,7 +224,7 @@ public:
     if (Len(docs))
       emit_doc_texinfo();
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Swig_insert_file("director_common.swg", f_runtime);
       Swig_insert_file("director.swg", f_runtime);
     }
@@ -237,7 +237,7 @@ public:
     Dump(f_runtime, f_begin);
     Dump(f_header, f_begin);
     Dump(f_doc, f_begin);
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Dump(f_directors_h, f_begin);
       Dump(f_directors, f_begin);
     }
@@ -836,7 +836,7 @@ public:
 
     Octave_begin_function(n, setf->def, setname, setwname, true);
     Printf(setf->code, "if (!SWIG_check_num_args(\"%s_set\",args.length(),1,1,0)) return octave_value_list();\n", iname);
-    if (!is_immutable(n)) {
+    if (is_assignable(n)) {
       Setattr(n, "wrap:name", setname);
       if ((tm = Swig_typemap_lookup("varin", n, name, 0))) {
         Replaceall(tm, "$input", "args(0)");
@@ -946,7 +946,7 @@ public:
     // This is a bug, due to the fact that swig_type -> octave_class mapping
     // is 1-to-n.
     static Hash *emitted = NewHash();
-    String *mangled_classname = Swig_name_mangle_type(Getattr(n, "name"));
+    String *mangled_classname = Swig_name_mangle(Getattr(n, "name"));
     if (Getattr(emitted, mangled_classname)) {
       Delete(mangled_classname);
       return SWIG_NOWRAP;

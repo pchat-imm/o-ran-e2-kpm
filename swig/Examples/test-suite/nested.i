@@ -13,7 +13,7 @@ Also tests reported error when a #define placed in a deeply embedded struct/unio
 %rename(InUnNamed) OuterStructNamed::Inner_union_named;
 #endif
 
-#if defined(SWIG_JAVASCRIPT_V8) || defined(SWIG_JAVASCRIPT_NAPI)
+#if defined(SWIG_JAVASCRIPT_V8)
 
 %inline %{
 #if __GNUC__ >= 5 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8)

@@ -34,14 +34,7 @@ SWIGINTERN char*
 SWIG_Python_str_AsChar(PyObject *str)
 {
 #if PY_VERSION_HEX >= 0x03030000
-# if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x030A0000
-  return (char*)PyUnicode_AsUTF8AndSize(str, NULL);
-# else
-  PyObject* bytes = PyUnicode_AsUTF8String(str);
-  char* chars = PyBytes_AsString(bytes);
-  Py_DECREF(bytes);
-  return chars;
-# endif
+  return (char *)PyUnicode_AsUTF8(str);
 #else
   return PyString_AsString(str);
 #endif

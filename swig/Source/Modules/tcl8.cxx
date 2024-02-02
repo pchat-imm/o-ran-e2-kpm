@@ -590,7 +590,7 @@ public:
     DelWrapper(getf);
 
     /* Try to create a function setting a variable */
-    if (!is_immutable(n)) {
+    if (is_assignable(n)) {
       setf = NewWrapper();
       setname = Swig_name_set(NSPACE_TODO, iname);
       setfname = Swig_name_wrapper(setname);
@@ -712,7 +712,7 @@ public:
   virtual int classHandler(Node *n) {
     static Hash *emitted = NewHash();
     String *mangled_classname = 0;
-    SwigType *real_classname = 0;
+    String *real_classname = 0;
 
     have_constructor = 0;
     have_destructor = 0;
@@ -740,7 +740,7 @@ public:
       return SWIG_ERROR;
 
     real_classname = Getattr(n, "name");
-    mangled_classname = Swig_name_mangle_type(real_classname);
+    mangled_classname = Swig_name_mangle(real_classname);
 
     if (Getattr(emitted, mangled_classname))
       return SWIG_NOWRAP;
@@ -806,7 +806,7 @@ public:
       int index = 0;
       b = First(baselist);
       while (b.item) {
-	SwigType *bname = Getattr(b.item, "name");
+	String *bname = Getattr(b.item, "name");
 	if ((!bname) || GetFlag(b.item, "feature:ignore") || (!Getattr(b.item, "module"))) {
 	  b = Next(b);
 	  continue;
@@ -816,7 +816,7 @@ public:
 	  Printv(base_classes, bname, " ", NIL);
 	  Printv(base_class_init, "    ", bname, "Ptr::constructor $ptr\n", NIL);
 	}
-	String *bmangle = Swig_name_mangle_type(bname);
+	String *bmangle = Swig_name_mangle(bname);
 	//      Printv(f_wrappers,"extern swig_class _wrap_class_", bmangle, ";\n", NIL);
 	//      Printf(base_class,"&_wrap_class_%s",bmangle);
 	Printf(base_class, "0");

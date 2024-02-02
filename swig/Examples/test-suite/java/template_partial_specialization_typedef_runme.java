@@ -12,15 +12,12 @@ public class template_partial_specialization_typedef_runme {
   }
 
   public static void main(String argv[]) {
-    double dub = 11.1;
-    Concrete concrete = new Concrete();
-
     // One parameter tests
     new A().a();
-    new B().b(); new B().bb(dub);
-    new C().c(); new C().cc(dub);
-    new D().d(); new D().dd(dub);
-    new E().e(); new E().ee(dub);
+    new B().b();
+    new C().c();
+    new D().d();
+    new E().e();
 
     new F().f();
     new G().g();
@@ -31,10 +28,10 @@ public class template_partial_specialization_typedef_runme {
     new M().m();
     new N().n();
 
-    new BB().b(); new BB().bb(true);
-    new BBB().b(); new BBB().bb('A');
-    new BBBB().b(); new BBBB().bb((short)12);
-    new BBBBB().b(); new BBBBB().bb(123);
+    new BB().b();
+    new BBB().b();
+    new BBBB().b();
+    new BBBBB().b();
 
     new B1().b();
     new B2().b();
@@ -43,18 +40,18 @@ public class template_partial_specialization_typedef_runme {
 
     // Two parameter tests
     new A_().a();
-    new B_().b(); new B_().bbb(dub);
-    new C_().c(); new C_().ccc(dub);
-    new D_().d(); new D_().ddd(123);
+    new B_().b();
+    new C_().c();
+    new D_().d();
     new E_().e();
     new F_().f();
     new G_().g();
 
-    new C1_().c(); new C1_().ccc(concrete);
-    new C2_().c(); new C2_().ccc(concrete);
-    new C3_().c(); new C3_().ccc(concrete);
-    new C4_().c(); new C4_().ccc(concrete);
-    new B1_().b(); new B1_().bbb(concrete);
+    new C1_().c();
+    new C2_().c();
+    new C3_().c();
+    new C4_().c();
+    new B1_().b();
     new E1_().e();
     new E2_().e();
   }

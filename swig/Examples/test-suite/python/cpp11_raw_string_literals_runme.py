@@ -65,11 +65,11 @@ documentation
 comment""")
 check(inspect.getdoc(RawStringDoc.YY), """Single line "raw string" documentation comment""")
 check(inspect.getdoc(RawStringDoc.ZZ),
-r"""Documentation comment
+"""Documentation comment
 
 as a "raw string"
 on multiple lines including a \ backslash""")
 
-check(mm, r""")I'm an "ascii" \ string constant with multiple
+check(mm, """)I'm an "ascii" \ string constant with multiple
 
 lines.""")

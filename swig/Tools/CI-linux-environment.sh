@@ -14,7 +14,7 @@ case "$SWIGLANG" in
 		;;
 	"javascript")
 		case "$ENGINE" in
-			"node"|"napi")
+			"node")
 				export NVM_DIR="$HOME/.nvm"
 				[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 				nvm use ${VER}
@@ -25,11 +25,7 @@ case "$SWIGLANG" in
 	"ruby")
 		if ! command -v rvm; then
 			set +x
-			if [ -f /etc/profile.d/rvm.sh ] ; then
-				source /etc/profile.d/rvm.sh
-			elif [ -f $HOME/.rvm/scripts/rvm ] ; then
-				source $HOME/.rvm/scripts/rvm
-			fi
+			source $HOME/.rvm/scripts/rvm
 			set -x
 		fi
 		;;

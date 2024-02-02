@@ -6,7 +6,7 @@
   if ($1) {
     $result = SWIG_From(int)(*$1);
   } else {
-    $result = VOID_Object;
+    $result = SWIG_Py_Void();
   }
 }
 
@@ -29,7 +29,7 @@
   if ($1) {
     $result = SWIG_From(std::string)(*$1);
   } else {
-    $result = VOID_Object;
+    $result = SWIG_Py_Void();
   }
 }
 

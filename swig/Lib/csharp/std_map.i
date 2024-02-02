@@ -236,11 +236,7 @@
       }
 
       void setitem(const key_type& key, const mapped_type& x) {
-%#ifdef __cpp_lib_map_try_emplace
-        (*$self).insert_or_assign(key, x);
-%#else
         (*$self)[key] = x;
-%#endif
       }
 
       bool ContainsKey(const key_type& key) {
@@ -273,14 +269,12 @@
       }
 
       const key_type& get_next_key(std::map< K, T, C >::iterator *swigiterator) {
-        (void)$self;
         std::map< K, T, C >::iterator iter = *swigiterator;
         (*swigiterator)++;
         return (*iter).first;
       }
 
       void destroy_iterator(std::map< K, T, C >::iterator *swigiterator) {
-        (void)$self;
         delete swigiterator;
       }
     }
@@ -315,3 +309,4 @@ namespace std {
 %define specialize_std_map_on_both(K,CHECK_K,CONVERT_K_FROM,CONVERT_K_TO, T,CHECK_T,CONVERT_T_FROM,CONVERT_T_TO)
 #warning "specialize_std_map_on_both ignored - macro is deprecated and no longer necessary"
 %enddef
+
