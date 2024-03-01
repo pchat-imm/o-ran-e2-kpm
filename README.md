@@ -76,7 +76,8 @@ PDU Session Establishment successful. IP: 10.45.1.2
 RRC NR reconfiguration successful.
 ```
 
-This is 1 UE (rnti = 4601) but with three different ping windows log of gNB when have 3 pings windows
+This is 1 UE (rnti = 4601) but with three different ping windows
+log of gNB when have 3 pings windowss
 - 1 ping: brate ~ 12k+
 - 2 ping: brate ~ 24k+
 - 3 ping: brate ~ 36k+
