@@ -1,11 +1,10 @@
-## task 05/02/2024
-- update readme
-- merge multiUE branch into main
+## task 01/03/2024
+- update readme case 1:ue1 with 3 ping windows
+- update readme case 2:3 ue (ue1, ue2, ue3) - check log/010324_3ue
 
 ## question <br />
 - [ ] how to config ue
-- [ ] why it is multi ue? currently only 1 ue with 3 individual ping window
-- [ ] merge multiUE branch into main
+- [ ] what is gnbradio doing? and what the throttle can be used?
 
 
 ### main tutorial: <br />
