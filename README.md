@@ -6,6 +6,9 @@
 - [ ] how to config ue
 - [ ] what is gnbradio doing? and what the throttle can be used?
 
+### successful use case
+- update readme case 1:ue1 with 3 ping windows
+- update readme case 2:3 ue (ue1, ue2, ue3) - check log/010324_3ue
 
 ### main tutorial: <br />
 - nearRT-RIC and xApp_kpm: https://docs.srsran.com/projects/project/en/latest/tutorials/source/flexric/source/index.html <br />
@@ -45,7 +48,7 @@ for multiUE to be able to handle more load, they set symbol rate, channel bandwi
 the max number of PRB need to be correspond with used bandwidth - BW 20, PRB 106 
 
 
-### multi_UE
+### single UE multi-load (1 UE 3 pings windows)
 
 ping command `sudo ip netns exec ue1 ping 10.45.1.1`
 
@@ -97,5 +100,105 @@ log of gNB when have 3 pings windowss
 ```
 
 
+### multi UE (3 UE)
+- there are 3 UE as you can see rnti 4601 (ue1), 4602 (ue2), 4603 (ue3)
+- they are simulate + ping in order, therefore rsrp are less strong in consequent UE
 
+> gnb
+```
+The PRACH detector will not meet the performance requirements with the configuration {Format 0, ZCZ 0, SCS 1.25kHz, Rx ports 1}.
+Lower PHY in executor blocking mode.
 
+--== srsRAN gNB (commit 0b2702cca) ==--
+
+Connecting to AMF on 10.53.1.2:38412
+Available radio types: zmq.
+Cell pci=1, bw=10 MHz, dl_arfcn=368500 (n3), dl_freq=1842.5 MHz, dl_ssb_arfcn=368410, ul_freq=1747.5 MHz
+
+==== gNodeB started ===
+pci rnti  cqi  ri  mcs  brate   ok  nok  (%)  dl_bs | pusch  mcs  brate   ok  nok  (%)    bsr
+   1 4601   15   1   26   7.3k    8    0   0%      0 |  65.5   28    48k   18    0   0%      0
+   1 4602   15   1   27   7.6k    8    0   0%      0 |  65.5   28    47k   18    0   0%      0
+   1 4603   15   1   27   3.9k    4    0   0%      0 |  65.5   28    23k    9    0   0%      0
+   1 4601   15   1   26   7.3k    8    0   0%      0 |  65.5   28    48k   19    0   0%      0
+   1 4602   15   1   27   7.7k    8    0   0%      0 |  65.5   28    47k   16    0   0%      0
+   1 4603   15   1   27   7.7k    8    0   0%      0 |  65.5   28    46k   17    0   0%      0
+   1 4601   15   1   26   7.3k    8    0   0%      0 |  65.5   28    47k   19    0   0%      0
+   1 4602   15   1   27   7.6k    8    0   0%      0 |  65.5   28    46k   16    0   0%      0
+   1 4603   15   1   27   7.7k    8    0   0%      0 |  65.5   28    47k   18    0   0%      0
+   1 4601   15   1   26   7.3k    8    0   0%      0 |  65.5   28    47k   19    0   0%      0
+```
+
+#### ue1
+- Opening 1 channels in RF device=zmq with args=tx_port=tcp://127.0.0.1:2101,rx_port=tcp://127.0.0.1:2100,base_srate=11.52e6
+    - CH0 rx_port=tcp://127.0.0.1:2100
+    - CH0 tx_port=tcp://127.0.0.1:2101
+- Random Access Complete.     c-rnti=0x4601, ta=0
+- PDU Session Establishment successful. IP: 10.45.1.2
+```
+>> sudo ./srsue ./ue1_zmq.conf 
+Active RF plugins: libsrsran_rf_blade.so libsrsran_rf_zmq.so
+Inactive RF plugins: 
+Reading configuration file ./ue1_zmq.conf...
+
+Built in Release mode using commit ec29b0c1f on branch master.
+
+Opening 1 channels in RF device=zmq with args=tx_port=tcp://127.0.0.1:2101,rx_port=tcp://127.0.0.1:2100,base_srate=11.52e6
+Supported RF device list: bladeRF zmq file
+CHx base_srate=11.52e6
+Current sample rate is 1.92 MHz with a base rate of 11.52 MHz (x6 decimation)
+CH0 rx_port=tcp://127.0.0.1:2100
+CH0 tx_port=tcp://127.0.0.1:2101
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Current sample rate is 11.52 MHz with a base rate of 11.52 MHz (x1 decimation)
+Waiting PHY to initialize ... done!
+Attaching UE...
+Random Access Transmission: prach_occasion=0, preamble_index=7, ra-rnti=0x39, tti=174
+Random Access Complete.     c-rnti=0x4601, ta=0
+RRC Connected
+PDU Session Establishment successful. IP: 10.45.1.2
+RRC NR reconfiguration successful.
+---------Signal-----------|-----------------DL-----------------|-----------UL-----------
+rat  pci  rsrp   pl   cfo | mcs  snr  iter  brate  bler  ta_us | mcs   buff  brate  bler
+ nr    1    41    0  -11u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    47k    0%
+ nr    1    41    0  -16u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    47k    0%
+ nr    1    41    0  -14u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    49k    0%
+ nr    1    41    0  -18u |  26   66   1.0   7.4k    0%    0.0 |  28    0.0    47k    0%
+ nr    1    41    0 -7.1u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    50k    0%
+ nr    1    41    0  -16u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    50k    0%
+ nr    1    41    0  -20u |  26   65   1.0   7.3k    0%    0.0 |  28    0.0    44k    0%
+ nr    1    41    0 -7.1u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    47k    0%
+ nr    1    41    0  -13u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    44k    0%
+ nr    1    41    0  -15u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    50k    0%
+ nr    1    41    0  -18u |  26   66   1.0   7.3k    0%    0.0 |  28    0.0    50k    0%
+```
+
+#### ue2
+- Opening 1 channels in RF device=zmq with args=tx_port=tcp://127.0.0.1:2201,rx_port=tcp://127.0.0.1:2200,base_srate=11.52e6
+    - CH0 rx_port=tcp://127.0.0.1:2200
+    - CH0 tx_port=tcp://127.0.0.1:2201
+- Random Access Complete.     c-rnti=0x4602, ta=0
+- PDU Session Establishment successful. IP: 10.45.1.4
+```
+---------Signal-----------|-----------------DL-----------------|-----------UL-----------
+rat  pci  rsrp   pl   cfo | mcs  snr  iter  brate  bler  ta_us | mcs   buff  brate  bler
+ nr    1    31    0  -12u |  26   64   1.0   7.6k    0%    0.0 |  28    0.0    47k    0%
+ nr    1    32    0  -12u |  26  n/a   1.0   7.6k    0%    0.0 |  28    0.0    47k    0%
+ nr    1    31    0  -14u |  27   65   1.0   7.7k    0%    0.0 |  28    0.0    46k    0%
+ nr    1    32    0  -14u |  26  n/a   1.0   7.7k    0%    0.0 |  28    0.0    47k    0%
+ ```
+
+ #### ue3
+ - Opening 1 channels in RF device=zmq with args=tx_port=tcp://127.0.0.1:2301,rx_port=tcp://127.0.0.1:2300,base_srate=11.52e6
+    - CH0 rx_port=tcp://127.0.0.1:2300
+    - CH0 tx_port=tcp://127.0.0.1:2301
+- Random Access Complete.     c-rnti=0x4603, ta=0
+- PDU Session Establishment successful. IP: 10.45.1.5
+```
+---------Signal-----------|-----------------DL-----------------|-----------UL-----------
+rat  pci  rsrp   pl   cfo | mcs  snr  iter  brate  bler  ta_us | mcs   buff  brate  bler
+ nr    1    22    0 -5.3u |  27   80   1.0   7.7k    0%    0.0 |  28    0.0    47k    0%
+ nr    1    22    0   22n |  26   81   1.0   7.6k    0%    0.0 |  28    0.0    32k    0%
+ nr    1    22    0  7.4u |  26   80   1.0   7.5k    0%    0.0 |  28    0.0    35k    0%
+ nr    1    22    0  5.5u |  27   81   1.0   7.9k    0%    0.0 |  28    0.0    51k    0%
+ ```s
