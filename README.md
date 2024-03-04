@@ -11,8 +11,13 @@
 - update readme case 2:3 ue (ue1, ue2, ue3) - check log/010324_3ue
 
 ### main tutorial: <br />
+downloaded document from srsRAN (040324) - follow this one
+- /document_srsRAN/zeroMQ_and_multiUE.pdf 
+
+from srsRAN
 - nearRT-RIC and xApp_kpm: https://docs.srsran.com/projects/project/en/latest/tutorials/source/flexric/source/index.html <br />
 - multi UE zmq: https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html#over-the-air-setup <br />
+
 
 #### other note before start
 - srsRAN_Project is inside czmq/ folder (accidentally install there)
@@ -201,4 +206,4 @@ rat  pci  rsrp   pl   cfo | mcs  snr  iter  brate  bler  ta_us | mcs   buff  bra
  nr    1    22    0   22n |  26   81   1.0   7.6k    0%    0.0 |  28    0.0    32k    0%
  nr    1    22    0  7.4u |  26   80   1.0   7.5k    0%    0.0 |  28    0.0    35k    0%
  nr    1    22    0  5.5u |  27   81   1.0   7.9k    0%    0.0 |  28    0.0    51k    0%
- ```s
+```
