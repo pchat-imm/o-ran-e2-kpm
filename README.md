@@ -22,8 +22,6 @@ compared to what we want, we lack this line
 ```
 - it can be seen that the UE try to send UL (UE trace UL brate), but unsuccessful, the `iperf server` shows nothing
 
-
-
 ## task 01/03/2024
 - update readme case 1:ue1 with 3 ping windows
 - update readme case 2:3 ue (ue1, ue2, ue3) - check log/010324_3ue
@@ -33,6 +31,9 @@ compared to what we want, we lack this line
     - check config files, is it corrected?
     - document srsRAN
     - task
+
+## diagram
+![overview_hw_sw_ip_port(1)](https://github.com/pchat-imm/o-ran-e2-kpm/assets/40858099/71e6f5ca-ef8f-4fbd-9f8f-828cb9a1a94a)
 
 ## question <br />
 - [ ] how to config ue
