@@ -1,6 +1,12 @@
 ## task 01/03/2024
 - update readme case 1:ue1 with 3 ping windows
 - update readme case 2:3 ue (ue1, ue2, ue3) - check log/010324_3ue
+- merge multiUE to main? - is it possible, which files you need to keep
+    - read me of multiUE -> move to new page of wiki
+    - wiki (of nearRT-RIC)
+    - check config files, is it corrected?
+    - document srsRAN
+    - task
 
 ## question <br />
 - [ ] how to config ue
