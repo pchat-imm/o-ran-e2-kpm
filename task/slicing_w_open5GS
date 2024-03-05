@@ -1,3 +1,5 @@
+following this: https://tech-academy.amarisoft.com/Cloud_open5gs.html
+
 [] do the slicing (sst = 1, sd = 1)
         gnb
         ue [slicing] nssai-sst=1, nssai-sd=1

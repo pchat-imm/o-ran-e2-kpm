@@ -1,3 +1,29 @@
+## task 05/04/23
+- currently stuck at iperf of singleUE_multiLoad (server at open5GS docker container, client at UE) \
+- the UE uplink might not successful
+current evidence
+- cannot ping in uplink
+- the `sudo ip ro add 10.45.0.0/16 via 10.53.1.2` return `file exist` and it is
+```
+>> route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.10.1    0.0.0.0         UG    600    0        0 wlp9s0
+10.45.0.0       0.0.0.0         255.255.0.0     U     0      0        0 ogstun
+10.53.1.0       0.0.0.0         255.255.255.0   U     0      0        0 br-2d2baf4f3a8c
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wlp9s0
+172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 docker0
+172.19.1.0      0.0.0.0         255.255.255.0   U     0      0        0 br-36c6988d1fa9
+192.168.10.0    0.0.0.0         255.255.255.0   U     600    0        0 wlp9s0
+```
+compared to what we want, we lack this line
+```
+10.45.0.0       10.53.1.2       255.255.0.0     UG    0      0        0 br-dfa5521eb807
+```
+- it can be seen that the UE try to send UL (UE trace UL brate), but unsuccessful, the `iperf server` shows nothing
+
+
+
 ## task 01/03/2024
 - update readme case 1:ue1 with 3 ping windows
 - update readme case 2:3 ue (ue1, ue2, ue3) - check log/010324_3ue
