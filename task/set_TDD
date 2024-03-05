@@ -1,0 +1,9 @@
+try set tdd : srsran/srsRAN_Project#369
+
+And, I am setting only the TDD pattern as follows and leaving CSI-RS measurement config default
+cell_cfg:
+  tdd_ul_dl_cfg:
+    nof_dl_slots: 3
+    nof_dl_symbols: 0
+    nof_ul_slots: 6
+
