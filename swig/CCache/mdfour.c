@@ -24,6 +24,8 @@
    It assumes that a int is at least 32 bits long
 */
 
+static struct mdfour *m;
+
 #define MASK32 (0xffffffff)
 
 #define F(X,Y,Z) ((((X)&(Y)) | ((~(X))&(Z))))
@@ -36,12 +38,12 @@
 #define ROUND3(a,b,c,d,k,s) a = lshift((a + H(b,c,d) + M[k] + 0x6ED9EBA1)&MASK32,s)
 
 /* this applies md4 to 64 byte chunks */
-static void mdfour64(struct mdfour *md, uint32 *M)
+static void mdfour64(uint32 *M)
 {
 	uint32 AA, BB, CC, DD;
 	uint32 A,B,C,D;
 
-	A = md->A; B = md->B; C = md->C; D = md->D;
+	A = m->A; B = m->B; C = m->C; D = m->D; 
 	AA = A; BB = B; CC = C; DD = D;
 
         ROUND1(A,B,C,D,  0,  3);  ROUND1(D,A,B,C,  1,  7);  
@@ -78,7 +80,7 @@ static void mdfour64(struct mdfour *md, uint32 *M)
 	A &= MASK32; B &= MASK32; 
 	C &= MASK32; D &= MASK32;
 
-	md->A = A; md->B = B; md->C = C; md->D = D;
+	m->A = A; m->B = B; m->C = C; m->D = D;
 }
 
 static void copy64(uint32 *M, const unsigned char *in)
@@ -109,15 +111,15 @@ void mdfour_begin(struct mdfour *md)
 }
 
 
-static void mdfour_tail(struct mdfour *md, const unsigned char *in, int n)
+static void mdfour_tail(const unsigned char *in, int n)
 {
 	unsigned char buf[128];
 	uint32 M[16];
 	uint32 b;
 
-	md->totalN += n;
+	m->totalN += n;
 
-	b = md->totalN * 8;
+	b = m->totalN * 8;
 
 	memset(buf, 0, 128);
 	if (n) memcpy(buf, in, n);
@@ -126,13 +128,13 @@ static void mdfour_tail(struct mdfour *md, const unsigned char *in, int n)
 	if (n <= 55) {
 		copy4(buf+56, b);
 		copy64(M, buf);
-		mdfour64(md, M);
+		mdfour64(M);
 	} else {
 		copy4(buf+120, b); 
 		copy64(M, buf);
-		mdfour64(md, M);
+		mdfour64(M);
 		copy64(M, buf+64);
-		mdfour64(md, M);
+		mdfour64(M);
 	}
 }
 
@@ -140,8 +142,10 @@ void mdfour_update(struct mdfour *md, const unsigned char *in, int n)
 {
 	uint32 M[16];
 
+	m = md;
+
 	if (in == NULL) {
-		mdfour_tail(md, md->tail, md->tail_len);
+		mdfour_tail(md->tail, md->tail_len);
 		return;
 	}
 
@@ -154,18 +158,18 @@ void mdfour_update(struct mdfour *md, const unsigned char *in, int n)
 		in += len;
 		if (md->tail_len == 64) {
 			copy64(M, md->tail);
-			mdfour64(md, M);
-			md->totalN += 64;
+			mdfour64(M);
+			m->totalN += 64;
 			md->tail_len = 0;
 		}
 	}
 
 	while (n >= 64) {
 		copy64(M, in);
-		mdfour64(md, M);
+		mdfour64(M);
 		in += 64;
 		n -= 64;
-		md->totalN += 64;
+		m->totalN += 64;
 	}
 
 	if (n) {
@@ -177,10 +181,12 @@ void mdfour_update(struct mdfour *md, const unsigned char *in, int n)
 
 void mdfour_result(struct mdfour *md, unsigned char *out)
 {
-	copy4(out, md->A);
-	copy4(out+4, md->B);
-	copy4(out+8, md->C);
-	copy4(out+12, md->D);
+	m = md;
+
+	copy4(out, m->A);
+	copy4(out+4, m->B);
+	copy4(out+8, m->C);
+	copy4(out+12, m->D);
 }
 
 
@@ -266,12 +272,7 @@ static void file_checksum2(char *fname)
 	printf("\n");
 }
 #endif
-/*
- * To test:
- *   gcc -DTEST_MDFOUR mdfour.c -o mdfourexe && ./mdfourexe <somefile>
- * then compare against a reference, such as:
- *   openssl dgst -md4 <somefile>
- */
+
  int main(int argc, char *argv[])
 {
 	file_checksum1(argv[1]);

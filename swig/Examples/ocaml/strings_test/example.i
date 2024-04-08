@@ -12,5 +12,4 @@ using std::string;
 %}
 
 %include "std_string.i"
-%apply std::string& INOUT { std::string &inout }
 %include example.h

@@ -85,7 +85,7 @@ public:
 
     /* Mangled name */
     Delete(mname);
-    mname = Swig_name_mangle_string(cname);
+    mname = Swig_name_mangle(cname);
 
     /* Renamed class name */
     Clear(name);
@@ -825,7 +825,7 @@ public:
           "  $director_new \n",
           "} else {\n", "  rb_raise(rb_eRuntimeError,\"accessing abstract class or protected constructor\"); \n", "  return Qnil;\n", "}\n", NIL);
       director_multiple_inheritance = 0;
-      directorLanguage();
+      director_language = 1;
     }
 
   /* ---------------------------------------------------------------------
@@ -845,6 +845,19 @@ public:
     for (int i = 1; i < argc; i++) {
       if (argv[i]) {
 	if (strcmp(argv[i], "-initname") == 0) {
+	  if (argv[i + 1]) {
+	    char *name = argv[i + 1];
+	    feature = NewString(name);
+	    Swig_mark_arg(i);
+	    Swig_mark_arg(i + 1);
+	    i++;
+	  } else {
+	    Swig_arg_error();
+	  }
+	}
+	else if (strcmp(argv[i], "-feature") == 0) {
+	  fprintf( stderr, "Warning: Ruby -feature option is deprecated, "
+		   "please use -initname instead.\n");
 	  if (argv[i + 1]) {
 	    char *name = argv[i + 1];
 	    feature = NewString(name);
@@ -1042,7 +1055,7 @@ public:
     f_directors_helpers = NewString("");
     f_initbeforefunc = NewString("");
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       if (!outfile_h) {
         Printf(stderr, "Unable to determine outfile_h\n");
         Exit(EXIT_FAILURE);
@@ -1076,7 +1089,7 @@ public:
 
     Swig_obligatory_macros(f_runtime, "RUBY");
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Printf(f_runtime, "#define SWIG_DIRECTORS\n");
     }
 
@@ -1091,7 +1104,7 @@ public:
     /* Set module name */
     set_module(Char(Getattr(n, "name")));
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       /* Build a version of the module name for use in a C macro name. */
       String *module_macro = Copy(module);
       Replaceall(module_macro, "::", "__");
@@ -1152,7 +1165,7 @@ public:
 
     Language::top(n);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       // Insert director runtime into the f_runtime file (make it occur before %header section)
       Swig_insert_file("director_common.swg", f_runtime);
       Swig_insert_file("director.swg", f_runtime);
@@ -1166,7 +1179,7 @@ public:
     Dump(f_runtime, f_begin);
     Dump(f_header, f_begin);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Dump(f_directors_helpers, f_begin);
       Dump(f_directors, f_begin);
       Dump(f_directors_h, f_runtime_h);
@@ -1804,7 +1817,7 @@ public:
 	Node *pn = Swig_methodclass(n);
 	String *symname = Getattr(pn, "sym:name");
 	String *action = Getattr(n, "wrap:action");
-	if (Swig_directors_enabled()) {
+	if (directorsEnabled()) {
 	  String *classname = NewStringf("const char *classname SWIGUNUSED = \"%s::%s\"", module, symname);
 	  Wrapper_add_local(f, "classname", classname);
 	}
@@ -1925,7 +1938,7 @@ public:
     }
 
 
-    /* Look for any remaining cleanup.  This processes the %newobject directive */
+    /* Look for any remaining cleanup.  This processes the %new directive */
     if (current != CONSTRUCTOR_ALLOCATE && GetFlag(n, "feature:new")) {
       tm = Swig_typemap_lookup("newfree", n, Swig_cresult_name(), 0);
       if (tm) {
@@ -2068,9 +2081,9 @@ public:
       sibl = Getattr(sibl, "sym:previousSibling");	// go all the way up
 
     // Constructors will be treated specially
-    String *siblNodeType = Getattr(sibl, "nodeType");
-    const bool isCtor = (Equal(siblNodeType, "constructor"));
-    const bool isMethod = (Equal(siblNodeType, "cdecl") && GetFlag(sibl, "ismember") && !isCtor);
+    const bool isCtor = (!Cmp(Getattr(sibl, "nodeType"), "constructor"));
+    const bool isMethod = ( Cmp(Getattr(sibl, "ismember"), "1") == 0 &&
+			    (!isCtor) );
 
     // Construct real method name
     String* methodName = NewString("");
@@ -2090,7 +2103,7 @@ public:
     String *protoTypes = NewString("");
     do {
       Append( protoTypes, "\n\"    ");
-      if (!isCtor && !Equal(siblNodeType, "using")) {
+      if (!isCtor) {
 	SwigType *type = SwigType_str(Getattr(sibl, "type"), NULL);
 	Printv(protoTypes, type, " ", NIL);
 	Delete(type);
@@ -2143,7 +2156,7 @@ public:
     String *tm;
     String *getfname, *setfname;
     Wrapper *getf, *setf;
-    int assignable = !is_immutable(n);
+    const int assignable = is_assignable(n);
 
     // Determine whether virtual global variables shall be used
     // which have different getter and setter signatures,
@@ -2757,7 +2770,7 @@ public:
     Printf(f_wrappers, "%s", docs);
     Delete(docs);
 
-    if (!is_immutable(n)) {
+    if (is_assignable(n)) {
       String* docs = docstring(n, AUTODOC_SETTER);
       Printf(f_wrappers, "%s", docs);
       Delete(docs);
@@ -2812,7 +2825,7 @@ public:
     Printf(f_wrappers, "%s", docs);
     Delete(docs);
 
-    if (!is_immutable(n)) {
+    if (is_assignable(n)) {
       String* docs = docstring(n, AUTODOC_SETTER);
       Printf(f_wrappers, "%s", docs);
       Delete(docs);
@@ -3146,6 +3159,12 @@ public:
       /* build argument list and type conversion string */
       idx = 0; p = l;
       while ( p ) {
+
+	if (Getattr(p, "tmap:ignore")) {
+	  p = Getattr(p, "tmap:ignore:next");
+	  continue;
+	}
+
 	if (Getattr(p, "tmap:directorargout") != 0)
 	  outputs++;
 

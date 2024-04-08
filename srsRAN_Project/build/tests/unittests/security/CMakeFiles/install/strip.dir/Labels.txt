@@ -1,3 +1,0 @@
-# Directory labels
- security
-# Source files and their labels

@@ -76,7 +76,7 @@ Vector addv(Vector &amp;a, Vector &amp;b) {
               <c:function name="size" >
                 <swigxml:type string="int"  />
               </c:function>
-              <swig:extend >
+              <swig:addmethods >
                 <swigxml:child >
                   <c:function name="get" >
                     <swigxml:parms >
@@ -106,7 +106,7 @@ Vector addv(Vector &amp;a, Vector &amp;b) {
                     <swigxml:type string="void"  />
                   </c:function>
                 </swigxml:child>
-              </swig:extend>
+              </swig:addmethods>
             </swigxml:child>
             <swigxml:classtype string="class"  />
             <swigxml:namespace string="VectorArray"  />

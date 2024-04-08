@@ -1,0 +1,14 @@
+following this: https://tech-academy.amarisoft.com/Cloud_open5gs.html
+
+[] do the slicing (sst = 1, sd = 1)
+        gnb
+        ue [slicing] nssai-sst=1, nssai-sd=1
+[] install open5gs from source to be able to config amf and upf https://open5gs.org/open5gs/docs/guide/02-building-open5gs-from-sources/ without 'ninja install'
+
+follow this: https://github.com/s5uishida/open5gs_5gc_srsran_sample_config/tree/main
+requirement
+    change open5gs
+    change upf
+    change gnb
+    change ue
+

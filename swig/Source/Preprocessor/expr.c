@@ -138,6 +138,7 @@ static int reduce_op(void) {
     default:
       errmsg = "Syntax error: bad binary operator for strings";
       return 0;
+      break;
     }
   } else {
     switch (op_token) {
@@ -242,6 +243,7 @@ static int reduce_op(void) {
     default:
       errmsg = "Syntax error: bad operator";
       return 0;
+      break;
     }
   }
   stack[sp].op = EXPR_VALUE;
@@ -318,17 +320,7 @@ int Preprocessor_expr(DOH *s, int *error) {
 	*error = 1;
 	return 0;
       }
-      if (token == SWIG_TOKEN_BOOL) {
-	/* A boolean value.  Reduce EXPR_TOP to an EXPR_VALUE */
-	String *cc = Scanner_text(scan);
-	if (Strcmp(cc, "true") == 0) {
-	  stack[sp].value = (long) 1;
-	} else {
-	  stack[sp].value = (long) 0;
-	}
-	stack[sp].svalue = 0;
-	stack[sp].op = EXPR_VALUE;
-      } else if ((token == SWIG_TOKEN_INT) || (token == SWIG_TOKEN_UINT) || (token == SWIG_TOKEN_LONG) || (token == SWIG_TOKEN_ULONG)) {
+      if ((token == SWIG_TOKEN_INT) || (token == SWIG_TOKEN_UINT) || (token == SWIG_TOKEN_LONG) || (token == SWIG_TOKEN_ULONG)) {
 	/* A number.  Reduce EXPR_TOP to an EXPR_VALUE */
 	char *c = Char(Scanner_text(scan));
 	if (c[0] == '0' && (c[1] == 'b' || c[1] == 'B')) {
@@ -363,7 +355,7 @@ int Preprocessor_expr(DOH *s, int *error) {
 	stack[sp].value = 0;
 	stack[sp].svalue = 0;
 	stack[sp].op = EXPR_VALUE;
-      } else if (token == SWIG_TOKEN_FLOAT || token == SWIG_TOKEN_DOUBLE || token == SWIG_TOKEN_LONGDOUBLE) {
+      } else if ((token == SWIG_TOKEN_FLOAT) || (token == SWIG_TOKEN_DOUBLE)) {
 	errmsg = "Floating point constant in preprocessor expression";
 	*error = 1;
 	return 0;

@@ -1,4 +1,0 @@
-# Directory labels
- mac
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/mac/mac_ue_create_test.cpp

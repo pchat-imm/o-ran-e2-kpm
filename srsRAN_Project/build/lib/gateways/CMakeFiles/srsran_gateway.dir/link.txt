@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_gateway.a CMakeFiles/srsran_gateway.dir/sctp_network_gateway_impl.cpp.o CMakeFiles/srsran_gateway.dir/udp_network_gateway_impl.cpp.o CMakeFiles/srsran_gateway.dir/sctp_network_gateway_factory.cpp.o CMakeFiles/srsran_gateway.dir/udp_network_gateway_factory.cpp.o
-/usr/bin/ranlib libsrsran_gateway.a

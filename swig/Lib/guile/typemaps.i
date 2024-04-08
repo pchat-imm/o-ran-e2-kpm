@@ -235,6 +235,8 @@
  %typemap (argout,doc="$name (of type <" #SCM_NAME ">)") C_NAME *OUTPUT
      { C_NAME swig_c_value = *$1;
        SWIG_APPEND_VALUE(C_TO_SCM_EXPR); }
+ %typemap (in)          C_NAME *BOTH = C_NAME *INPUT;
+ %typemap (argout)      C_NAME *BOTH = C_NAME *OUTPUT;
  %typemap (in)          C_NAME *INOUT = C_NAME *INPUT;
  %typemap (argout)      C_NAME *INOUT = C_NAME *OUTPUT;
  /* Const primitive references.  Passed by value */
@@ -276,6 +278,8 @@
    {$1 = &temp;}
  %typemap (argout,doc="$name (of type <" #SCM_NAME ">)") C_NAME *OUTPUT, C_NAME &OUTPUT
    {SWIG_APPEND_VALUE(C_TO_SCM(*$1));}
+ %typemap (in)          C_NAME *BOTH = C_NAME *INPUT;
+ %typemap (argout)      C_NAME *BOTH = C_NAME *OUTPUT;
  %typemap (in)          C_NAME *INOUT = C_NAME *INPUT;
  %typemap (argout)      C_NAME *INOUT = C_NAME *OUTPUT;
  %typemap (in)          C_NAME &INOUT = C_NAME &INPUT;
@@ -336,6 +340,8 @@ SIMPLE_MAP(unsigned long long, scm_to_ulong_long, scm_from_ulong_long, integer);
    {$1 = &temp;}
  %typemap (argout,doc="$NAME (a string)") char **OUTPUT
    {SWIG_APPEND_VALUE(SWIG_str02scm(*$1));}
+ %typemap (in)          char **BOTH = char **INPUT;
+ %typemap (argout)      char **BOTH = char **OUTPUT;
  %typemap (in)          char **INOUT = char **INPUT;
  %typemap (argout)      char **INOUT = char **OUTPUT;
 
@@ -343,13 +349,13 @@ SIMPLE_MAP(unsigned long long, scm_to_ulong_long, scm_from_ulong_long, integer);
    the function call. */
 
 %typemap (freearg) char * "if (must_free$argnum) SWIG_free($1);"
-%typemap (freearg) char **INPUT, char **INOUT "if (must_free$argnum) SWIG_free(*$1);"
+%typemap (freearg) char **INPUT, char **BOTH "if (must_free$argnum) SWIG_free(*$1);"
 %typemap (freearg) char **OUTPUT "SWIG_free(*$1);"
   
 /* But this shall not apply if we try to pass a single char by
    reference. */
 
-%typemap (freearg) char *OUTPUT, char *INOUT ""
+%typemap (freearg) char *OUTPUT, char *BOTH ""
 
 /* If we set a string variable, delete the old result first, unless const. */
 

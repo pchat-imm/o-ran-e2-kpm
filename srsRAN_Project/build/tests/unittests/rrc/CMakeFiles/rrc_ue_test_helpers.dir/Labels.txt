@@ -1,4 +1,0 @@
-# Directory labels
- rrc
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/rrc/rrc_ue_test_messages.cpp

@@ -237,7 +237,7 @@ public:
      go_imports(NULL),
      unique_id(NULL) {
     director_multiple_inheritance = 1;
-    directorLanguage();
+    director_language = 1;
     director_prot_ctor_code = NewString("_swig_gopanic(\"accessing abstract class or protected constructor\");");
   }
 
@@ -464,7 +464,7 @@ private:
       Exit(EXIT_FAILURE);
     }
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       if (!c_filename_h) {
 	Printf(stderr, "Unable to determine outfile_h\n");
 	Exit(EXIT_FAILURE);
@@ -527,7 +527,7 @@ private:
       Printf(f_c_runtime, "#define SWIGGO_PREFIX %s\n", go_prefix);
     }
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Printf(f_c_runtime, "#define SWIG_DIRECTORS\n");
 
       Swig_banner(f_c_directors_h);
@@ -573,7 +573,7 @@ private:
 
     Language::top(n);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       // Insert director runtime into the f_runtime file (make it occur before %header section)
       Swig_insert_file("director_common.swg", f_c_runtime);
       Swig_insert_file("director.swg", f_c_runtime);
@@ -616,7 +616,7 @@ private:
 
     Dump(f_c_header, f_c_runtime);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Printf(f_c_directors_h, "#endif\n");
       Delete(f_c_directors_h);
       f_c_directors_h = NULL;
@@ -672,7 +672,7 @@ private:
     Dump(f_go_header, f_go_begin);
     Dump(f_go_runtime, f_go_begin);
     Dump(f_go_wrappers, f_go_begin);
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Dump(f_go_directors, f_go_begin);
     }
     Delete(f_c_runtime);
@@ -760,6 +760,13 @@ private:
       return SWIG_OK;
     }
 
+    // Don't emit constructors for abstract director classes.  They
+    // will never succeed anyhow.
+    if (Swig_methodclass(n) && Swig_directorclass(n)
+	&& Strcmp(Char(Getattr(n, "wrap:action")), director_prot_ctor_code) == 0) {
+      return SWIG_OK;
+    }
+
     String *name = Getattr(n, "sym:name");
     String *nodetype = Getattr(n, "nodeType");
     bool is_static = is_static_member_function || isStatic(n);
@@ -833,9 +840,7 @@ private:
 	SwigType *type = Copy(getClassType());
 	SwigType_add_pointer(type);
 	String *cres = Swig_cresult(type, Swig_cresult_name(), call);
-	if (!Equal(Getattr(n, "wrap:action"), director_prot_ctor_code)) {
-	  Setattr(n, "wrap:action", cres);
-	}
+	Setattr(n, "wrap:action", cres);
       }
     } else if (Cmp(nodetype, "destructor") == 0) {
       // No need to emit protected destructors.
@@ -2266,7 +2271,7 @@ private:
     }
 
     String *storage = Getattr(entry, "storage");
-    if (storage && (Strcmp(storage, "typedef") == 0 || Strstr(storage, "friend"))) {
+    if (storage && (Strcmp(storage, "typedef") == 0 || Strcmp(storage, "friend") == 0)) {
       return SWIG_OK;
     }
 
@@ -2443,7 +2448,7 @@ private:
 
     String *mname = Swig_name_member(getNSpace(), Getattr(var_class, "sym:name"), var_name);
 
-    if (!is_immutable(var)) {
+    if (is_assignable(var)) {
       for (Iterator ki = First(var); ki.key; ki = Next(ki)) {
 	if (Strncmp(ki.key, "tmap:", 5) == 0) {
 	  Delattr(var, ki.key);
@@ -4651,8 +4656,8 @@ private:
    * 'X'.
    * ---------------------------------------------------------------------- */
 
-  String *exportedName(SwigType *name) {
-    SwigType *copy = Copy(name);
+  String *exportedName(String *name) {
+    String *copy = Copy(name);
     char c = *Char(copy);
     if (islower(c)) {
       char l[2];
@@ -4672,7 +4677,7 @@ private:
       u[2] = '\0';
       Replace(copy, l, u, DOH_REPLACE_FIRST);
     }
-    String *ret = Swig_name_mangle_type(copy);
+    String *ret = Swig_name_mangle(copy);
     Delete(copy);
     return ret;
   }
@@ -4720,7 +4725,7 @@ private:
     Append(nw, c3);
     Delete(c2);
     Delete(c3);
-    String *ret = Swig_name_mangle_string(nw);
+    String *ret = Swig_name_mangle(nw);
     Delete(nw);
     return ret;
   }
@@ -4737,7 +4742,7 @@ private:
   String *buildGoWrapperName(String *name, String *overname) {
     String *s1 = NewString("_swig_wrap_");
     Append(s1, name);
-    String *s2 = Swig_name_mangle_string(s1);
+    String *s2 = Swig_name_mangle(s1);
     Delete(s1);
     if (overname) {
       Append(s2, overname);
@@ -5551,11 +5556,11 @@ private:
       return NewString("int");
     }
 
-    SwigType *type = Getattr(n, "enumtype");
+    String *type = Getattr(n, "enumtype");
     assert(type);
     char *p = Char(type);
     int len = Len(type);
-    SwigType *s = NewString("");
+    String *s = NewString("");
     bool capitalize = true;
     for (int i = 0; i < len; ++i, ++p) {
       if (*p == ':') {
@@ -5571,7 +5576,7 @@ private:
       }
     }
 
-    ret = Swig_name_mangle_type(s);
+    ret = Swig_name_mangle(s);
     Delete(s);
     return ret;
   }
@@ -5615,7 +5620,7 @@ private:
 
   bool isStatic(Node *n) {
     String *storage = Getattr(n, "storage");
-    return (storage && (Swig_storage_isstatic(n) || Strstr(storage, "friend")) && (!SmartPointer || !Getattr(n, "allocate:smartpointeraccess")));
+    return (storage && (Swig_storage_isstatic(n) || Strcmp(storage, "friend") == 0) && (!SmartPointer || !Getattr(n, "allocate:smartpointeraccess")));
   }
 
   /* ----------------------------------------------------------------------
@@ -5626,7 +5631,7 @@ private:
 
   bool isFriend(Node *n) {
     String *storage = Getattr(n, "storage");
-    return storage && Strstr(storage, "friend");
+    return storage && Strcmp(storage, "friend") == 0;
   }
 
   /* ----------------------------------------------------------------------

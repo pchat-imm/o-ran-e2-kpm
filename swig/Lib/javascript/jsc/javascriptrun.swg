@@ -273,12 +273,11 @@ int SWIG_JSC_ConvertPacked(JSContextRef context, JSValueRef valRef, void *ptr, s
 SWIGRUNTIME
 JSValueRef SWIG_JSC_NewPackedObj(JSContextRef context, void *data, size_t size, swig_type_info *type) {
 
-  JSClassRef classRef = _SwigPackedData_classRef;
+  JSClassRef classRef = _SwigObject_classRef;
   JSObjectRef result = JSObjectMake(context, classRef, NULL);
 
   SwigPackedData* cdata = (SwigPackedData*) malloc(sizeof(SwigPackedData));
-  cdata->data = malloc(size);
-  memcpy(cdata->data, data, size);
+  cdata->data = data;
   cdata->size = size;
   cdata->type = type;
 

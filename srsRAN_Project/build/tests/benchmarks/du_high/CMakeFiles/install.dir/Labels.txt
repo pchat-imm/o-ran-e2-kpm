@@ -1,3 +1,0 @@
-# Directory labels
- du_high|tsan
-# Source files and their labels

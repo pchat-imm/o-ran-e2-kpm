@@ -1,4 +1,0 @@
-# Directory labels
- phy
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/benchmarks/phy/generic_functions/dft_processor_benchmark.cpp

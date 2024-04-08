@@ -1,2 +1,0 @@
-/usr/bin/ar qc libf1ap_test_doubles.a CMakeFiles/f1ap_test_doubles.dir/f1ap_test_message_validators.cpp.o CMakeFiles/f1ap_test_doubles.dir/f1ap_test_messages.cpp.o
-/usr/bin/ranlib libf1ap_test_doubles.a

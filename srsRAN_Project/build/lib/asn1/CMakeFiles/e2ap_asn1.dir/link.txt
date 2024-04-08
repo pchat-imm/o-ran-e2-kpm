@@ -1,2 +1,0 @@
-/usr/bin/ar qc libe2ap_asn1.a CMakeFiles/e2ap_asn1.dir/e2ap/e2ap.cpp.o CMakeFiles/e2ap_asn1.dir/e2ap/e2sm.cpp.o CMakeFiles/e2ap_asn1.dir/e2ap/e2sm_kpm.cpp.o CMakeFiles/e2ap_asn1.dir/e2ap/e2sm_rc.cpp.o
-/usr/bin/ranlib libe2ap_asn1.a

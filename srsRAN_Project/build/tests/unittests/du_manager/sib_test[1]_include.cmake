@@ -1,5 +1,0 @@
-if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/du_manager/sib_test[1]_tests.cmake")
-  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/du_manager/sib_test[1]_tests.cmake")
-else()
-  add_test(sib_test_NOT_BUILT sib_test_NOT_BUILT)
-endif()

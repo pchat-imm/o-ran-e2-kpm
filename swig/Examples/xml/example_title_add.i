@@ -1,5 +1,5 @@
 /* File : example.i */
-/* Matrix and vector package */
+%title "Matrix and vector package"
 
 /* This file has a few "typical" uses of C++ references. */
 
@@ -32,7 +32,7 @@ public:
   int size();
   
   /* This wrapper provides an alternative to the [] operator */
-  %extend {
+  %addmethods {
     Vector &get(int index) {
       return (*self)[index];
     }

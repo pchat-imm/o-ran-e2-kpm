@@ -220,7 +220,7 @@ public:
 	   "  $director_new \n",
 	   "} else {\n", "  SWIG_SetErrorMsg(PyExc_RuntimeError,\"accessing abstract class or protected constructor\"); \n", "  SWIG_fail;\n", "}\n", NIL);
     director_multiple_inheritance = 1;
-    directorLanguage();
+    director_language = 1;
   }
 
   ~PYTHON() {
@@ -560,7 +560,7 @@ public:
       f_builtins = NewString("");
     }
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       if (!no_header_file) {
 	f_runtime_h = NewFile(outfile_h, "w", SWIG_output_files());
 	if (!f_runtime_h) {
@@ -589,7 +589,7 @@ public:
 
     Swig_obligatory_macros(f_runtime, "PYTHON");
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Printf(f_runtime, "#define SWIG_DIRECTORS\n");
     }
 
@@ -638,7 +638,7 @@ public:
     module = Copy(Getattr(n, "name"));
     mainmodule = Getattr(n, "name");
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Swig_banner(f_directors_h);
       Printf(f_directors_h, "\n");
       Printf(f_directors_h, "#ifndef SWIG_%s_WRAP_H_\n", module);
@@ -769,7 +769,7 @@ public:
 
 	Printv(f_shadow, "\n", NIL);
 
-	if (Swig_directors_enabled())
+	if (directorsEnabled())
 	  Printv(f_shadow, "import weakref\n\n", NIL);
       }
     }
@@ -805,7 +805,7 @@ public:
     /* emit code */
     Language::top(n);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       // Insert director runtime into the f_runtime file (make it occur before %header section)
       Swig_insert_file("director_common.swg", f_runtime);
       Swig_insert_file("director.swg", f_runtime);
@@ -886,7 +886,7 @@ public:
     Dump(f_runtime, f_begin);
     Dump(f_header, f_begin);
 
-    if (Swig_directors_enabled()) {
+    if (directorsEnabled()) {
       Dump(f_directors_h, f_runtime_h);
       Printf(f_runtime_h, "\n");
       Printf(f_runtime_h, "#endif\n");
@@ -1898,20 +1898,16 @@ public:
 	    String *str = Getattr(n, "feature:docstring");
 	    if (!str || Len(str) == 0) {
 	      if (builtin) {
-		SwigType *name = Getattr(n, "name");
-		SwigType *sname = add_explicit_scope(name);
-		String *rname = SwigType_namestr(sname);
+		String *name = Getattr(n, "name");
+		String *rname = add_explicit_scope(SwigType_namestr(name));
 		Printf(doc, "%s", rname);
-		Delete(sname);
 		Delete(rname);
 	      } else {
-		String *classname_str = SwigType_namestr(real_classname);
 		if (CPlusPlus) {
-		  Printf(doc, "Proxy of C++ %s class.", classname_str);
+		  Printf(doc, "Proxy of C++ %s class.", SwigType_namestr(real_classname));
 		} else {
-		  Printf(doc, "Proxy of C %s struct.", classname_str);
+		  Printf(doc, "Proxy of C %s struct.", SwigType_namestr(real_classname));
 		}
-		Delete(classname_str);
 	      }
 	    }
 	  }
@@ -2814,7 +2810,7 @@ public:
       Printv(f->def, linkage, wrap_return, wname, "(PyObject *self, PyObject *args, PyObject *kwargs) {", NIL);
     }
 
-    if (!builtin) {
+    if (builtin) {
       /* Avoid warning if the self parameter is not used. */
       Append(f->code, "(void)self;\n");
     }
@@ -3460,7 +3456,7 @@ public:
 	Printf(f_shadow_stubs, "%s = %s.%s\n", global_name, module, global_name);
       }
     }
-    int assignable = !is_immutable(n);
+    int assignable = is_assignable(n);
 
     if (!builtin && shadow && !assignable && !in_class)
       Printf(f_shadow_stubs, "%s = %s.%s\n", iname, global_name, iname);
@@ -3926,36 +3922,35 @@ public:
    * classHandler()
    * ------------------------------------------------------------ */
 
-  SwigType *add_explicit_scope(SwigType *s) {
+  String *add_explicit_scope(String *s) {
     if (!Strstr(s, "::")) {
-      return NewStringf("::%s", s);
+      String *ss = NewStringf("::%s", s);
+      Delete(s);
+      s = ss;
     }
-    return Copy(s);
+    return s;
   }
 
   void builtin_pre_decl(Node *n) {
-    SwigType *name = Getattr(n, "name");
-    SwigType *sname = add_explicit_scope(name);
-    String *rname = SwigType_namestr(sname);
-    String *mname = SwigType_manglestr(sname);
+    String *name = Getattr(n, "name");
+    String *rname = add_explicit_scope(SwigType_namestr(name));
+    String *mname = SwigType_manglestr(rname);
 
     Printf(f_init, "\n/* type '%s' */\n", rname);
     Printf(f_init, "    builtin_pytype = (PyTypeObject *)&SwigPyBuiltin_%s_type;\n", mname);
     Printf(f_init, "    builtin_pytype->tp_dict = d = PyDict_New();\n");
 
-    Delete(sname);
     Delete(rname);
     Delete(mname);
   }
 
   void builtin_post_decl(File *f, Node *n) {
-    SwigType *name = Getattr(n, "name");
-    SwigType *pname = Copy(name);
+    String *name = Getattr(n, "name");
+    String *pname = Copy(name);
     SwigType_add_pointer(pname);
     String *symname = Getattr(n, "sym:name");
-    SwigType *sname = add_explicit_scope(name);
-    String *rname = SwigType_namestr(sname);
-    String *mname = SwigType_manglestr(sname);
+    String *rname = add_explicit_scope(SwigType_namestr(name));
+    String *mname = SwigType_manglestr(rname);
     String *pmname = SwigType_manglestr(pname);
     String *templ = NewStringf("SwigPyBuiltin_%s", mname);
     int funpack = fastunpack;
@@ -4203,9 +4198,6 @@ public:
     Printv(f, "#if (PY_VERSION_HEX >= 0x03080000) && (PY_VERSION_HEX < 0x03090000)\n", NIL);
     printSlot(f, getSlot(), "tp_print");
     Printv(f, "#endif\n", NIL);
-    Printv(f, "#if PY_VERSION_HEX >= 0x030c0000\n", NIL);
-    printSlot(f, getSlot(n, "feature:python:tp_watched"), "tp_watched", "char");
-    Printv(f, "#endif\n", NIL);
 
     Printv(f, "#ifdef COUNT_ALLOCS\n", NIL);
     printSlot(f, getSlot(n, "feature:python:tp_allocs"), "tp_allocs", "Py_ssize_t");
@@ -4350,9 +4342,6 @@ public:
     // struct _specialization_cache _spec_cache;
     Printf(f, "  {\n");
     printSlot(f, getSlot(n, "feature:python:getitem"), "getitem", "PyObject *");
-    Printv(f, "#if PY_VERSION_HEX >= 0x030c0000\n", NIL);
-    printSlot(f, getSlot(n, "feature:python:getitem_version"), "getitem_version", "uint32_t");
-    Printv(f, "#endif\n", NIL);
     Printf(f, "  }\n");
     Printv(f, "#endif\n", NIL);
     Printf(f, "};\n\n");
@@ -4392,10 +4381,9 @@ public:
 
     Delete(clientdata);
     Delete(smart);
-    Delete(sname);
     Delete(rname);
-    Delete(mname);
     Delete(pname);
+    Delete(mname);
     Delete(pmname);
     Delete(templ);
     Delete(tp_flags);
@@ -4492,11 +4480,9 @@ public:
 	  Setattr(n, "feature:python:tp_doc", ds);
 	  Delete(ds);
 	} else {
-	  SwigType *name = Getattr(n, "name");
-	  SwigType *sname = add_explicit_scope(name);
-	  String *rname = SwigType_namestr(sname);
+	  String *name = Getattr(n, "name");
+	  String *rname = add_explicit_scope(SwigType_namestr(name));
 	  Setattr(n, "feature:python:tp_doc", rname);
-	  Delete(sname);
 	  Delete(rname);
 	}
       } else {
@@ -5058,7 +5044,7 @@ public:
       String *mname = Swig_name_member(NSPACE_TODO, class_name, symname);
       String *setname = Swig_name_set(NSPACE_TODO, mname);
       String *getname = Swig_name_get(NSPACE_TODO, mname);
-      int assignable = !is_immutable(n);
+      int assignable = is_assignable(n);
       String *variable_annotation = variableAnnotation(n);
       Printv(f_shadow, tab4, symname, variable_annotation, " = property(", module, ".", getname, NIL);
       if (assignable)
@@ -5113,7 +5099,7 @@ public:
 	add_method(getname, wrapgetname, 0);
 	Wrapper_print(f, f_wrappers);
 	DelWrapper(f);
-	int assignable = !is_immutable(n);
+	int assignable = is_assignable(n);
 	if (assignable) {
 	  int funpack = fastunpack;
 	  Wrapper *f = NewWrapper();
@@ -5446,6 +5432,14 @@ int PYTHON::classDirectorMethod(Node *n, Node *parent, String *super) {
 	p = Getattr(p, "tmap:in:next");
 	continue;
       }
+
+      /* old style?  caused segfaults without the p!=0 check
+         in the for() condition, and seems dangerous in the
+         while loop as well.
+         while (Getattr(p, "tmap:ignore")) {
+         p = Getattr(p, "tmap:ignore:next");
+         }
+       */
 
       if (Getattr(p, "tmap:directorargout") != 0)
 	outputs++;

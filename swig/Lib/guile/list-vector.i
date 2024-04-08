@@ -283,7 +283,8 @@ TYPEMAP_LIST_VECTOR_INPUT_OUTPUT(const char *, SWIG_scm2str, SWIG_str02scm, stri
   /* input */
      
      /* Passing data is a little complicated here; just remember:
-	IN typemaps come first, then CHECK.
+	IGNORE typemaps come first, then IN, then CHECK.  But if
+	IGNORE is given, IN won't be used for this type.
 
 	We need to "ignore" one of the parameters because there shall
 	be only one argument on the Scheme side.  Here we only

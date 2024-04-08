@@ -702,8 +702,167 @@ String *Swig_string_typecode(String *s) {
   return ns;
 }
 
-static String *string_mangle(String *s) {
-  return Swig_name_mangle_string(s);
+/* -----------------------------------------------------------------------------
+ * Swig_string_mangle()
+ * 
+ * Take a string and mangle it by stripping all non-valid C identifier
+ * characters.
+ *
+ * This routine skips unnecessary blank spaces, therefore mangling
+ * 'char *' and 'char*', 'std::pair<int, int >' and
+ * 'std::pair<int,int>', produce the same result.
+ *
+ * However, note that 'long long' and 'long_long' produce different
+ * mangled strings.
+ *
+ * The mangling method still is not 'perfect', for example std::pair and
+ * std_pair return the same mangling. This is just a little better
+ * than before, but it seems to be enough for most of the purposes.
+ *
+ * Having a perfect mangling will break some examples and code which
+ * assume, for example, that A::get_value will be mangled as
+ * A_get_value. 
+ * ----------------------------------------------------------------------------- */
+
+String *Swig_string_mangle(const String *s) {
+#if 0
+  /* old mangling, not suitable for using in macros */
+  String *t = Copy(s);
+  char *c = Char(t);
+  while (*c) {
+    if (!isalnum(*c))
+      *c = '_';
+    c++;
+  }
+  return t;
+#else
+  String *result = NewStringEmpty();
+  int space = 0;
+  int state = 0;
+  char *pc, *cb;
+  String *b = Copy(s);
+  if (SwigType_istemplate(b)) {
+    String *st = Swig_symbol_template_deftype(b, 0);
+    String *sq = Swig_symbol_type_qualify(st, 0);
+    String *t = SwigType_namestr(sq);
+    Delete(st);
+    Delete(sq);
+    Delete(b);
+    b = t;
+  }
+  pc = cb = Char(b);
+  while (*pc) {
+    char c = *pc;
+    if (isalnum((int) c) || (c == '_')) {
+      state = 1;
+      if (space && (space == state)) {
+	Append(result, "_SS_");
+      }
+      space = 0;
+      Printf(result, "%c", (int) c);
+
+    } else {
+      if (isspace((int) c)) {
+	space = state;
+	++pc;
+	continue;
+      } else {
+	state = 3;
+	space = 0;
+      }
+      switch (c) {
+      case '.':
+	if ((cb != pc) && (*(pc - 1) == 'p')) {
+	  Append(result, "_");
+	  ++pc;
+	  continue;
+	} else {
+	  c = 'f';
+	}
+	break;
+      case ':':
+	if (*(pc + 1) == ':') {
+	  Append(result, "_");
+	  ++pc;
+	  ++pc;
+	  continue;
+	}
+	break;
+      case '*':
+	c = 'm';
+	break;
+      case '&':
+	c = 'A';
+	break;
+      case '<':
+	c = 'l';
+	break;
+      case '>':
+	c = 'g';
+	break;
+      case '=':
+	c = 'e';
+	break;
+      case ',':
+	c = 'c';
+	break;
+      case '(':
+	c = 'p';
+	break;
+      case ')':
+	c = 'P';
+	break;
+      case '[':
+	c = 'b';
+	break;
+      case ']':
+	c = 'B';
+	break;
+      case '^':
+	c = 'x';
+	break;
+      case '|':
+	c = 'o';
+	break;
+      case '~':
+	c = 'n';
+	break;
+      case '!':
+	c = 'N';
+	break;
+      case '%':
+	c = 'M';
+	break;
+      case '?':
+	c = 'q';
+	break;
+      case '+':
+	c = 'a';
+	break;
+      case '-':
+	c = 's';
+	break;
+      case '/':
+	c = 'd';
+	break;
+      default:
+	break;
+      }
+      if (isalpha((int) c)) {
+	Printf(result, "_S%c_", (int) c);
+      } else {
+	Printf(result, "_S%02X_", (int) c);
+      }
+    }
+    ++pc;
+  }
+  Delete(b);
+  return result;
+#endif
+}
+
+String *Swig_string_emangle(String *s) {
+  return Swig_string_mangle(s);
 }
 
 
@@ -1321,8 +1480,8 @@ String *Swig_string_regex(String *s) {
     }
   }
 
-  Delete(pattern);
-  Delete(subst);
+  DohDelete(pattern);
+  DohDelete(subst);
   pcre2_code_free(compiled_pat);
   pcre2_match_data_free(match_data);
   return res ? res : NewStringEmpty();
@@ -1357,31 +1516,10 @@ String *Swig_pcre_version(void) {
  * Check if the function is an automatically generated
  * overload created because a method has default parameters. 
  * ------------------------------------------------------------ */
-
 int Swig_is_generated_overload(Node *n) {
   Node *base_method = Getattr(n, "sym:overloaded");
   Node *default_args = Getattr(n, "defaultargs");
   return ((base_method != NULL) && (default_args != NULL) && (base_method == default_args));
-}
-
-/* -----------------------------------------------------------------------------
- * Swig_item_in_list()
- *
- * If the input name is the name of an item in the list, return the item
- * ----------------------------------------------------------------------------- */
-
-Node *Swig_item_in_list(List *list, const_String_or_char_ptr name) {
-  Node *item = 0;
-  if (list) {
-    Iterator it;
-    for (it = First(list); it.item; it = Next(it)) {
-      if (Strcmp(name, it.item) == 0) {
-	item = it.item;
-	break;
-      }
-    }
-  }
-  return item;
 }
 
 /* -----------------------------------------------------------------------------
@@ -1401,7 +1539,7 @@ void Swig_init(void) {
   DohEncoding("lctitle", Swig_string_lccase);
   DohEncoding("utitle", Swig_string_ucase);
   DohEncoding("typecode", Swig_string_typecode);
-  DohEncoding("mangle", string_mangle);
+  DohEncoding("mangle", Swig_string_emangle);
   DohEncoding("command", Swig_string_command);
   DohEncoding("schemify", Swig_string_schemify);
   DohEncoding("strip", Swig_string_strip);

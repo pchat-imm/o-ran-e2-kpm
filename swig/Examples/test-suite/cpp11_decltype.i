@@ -9,42 +9,11 @@
     int i;
     decltype(i) j;
 
-    auto get_number(decltype(i) a) -> decltype(i) {
+    auto foo( decltype(i) a ) -> decltype(i) {
       if (a==5)
         return 10;
       else
         return 0;
     }
   };
-%}
-
-
-// These are ignored as unable to deduce decltype for (i+j)
-%ignore B::k;
-%ignore B::get_number_sum;
-%ignore B::get_number_address;
-#pragma SWIG nowarn=SWIGWARN_CPP11_DECLTYPE
-
-%inline %{
-#define DECLARE(VAR, VAL) decltype(VAL) VAR = VAL
-  class B {
-  public:
-    int i;
-    decltype(i) j;
-    decltype(i+j) k;
-    DECLARE(a, false);
-    DECLARE(b, true);
-
-    auto get_number_sum(decltype(i+j) a) -> decltype(i+j) {
-      return i+j;
-    }
-
-    auto get_number_address(decltype(&i) a) -> decltype(&i) {
-      return &i;
-    }
-
-    auto negate(decltype(true) b) -> decltype(b) {
-      return !b;
-    }
-  };
-%}
+  %}

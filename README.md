@@ -26,3 +26,7 @@ from srsRAN
 - [FlexRIC](https://gitlab.eurecom.fr/mosaic5g/flexric)
 - [Open5GS 5G Core](https://open5gs.org/)
 - Wireshark (Version 4.0.7 or later)
+
+## task 05/04/23
+- understand multiUE and gNU Emulator 
+

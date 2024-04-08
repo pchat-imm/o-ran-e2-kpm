@@ -1,3 +1,3 @@
-SRCS = example.c
+SRCS = example.cxx
 
 include $(SRCDIR)../example.mk

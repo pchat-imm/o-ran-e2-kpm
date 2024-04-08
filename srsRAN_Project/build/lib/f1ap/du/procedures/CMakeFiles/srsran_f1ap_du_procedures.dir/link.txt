@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_f1ap_du_procedures.a CMakeFiles/srsran_f1ap_du_procedures.dir/gnb_cu_configuration_update_procedure.cpp.o CMakeFiles/srsran_f1ap_du_procedures.dir/f1ap_du_setup_procedure.cpp.o CMakeFiles/srsran_f1ap_du_procedures.dir/f1ap_du_ue_context_setup_procedure.cpp.o CMakeFiles/srsran_f1ap_du_procedures.dir/f1ap_du_ue_context_modification_procedure.cpp.o CMakeFiles/srsran_f1ap_du_procedures.dir/f1ap_du_ue_context_release_procedure.cpp.o
-/usr/bin/ranlib libsrsran_f1ap_du_procedures.a

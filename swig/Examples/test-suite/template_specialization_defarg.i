@@ -1,7 +1,5 @@
 %module template_specialization_defarg
 
-%warnfilter(SWIGWARN_TYPE_REDEFINED) C<double, double>; // note that warning is actually for the equivalent C<double.
-
 %inline %{
 
   template <class A, class B = double>

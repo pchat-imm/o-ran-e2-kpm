@@ -104,7 +104,7 @@ with a pair of set/get functions like this:
 class VectorArray {
 public:
  ...
-   %extend {
+   %addmethods {
     Vector &amp;get(int index) {
       return (*self)[index];
     }

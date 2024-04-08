@@ -1,9 +1,5 @@
 %module iadd
 
-#if defined(SWIGJAVASCRIPT)
-%rename(addto) operator+=;
-#endif
-
 %include attribute.i
 class Foo; 
 %attribute_ref(test::Foo, test::A& , AsA);

@@ -1,4 +1,0 @@
-# Directory labels
- fapi_adaptor
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/fapi_adaptor/phy/messages/ul_pucch_pdu_test.cpp

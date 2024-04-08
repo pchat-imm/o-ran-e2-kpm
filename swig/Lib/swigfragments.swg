@@ -85,10 +85,6 @@
 #include <string>
 %}
 
-%fragment("<string_view>", "header") %{
-#include <string_view>
-%}
-
 %fragment("<memory>", "header") %{
 #include <memory>
 %}

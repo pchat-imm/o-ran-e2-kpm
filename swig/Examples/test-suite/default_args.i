@@ -229,7 +229,7 @@ struct Except {
 %}
 
 // Default parameters in static class methods
-#if defined(SWIGPYTHON) || defined(SWIGJAVASCRIPT)
+#ifdef SWIGPYTHON
 %rename(staticMethod) staticmethod;
 #endif
 

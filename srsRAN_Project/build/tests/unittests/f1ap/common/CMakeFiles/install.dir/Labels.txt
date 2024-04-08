@@ -1,3 +1,0 @@
-# Directory labels
- f1ap
-# Source files and their labels

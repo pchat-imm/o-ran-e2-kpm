@@ -1,6 +1,6 @@
 %module nested_extend_c
 
-#if defined(SWIG_JAVASCRIPT_V8) || defined(SWIG_JAVASCRIPT_NAPI)
+#if defined(SWIG_JAVASCRIPT_V8)
 
 %inline %{
 #if __GNUC__ >= 5 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8)
@@ -16,7 +16,7 @@
 #include "stdlib.h"
 %}
 
-#if !defined(SWIGOCTAVE) && !defined(SWIG_JAVASCRIPT_V8) && !defined(SWIG_JAVASCRIPT_NAPI)
+#if !defined(SWIGOCTAVE) && !defined(SWIG_JAVASCRIPT_V8)
 %extend hiA {
   hiA() {
    union hiA *self = (union hiA *)malloc(sizeof(union hiA));

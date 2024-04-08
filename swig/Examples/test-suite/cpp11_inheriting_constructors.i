@@ -10,7 +10,6 @@ private:
   int _val;
 public:
   BaseClass(int iValue) { _val = iValue; }
-  int retrieveValue() { return _val; }
 };
 
 // Constructor inheritance via using declaration

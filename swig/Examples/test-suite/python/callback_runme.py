@@ -2,6 +2,7 @@ import _callback
 from callback import *
 
 # callbacks are implemented by modifying docstrings, useful for debugging:
+# print("A_bar doc: {}".format(A_bar.__doc__))
 # print("A.bar doc: {}".format(A.bar.__doc__))
 
 if foo(2) != 2:

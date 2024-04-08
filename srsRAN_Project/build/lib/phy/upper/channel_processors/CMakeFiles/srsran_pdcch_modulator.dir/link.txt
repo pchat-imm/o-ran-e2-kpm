@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrsran_pdcch_modulator.a CMakeFiles/srsran_pdcch_modulator.dir/pdcch_modulator_impl.cpp.o
-/usr/bin/ranlib libsrsran_pdcch_modulator.a

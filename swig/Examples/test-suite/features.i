@@ -68,7 +68,7 @@ template<class T> class SimpleTemplate {
 
 // Test 4: Test templates with user supplied constructors and destructor
 %exception Template<int>::Template() "$action /*Template<int>::Template<int>*/";
-%exception Template<int>::Template(const Template<int>&) "$action /*Template<int>::Template(const Template&)*/";
+%exception Template<int>::Template(const Template&) "$action /*Template<int>::Template<int>(const Template&)*/";
 %exception Template<int>::~Template() "$action /*Template<int>::~Template*/";
 // method tests
 %exception Template<int>::foo "$action /*Template<int>::foo*/";
@@ -76,7 +76,6 @@ template<class T> class SimpleTemplate {
 %exception Template<int>::set(const int &t) "$action /*Template<int>::set(const int &t)*/";
 %exception Template<int>::bar(const int &t)       "_failed_ /*Template<int>::bar(const int &t) const*/";
 %exception Template<int>::bar(const int &t) const "$action /*Template<int>::bar(const int &t) const*/";
-%exception Template<int>::spam(const Template<int> &)       "$action /*Template<int>::spam(const Template&)*/";
 
 %inline %{
 template<class T> class Template {
@@ -87,7 +86,6 @@ public:
   ~Template(){}
   void foo(){}
   void bar(const int &t) const {}
-  void spam(const Template &){}
 #ifdef SWIG
     %extend {
       T& get(int i) const {

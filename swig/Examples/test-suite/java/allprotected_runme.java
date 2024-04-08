@@ -14,9 +14,6 @@ public class allprotected_runme {
   {
     MyProtectedBase mpb = new MyProtectedBase("MyProtectedBase");
     mpb.accessProtected();
-
-    MyAllProtectedBottom mapb = new MyAllProtectedBottom();
-    mapb.callProtectedMethods();
   }
 }
 
@@ -75,13 +72,3 @@ class MyProtectedBase extends ProtectedBase
   }
 }
 
-class MyAllProtectedBottom extends AllProtectedBottom
-{
-  void callProtectedMethods() {
-    usingOverloaded();
-    usingOverloaded(99);
-    usingSingle();
-    doSomething();
-    doSomething(99);
-  }
-}

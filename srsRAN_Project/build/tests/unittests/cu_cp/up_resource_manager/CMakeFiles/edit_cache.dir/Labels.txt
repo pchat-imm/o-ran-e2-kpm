@@ -1,3 +1,0 @@
-# Directory labels
- cu_cp
-# Source files and their labels

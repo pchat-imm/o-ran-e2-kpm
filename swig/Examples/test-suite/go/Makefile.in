@@ -99,7 +99,8 @@ run_testcase = \
 	  cp gopath/src/$*/* gopath/src/swigtests/$*/; \
 	  mkdir gopath/src/$*/runme 2>/dev/null || true; \
 	  cp $(SCRIPTDIR)/$(SCRIPTPREFIX)$*$(SCRIPTSUFFIX) gopath/src/$*/runme/runme.go; \
-	  (cd gopath/src/$*/runme && $(COMPILETOOL) $(GO) build `if $(GOGCC); then echo -compiler=gccgo; fi` -o ../../../../$*_runme runme.go); \
+	  (cd gopath/src/$*/runme && $(COMPILETOOL) $(GO) build `if $(GOGCC); then echo -compiler=gccgo; fi` -o runme runme.go); \
+	  cp gopath/src/$*/runme/runme $*_runme; \
 	  env LD_LIBRARY_PATH=.:$$LD_LIBRARY_PATH $(RUNTOOL) ./$*_runme; \
 	fi
 
@@ -120,7 +121,8 @@ run_testcase_cpp = \
 	  cp gopath/src/$*/* gopath/src/swigtests/$*/; \
 	  mkdir gopath/src/$*/runme 2>/dev/null || true; \
 	  cp $(SCRIPTDIR)/$(SCRIPTPREFIX)$*$(SCRIPTSUFFIX) gopath/src/$*/runme/runme.go; \
-	  (cd gopath/src/$*/runme && $(COMPILETOOL) $(GO) build `if $(GOGCC); then echo -compiler=gccgo; fi` -o ../../../../$*_runme runme.go); \
+	  (cd gopath/src/$*/runme && $(COMPILETOOL) $(GO) build `if $(GOGCC); then echo -compiler=gccgo; fi` -o runme runme.go); \
+	  cp gopath/src/$*/runme/runme $*_runme; \
 	  env LD_LIBRARY_PATH=.:$$LD_LIBRARY_PATH $(RUNTOOL) ./$*_runme; \
 	fi
 
@@ -140,7 +142,7 @@ run_multi_testcase = \
 	  CGO_LDFLAGS="$(LDFLAGS) -lm"; \
 	  export CGO_LDFLAGS; \
 	  (cd gopath/$*/src/$* && \
-	    $(COMPILETOOL) $(GO) build `if $(GOGCC); then echo -compiler=gccgo; fi` -o ../../../../$*_runme) && \
+	    $(GO) build `if $(GOGCC); then echo -compiler=gccgo; fi` -o ../../../../$*_runme) && \
 	  env LD_LIBRARY_PATH=.:$$LD_LIBRARY_PATH $(RUNTOOL) ./$*_runme; \
 	fi
 

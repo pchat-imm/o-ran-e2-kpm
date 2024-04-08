@@ -1,0 +1,3 @@
+[submodule "czmq/srsRAN_Project"]
+	path = czmq/srsRAN_Project
+	url = https://github.com/srsran/srsRAN_Project.git

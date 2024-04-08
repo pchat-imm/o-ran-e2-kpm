@@ -1,6 +1,0 @@
-# Directory labels
- du_manager
-# Source files and their labels
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/du_manager/procedures/ue_configuration_test.cpp
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/du_manager/procedures/ue_deletion_test.cpp
-/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/tests/unittests/du_manager/procedures/du_ue_ric_configuration_procedure_test.cpp

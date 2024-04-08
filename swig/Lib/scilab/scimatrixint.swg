@@ -30,11 +30,7 @@
 %typemap(in, noblock=1, fragment="SWIG_SciDoubleOrInt32_AsIntArrayAndSize") (int *IN, int IN_SIZE) (int rowCount, int colCount)
 {
   if (SWIG_SciDoubleOrInt32_AsIntArrayAndSize(pvApiCtx, $input, &rowCount, &colCount, &$1, fname) == SWIG_OK) {
-    if (rowCount < 0) {
-      $2 = rowCount;
-    } else {
-      $2 = rowCount * colCount;
-    }
+    $2 = rowCount * colCount;
   }
   else {
     return SWIG_ERROR;
@@ -47,11 +43,7 @@
 %typemap(in, noblock=1, fragment="SWIG_SciDoubleOrInt32_AsIntArrayAndSize") (int IN_SIZE, int *IN) (int rowCount, int colCount)
 {
   if (SWIG_SciDoubleOrInt32_AsIntArrayAndSize(pvApiCtx, $input, &rowCount, &colCount, &$2, fname) == SWIG_OK) {
-    if (rowCount < 0) {
-      $1 = rowCount;
-    } else {
-      $1 = rowCount * colCount;
-    }
+	$1 = rowCount * colCount;
   }
   else {
 	return SWIG_ERROR;

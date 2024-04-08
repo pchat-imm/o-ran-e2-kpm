@@ -1,5 +1,0 @@
-if(EXISTS "/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/adt/circular_map_test_alt[1]_tests.cmake")
-  include("/home/chatchamon/o-ran-e2-kpm/srsRAN_Project/build/tests/unittests/adt/circular_map_test_alt[1]_tests.cmake")
-else()
-  add_test(circular_map_test_alt_NOT_BUILT circular_map_test_alt_NOT_BUILT)
-endif()
