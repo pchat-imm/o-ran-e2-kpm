@@ -1,5 +1,8 @@
 # o-ran-e2-kpm
 
+## task 05/04/23
+- understand multiUE and gNU Emulator 
+
 ## Diagram
 ![overview_hw_sw_ip_port(1)](https://github.com/pchat-imm/o-ran-e2-kpm/assets/40858099/71e6f5ca-ef8f-4fbd-9f8f-828cb9a1a94a)
 
@@ -26,7 +29,3 @@ from srsRAN
 - [FlexRIC](https://gitlab.eurecom.fr/mosaic5g/flexric)
 - [Open5GS 5G Core](https://open5gs.org/)
 - Wireshark (Version 4.0.7 or later)
-
-## task 05/04/23
-- understand multiUE and gNU Emulator 
-
