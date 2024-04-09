@@ -73,15 +73,15 @@ srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o: srsenb/te
 srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o: ../srsenb/test/mac/sched_lc_ch_test.cc
 srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o: srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/mac && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o -MF CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o.d -o CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/mac/sched_lc_ch_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/mac && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o -MF CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o.d -o CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/mac/sched_lc_ch_test.cc
 
 srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/mac && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/mac/sched_lc_ch_test.cc > CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/mac && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/mac/sched_lc_ch_test.cc > CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.i
 
 srsenb/test/mac/CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/mac && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/mac/sched_lc_ch_test.cc -o CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/mac && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/mac/sched_lc_ch_test.cc -o CMakeFiles/sched_lc_ch_test.dir/sched_lc_ch_test.cc.s
 
 # Object files for target sched_lc_ch_test
 sched_lc_ch_test_OBJECTS = \

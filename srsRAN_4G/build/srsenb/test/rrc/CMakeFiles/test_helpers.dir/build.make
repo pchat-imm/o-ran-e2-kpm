@@ -73,15 +73,15 @@ srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.o: srsenb/test/rrc/C
 srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.o: ../srsenb/test/rrc/test_helpers.cc
 srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.o: srsenb/test/rrc/CMakeFiles/test_helpers.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.o -MF CMakeFiles/test_helpers.dir/test_helpers.cc.o.d -o CMakeFiles/test_helpers.dir/test_helpers.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/rrc/test_helpers.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.o -MF CMakeFiles/test_helpers.dir/test_helpers.cc.o.d -o CMakeFiles/test_helpers.dir/test_helpers.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/rrc/test_helpers.cc
 
 srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_helpers.dir/test_helpers.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/rrc/test_helpers.cc > CMakeFiles/test_helpers.dir/test_helpers.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/rrc/test_helpers.cc > CMakeFiles/test_helpers.dir/test_helpers.cc.i
 
 srsenb/test/rrc/CMakeFiles/test_helpers.dir/test_helpers.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_helpers.dir/test_helpers.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/rrc/test_helpers.cc -o CMakeFiles/test_helpers.dir/test_helpers.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/rrc/test_helpers.cc -o CMakeFiles/test_helpers.dir/test_helpers.cc.s
 
 # Object files for target test_helpers
 test_helpers_OBJECTS = \

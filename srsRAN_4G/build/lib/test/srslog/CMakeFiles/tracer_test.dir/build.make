@@ -73,15 +73,15 @@ lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.o: lib/test/srsl
 lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.o: ../lib/test/srslog/event_trace_test.cpp
 lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.o: lib/test/srslog/CMakeFiles/tracer_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.o -MF CMakeFiles/tracer_test.dir/event_trace_test.cpp.o.d -o CMakeFiles/tracer_test.dir/event_trace_test.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/event_trace_test.cpp
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.o -MF CMakeFiles/tracer_test.dir/event_trace_test.cpp.o.d -o CMakeFiles/tracer_test.dir/event_trace_test.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/event_trace_test.cpp
 
 lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tracer_test.dir/event_trace_test.cpp.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/event_trace_test.cpp > CMakeFiles/tracer_test.dir/event_trace_test.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/event_trace_test.cpp > CMakeFiles/tracer_test.dir/event_trace_test.cpp.i
 
 lib/test/srslog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tracer_test.dir/event_trace_test.cpp.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/event_trace_test.cpp -o CMakeFiles/tracer_test.dir/event_trace_test.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/event_trace_test.cpp -o CMakeFiles/tracer_test.dir/event_trace_test.cpp.s
 
 # Object files for target tracer_test
 tracer_test_OBJECTS = \

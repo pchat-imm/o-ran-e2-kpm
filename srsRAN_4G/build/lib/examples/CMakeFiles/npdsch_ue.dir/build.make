@@ -73,29 +73,29 @@ lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o: lib/examples/CMakeFiles/npd
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o: ../lib/examples/npdsch_ue.c
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o: lib/examples/CMakeFiles/npdsch_ue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o -MF CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o.d -o CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o -MF CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o.d -o CMakeFiles/npdsch_ue.dir/npdsch_ue.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue.c
 
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/npdsch_ue.dir/npdsch_ue.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue.c > CMakeFiles/npdsch_ue.dir/npdsch_ue.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue.c > CMakeFiles/npdsch_ue.dir/npdsch_ue.c.i
 
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/npdsch_ue.dir/npdsch_ue.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue.c -o CMakeFiles/npdsch_ue.dir/npdsch_ue.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue.c -o CMakeFiles/npdsch_ue.dir/npdsch_ue.c.s
 
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o: lib/examples/CMakeFiles/npdsch_ue.dir/flags.make
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o: ../lib/examples/npdsch_ue_helper.cc
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o: lib/examples/CMakeFiles/npdsch_ue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o -MF CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o.d -o CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue_helper.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o -MF CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o.d -o CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue_helper.cc
 
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue_helper.cc > CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue_helper.cc > CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.i
 
 lib/examples/CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue_helper.cc -o CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/npdsch_ue_helper.cc -o CMakeFiles/npdsch_ue.dir/npdsch_ue_helper.cc.s
 
 # Object files for target npdsch_ue
 npdsch_ue_OBJECTS = \

@@ -73,15 +73,15 @@ srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.o: srsu
 srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.o: ../srsue/src/stack/mac_common/mac_common.cc
 srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.o: srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/mac_common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.o -MF CMakeFiles/srsue_mac_common.dir/mac_common.cc.o.d -o CMakeFiles/srsue_mac_common.dir/mac_common.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/mac_common/mac_common.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/mac_common && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.o -MF CMakeFiles/srsue_mac_common.dir/mac_common.cc.o.d -o CMakeFiles/srsue_mac_common.dir/mac_common.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/mac_common/mac_common.cc
 
 srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_mac_common.dir/mac_common.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/mac_common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/mac_common/mac_common.cc > CMakeFiles/srsue_mac_common.dir/mac_common.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/mac_common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/mac_common/mac_common.cc > CMakeFiles/srsue_mac_common.dir/mac_common.cc.i
 
 srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_mac_common.dir/mac_common.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/mac_common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/mac_common/mac_common.cc -o CMakeFiles/srsue_mac_common.dir/mac_common.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/mac_common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/mac_common/mac_common.cc -o CMakeFiles/srsue_mac_common.dir/mac_common.cc.s
 
 # Object files for target srsue_mac_common
 srsue_mac_common_OBJECTS = \

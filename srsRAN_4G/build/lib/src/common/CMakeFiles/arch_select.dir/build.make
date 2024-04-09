@@ -73,15 +73,15 @@ lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.o: lib/src/common/CMake
 lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.o: ../lib/src/common/arch_select.cc
 lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.o: lib/src/common/CMakeFiles/arch_select.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.o -MF CMakeFiles/arch_select.dir/arch_select.cc.o.d -o CMakeFiles/arch_select.dir/arch_select.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/arch_select.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.o -MF CMakeFiles/arch_select.dir/arch_select.cc.o.d -o CMakeFiles/arch_select.dir/arch_select.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/arch_select.cc
 
 lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arch_select.dir/arch_select.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/arch_select.cc > CMakeFiles/arch_select.dir/arch_select.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/arch_select.cc > CMakeFiles/arch_select.dir/arch_select.cc.i
 
 lib/src/common/CMakeFiles/arch_select.dir/arch_select.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arch_select.dir/arch_select.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/arch_select.cc -o CMakeFiles/arch_select.dir/arch_select.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/arch_select.cc -o CMakeFiles/arch_select.dir/arch_select.cc.s
 
 # Object files for target arch_select
 arch_select_OBJECTS = \

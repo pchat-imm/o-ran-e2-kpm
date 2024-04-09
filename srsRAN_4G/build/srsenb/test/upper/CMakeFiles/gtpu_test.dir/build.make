@@ -73,15 +73,15 @@ srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.o: srsenb/test/upper/CMa
 srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.o: ../srsenb/test/upper/gtpu_test.cc
 srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.o: srsenb/test/upper/CMakeFiles/gtpu_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/upper && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.o -MF CMakeFiles/gtpu_test.dir/gtpu_test.cc.o.d -o CMakeFiles/gtpu_test.dir/gtpu_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/upper/gtpu_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/upper && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.o -MF CMakeFiles/gtpu_test.dir/gtpu_test.cc.o.d -o CMakeFiles/gtpu_test.dir/gtpu_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/upper/gtpu_test.cc
 
 srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtpu_test.dir/gtpu_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/upper && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/upper/gtpu_test.cc > CMakeFiles/gtpu_test.dir/gtpu_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/upper && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/upper/gtpu_test.cc > CMakeFiles/gtpu_test.dir/gtpu_test.cc.i
 
 srsenb/test/upper/CMakeFiles/gtpu_test.dir/gtpu_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtpu_test.dir/gtpu_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/upper && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/upper/gtpu_test.cc -o CMakeFiles/gtpu_test.dir/gtpu_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/upper && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/upper/gtpu_test.cc -o CMakeFiles/gtpu_test.dir/gtpu_test.cc.s
 
 # Object files for target gtpu_test
 gtpu_test_OBJECTS = \

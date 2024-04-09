@@ -73,85 +73,85 @@ lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o: lib/src/phy/modem/
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o: ../lib/src/phy/modem/demod_hard.c
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o -MF CMakeFiles/srsran_modem.dir/demod_hard.c.o.d -o CMakeFiles/srsran_modem.dir/demod_hard.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_hard.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o -MF CMakeFiles/srsran_modem.dir/demod_hard.c.o.d -o CMakeFiles/srsran_modem.dir/demod_hard.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_hard.c
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_modem.dir/demod_hard.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_hard.c > CMakeFiles/srsran_modem.dir/demod_hard.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_hard.c > CMakeFiles/srsran_modem.dir/demod_hard.c.i
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_modem.dir/demod_hard.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_hard.c -o CMakeFiles/srsran_modem.dir/demod_hard.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_hard.c -o CMakeFiles/srsran_modem.dir/demod_hard.c.s
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/flags.make
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o: ../lib/src/phy/modem/demod_soft.c
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o -MF CMakeFiles/srsran_modem.dir/demod_soft.c.o.d -o CMakeFiles/srsran_modem.dir/demod_soft.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_soft.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o -MF CMakeFiles/srsran_modem.dir/demod_soft.c.o.d -o CMakeFiles/srsran_modem.dir/demod_soft.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_soft.c
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_modem.dir/demod_soft.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_soft.c > CMakeFiles/srsran_modem.dir/demod_soft.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_soft.c > CMakeFiles/srsran_modem.dir/demod_soft.c.i
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_modem.dir/demod_soft.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_soft.c -o CMakeFiles/srsran_modem.dir/demod_soft.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/demod_soft.c -o CMakeFiles/srsran_modem.dir/demod_soft.c.s
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/flags.make
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o: ../lib/src/phy/modem/hard_demod_lte.c
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o -MF CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o.d -o CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o -MF CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o.d -o CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_modem.dir/hard_demod_lte.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c > CMakeFiles/srsran_modem.dir/hard_demod_lte.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c > CMakeFiles/srsran_modem.dir/hard_demod_lte.c.i
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_modem.dir/hard_demod_lte.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c -o CMakeFiles/srsran_modem.dir/hard_demod_lte.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/hard_demod_lte.c -o CMakeFiles/srsran_modem.dir/hard_demod_lte.c.s
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/flags.make
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o: ../lib/src/phy/modem/lte_tables.c
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o -MF CMakeFiles/srsran_modem.dir/lte_tables.c.o.d -o CMakeFiles/srsran_modem.dir/lte_tables.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o -MF CMakeFiles/srsran_modem.dir/lte_tables.c.o.d -o CMakeFiles/srsran_modem.dir/lte_tables.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_modem.dir/lte_tables.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c > CMakeFiles/srsran_modem.dir/lte_tables.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c > CMakeFiles/srsran_modem.dir/lte_tables.c.i
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_modem.dir/lte_tables.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c -o CMakeFiles/srsran_modem.dir/lte_tables.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/lte_tables.c -o CMakeFiles/srsran_modem.dir/lte_tables.c.s
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/flags.make
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o: ../lib/src/phy/modem/mod.c
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o -MF CMakeFiles/srsran_modem.dir/mod.c.o.d -o CMakeFiles/srsran_modem.dir/mod.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/mod.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o -MF CMakeFiles/srsran_modem.dir/mod.c.o.d -o CMakeFiles/srsran_modem.dir/mod.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/mod.c
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_modem.dir/mod.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/mod.c > CMakeFiles/srsran_modem.dir/mod.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/mod.c > CMakeFiles/srsran_modem.dir/mod.c.i
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_modem.dir/mod.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/mod.c -o CMakeFiles/srsran_modem.dir/mod.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/mod.c -o CMakeFiles/srsran_modem.dir/mod.c.s
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/flags.make
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o: ../lib/src/phy/modem/modem_table.c
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o -MF CMakeFiles/srsran_modem.dir/modem_table.c.o.d -o CMakeFiles/srsran_modem.dir/modem_table.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o -MF CMakeFiles/srsran_modem.dir/modem_table.c.o.d -o CMakeFiles/srsran_modem.dir/modem_table.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_modem.dir/modem_table.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c > CMakeFiles/srsran_modem.dir/modem_table.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c > CMakeFiles/srsran_modem.dir/modem_table.c.i
 
 lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_modem.dir/modem_table.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c -o CMakeFiles/srsran_modem.dir/modem_table.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/modem_table.c -o CMakeFiles/srsran_modem.dir/modem_table.c.s
 
 srsran_modem: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o
 srsran_modem: lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o

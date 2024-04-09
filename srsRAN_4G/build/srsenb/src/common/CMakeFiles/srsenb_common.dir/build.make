@@ -73,15 +73,15 @@ srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.o: srsenb/src/common
 srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.o: ../srsenb/src/common/rnti_pool.cc
 srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.o: srsenb/src/common/CMakeFiles/srsenb_common.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.o -MF CMakeFiles/srsenb_common.dir/rnti_pool.cc.o.d -o CMakeFiles/srsenb_common.dir/rnti_pool.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/common/rnti_pool.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/common && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.o -MF CMakeFiles/srsenb_common.dir/rnti_pool.cc.o.d -o CMakeFiles/srsenb_common.dir/rnti_pool.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/common/rnti_pool.cc
 
 srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsenb_common.dir/rnti_pool.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/common/rnti_pool.cc > CMakeFiles/srsenb_common.dir/rnti_pool.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/common/rnti_pool.cc > CMakeFiles/srsenb_common.dir/rnti_pool.cc.i
 
 srsenb/src/common/CMakeFiles/srsenb_common.dir/rnti_pool.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsenb_common.dir/rnti_pool.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/common/rnti_pool.cc -o CMakeFiles/srsenb_common.dir/rnti_pool.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/common/rnti_pool.cc -o CMakeFiles/srsenb_common.dir/rnti_pool.cc.s
 
 # Object files for target srsenb_common
 srsenb_common_OBJECTS = \

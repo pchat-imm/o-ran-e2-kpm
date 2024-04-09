@@ -73,15 +73,15 @@ srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_mana
 srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o: ../srsenb/src/stack/mac/common/base_ue_buffer_manager.cc
 srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o: srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/mac/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o -MF CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o.d -o CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/mac/common && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o -MF CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o.d -o CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc
 
 srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/mac/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc > CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/mac/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc > CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.i
 
 srsenb/src/stack/mac/common/CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/mac/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc -o CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/mac/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/mac/common/base_ue_buffer_manager.cc -o CMakeFiles/srsenb_mac_common.dir/base_ue_buffer_manager.cc.s
 
 # Object files for target srsenb_mac_common
 srsenb_mac_common_OBJECTS = \

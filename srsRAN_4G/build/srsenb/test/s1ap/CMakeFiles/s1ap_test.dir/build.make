@@ -73,15 +73,15 @@ srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.o: srsenb/test/s1ap/CMake
 srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.o: ../srsenb/test/s1ap/s1ap_test.cc
 srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.o: srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/s1ap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.o -MF CMakeFiles/s1ap_test.dir/s1ap_test.cc.o.d -o CMakeFiles/s1ap_test.dir/s1ap_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/s1ap/s1ap_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/s1ap && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.o -MF CMakeFiles/s1ap_test.dir/s1ap_test.cc.o.d -o CMakeFiles/s1ap_test.dir/s1ap_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/s1ap/s1ap_test.cc
 
 srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/s1ap_test.dir/s1ap_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/s1ap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/s1ap/s1ap_test.cc > CMakeFiles/s1ap_test.dir/s1ap_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/s1ap && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/s1ap/s1ap_test.cc > CMakeFiles/s1ap_test.dir/s1ap_test.cc.i
 
 srsenb/test/s1ap/CMakeFiles/s1ap_test.dir/s1ap_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/s1ap_test.dir/s1ap_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/s1ap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/s1ap/s1ap_test.cc -o CMakeFiles/s1ap_test.dir/s1ap_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/test/s1ap && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/test/s1ap/s1ap_test.cc -o CMakeFiles/s1ap_test.dir/s1ap_test.cc.s
 
 # Object files for target s1ap_test
 s1ap_test_OBJECTS = \

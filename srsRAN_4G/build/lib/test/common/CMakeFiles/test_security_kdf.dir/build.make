@@ -73,15 +73,15 @@ lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o: lib/tes
 lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o: ../lib/test/common/test_security_kdf.cc
 lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o: lib/test/common/CMakeFiles/test_security_kdf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o -MF CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o.d -o CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_security_kdf.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o -MF CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o.d -o CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_security_kdf.cc
 
 lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_security_kdf.cc > CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_security_kdf.cc > CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.i
 
 lib/test/common/CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_security_kdf.cc -o CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_security_kdf.cc -o CMakeFiles/test_security_kdf.dir/test_security_kdf.cc.s
 
 # Object files for target test_security_kdf
 test_security_kdf_OBJECTS = \

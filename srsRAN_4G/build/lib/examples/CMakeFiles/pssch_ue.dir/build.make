@@ -73,15 +73,15 @@ lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.o: lib/examples/CMakeFiles/pssch
 lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.o: ../lib/examples/pssch_ue.c
 lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.o: lib/examples/CMakeFiles/pssch_ue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.o -MF CMakeFiles/pssch_ue.dir/pssch_ue.c.o.d -o CMakeFiles/pssch_ue.dir/pssch_ue.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/pssch_ue.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.o -MF CMakeFiles/pssch_ue.dir/pssch_ue.c.o.d -o CMakeFiles/pssch_ue.dir/pssch_ue.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/pssch_ue.c
 
 lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pssch_ue.dir/pssch_ue.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/pssch_ue.c > CMakeFiles/pssch_ue.dir/pssch_ue.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/pssch_ue.c > CMakeFiles/pssch_ue.dir/pssch_ue.c.i
 
 lib/examples/CMakeFiles/pssch_ue.dir/pssch_ue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pssch_ue.dir/pssch_ue.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/pssch_ue.c -o CMakeFiles/pssch_ue.dir/pssch_ue.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/pssch_ue.c -o CMakeFiles/pssch_ue.dir/pssch_ue.c.s
 
 # Object files for target pssch_ue
 pssch_ue_OBJECTS = \

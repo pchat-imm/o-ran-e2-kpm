@@ -73,15 +73,15 @@ lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.o: lib/s
 lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.o: ../lib/src/common/test/band_helper_test.cc
 lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.o: lib/src/common/test/CMakeFiles/band_helper_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.o -MF CMakeFiles/band_helper_test.dir/band_helper_test.cc.o.d -o CMakeFiles/band_helper_test.dir/band_helper_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/test/band_helper_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common/test && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.o -MF CMakeFiles/band_helper_test.dir/band_helper_test.cc.o.d -o CMakeFiles/band_helper_test.dir/band_helper_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/test/band_helper_test.cc
 
 lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/band_helper_test.dir/band_helper_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/test/band_helper_test.cc > CMakeFiles/band_helper_test.dir/band_helper_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/test/band_helper_test.cc > CMakeFiles/band_helper_test.dir/band_helper_test.cc.i
 
 lib/src/common/test/CMakeFiles/band_helper_test.dir/band_helper_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/band_helper_test.dir/band_helper_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/test/band_helper_test.cc -o CMakeFiles/band_helper_test.dir/band_helper_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/common/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/common/test/band_helper_test.cc -o CMakeFiles/band_helper_test.dir/band_helper_test.cc.s
 
 # Object files for target band_helper_test
 band_helper_test_OBJECTS = \

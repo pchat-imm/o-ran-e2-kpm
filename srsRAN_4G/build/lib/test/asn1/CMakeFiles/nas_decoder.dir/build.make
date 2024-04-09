@@ -73,15 +73,15 @@ lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.o: lib/test/asn1/CMakeFi
 lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.o: ../lib/test/asn1/nas_decoder.cc
 lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.o: lib/test/asn1/CMakeFiles/nas_decoder.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.o -MF CMakeFiles/nas_decoder.dir/nas_decoder.cc.o.d -o CMakeFiles/nas_decoder.dir/nas_decoder.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/nas_decoder.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.o -MF CMakeFiles/nas_decoder.dir/nas_decoder.cc.o.d -o CMakeFiles/nas_decoder.dir/nas_decoder.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/nas_decoder.cc
 
 lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nas_decoder.dir/nas_decoder.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/nas_decoder.cc > CMakeFiles/nas_decoder.dir/nas_decoder.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/nas_decoder.cc > CMakeFiles/nas_decoder.dir/nas_decoder.cc.i
 
 lib/test/asn1/CMakeFiles/nas_decoder.dir/nas_decoder.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nas_decoder.dir/nas_decoder.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/nas_decoder.cc -o CMakeFiles/nas_decoder.dir/nas_decoder.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/nas_decoder.cc -o CMakeFiles/nas_decoder.dir/nas_decoder.cc.s
 
 # Object files for target nas_decoder
 nas_decoder_OBJECTS = \

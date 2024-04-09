@@ -73,15 +73,15 @@ lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.o: lib/src/asn1/CMakeFiles/
 lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.o: ../lib/src/asn1/asn1_utils.cc
 lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.o: lib/src/asn1/CMakeFiles/asn1_utils.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.o -MF CMakeFiles/asn1_utils.dir/asn1_utils.cc.o.d -o CMakeFiles/asn1_utils.dir/asn1_utils.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/asn1_utils.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.o -MF CMakeFiles/asn1_utils.dir/asn1_utils.cc.o.d -o CMakeFiles/asn1_utils.dir/asn1_utils.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/asn1_utils.cc
 
 lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asn1_utils.dir/asn1_utils.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/asn1_utils.cc > CMakeFiles/asn1_utils.dir/asn1_utils.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/asn1_utils.cc > CMakeFiles/asn1_utils.dir/asn1_utils.cc.i
 
 lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asn1_utils.dir/asn1_utils.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/asn1_utils.cc -o CMakeFiles/asn1_utils.dir/asn1_utils.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/asn1_utils.cc -o CMakeFiles/asn1_utils.dir/asn1_utils.cc.s
 
 # Object files for target asn1_utils
 asn1_utils_OBJECTS = \

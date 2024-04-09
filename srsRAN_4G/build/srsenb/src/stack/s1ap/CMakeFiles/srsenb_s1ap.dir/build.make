@@ -73,15 +73,15 @@ srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o: srsenb/src/stack/s1a
 srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o: ../srsenb/src/stack/s1ap/s1ap.cc
 srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o: srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/s1ap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o -MF CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o.d -o CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/s1ap && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o -MF CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o.d -o CMakeFiles/srsenb_s1ap.dir/s1ap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc
 
 srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsenb_s1ap.dir/s1ap.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/s1ap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc > CMakeFiles/srsenb_s1ap.dir/s1ap.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/s1ap && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc > CMakeFiles/srsenb_s1ap.dir/s1ap.cc.i
 
 srsenb/src/stack/s1ap/CMakeFiles/srsenb_s1ap.dir/s1ap.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsenb_s1ap.dir/s1ap.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/s1ap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc -o CMakeFiles/srsenb_s1ap.dir/s1ap.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack/s1ap && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/s1ap/s1ap.cc -o CMakeFiles/srsenb_s1ap.dir/s1ap.cc.s
 
 # Object files for target srsenb_s1ap
 srsenb_s1ap_OBJECTS = \

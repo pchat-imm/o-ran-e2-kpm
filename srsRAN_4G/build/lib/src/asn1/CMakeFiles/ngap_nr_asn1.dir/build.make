@@ -73,15 +73,15 @@ lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o: lib/src/asn1/CMakeFiles/ngap
 lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o: ../lib/src/asn1/ngap.cc
 lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o: lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o -MF CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o.d -o CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/ngap.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o -MF CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o.d -o CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/ngap.cc
 
 lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ngap_nr_asn1.dir/ngap.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/ngap.cc > CMakeFiles/ngap_nr_asn1.dir/ngap.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/ngap.cc > CMakeFiles/ngap_nr_asn1.dir/ngap.cc.i
 
 lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ngap_nr_asn1.dir/ngap.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/ngap.cc -o CMakeFiles/ngap_nr_asn1.dir/ngap.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/asn1/ngap.cc -o CMakeFiles/ngap_nr_asn1.dir/ngap.cc.s
 
 # Object files for target ngap_nr_asn1
 ngap_nr_asn1_OBJECTS = \

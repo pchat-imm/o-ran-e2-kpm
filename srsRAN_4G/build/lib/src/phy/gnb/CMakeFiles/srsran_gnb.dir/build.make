@@ -73,29 +73,29 @@ lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o: lib/src/phy/gnb/CMakeFiles
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o: ../lib/src/phy/gnb/gnb_dl.c
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o: lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o -MF CMakeFiles/srsran_gnb.dir/gnb_dl.c.o.d -o CMakeFiles/srsran_gnb.dir/gnb_dl.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o -MF CMakeFiles/srsran_gnb.dir/gnb_dl.c.o.d -o CMakeFiles/srsran_gnb.dir/gnb_dl.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c
 
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_gnb.dir/gnb_dl.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c > CMakeFiles/srsran_gnb.dir/gnb_dl.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c > CMakeFiles/srsran_gnb.dir/gnb_dl.c.i
 
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_gnb.dir/gnb_dl.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c -o CMakeFiles/srsran_gnb.dir/gnb_dl.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_dl.c -o CMakeFiles/srsran_gnb.dir/gnb_dl.c.s
 
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o: lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/flags.make
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o: ../lib/src/phy/gnb/gnb_ul.c
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o: lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o -MF CMakeFiles/srsran_gnb.dir/gnb_ul.c.o.d -o CMakeFiles/srsran_gnb.dir/gnb_ul.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o -MF CMakeFiles/srsran_gnb.dir/gnb_ul.c.o.d -o CMakeFiles/srsran_gnb.dir/gnb_ul.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c
 
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_gnb.dir/gnb_ul.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c > CMakeFiles/srsran_gnb.dir/gnb_ul.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c > CMakeFiles/srsran_gnb.dir/gnb_ul.c.i
 
 lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_gnb.dir/gnb_ul.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c -o CMakeFiles/srsran_gnb.dir/gnb_ul.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/gnb && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/gnb/gnb_ul.c -o CMakeFiles/srsran_gnb.dir/gnb_ul.c.s
 
 srsran_gnb: lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o
 srsran_gnb: lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o

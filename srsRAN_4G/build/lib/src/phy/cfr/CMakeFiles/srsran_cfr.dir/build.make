@@ -73,15 +73,15 @@ lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o: lib/src/phy/cfr/CMakeFiles/sr
 lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o: ../lib/src/phy/cfr/cfr.c
 lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o: lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/cfr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o -MF CMakeFiles/srsran_cfr.dir/cfr.c.o.d -o CMakeFiles/srsran_cfr.dir/cfr.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/cfr/cfr.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/cfr && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o -MF CMakeFiles/srsran_cfr.dir/cfr.c.o.d -o CMakeFiles/srsran_cfr.dir/cfr.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/cfr/cfr.c
 
 lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_cfr.dir/cfr.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/cfr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/cfr/cfr.c > CMakeFiles/srsran_cfr.dir/cfr.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/cfr && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/cfr/cfr.c > CMakeFiles/srsran_cfr.dir/cfr.c.i
 
 lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_cfr.dir/cfr.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/cfr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/cfr/cfr.c -o CMakeFiles/srsran_cfr.dir/cfr.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/cfr && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/cfr/cfr.c -o CMakeFiles/srsran_cfr.dir/cfr.c.s
 
 srsran_cfr: lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o
 srsran_cfr: lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/build.make

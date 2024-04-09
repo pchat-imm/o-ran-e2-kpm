@@ -73,15 +73,15 @@ lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o: lib/src/
 lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o: ../lib/src/radio/test/benchmark_radio.cc
 lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o: lib/src/radio/test/CMakeFiles/benchmark_radio.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/radio/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o -MF CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o.d -o CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/radio/test/benchmark_radio.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/radio/test && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o -MF CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o.d -o CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/radio/test/benchmark_radio.cc
 
 lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/radio/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/radio/test/benchmark_radio.cc > CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/radio/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/radio/test/benchmark_radio.cc > CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.i
 
 lib/src/radio/test/CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/radio/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/radio/test/benchmark_radio.cc -o CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/radio/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/radio/test/benchmark_radio.cc -o CMakeFiles/benchmark_radio.dir/benchmark_radio.cc.s
 
 # Object files for target benchmark_radio
 benchmark_radio_OBJECTS = \

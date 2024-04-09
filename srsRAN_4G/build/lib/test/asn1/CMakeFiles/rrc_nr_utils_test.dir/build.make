@@ -73,15 +73,15 @@ lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o: lib/test/
 lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o: ../lib/test/asn1/rrc_nr_utils_test.cc
 lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o: lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o -MF CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o.d -o CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/rrc_nr_utils_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o -MF CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o.d -o CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/rrc_nr_utils_test.cc
 
 lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/rrc_nr_utils_test.cc > CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/rrc_nr_utils_test.cc > CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.i
 
 lib/test/asn1/CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/rrc_nr_utils_test.cc -o CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/asn1 && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/asn1/rrc_nr_utils_test.cc -o CMakeFiles/rrc_nr_utils_test.dir/rrc_nr_utils_test.cc.s
 
 # Object files for target rrc_nr_utils_test
 rrc_nr_utils_test_OBJECTS = \

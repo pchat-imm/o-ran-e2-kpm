@@ -46,8 +46,10 @@ Boost_INCLUDE_DIR:PATH=/usr/include
 
 Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
 
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
+
 //Path to a program.
-CCACHE_EXECUTABLE:FILEPATH=CCACHE_EXECUTABLE-NOTFOUND
+CCACHE_EXECUTABLE:FILEPATH=/usr/bin/ccache
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -63,11 +65,13 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/lib/ccache/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
 CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-10
+
+CMAKE_CXX_COMPILER_LAUNCHER:STRING=/usr/bin/ccache
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -89,11 +93,13 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/lib/ccache/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
 CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-10
+
+CMAKE_C_COMPILER_LAUNCHER:STRING=/usr/bin/ccache
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -525,7 +531,7 @@ SKIQ_INCLUDE_DIRS:PATH=SKIQ_INCLUDE_DIRS-NOTFOUND
 SKIQ_LIBRARY:FILEPATH=SKIQ_LIBRARY-NOTFOUND
 
 //Path to a library.
-SKIQ_LIBRARY_GLIB:FILEPATH=SKIQ_LIBRARY_GLIB-NOTFOUND
+SKIQ_LIBRARY_GLIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libglib-2.0.a
 
 //Path to a library.
 SKIQ_LIBRARY_TIRPC:FILEPATH=/usr/lib/x86_64-linux-gnu/libtirpc.so.3
@@ -582,10 +588,10 @@ STACK_WALKING_UNWIND:BOOL=TRUE
 STOP_ON_WARNING:BOOL=OFF
 
 //Path to a file.
-UHD_INCLUDE_DIRS:PATH=UHD_INCLUDE_DIRS-NOTFOUND
+UHD_INCLUDE_DIRS:PATH=/usr/local/include
 
 //Path to a library.
-UHD_LIBRARIES:FILEPATH=UHD_LIBRARIES-NOTFOUND
+UHD_LIBRARIES:FILEPATH=/usr/local/lib/libuhd.so
 
 //Use standard LTE sampling rates
 USE_LTE_RATES:BOOL=OFF
@@ -607,6 +613,9 @@ boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0
 
 //The directory containing a CMake configuration file for boost_program_options.
 boost_program_options_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_program_options-1.74.0
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.74.0
 
 //Dependencies for the target
 enb_cfg_parser_LIB_DEPENDS:STATIC=general;srsran_common;general;srsgnb_rrc_config_utils;general;/usr/lib/x86_64-linux-gnu/libconfig++.so;
@@ -682,6 +691,9 @@ srsran_rf_LIB_DEPENDS:STATIC=general;dl;general;srsran_rf_utils;general;srsran_p
 
 //Dependencies for the target
 srsran_rf_blade_LIB_DEPENDS:STATIC=general;srsran_rf_utils;general;srsran_phy;general;/usr/local/lib/libbladeRF.so;
+
+//Dependencies for the target
+srsran_rf_uhd_LIB_DEPENDS:STATIC=general;srsran_rf_utils;general;srsran_phy;general;/usr/local/lib/libuhd.so;general;Boost::program_options;general;Boost::system;
 
 //Dependencies for the target
 srsran_rf_utils_LIB_DEPENDS:STATIC=general;srsran_phy;
@@ -985,7 +997,7 @@ FFTW3F_STATIC_LIBRARY-ADVANCED:INTERNAL=1
 //Details about finding Backward
 FIND_PACKAGE_MESSAGE_DETAILS_Backward:INTERNAL=[/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/cmake/modules][v()]
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake][cfound components: program_options ][v1.74.0(1.35)]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake][cfound components: program_options system ][v1.74.0(1.35)]
 //Details about finding FFTW3F
 FIND_PACKAGE_MESSAGE_DETAILS_FFTW3F:INTERNAL=[/usr/lib/x86_64-linux-gnu/libfftw3f.so][/usr/include][v()]
 //Details about finding MbedTLS
@@ -996,6 +1008,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 FIND_PACKAGE_MESSAGE_DETAILS_SCTP:INTERNAL=[/usr/lib/x86_64-linux-gnu/libsctp.so][/usr/include][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding UHD
+FIND_PACKAGE_MESSAGE_DETAILS_UHD:INTERNAL=[/usr/local/lib/libuhd.so][/usr/local/include][v()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
 //Test HAVE_AVX
@@ -1276,6 +1290,12 @@ SOAPYSDR_PKG_VERSION:INTERNAL=
 SRSGUI_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SRSGUI_LIBRARIES
 SRSGUI_LIBRARIES-ADVANCED:INTERNAL=1
+//Test UHD_ENABLE_CUSTOM_RFNOC
+UHD_ENABLE_CUSTOM_RFNOC:INTERNAL=
+//Test UHD_ENABLE_RFNOC
+UHD_ENABLE_RFNOC:INTERNAL=
+//Test UHD_ENABLE_X300_FW_RESET
+UHD_ENABLE_X300_FW_RESET:INTERNAL=
 //ADVANCED property for variable: UHD_INCLUDE_DIRS
 UHD_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: UHD_LIBRARIES
@@ -1327,6 +1347,8 @@ __pkg_config_checked_ZEROMQ_PKG:INTERNAL=1
 boost_headers_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_program_options_DIR
 boost_program_options_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_system_DIR
+boost_system_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_BLADERF_PKG_bladeRF
 pkgcfg_lib_BLADERF_PKG_bladeRF-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_FFTW3F_fftw3f

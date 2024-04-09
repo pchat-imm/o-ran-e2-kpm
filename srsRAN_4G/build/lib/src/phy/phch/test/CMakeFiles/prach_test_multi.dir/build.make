@@ -73,15 +73,15 @@ lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o: lib/
 lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o: ../lib/src/phy/phch/test/prach_test_multi.c
 lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o: lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o -MF CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o.d -o CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/test/prach_test_multi.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o -MF CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o.d -o CMakeFiles/prach_test_multi.dir/prach_test_multi.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/test/prach_test_multi.c
 
 lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/prach_test_multi.dir/prach_test_multi.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/test/prach_test_multi.c > CMakeFiles/prach_test_multi.dir/prach_test_multi.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/test/prach_test_multi.c > CMakeFiles/prach_test_multi.dir/prach_test_multi.c.i
 
 lib/src/phy/phch/test/CMakeFiles/prach_test_multi.dir/prach_test_multi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/prach_test_multi.dir/prach_test_multi.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/test/prach_test_multi.c -o CMakeFiles/prach_test_multi.dir/prach_test_multi.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/phch/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/phch/test/prach_test_multi.c -o CMakeFiles/prach_test_multi.dir/prach_test_multi.c.s
 
 # Object files for target prach_test_multi
 prach_test_multi_OBJECTS = \

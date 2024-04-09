@@ -73,15 +73,15 @@ lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o: lib/example
 lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o: ../lib/examples/cell_search_nbiot.c
 lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o: lib/examples/CMakeFiles/cell_search_nbiot.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o -MF CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o.d -o CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/cell_search_nbiot.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o -MF CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o.d -o CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/cell_search_nbiot.c
 
 lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/cell_search_nbiot.c > CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/cell_search_nbiot.c > CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.i
 
 lib/examples/CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/cell_search_nbiot.c -o CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/cell_search_nbiot.c -o CMakeFiles/cell_search_nbiot.dir/cell_search_nbiot.c.s
 
 # Object files for target cell_search_nbiot
 cell_search_nbiot_OBJECTS = \

@@ -73,15 +73,15 @@ test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o: test/phy/CMakeFiles/nr_phy
 test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o: ../test/phy/nr_phy_test.cc
 test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o: test/phy/CMakeFiles/nr_phy_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/test/phy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o -MF CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o.d -o CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/test/phy/nr_phy_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/test/phy && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o -MF CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o.d -o CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/test/phy/nr_phy_test.cc
 
 test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/test/phy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/test/phy/nr_phy_test.cc > CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/test/phy && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/test/phy/nr_phy_test.cc > CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.i
 
 test/phy/CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/test/phy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/test/phy/nr_phy_test.cc -o CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/test/phy && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/test/phy/nr_phy_test.cc -o CMakeFiles/nr_phy_test.dir/nr_phy_test.cc.s
 
 # Object files for target nr_phy_test
 nr_phy_test_OBJECTS = \
@@ -101,6 +101,7 @@ test/phy/nr_phy_test: srsenb/src/phy/libsrsenb_phy.a
 test/phy/nr_phy_test: srsgnb/src/stack/mac/libsrsgnb_mac.a
 test/phy/nr_phy_test: lib/src/mac/libsrsran_mac.a
 test/phy/nr_phy_test: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
+test/phy/nr_phy_test: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
 test/phy/nr_phy_test: lib/src/phy/rf/libsrsran_rf.so.23.04.0
 test/phy/nr_phy_test: lib/src/phy/rf/libsrsran_rf_utils.a
 test/phy/nr_phy_test: lib/src/asn1/librrc_nr_asn1.a

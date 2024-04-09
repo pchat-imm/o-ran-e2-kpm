@@ -73,15 +73,15 @@ lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_laten
 lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o: ../lib/test/srslog/benchmarks/frontend_latency.cpp
 lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o: lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o -MF CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o.d -o CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/benchmarks/frontend_latency.cpp
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o -MF CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o.d -o CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/benchmarks/frontend_latency.cpp
 
 lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/benchmarks/frontend_latency.cpp > CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/benchmarks/frontend_latency.cpp > CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.i
 
 lib/test/srslog/CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/benchmarks/frontend_latency.cpp -o CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/benchmarks/frontend_latency.cpp -o CMakeFiles/srslog_frontend_latency.dir/benchmarks/frontend_latency.cpp.s
 
 # Object files for target srslog_frontend_latency
 srslog_frontend_latency_OBJECTS = \

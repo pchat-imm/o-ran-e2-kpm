@@ -73,15 +73,15 @@ srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o: srsue/sr
 srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o: ../srsue/src/stack/upper/test/nas_5g_test.cc
 srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o: srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/upper/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o -MF CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o.d -o CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/upper/test/nas_5g_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/upper/test && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o -MF CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o.d -o CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/upper/test/nas_5g_test.cc
 
 srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/upper/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/upper/test/nas_5g_test.cc > CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/upper/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/upper/test/nas_5g_test.cc > CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.i
 
 srsue/src/stack/upper/test/CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/upper/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/upper/test/nas_5g_test.cc -o CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/upper/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/upper/test/nas_5g_test.cc -o CMakeFiles/nas_5g_test.dir/nas_5g_test.cc.s
 
 # Object files for target nas_5g_test
 nas_5g_test_OBJECTS = \

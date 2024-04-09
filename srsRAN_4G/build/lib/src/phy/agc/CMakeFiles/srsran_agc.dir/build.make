@@ -73,15 +73,15 @@ lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o: lib/src/phy/agc/CMakeFiles/sr
 lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o: ../lib/src/phy/agc/agc.c
 lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o: lib/src/phy/agc/CMakeFiles/srsran_agc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/agc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o -MF CMakeFiles/srsran_agc.dir/agc.c.o.d -o CMakeFiles/srsran_agc.dir/agc.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/agc/agc.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/agc && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o -MF CMakeFiles/srsran_agc.dir/agc.c.o.d -o CMakeFiles/srsran_agc.dir/agc.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/agc/agc.c
 
 lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_agc.dir/agc.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/agc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/agc/agc.c > CMakeFiles/srsran_agc.dir/agc.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/agc && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/agc/agc.c > CMakeFiles/srsran_agc.dir/agc.c.i
 
 lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_agc.dir/agc.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/agc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/agc/agc.c -o CMakeFiles/srsran_agc.dir/agc.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/agc && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/agc/agc.c -o CMakeFiles/srsran_agc.dir/agc.c.s
 
 srsran_agc: lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o
 srsran_agc: lib/src/phy/agc/CMakeFiles/srsran_agc.dir/build.make

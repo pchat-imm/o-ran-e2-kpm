@@ -73,15 +73,15 @@ lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench
 lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o: ../lib/src/phy/resampling/test/resample_arb_bench.c
 lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o: lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/resampling/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o -MF CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o.d -o CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/resampling/test/resample_arb_bench.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/resampling/test && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o -MF CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o.d -o CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/resampling/test/resample_arb_bench.c
 
 lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/resampling/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/resampling/test/resample_arb_bench.c > CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/resampling/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/resampling/test/resample_arb_bench.c > CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.i
 
 lib/src/phy/resampling/test/CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/resampling/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/resampling/test/resample_arb_bench.c -o CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/resampling/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/resampling/test/resample_arb_bench.c -o CMakeFiles/resample_arb_bench.dir/resample_arb_bench.c.s
 
 # Object files for target resample_arb_bench
 resample_arb_bench_OBJECTS = \

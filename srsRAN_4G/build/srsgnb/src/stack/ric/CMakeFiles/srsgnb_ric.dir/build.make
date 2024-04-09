@@ -73,85 +73,85 @@ srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o: srsgnb/src/stack/r
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o: ../srsgnb/src/stack/ric/e2_agent.cc
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2_agent.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2_agent.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2_agent.cc
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_ric.dir/e2_agent.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2_agent.cc > CMakeFiles/srsgnb_ric.dir/e2_agent.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2_agent.cc > CMakeFiles/srsgnb_ric.dir/e2_agent.cc.i
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2_agent.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_ric.dir/e2_agent.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2_agent.cc -o CMakeFiles/srsgnb_ric.dir/e2_agent.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2_agent.cc -o CMakeFiles/srsgnb_ric.dir/e2_agent.cc.s
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/flags.make
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o: ../srsgnb/src/stack/ric/e2ap_ric_subscription.cc
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap_ric_subscription.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap_ric_subscription.cc
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap_ric_subscription.cc > CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap_ric_subscription.cc > CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.i
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap_ric_subscription.cc -o CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap_ric_subscription.cc -o CMakeFiles/srsgnb_ric.dir/e2ap_ric_subscription.cc.s
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/flags.make
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o: ../srsgnb/src/stack/ric/e2ap.cc
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2ap.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2ap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2ap.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2ap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap.cc
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_ric.dir/e2ap.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap.cc > CMakeFiles/srsgnb_ric.dir/e2ap.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap.cc > CMakeFiles/srsgnb_ric.dir/e2ap.cc.i
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2ap.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_ric.dir/e2ap.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap.cc -o CMakeFiles/srsgnb_ric.dir/e2ap.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2ap.cc -o CMakeFiles/srsgnb_ric.dir/e2ap.cc.s
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/flags.make
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o: ../srsgnb/src/stack/ric/e2sm_kpm_common.cc
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_common.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_common.cc
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_common.cc > CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_common.cc > CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.i
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_common.cc -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_common.cc -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_common.cc.s
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/flags.make
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o: ../srsgnb/src/stack/ric/e2sm_kpm.cc
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm.cc
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm.cc > CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm.cc > CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.i
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm.cc -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm.cc -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm.cc.s
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/flags.make
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o: ../srsgnb/src/stack/ric/e2sm_kpm_report_service.cc
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o: srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_report_service.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o -MF CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o.d -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_report_service.cc
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_report_service.cc > CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_report_service.cc > CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.i
 
 srsgnb/src/stack/ric/CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_report_service.cc -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ric && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ric/e2sm_kpm_report_service.cc -o CMakeFiles/srsgnb_ric.dir/e2sm_kpm_report_service.cc.s
 
 # Object files for target srsgnb_ric
 srsgnb_ric_OBJECTS = \

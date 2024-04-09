@@ -1921,6 +1921,19 @@ srsran_rf_utils/fast:
 .PHONY : srsran_rf_utils/fast
 
 #=============================================================================
+# Target rules for targets named srsran_rf_uhd
+
+# Build rule for target.
+srsran_rf_uhd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 srsran_rf_uhd
+.PHONY : srsran_rf_uhd
+
+# fast build rule for target.
+srsran_rf_uhd/fast:
+	$(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/build
+.PHONY : srsran_rf_uhd/fast
+
+#=============================================================================
 # Target rules for targets named srsran_rf_blade
 
 # Build rule for target.
@@ -5546,6 +5559,7 @@ help:
 	@echo "... srsran_rf"
 	@echo "... srsran_rf_blade"
 	@echo "... srsran_rf_object"
+	@echo "... srsran_rf_uhd"
 	@echo "... srsran_rf_utils"
 	@echo "... srsran_rf_zmq"
 	@echo "... srsran_rlc"

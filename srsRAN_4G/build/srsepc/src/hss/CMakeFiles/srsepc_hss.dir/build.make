@@ -73,15 +73,15 @@ srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.o: srsepc/src/hss/CMakeFiles/srs
 srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.o: ../srsepc/src/hss/hss.cc
 srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.o: srsepc/src/hss/CMakeFiles/srsepc_hss.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/hss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.o -MF CMakeFiles/srsepc_hss.dir/hss.cc.o.d -o CMakeFiles/srsepc_hss.dir/hss.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsepc/src/hss/hss.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/hss && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.o -MF CMakeFiles/srsepc_hss.dir/hss.cc.o.d -o CMakeFiles/srsepc_hss.dir/hss.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsepc/src/hss/hss.cc
 
 srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsepc_hss.dir/hss.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/hss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsepc/src/hss/hss.cc > CMakeFiles/srsepc_hss.dir/hss.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/hss && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsepc/src/hss/hss.cc > CMakeFiles/srsepc_hss.dir/hss.cc.i
 
 srsepc/src/hss/CMakeFiles/srsepc_hss.dir/hss.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsepc_hss.dir/hss.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/hss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsepc/src/hss/hss.cc -o CMakeFiles/srsepc_hss.dir/hss.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsepc/src/hss && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsepc/src/hss/hss.cc -o CMakeFiles/srsepc_hss.dir/hss.cc.s
 
 # Object files for target srsepc_hss
 srsepc_hss_OBJECTS = \

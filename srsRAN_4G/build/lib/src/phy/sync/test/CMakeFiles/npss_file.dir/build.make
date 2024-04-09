@@ -73,15 +73,15 @@ lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o: lib/src/phy/sync/t
 lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o: ../lib/src/phy/sync/test/npss_file.c
 lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o: lib/src/phy/sync/test/CMakeFiles/npss_file.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o -MF CMakeFiles/npss_file.dir/npss_file.c.o.d -o CMakeFiles/npss_file.dir/npss_file.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/npss_file.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.o -MF CMakeFiles/npss_file.dir/npss_file.c.o.d -o CMakeFiles/npss_file.dir/npss_file.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/npss_file.c
 
 lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/npss_file.dir/npss_file.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/npss_file.c > CMakeFiles/npss_file.dir/npss_file.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/npss_file.c > CMakeFiles/npss_file.dir/npss_file.c.i
 
 lib/src/phy/sync/test/CMakeFiles/npss_file.dir/npss_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/npss_file.dir/npss_file.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/npss_file.c -o CMakeFiles/npss_file.dir/npss_file.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/npss_file.c -o CMakeFiles/npss_file.dir/npss_file.c.s
 
 # Object files for target npss_file
 npss_file_OBJECTS = \

@@ -73,15 +73,15 @@ srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o: srsue/src/stack/CM
 srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o: ../srsue/src/stack/ue_stack_lte.cc
 srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o: srsue/src/stack/CMakeFiles/srsue_stack.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o -MF CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o.d -o CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/ue_stack_lte.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o -MF CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o.d -o CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/ue_stack_lte.cc
 
 srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/ue_stack_lte.cc > CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/ue_stack_lte.cc > CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.i
 
 srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/ue_stack_lte.cc -o CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/ue_stack_lte.cc -o CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.s
 
 # Object files for target srsue_stack
 srsue_stack_OBJECTS = \

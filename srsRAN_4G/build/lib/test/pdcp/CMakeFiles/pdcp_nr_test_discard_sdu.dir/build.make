@@ -73,15 +73,15 @@ lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.c
 lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o: ../lib/test/pdcp/pdcp_nr_test_discard_sdu.cc
 lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o: lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o -MF CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o.d -o CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_nr_test_discard_sdu.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o -MF CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o.d -o CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_nr_test_discard_sdu.cc
 
 lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_nr_test_discard_sdu.cc > CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_nr_test_discard_sdu.cc > CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.i
 
 lib/test/pdcp/CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_nr_test_discard_sdu.cc -o CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_nr_test_discard_sdu.cc -o CMakeFiles/pdcp_nr_test_discard_sdu.dir/pdcp_nr_test_discard_sdu.cc.s
 
 # Object files for target pdcp_nr_test_discard_sdu
 pdcp_nr_test_discard_sdu_OBJECTS = \

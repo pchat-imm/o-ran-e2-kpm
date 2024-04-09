@@ -73,15 +73,15 @@ lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o: lib/src/mac/te
 lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o: ../lib/src/mac/test/mac_pcap_test.cc
 lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o: lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o -MF CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o.d -o CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/mac/test/mac_pcap_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/test && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o -MF CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o.d -o CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/mac/test/mac_pcap_test.cc
 
 lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/mac/test/mac_pcap_test.cc > CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/mac/test/mac_pcap_test.cc > CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.i
 
 lib/src/mac/test/CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/mac/test/mac_pcap_test.cc -o CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/mac/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/mac/test/mac_pcap_test.cc -o CMakeFiles/mac_pcap_test.dir/mac_pcap_test.cc.s
 
 # Object files for target mac_pcap_test
 mac_pcap_test_OBJECTS = \

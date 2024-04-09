@@ -73,15 +73,15 @@ lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o: lib/te
 lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o: ../lib/test/adt/bounded_bitset_test.cc
 lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o: lib/test/adt/CMakeFiles/bounded_bitset_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/adt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o -MF CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o.d -o CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/adt/bounded_bitset_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/adt && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o -MF CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o.d -o CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/adt/bounded_bitset_test.cc
 
 lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/adt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/adt/bounded_bitset_test.cc > CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/adt && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/adt/bounded_bitset_test.cc > CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.i
 
 lib/test/adt/CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/adt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/adt/bounded_bitset_test.cc -o CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/adt && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/adt/bounded_bitset_test.cc -o CMakeFiles/bounded_bitset_test.dir/bounded_bitset_test.cc.s
 
 # Object files for target bounded_bitset_test
 bounded_bitset_test_OBJECTS = \

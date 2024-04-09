@@ -73,15 +73,15 @@ lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o: lib/example
 lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o: ../lib/examples/usrp_capture_sync.c
 lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o: lib/examples/CMakeFiles/usrp_capture_sync.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o -MF CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o.d -o CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o -MF CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o.d -o CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync.c
 
 lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync.c > CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync.c > CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.i
 
 lib/examples/CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync.c -o CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/usrp_capture_sync.c -o CMakeFiles/usrp_capture_sync.dir/usrp_capture_sync.c.s
 
 # Object files for target usrp_capture_sync
 usrp_capture_sync_OBJECTS = \

@@ -73,15 +73,15 @@ srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o: srsenb/src/stac
 srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o: ../srsenb/src/stack/enb_stack_lte.cc
 srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o: srsenb/src/stack/CMakeFiles/srsenb_stack.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o -MF CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o.d -o CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/enb_stack_lte.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o -MF CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o.d -o CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/enb_stack_lte.cc
 
 srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/enb_stack_lte.cc > CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/enb_stack_lte.cc > CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.i
 
 srsenb/src/stack/CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/enb_stack_lte.cc -o CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsenb/src/stack && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsenb/src/stack/enb_stack_lte.cc -o CMakeFiles/srsenb_stack.dir/enb_stack_lte.cc.s
 
 # Object files for target srsenb_stack
 srsenb_stack_OBJECTS = \

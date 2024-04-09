@@ -206,6 +206,20 @@ srsran_rf_utils/fast:
 .PHONY : srsran_rf_utils/fast
 
 # Convenience name for target.
+lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/rule:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/rule
+.PHONY : lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/rule
+
+# Convenience name for target.
+srsran_rf_uhd: lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/rule
+.PHONY : srsran_rf_uhd
+
+# fast build rule for target.
+srsran_rf_uhd/fast:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/build
+.PHONY : srsran_rf_uhd/fast
+
+# Convenience name for target.
 lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rule:
 	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rule
 .PHONY : lib/src/phy/rf/CMakeFiles/srsran_rf_blade.dir/rule
@@ -433,6 +447,30 @@ rf_imp.c.s:
 	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_object.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_object.dir/rf_imp.c.s
 .PHONY : rf_imp.c.s
 
+rf_uhd_imp.o: rf_uhd_imp.cc.o
+.PHONY : rf_uhd_imp.o
+
+# target to build an object file
+rf_uhd_imp.cc.o:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/rf_uhd_imp.cc.o
+.PHONY : rf_uhd_imp.cc.o
+
+rf_uhd_imp.i: rf_uhd_imp.cc.i
+.PHONY : rf_uhd_imp.i
+
+# target to preprocess a source file
+rf_uhd_imp.cc.i:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/rf_uhd_imp.cc.i
+.PHONY : rf_uhd_imp.cc.i
+
+rf_uhd_imp.s: rf_uhd_imp.cc.s
+.PHONY : rf_uhd_imp.s
+
+# target to generate assembly for a file
+rf_uhd_imp.cc.s:
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build && $(MAKE) $(MAKESILENT) -f lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/build.make lib/src/phy/rf/CMakeFiles/srsran_rf_uhd.dir/rf_uhd_imp.cc.s
+.PHONY : rf_uhd_imp.cc.s
+
 rf_utils.o: rf_utils.c.o
 .PHONY : rf_utils.o
 
@@ -573,6 +611,7 @@ help:
 	@echo "... srsran_rf"
 	@echo "... srsran_rf_blade"
 	@echo "... srsran_rf_object"
+	@echo "... srsran_rf_uhd"
 	@echo "... srsran_rf_utils"
 	@echo "... srsran_rf_zmq"
 	@echo "... rf_blade_imp.o"
@@ -593,6 +632,9 @@ help:
 	@echo "... rf_imp.o"
 	@echo "... rf_imp.i"
 	@echo "... rf_imp.s"
+	@echo "... rf_uhd_imp.o"
+	@echo "... rf_uhd_imp.i"
+	@echo "... rf_uhd_imp.s"
 	@echo "... rf_utils.o"
 	@echo "... rf_utils.i"
 	@echo "... rf_utils.s"

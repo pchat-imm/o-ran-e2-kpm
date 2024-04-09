@@ -73,15 +73,15 @@ lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o: li
 lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o: ../lib/test/srslog/json_formatter_test.cpp
 lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o: lib/test/srslog/CMakeFiles/json_formatter_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o -MF CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o.d -o CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/json_formatter_test.cpp
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o -MF CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o.d -o CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/json_formatter_test.cpp
 
 lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/json_formatter_test.cpp > CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/json_formatter_test.cpp > CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.i
 
 lib/test/srslog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/json_formatter_test.cpp -o CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/srslog && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/srslog/json_formatter_test.cpp -o CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.s
 
 # Object files for target json_formatter_test
 json_formatter_test_OBJECTS = \

@@ -73,15 +73,15 @@ srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o: srsu
 srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o: ../srsue/src/phy/test/nr_cell_search_rf.cc
 srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o: srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o -MF CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o.d -o CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/phy/test/nr_cell_search_rf.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/test && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o -MF CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o.d -o CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/phy/test/nr_cell_search_rf.cc
 
 srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/phy/test/nr_cell_search_rf.cc > CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/phy/test/nr_cell_search_rf.cc > CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.i
 
 srsue/src/phy/test/CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/phy/test/nr_cell_search_rf.cc -o CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/phy/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/phy/test/nr_cell_search_rf.cc -o CMakeFiles/nr_cell_search_rf.dir/nr_cell_search_rf.cc.s
 
 # Object files for target nr_cell_search_rf
 nr_cell_search_rf_OBJECTS = \
@@ -97,6 +97,7 @@ srsue/src/phy/test/nr_cell_search_rf: lib/src/common/libsrsran_common.a
 srsue/src/phy/test/nr_cell_search_rf: lib/src/phy/libsrsran_phy.a
 srsue/src/phy/test/nr_cell_search_rf: lib/src/radio/libsrsran_radio.a
 srsue/src/phy/test/nr_cell_search_rf: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
+srsue/src/phy/test/nr_cell_search_rf: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
 srsue/src/phy/test/nr_cell_search_rf: lib/src/common/libsrsran_common.a
 srsue/src/phy/test/nr_cell_search_rf: lib/src/support/libsupport.a
 srsue/src/phy/test/nr_cell_search_rf: lib/src/srslog/libsrslog.a

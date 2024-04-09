@@ -73,29 +73,29 @@ lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o: lib/src/phy/mimo/CMake
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o: ../lib/src/phy/mimo/layermap.c
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o: lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o -MF CMakeFiles/srsran_mimo.dir/layermap.c.o.d -o CMakeFiles/srsran_mimo.dir/layermap.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/layermap.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o -MF CMakeFiles/srsran_mimo.dir/layermap.c.o.d -o CMakeFiles/srsran_mimo.dir/layermap.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/layermap.c
 
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_mimo.dir/layermap.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/layermap.c > CMakeFiles/srsran_mimo.dir/layermap.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/layermap.c > CMakeFiles/srsran_mimo.dir/layermap.c.i
 
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_mimo.dir/layermap.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/layermap.c -o CMakeFiles/srsran_mimo.dir/layermap.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/layermap.c -o CMakeFiles/srsran_mimo.dir/layermap.c.s
 
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o: lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/flags.make
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o: ../lib/src/phy/mimo/precoding.c
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o: lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o -MF CMakeFiles/srsran_mimo.dir/precoding.c.o.d -o CMakeFiles/srsran_mimo.dir/precoding.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/precoding.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o -MF CMakeFiles/srsran_mimo.dir/precoding.c.o.d -o CMakeFiles/srsran_mimo.dir/precoding.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/precoding.c
 
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srsran_mimo.dir/precoding.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/precoding.c > CMakeFiles/srsran_mimo.dir/precoding.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/precoding.c > CMakeFiles/srsran_mimo.dir/precoding.c.i
 
 lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srsran_mimo.dir/precoding.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/precoding.c -o CMakeFiles/srsran_mimo.dir/precoding.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/mimo && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/mimo/precoding.c -o CMakeFiles/srsran_mimo.dir/precoding.c.s
 
 srsran_mimo: lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o
 srsran_mimo: lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o

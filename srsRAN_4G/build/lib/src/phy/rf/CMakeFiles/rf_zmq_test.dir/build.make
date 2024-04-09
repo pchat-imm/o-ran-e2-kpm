@@ -73,15 +73,15 @@ lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o: lib/src/phy/rf/CMakeF
 lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o: ../lib/src/phy/rf/rf_zmq_test.c
 lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o: lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o -MF CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o.d -o CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/rf/rf_zmq_test.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o -MF CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o.d -o CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/rf/rf_zmq_test.c
 
 lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/rf/rf_zmq_test.c > CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/rf/rf_zmq_test.c > CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.i
 
 lib/src/phy/rf/CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/rf/rf_zmq_test.c -o CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/rf && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/rf/rf_zmq_test.c -o CMakeFiles/rf_zmq_test.dir/rf_zmq_test.c.s
 
 # Object files for target rf_zmq_test
 rf_zmq_test_OBJECTS = \

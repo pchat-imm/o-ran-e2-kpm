@@ -62,7 +62,7 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /usr/bin/c++
+Compiler: /usr/lib/ccache/c++
 CompilerVersion: 10.5.0
 
 # Dynamic analysis (MemCheck)

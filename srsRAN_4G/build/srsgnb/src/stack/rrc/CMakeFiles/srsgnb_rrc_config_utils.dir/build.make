@@ -73,15 +73,15 @@ srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.
 srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o: ../srsgnb/src/stack/rrc/rrc_nr_config_utils.cc
 srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o: srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o -MF CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o.d -o CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/rrc_nr_config_utils.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o -MF CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o.d -o CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/rrc_nr_config_utils.cc
 
 srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/rrc_nr_config_utils.cc > CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/rrc_nr_config_utils.cc > CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.i
 
 srsgnb/src/stack/rrc/CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/rrc_nr_config_utils.cc -o CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/rrc_nr_config_utils.cc -o CMakeFiles/srsgnb_rrc_config_utils.dir/rrc_nr_config_utils.cc.s
 
 # Object files for target srsgnb_rrc_config_utils
 srsgnb_rrc_config_utils_OBJECTS = \

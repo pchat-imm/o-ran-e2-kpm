@@ -73,15 +73,15 @@ lib/examples/CMakeFiles/synch_file.dir/synch_file.c.o: lib/examples/CMakeFiles/s
 lib/examples/CMakeFiles/synch_file.dir/synch_file.c.o: ../lib/examples/synch_file.c
 lib/examples/CMakeFiles/synch_file.dir/synch_file.c.o: lib/examples/CMakeFiles/synch_file.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/examples/CMakeFiles/synch_file.dir/synch_file.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/synch_file.dir/synch_file.c.o -MF CMakeFiles/synch_file.dir/synch_file.c.o.d -o CMakeFiles/synch_file.dir/synch_file.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/synch_file.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/examples/CMakeFiles/synch_file.dir/synch_file.c.o -MF CMakeFiles/synch_file.dir/synch_file.c.o.d -o CMakeFiles/synch_file.dir/synch_file.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/synch_file.c
 
 lib/examples/CMakeFiles/synch_file.dir/synch_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/synch_file.dir/synch_file.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/synch_file.c > CMakeFiles/synch_file.dir/synch_file.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/synch_file.c > CMakeFiles/synch_file.dir/synch_file.c.i
 
 lib/examples/CMakeFiles/synch_file.dir/synch_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/synch_file.dir/synch_file.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/synch_file.c -o CMakeFiles/synch_file.dir/synch_file.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/examples && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/examples/synch_file.c -o CMakeFiles/synch_file.dir/synch_file.c.s
 
 # Object files for target synch_file
 synch_file_OBJECTS = \

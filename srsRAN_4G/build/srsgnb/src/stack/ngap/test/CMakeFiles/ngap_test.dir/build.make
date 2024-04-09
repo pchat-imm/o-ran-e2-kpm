@@ -73,15 +73,15 @@ srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.o: srsgnb/src/s
 srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.o: ../srsgnb/src/stack/ngap/test/ngap_test.cc
 srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.o: srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ngap/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.o -MF CMakeFiles/ngap_test.dir/ngap_test.cc.o.d -o CMakeFiles/ngap_test.dir/ngap_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ngap/test/ngap_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ngap/test && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.o -MF CMakeFiles/ngap_test.dir/ngap_test.cc.o.d -o CMakeFiles/ngap_test.dir/ngap_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ngap/test/ngap_test.cc
 
 srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ngap_test.dir/ngap_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ngap/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ngap/test/ngap_test.cc > CMakeFiles/ngap_test.dir/ngap_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ngap/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ngap/test/ngap_test.cc > CMakeFiles/ngap_test.dir/ngap_test.cc.i
 
 srsgnb/src/stack/ngap/test/CMakeFiles/ngap_test.dir/ngap_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ngap_test.dir/ngap_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ngap/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ngap/test/ngap_test.cc -o CMakeFiles/ngap_test.dir/ngap_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/ngap/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/ngap/test/ngap_test.cc -o CMakeFiles/ngap_test.dir/ngap_test.cc.s
 
 # Object files for target ngap_test
 ngap_test_OBJECTS = \

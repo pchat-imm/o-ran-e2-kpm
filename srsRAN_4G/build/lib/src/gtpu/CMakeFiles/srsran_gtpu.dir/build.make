@@ -73,15 +73,15 @@ lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.o: lib/src/gtpu/CMakeFiles/srsra
 lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.o: ../lib/src/gtpu/gtpu.cc
 lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.o: lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/gtpu && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.o -MF CMakeFiles/srsran_gtpu.dir/gtpu.cc.o.d -o CMakeFiles/srsran_gtpu.dir/gtpu.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/gtpu/gtpu.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/gtpu && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.o -MF CMakeFiles/srsran_gtpu.dir/gtpu.cc.o.d -o CMakeFiles/srsran_gtpu.dir/gtpu.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/gtpu/gtpu.cc
 
 lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsran_gtpu.dir/gtpu.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/gtpu && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/gtpu/gtpu.cc > CMakeFiles/srsran_gtpu.dir/gtpu.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/gtpu && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/gtpu/gtpu.cc > CMakeFiles/srsran_gtpu.dir/gtpu.cc.i
 
 lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsran_gtpu.dir/gtpu.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/gtpu && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/gtpu/gtpu.cc -o CMakeFiles/srsran_gtpu.dir/gtpu.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/gtpu && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/gtpu/gtpu.cc -o CMakeFiles/srsran_gtpu.dir/gtpu.cc.s
 
 # Object files for target srsran_gtpu
 srsran_gtpu_OBJECTS = \

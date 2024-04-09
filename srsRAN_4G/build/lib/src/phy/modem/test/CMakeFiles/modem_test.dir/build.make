@@ -73,15 +73,15 @@ lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.o: lib/src/phy/mod
 lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.o: ../lib/src/phy/modem/test/modem_test.c
 lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.o: lib/src/phy/modem/test/CMakeFiles/modem_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.o -MF CMakeFiles/modem_test.dir/modem_test.c.o.d -o CMakeFiles/modem_test.dir/modem_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/test/modem_test.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem/test && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.o -MF CMakeFiles/modem_test.dir/modem_test.c.o.d -o CMakeFiles/modem_test.dir/modem_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/test/modem_test.c
 
 lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modem_test.dir/modem_test.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/test/modem_test.c > CMakeFiles/modem_test.dir/modem_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/test/modem_test.c > CMakeFiles/modem_test.dir/modem_test.c.i
 
 lib/src/phy/modem/test/CMakeFiles/modem_test.dir/modem_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modem_test.dir/modem_test.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/test/modem_test.c -o CMakeFiles/modem_test.dir/modem_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/modem/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/modem/test/modem_test.c -o CMakeFiles/modem_test.dir/modem_test.c.s
 
 # Object files for target modem_test
 modem_test_OBJECTS = \

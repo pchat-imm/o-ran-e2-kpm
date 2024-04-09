@@ -73,29 +73,29 @@ lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o: lib/src/support/
 lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o: ../lib/src/support/emergency_handlers.cc
 lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o: lib/src/support/CMakeFiles/support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o -MF CMakeFiles/support.dir/emergency_handlers.cc.o.d -o CMakeFiles/support.dir/emergency_handlers.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/emergency_handlers.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o -MF CMakeFiles/support.dir/emergency_handlers.cc.o.d -o CMakeFiles/support.dir/emergency_handlers.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/emergency_handlers.cc
 
 lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/support.dir/emergency_handlers.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/emergency_handlers.cc > CMakeFiles/support.dir/emergency_handlers.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/emergency_handlers.cc > CMakeFiles/support.dir/emergency_handlers.cc.i
 
 lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/support.dir/emergency_handlers.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/emergency_handlers.cc -o CMakeFiles/support.dir/emergency_handlers.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/emergency_handlers.cc -o CMakeFiles/support.dir/emergency_handlers.cc.s
 
 lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o: lib/src/support/CMakeFiles/support.dir/flags.make
 lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o: ../lib/src/support/signal_handler.cc
 lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o: lib/src/support/CMakeFiles/support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o -MF CMakeFiles/support.dir/signal_handler.cc.o.d -o CMakeFiles/support.dir/signal_handler.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/signal_handler.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o -MF CMakeFiles/support.dir/signal_handler.cc.o.d -o CMakeFiles/support.dir/signal_handler.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/signal_handler.cc
 
 lib/src/support/CMakeFiles/support.dir/signal_handler.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/support.dir/signal_handler.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/signal_handler.cc > CMakeFiles/support.dir/signal_handler.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/signal_handler.cc > CMakeFiles/support.dir/signal_handler.cc.i
 
 lib/src/support/CMakeFiles/support.dir/signal_handler.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/support.dir/signal_handler.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/signal_handler.cc -o CMakeFiles/support.dir/signal_handler.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/support && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/support/signal_handler.cc -o CMakeFiles/support.dir/signal_handler.cc.s
 
 # Object files for target support
 support_OBJECTS = \

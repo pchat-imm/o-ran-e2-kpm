@@ -73,15 +73,15 @@ lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.o: lib/test/common/CMa
 lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.o: ../lib/test/common/test_f12345.cc
 lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.o: lib/test/common/CMakeFiles/test_f12345.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.o -MF CMakeFiles/test_f12345.dir/test_f12345.cc.o.d -o CMakeFiles/test_f12345.dir/test_f12345.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_f12345.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.o -MF CMakeFiles/test_f12345.dir/test_f12345.cc.o.d -o CMakeFiles/test_f12345.dir/test_f12345.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_f12345.cc
 
 lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_f12345.dir/test_f12345.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_f12345.cc > CMakeFiles/test_f12345.dir/test_f12345.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_f12345.cc > CMakeFiles/test_f12345.dir/test_f12345.cc.i
 
 lib/test/common/CMakeFiles/test_f12345.dir/test_f12345.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_f12345.dir/test_f12345.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_f12345.cc -o CMakeFiles/test_f12345.dir/test_f12345.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/test_f12345.cc -o CMakeFiles/test_f12345.dir/test_f12345.cc.s
 
 # Object files for target test_f12345
 test_f12345_OBJECTS = \

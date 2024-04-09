@@ -73,15 +73,15 @@ srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o:
 srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o: ../srsgnb/src/stack/rrc/test/rrc_nr_core_test.cc
 srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o: srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o -MF CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o.d -o CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/test/rrc_nr_core_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc/test && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o -MF CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o.d -o CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/test/rrc_nr_core_test.cc
 
 srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/test/rrc_nr_core_test.cc > CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/test/rrc_nr_core_test.cc > CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.i
 
 srsgnb/src/stack/rrc/test/CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/test/rrc_nr_core_test.cc -o CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/rrc/test && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/rrc/test/rrc_nr_core_test.cc -o CMakeFiles/rrc_nr_core_test.dir/rrc_nr_core_test.cc.s
 
 # Object files for target rrc_nr_core_test
 rrc_nr_core_test_OBJECTS = \
@@ -105,6 +105,7 @@ srsgnb/src/stack/rrc/test/rrc_nr_core_test: lib/src/gtpu/libsrsran_gtpu.a
 srsgnb/src/stack/rrc/test/rrc_nr_core_test: srsenb/src/stack/upper/libsrsenb_upper.a
 srsgnb/src/stack/rrc/test/rrc_nr_core_test: /usr/lib/x86_64-linux-gnu/libsctp.so
 srsgnb/src/stack/rrc/test/rrc_nr_core_test: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
+srsgnb/src/stack/rrc/test/rrc_nr_core_test: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
 srsgnb/src/stack/rrc/test/rrc_nr_core_test: srsenb/src/stack/rrc/libsrsenb_rrc.a
 srsgnb/src/stack/rrc/test/rrc_nr_core_test: srsenb/src/common/libsrsenb_common.a
 srsgnb/src/stack/rrc/test/rrc_nr_core_test: lib/src/asn1/librrc_asn1.a

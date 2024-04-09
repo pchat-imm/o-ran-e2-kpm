@@ -73,15 +73,15 @@ lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_re
 lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o: ../lib/test/pdcp/pdcp_lte_test_status_report.cc
 lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o: lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o -MF CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o.d -o CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_lte_test_status_report.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o -MF CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o.d -o CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_lte_test_status_report.cc
 
 lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_lte_test_status_report.cc > CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_lte_test_status_report.cc > CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.i
 
 lib/test/pdcp/CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_lte_test_status_report.cc -o CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/pdcp && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/pdcp/pdcp_lte_test_status_report.cc -o CMakeFiles/pdcp_lte_test_status_report.dir/pdcp_lte_test_status_report.cc.s
 
 # Object files for target pdcp_lte_test_status_report
 pdcp_lte_test_status_report_OBJECTS = \

@@ -73,15 +73,15 @@ srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o: srsgnb/src/stack/sda
 srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o: ../srsgnb/src/stack/sdap/sdap.cc
 srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o: srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/sdap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o -MF CMakeFiles/srsgnb_sdap.dir/sdap.cc.o.d -o CMakeFiles/srsgnb_sdap.dir/sdap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/sdap && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.o -MF CMakeFiles/srsgnb_sdap.dir/sdap.cc.o.d -o CMakeFiles/srsgnb_sdap.dir/sdap.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc
 
 srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsgnb_sdap.dir/sdap.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/sdap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc > CMakeFiles/srsgnb_sdap.dir/sdap.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/sdap && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc > CMakeFiles/srsgnb_sdap.dir/sdap.cc.i
 
 srsgnb/src/stack/sdap/CMakeFiles/srsgnb_sdap.dir/sdap.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsgnb_sdap.dir/sdap.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/sdap && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc -o CMakeFiles/srsgnb_sdap.dir/sdap.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsgnb/src/stack/sdap && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsgnb/src/stack/sdap/sdap.cc -o CMakeFiles/srsgnb_sdap.dir/sdap.cc.s
 
 # Object files for target srsgnb_sdap
 srsgnb_sdap_OBJECTS = \

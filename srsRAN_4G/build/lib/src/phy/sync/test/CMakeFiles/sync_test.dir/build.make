@@ -73,15 +73,15 @@ lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o: lib/src/phy/sync/t
 lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o: ../lib/src/phy/sync/test/sync_test.c
 lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o: lib/src/phy/sync/test/CMakeFiles/sync_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o -MF CMakeFiles/sync_test.dir/sync_test.c.o.d -o CMakeFiles/sync_test.dir/sync_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/sync_test.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.o -MF CMakeFiles/sync_test.dir/sync_test.c.o.d -o CMakeFiles/sync_test.dir/sync_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/sync_test.c
 
 lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sync_test.dir/sync_test.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/sync_test.c > CMakeFiles/sync_test.dir/sync_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/sync_test.c > CMakeFiles/sync_test.dir/sync_test.c.i
 
 lib/src/phy/sync/test/CMakeFiles/sync_test.dir/sync_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sync_test.dir/sync_test.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/sync_test.c -o CMakeFiles/sync_test.dir/sync_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/sync/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/sync/test/sync_test.c -o CMakeFiles/sync_test.dir/sync_test.c.s
 
 # Object files for target sync_test
 sync_test_OBJECTS = \

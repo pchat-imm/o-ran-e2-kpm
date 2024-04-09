@@ -73,15 +73,15 @@ lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o: lib/test/phy/CMakeF
 lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o: ../lib/test/phy/pucch_ca_test.c
 lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o: lib/test/phy/CMakeFiles/pucch_ca_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/phy && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o -MF CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o.d -o CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/phy/pucch_ca_test.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/phy && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o -MF CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o.d -o CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/phy/pucch_ca_test.c
 
 lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/phy && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/phy/pucch_ca_test.c > CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/phy && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/phy/pucch_ca_test.c > CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.i
 
 lib/test/phy/CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/phy && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/phy/pucch_ca_test.c -o CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/phy && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/phy/pucch_ca_test.c -o CMakeFiles/pucch_ca_test.dir/pucch_ca_test.c.s
 
 # Object files for target pucch_ca_test
 pucch_ca_test_OBJECTS = \

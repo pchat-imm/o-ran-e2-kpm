@@ -73,15 +73,15 @@ lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.o: lib/test/common/
 lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.o: ../lib/test/common/multiqueue_test.cc
 lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.o: lib/test/common/CMakeFiles/queue_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.o -MF CMakeFiles/queue_test.dir/multiqueue_test.cc.o.d -o CMakeFiles/queue_test.dir/multiqueue_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/multiqueue_test.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.o -MF CMakeFiles/queue_test.dir/multiqueue_test.cc.o.d -o CMakeFiles/queue_test.dir/multiqueue_test.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/multiqueue_test.cc
 
 lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/queue_test.dir/multiqueue_test.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/multiqueue_test.cc > CMakeFiles/queue_test.dir/multiqueue_test.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/multiqueue_test.cc > CMakeFiles/queue_test.dir/multiqueue_test.cc.i
 
 lib/test/common/CMakeFiles/queue_test.dir/multiqueue_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/queue_test.dir/multiqueue_test.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/multiqueue_test.cc -o CMakeFiles/queue_test.dir/multiqueue_test.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/test/common && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/test/common/multiqueue_test.cc -o CMakeFiles/queue_test.dir/multiqueue_test.cc.s
 
 # Object files for target queue_test
 queue_test_OBJECTS = \

@@ -73,29 +73,29 @@ lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.o: lib/s
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.o: ../lib/src/phy/fec/polar/test/polar_sets.c
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.o: lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.o -MF CMakeFiles/polar_test_utils.dir/polar_sets.c.o.d -o CMakeFiles/polar_test_utils.dir/polar_sets.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/polar_sets.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.o -MF CMakeFiles/polar_test_utils.dir/polar_sets.c.o.d -o CMakeFiles/polar_test_utils.dir/polar_sets.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/polar_sets.c
 
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/polar_test_utils.dir/polar_sets.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/polar_sets.c > CMakeFiles/polar_test_utils.dir/polar_sets.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/polar_sets.c > CMakeFiles/polar_test_utils.dir/polar_sets.c.i
 
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/polar_sets.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/polar_test_utils.dir/polar_sets.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/polar_sets.c -o CMakeFiles/polar_test_utils.dir/polar_sets.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/polar_sets.c -o CMakeFiles/polar_test_utils.dir/polar_sets.c.s
 
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o: lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/flags.make
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o: ../lib/src/phy/fec/polar/test/subchannel_allocation.c
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o: lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o -MF CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o.d -o CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/subchannel_allocation.c
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/ccache /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o -MF CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o.d -o CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/subchannel_allocation.c
 
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/subchannel_allocation.c > CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/subchannel_allocation.c > CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.i
 
 lib/src/phy/fec/polar/test/CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/subchannel_allocation.c -o CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/lib/src/phy/fec/polar/test && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/lib/src/phy/fec/polar/test/subchannel_allocation.c -o CMakeFiles/polar_test_utils.dir/subchannel_allocation.c.s
 
 # Object files for target polar_test_utils
 polar_test_utils_OBJECTS = \

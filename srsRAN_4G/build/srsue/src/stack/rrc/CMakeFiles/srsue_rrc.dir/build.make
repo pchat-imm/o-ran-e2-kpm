@@ -73,85 +73,85 @@ srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.o: srsue/src/stack/rrc/CMake
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.o: ../srsue/src/stack/rrc/rrc.cc
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc.cc
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_rrc.dir/rrc.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc.cc > CMakeFiles/srsue_rrc.dir/rrc.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc.cc > CMakeFiles/srsue_rrc.dir/rrc.cc.i
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_rrc.dir/rrc.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc.cc -o CMakeFiles/srsue_rrc.dir/rrc.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc.cc -o CMakeFiles/srsue_rrc.dir/rrc.cc.s
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/flags.make
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o: ../srsue/src/stack/rrc/rrc_procedures.cc
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_procedures.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_procedures.cc
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_procedures.cc > CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_procedures.cc > CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.i
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_procedures.cc -o CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_procedures.cc -o CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.s
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/flags.make
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o: ../srsue/src/stack/rrc/rrc_meas.cc
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_meas.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_meas.cc
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_rrc.dir/rrc_meas.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_meas.cc > CMakeFiles/srsue_rrc.dir/rrc_meas.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_meas.cc > CMakeFiles/srsue_rrc.dir/rrc_meas.cc.i
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_rrc.dir/rrc_meas.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_meas.cc -o CMakeFiles/srsue_rrc.dir/rrc_meas.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_meas.cc -o CMakeFiles/srsue_rrc.dir/rrc_meas.cc.s
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/flags.make
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o: ../srsue/src/stack/rrc/rrc_cell.cc
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_rrc.dir/rrc_cell.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc > CMakeFiles/srsue_rrc.dir/rrc_cell.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc > CMakeFiles/srsue_rrc.dir/rrc_cell.cc.i
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_rrc.dir/rrc_cell.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc -o CMakeFiles/srsue_rrc.dir/rrc_cell.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_cell.cc -o CMakeFiles/srsue_rrc.dir/rrc_cell.cc.s
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/flags.make
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o: ../srsue/src/stack/rrc/rrc_rlf_report.cc
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_rlf_report.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o -MF CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o.d -o CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_rlf_report.cc
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_rlf_report.cc > CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_rlf_report.cc > CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.i
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_rlf_report.cc -o CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/rrc_rlf_report.cc -o CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.s
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/flags.make
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.o: ../srsue/src/stack/rrc/phy_controller.cc
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.o: srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.o"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.o -MF CMakeFiles/srsue_rrc.dir/phy_controller.cc.o.d -o CMakeFiles/srsue_rrc.dir/phy_controller.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/phy_controller.cc
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.o -MF CMakeFiles/srsue_rrc.dir/phy_controller.cc.o.d -o CMakeFiles/srsue_rrc.dir/phy_controller.cc.o -c /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/phy_controller.cc
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsue_rrc.dir/phy_controller.cc.i"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/phy_controller.cc > CMakeFiles/srsue_rrc.dir/phy_controller.cc.i
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/phy_controller.cc > CMakeFiles/srsue_rrc.dir/phy_controller.cc.i
 
 srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsue_rrc.dir/phy_controller.cc.s"
-	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/phy_controller.cc -o CMakeFiles/srsue_rrc.dir/phy_controller.cc.s
+	cd /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/build/srsue/src/stack/rrc && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chatchamon/o-ran-e2-kpm/srsRAN_4G/srsue/src/stack/rrc/phy_controller.cc -o CMakeFiles/srsue_rrc.dir/phy_controller.cc.s
 
 # Object files for target srsue_rrc
 srsue_rrc_OBJECTS = \
