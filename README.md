@@ -1,8 +1,8 @@
 # o-ran-e2-kpm
 
 ## task 08/04/24
-- [ ] install URRP driver
-- [ ] run the baseline requirement of gNB: https://docs.srsran.com/projects/project/en/latest/user_manuals/source/running.html
+- [x] install URRP driver
+- [check?] run the baseline requirement of gNB: https://docs.srsran.com/projects/project/en/latest/user_manuals/source/running.html
 - [ ] follow this tutorial to run the URSP as the radio front for over-the-air-setup: https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html
 - [ ] follow this tutorial for srsRAN gNB with COTS UE: https://docs.srsran.com/projects/project/en/latest/tutorials/source/cotsUE/source/index.html#configuration
 ## old task 
