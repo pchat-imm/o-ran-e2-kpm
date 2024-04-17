@@ -1,8 +1,6 @@
-cmake_minimum_required (VERSION 3.2)
+cmake_minimum_required (VERSION 3.13)
 
-if (NOT DEFINED CMAKE_BUILD_TYPE)
-  set (CMAKE_BUILD_TYPE Release CACHE STRING "Build type")
-endif ()
+set (CMAKE_BUILD_TYPE Release CACHE STRING "Build type")
 
 project (swig)
 
@@ -90,7 +88,7 @@ endif()
 configure_file (${SWIG_ROOT}/Tools/cmake/swigconfig.h.in
                 ${CMAKE_CURRENT_BINARY_DIR}/Source/Include/swigconfig.h)
 
-find_package (BISON REQUIRED)
+find_package (BISON 3.5 REQUIRED)
 
 
 # Compiler flags

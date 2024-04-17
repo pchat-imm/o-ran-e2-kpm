@@ -1,8 +1,42 @@
 %module preproc_cpp
 
 
-// Comma in macro - https://github.com/swig/swig/issues/974 (for /* */)
-// and https://github.com/swig/swig/pull/1166 (for //)
+// booleans start
+#if false
+# error "boolean preproc check fail false"
+#else
+#endif
+
+#if !false
+#else
+# error "boolean preproc check fail !false"
+#endif
+
+#if true
+#else
+# error "boolean preproc check fail true"
+#endif
+
+#if !true
+# error "boolean preproc check fail !true"
+#else
+#endif
+
+#if (true)
+#else
+# error "boolean preproc check fail (true)"
+#endif
+
+#if (0 || true)
+#else
+# error "boolean preproc check fail (0 || true)"
+#endif
+// booleans end
+
+
+// Regression tests for bugs handling a comma in a comment in a macro:
+// - https://github.com/swig/swig/issues/974 (for /* */)
+// - https://github.com/swig/swig/pull/1166 (for //)
 // Also see preproc.i
 %inline %{
 #define swig__attribute__(x)
