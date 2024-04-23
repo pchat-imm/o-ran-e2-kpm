@@ -1,3 +1,6 @@
 [submodule "czmq/srsRAN_Project"]
 	path = czmq/srsRAN_Project
 	url = https://github.com/srsran/srsRAN_Project.git
+[submodule "open5gs"]
+	path = open5gs
+	url = https://github.com/open5gs/open5gs.git
