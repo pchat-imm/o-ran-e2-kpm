@@ -1,3 +1,9 @@
 [submodule "czmq/srsRAN_Project"]
 	path = czmq/srsRAN_Project
 	url = https://github.com/srsran/srsRAN_Project.git
+[submodule "srsRAN_Project"]
+	path = srsRAN_Project
+	url = https://github.com/srsran/srsRAN_Project
+[submodule "uhd"]
+	path = uhd
+	url = https://github.com/EttusResearch/uhd

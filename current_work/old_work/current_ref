@@ -1,0 +1,19 @@
+from SixFab
+
+- ECM mode with EC25
+https://docs.sixfab.com/page/cellular-internet-connection-in-ecm-mode
+
+- QMI/PPP mode 
+[x] https://docs.sixfab.com/page/setting-up-a-data-connection-over-qmi-interface-using-libqmi
+
+- troubleshoot
+https://docs.sixfab.com/docs/raspberry-pi-3g-4g-lte-base-hat-troubleshooting
+
+- AT Command with ttyUSB2
+https://docs.sixfab.com/page/sending-at-commands
+
+
+- Onomondo Quectel EC96
+https://onomondo.com/blog/how-to-ping-your-modem-using-at-commands/
+
+
