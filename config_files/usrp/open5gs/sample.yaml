@@ -129,7 +129,8 @@ smf:
     - 8.8.4.4
     - 2001:4860:4860::8888
     - 2001:4860:4860::8844
-  mtu: 1400
+  # mtu: 1400		
+  mtu: 1450		# @1mm - change from 1400 to 1450
   freeDiameter:
     identity: smf.localdomain
     realm: localdomain
@@ -210,6 +211,11 @@ upf:
       # - address: 127.0.0.7
       # - address: 127.0.1.100
       - address: 127.0.0.2 
+  
+  # smf:		# @1mm add (not worked)
+    # mtu: 1450	# @1mm add (not worked)
+      
+      
   session:
     - subnet: 10.45.0.0/16
       gateway: 10.45.0.1
@@ -219,6 +225,11 @@ upf:
     server:
       - address: 127.0.0.7
         port: 9090
+
+#@1mm - add smf session (not sure)
+smf:		# @1mm add
+  mtu: 1450	# @1mm add
+
 
 hss:
   freeDiameter:
