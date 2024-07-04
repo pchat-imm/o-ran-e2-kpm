@@ -4,76 +4,78 @@ See the RELEASENOTES file for a summary of changes in each release.
 Issue # numbers mentioned below can be found on Github. For more details, add
 the issue number to the end of the URL: https://github.com/swig/swig/issues/
 
-Version 4.1.1 (30 Nov 2022)
+Version 4.3.0 (in progress)
 ===========================
 
-2022-11-29: bero
-            Fix mismatch between #pragma GCC diagnostic push and pop statements
+2024-03-28: olly
+	    Fix preprocessor to handle C-style comment ending **/ in macro argument.
 
-2022-11-26: wsfulton
-            #2449 Fix undefined behaviour in ccache-swig calculating md4 hashes and possibly
-            also handling errors when CCACHE_CPP2 is set.
+2024-03-27: wsfulton
+            [Python] #2844 Fix for using more than one std::string_view type in a method.
 
-2022-11-25: wsfulton
-            #961 Fix syntax error parsing unnamed template parameters with a default value.
+2024-03-27: wsfulton
+            [R] #2847 Add missing std::vector<long> and std::vector<long long> typemaps
+            which were missing depending on whether or not SWIGWORDSIZE64 was defined.
 
-2022-11-25: olly
-	    #2447 Fix undefined behaviour in swig's parser when handling
-	    default parameter expressions containing method calls.
+2024-03-25: wsfulton
+            [Python] #2826 Stricter stable ABI conformance.
+            1. Use Py_DecRef and Py_IncRef when Py_LIMITED_API is defined instead of
+               macro equivalents, such as Py_INCREF.
+            2. Don't use PyUnicode_GetLength from python-3.7 and later.
+            3. Use PyObject_Free instead of deprecated equivalents.
 
-2022-11-13: olly
-	    [PHP] #2419 Update the documentation to reflect that SWIG 4.1.0
-	    dropped support for -noproxy when generating PHP wrappers.
+2024-03-25: olly
+	    #2848 Fix elision of comma before ##__VARARGS__ which we document
+	    as supported but seems to have not worked since before 2009.
 
-2022-11-05: wsfulton
-            #2417 Fix -swiglib for Windows when building with CMake.
+2024-03-11: wsfulton
+            [C#] #2829 Improve handling and documentation of missing enum base type
+            information.
 
-2022-11-02: wsfulton
-            #2418 Fix infinite loop handling non-type template parameters.
+2024-03-07: wsfulton
+            [Ocaml] Fix SWIGTYPE MOVE 'in' typemap to fix compilation error.
 
-            Fixes infinite loop due to () brackets in a non-type template
-            parameter containing an expression.
+2024-03-07: wsfulton
+            Add SWIGTYPE MOVE 'typecheck' typemaps to remove warning 472 
+            (SWIGWARN_TYPEMAP_TYPECHECK_UNDEF).
 
-2022-10-28: wsfulton
-            [R] R rtypecheck typemaps
+2024-03-06: wsfulton
+            Add support for std::unique_ptr & typemaps. Non-const inputs implement
+            move semantics from proxy class to C++ layer, otherwise const inputs
+            and all reference returns behave like any other lvalue reference to a class.
 
-            Further switch to use rtypecheck typemaps instead of hard coded logic.
-            The full switch to typemaps is deferred until swig-4.2 as it can't be fully
-            backwards compatible. For now a warning is provided to help the
-            transition. It provides the full typemap that should be placed into
-            a user's interface file, for example:
+2024-03-06: wsfulton
+            [Javascript, MzScheme, Octave] Support NULL being passed into char* typemaps.
 
-            %typemap("rtype") int32_t * "integer"
-            void testmethod(int32_t * i);
-            void testmethod();
+2024-03-06: christophe-calmejane,wsfulton
+            #2650 Add support for movable std::unique_ptr by adding in std::unique_ptr &&
+            input typemaps. The std::unique && output typemaps do not support move
+            semantics by default and behave like lvalue references.
 
-            If there is no rtypecheck typemap for int32_t *, the warning shown is:
+2024-03-06: wsfulton
+            Add missing use of move constructor instead of copy constructor when
+            passing movable types by value. This was previously implemented only for
+            parameters passed to a global function or static member function and is
+            now extended to parameters passed to member methods as well as constructors.
 
-              example.i:7: Warning 750: Optional rtypecheck code is deprecated. Add the
-              following typemap to fix as the next version of SWIG will not work without it:
-              %typemap("rtypecheck") int32_t * %{ (is.integer($arg) || is.numeric($arg)) %}
+2024-03-01: olly
+	    [Java] #2819 Suppress Java removal warnings for uses of
+	    System.runFinalization().  SWIG will need to stop relying on
+	    finalize methods, but we know that and meanwhile these warnings
+	    make the testsuite output noisy.  Fix use of deprecated form
+	    of Runtime.exec() in the doxygen example.
 
-            The warning is shown for any code that previously used "numeric", "integer" or
-            "character" for the rtype typemap. Copying the rtypecheck typemap as
-            shown into the user interface file will provide the appropriate fix and
-            the warning will disappear. This is important to do as swig-4.2 will
-            not be able to provide this helpful warning.
+2024-02-28: wsfulton
+            #1754 Fix compilation errors in generated code when instantiating a templated
+            static method within a template (non-static methods and constructors were
+            always okay). For example:
 
-2022-10-27: wsfulton
-            [R] Allow NULL to be used in overloaded functions taking shared_ptr.
-            Also fixes special variable $argtype expansion in rtypecheck typemaps.
+              template <typename T> class X {
+                template <class InputIterator>
+                  static void fn(InputIterator first, InputIterator last) { ... }
+              };
+              class SimpleIterator { ... };
 
-2022-10-26: wsfulton
-            [R] Improve R wrapper error message when calling overloaded methods
-            when incorrect types passed are passed to the overloaded methods.
-
-            Old unhelpful error message:
-              Error in f(...) : could not find function "f"
-
-            Example of new improved error message:
-              Error in use_count(k) :
-                cannot find overloaded function for use_count with argtypes (NULL)
-
-2022-10-26: wsfulton
-            [R] #2386 Fix memory leak in R shared_ptr wrappers.
-            Fix leak when a cast up a class inheritance chain is required.
+              %extend X<int> {
+                %template(fn) fn<SimpleIterator>;
+              }

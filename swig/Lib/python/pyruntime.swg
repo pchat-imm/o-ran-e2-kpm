@@ -34,6 +34,9 @@
 #if __GNUC__ >= 7
 #pragma GCC diagnostic pop
 #endif
+
+#include <stdio.h>
+#include <stdlib.h>
 %}
 
 %insert(runtime) "swigrun.swg";         /* SWIG API */

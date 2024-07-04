@@ -1,5 +1,13 @@
 # o-ran-e2-kpm
 
+## task 08/04/24
+- [x] install URRP driver
+- [check?] run the baseline requirement of gNB: https://docs.srsran.com/projects/project/en/latest/user_manuals/source/running.html
+- [ ] follow this tutorial to run the URSP as the radio front for over-the-air-setup: https://docs.srsran.com/projects/project/en/latest/tutorials/source/srsUE/source/index.html
+- [ ] follow this tutorial for srsRAN gNB with COTS UE: https://docs.srsran.com/projects/project/en/latest/tutorials/source/cotsUE/source/index.html#configuration
+## old task 
+- understand multiUE and gNU Emulator 
+
 ## Diagram
 ![overview_hw_sw_ip_port(1)](https://github.com/pchat-imm/o-ran-e2-kpm/assets/40858099/71e6f5ca-ef8f-4fbd-9f8f-828cb9a1a94a)
 
@@ -26,7 +34,3 @@ from srsRAN
 - [FlexRIC](https://gitlab.eurecom.fr/mosaic5g/flexric)
 - [Open5GS 5G Core](https://open5gs.org/)
 - Wireshark (Version 4.0.7 or later)
-
-## task 05/04/23
-- understand multiUE and gNU Emulator 
-

@@ -7,3 +7,7 @@
 [submodule "uhd"]
 	path = uhd
 	url = https://github.com/EttusResearch/uhd
+[submodule "open5gs"]
+	path = open5gs
+	url = https://github.com/open5gs/open5gs.git
+
