@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-05T08:59:13.169Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="wfp-_hBqdvZMlH8SgHlc" version="24.6.4" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-07-05T09:11:08.744Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="exUNvXUrDJS0MOvrkVxH" version="24.6.4" type="github" pages="6">
   <diagram name="start_system_flowchart" id="ih1Q73Nmi0UyLShYIxLE">
     <mxGraphModel dx="1326" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -235,7 +235,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="short_start_system_flowchart" id="Fw9n1UCOq08EcSZxIcgA">
-    <mxGraphModel dx="980" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="SaCbKcbmavSiH5WYuZVN-0" />
         <mxCell id="SaCbKcbmavSiH5WYuZVN-1" parent="SaCbKcbmavSiH5WYuZVN-0" />
